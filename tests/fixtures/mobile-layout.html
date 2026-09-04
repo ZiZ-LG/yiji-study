@@ -102,9 +102,11 @@
             domainTitleOverflow: domainTitle.scrollWidth - domainTitle.clientWidth,
             domainTitleRightOverflow: domainTitleRect.right - domainCard.right,
             domainTitleHeight: domainTitle.getBoundingClientRect().height,
+            domainTitleWhiteSpace: getComputedStyle(domainTitle).whiteSpace,
             optionHeight: option.height,
             optionKeyContained: key.top >= option.top && key.bottom <= option.bottom,
             optionCopyOverflow: optionCopy.scrollWidth - optionCopy.clientWidth,
+            optionCopyWhiteSpace: getComputedStyle(optionCopy).whiteSpace,
           };
           document.body.dataset.layoutResult = encodeURIComponent(JSON.stringify(result));
         });

@@ -49,9 +49,10 @@ assert.ok(layout.navScrollPaddingBottom >= 188, `导航页滚动留白仅 ${layo
 assert.ok(layout.dockScrollPaddingBottom >= 196, `答题页滚动留白仅 ${layout.dockScrollPaddingBottom}px`);
 assert.ok(layout.domainTitleOverflow <= 1, `知识域标题横向溢出 ${layout.domainTitleOverflow}px`);
 assert.ok(layout.domainTitleRightOverflow <= 1, `知识域标题越过卡片右边界 ${layout.domainTitleRightOverflow}px`);
-assert.ok(layout.domainTitleHeight >= 40, `长知识域标题未换行，高度仅 ${layout.domainTitleHeight}px`);
+assert.equal(layout.domainTitleWhiteSpace, "normal", "知识域标题仍被宿主样式强制为单行");
 assert.ok(layout.optionHeight >= 64, `选项按钮高度仅 ${layout.optionHeight}px`);
 assert.equal(layout.optionKeyContained, true, "选项序号框越过了选项按钮边界");
 assert.ok(layout.optionCopyOverflow <= 1, `选项文字横向溢出 ${layout.optionCopyOverflow}px`);
+assert.equal(layout.optionCopyWhiteSpace, "normal", "选项文字仍被宿主样式强制为单行");
 
 console.log("MOBILE_LAYOUT: PASS");
