@@ -8,6 +8,16 @@ if (!expectedTag) {
 }
 
 const readText = (fileName) => readFile(resolve(fileName), "utf8");
+const readOptionalText = async (fileName) => {
+  try {
+    return await readText(fileName);
+  } catch (error) {
+    if (error && error.code === "ENOENT") {
+      return "";
+    }
+    throw error;
+  }
+};
 const readJson = async (fileName) => JSON.parse(await readText(fileName));
 const sha256 = (content) => createHash("sha256").update(content).digest("hex");
 const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -18,7 +28,19 @@ function assert(condition, message) {
   }
 }
 
-const [manifest, packageJson, versions, metadata, generatedSource, bundle, checksums, license] =
+const [
+  manifest,
+  packageJson,
+  versions,
+  metadata,
+  generatedSource,
+  bundle,
+  checksums,
+  license,
+  licenseOverview,
+  contentLicense,
+  readme,
+] =
   await Promise.all([
     readJson("manifest.json"),
     readJson("package.json"),
@@ -28,6 +50,9 @@ const [manifest, packageJson, versions, metadata, generatedSource, bundle, check
     readText("main.js"),
     readText("SHA256SUMS.txt"),
     readText("LICENSE"),
+    readOptionalText("LICENSES.md"),
+    readOptionalText("LICENSE-CONTENT.md"),
+    readText("README.md"),
   ]);
 
 assert(expectedTag === manifest.version, `标签 ${expectedTag} 与 manifest ${manifest.version} 不一致`);
@@ -38,7 +63,10 @@ assert(manifest.isDesktopOnly === false, "发布版必须允许 Obsidian Mobile 
 assert(manifest.description.length <= 250, "插件描述不能超过 250 个字符");
 assert(manifest.description.endsWith("."), "插件描述必须以英文句点结尾");
 assert(packageJson.license !== "UNLICENSED", "package.json 必须声明许可证");
-assert(license.trim().length > 0, "LICENSE 文件不能为空");
+assert(license.startsWith("MIT License\n"), "根 LICENSE 必须使用 GitHub 可识别的标准 MIT 文本");
+assert(licenseOverview.includes("LICENSE-CONTENT.md"), "双许可总览必须指向题库内容许可证");
+assert(contentLicense.includes("CC BY-NC-ND 4.0"), "题库内容必须继续声明 CC BY-NC-ND 4.0");
+assert(/## English[\s\S]+Yiji Study is/.test(readme), "README 必须包含社区目录要求的英文产品说明");
 
 assert(metadata.schemaVersion === 1, "内置题包元数据版本不受支持");
 assert(metadata.sourceFileCount === 20, "内置题包必须来自 20 个题源文件");

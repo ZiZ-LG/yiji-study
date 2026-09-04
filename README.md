@@ -1,4 +1,19 @@
-# 易记
+# Yiji Study（易记）
+
+## English
+
+Yiji Study is an offline-first, mobile-friendly quiz plugin for Obsidian. It
+currently bundles 1,085 questions for the Level 4 electricity trader exam and
+supports practice by knowledge domain or question type, instant grading,
+bookmarks, mistake review, saved progress, and learning statistics.
+
+The plugin interface is in Chinese. Questions and study records stay in the
+user's local Obsidian vault, and the plugin does not make network requests.
+After the community-directory review is approved, install it from **Settings →
+Community plugins → Browse** by searching for **Yiji Study**. During review,
+the BRAT installation route below remains available.
+
+## 中文
 
 “易记”是一个适配 Obsidian Mobile 的本地题库刷题插件。发布包已经内置 1085 道电力交易员四级题目，不要求使用者复制 `Study_Vault`；答题进度、错题和收藏保存在使用者自己的 Obsidian 仓库中。
 
@@ -68,7 +83,7 @@ npm run lint:obsidian           # Obsidian 官方插件规范检查
 npm run build                   # 生产构建
 npm run check:ui                # 手机端字号、触控、导航和依赖契约扫描
 npm run verify                  # 完整开发验证
-npm run verify:release -- 0.1.4 # 生成校验和并验证 Release 契约
+npm run verify:release -- 0.1.5 # 生成校验和并验证 Release 契约
 ```
 
 推送与 `manifest.json` 版本完全一致的 Git 标签后，GitHub Actions 会验证并发布 BRAT 所需的 `main.js`、`manifest.json`、`styles.css` 和 `SHA256SUMS.txt`。
@@ -88,4 +103,6 @@ npm run verify:release -- 0.1.4 # 生成校验和并验证 Release 契约
 - 内置结构化题库采用 CC BY-NC-ND 4.0，仅允许在遵守署名、非商业使用和禁止传播演绎版本等条款的前提下复制与原样分享。
 - 题目中标注的第三方来源及材料，其权利仍归相应权利人所有。
 
-完整条款见 [LICENSE](./LICENSE)。
+完整的双许可范围见 [LICENSES.md](./LICENSES.md)：插件代码使用
+[MIT License](./LICENSE)，内置题库内容使用
+[CC BY-NC-ND 4.0](./LICENSE-CONTENT.md)。
