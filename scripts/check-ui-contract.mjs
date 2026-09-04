@@ -15,7 +15,11 @@ const [manifestText, css, viewSource, contentSource, bundle] = await Promise.all
 
 const manifest = JSON.parse(manifestText);
 assert.equal(manifest.id, "yiji-study", "插件 ID 必须保持为 yiji-study");
-assert.equal(manifest.name, "易记", "产品名必须保持为易记");
+assert.match(
+  manifest.name,
+  /^[A-Za-z0-9 +()-]+$/,
+  "社区目录显示名只能使用 Obsidian 允许的 Basic Latin 字母、数字、空格和有限标点",
+);
 assert.equal(manifest.isDesktopOnly, false, "插件必须允许在 Obsidian Mobile 加载");
 
 assert.match(css, /\.yiji-root\s*\{[^}]*font-size:\s*17px/s, "正文基准字号必须至少为 17px");

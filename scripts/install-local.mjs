@@ -21,4 +21,4 @@ for (const fileName of releaseFiles) {
 
 console.log(`易记已复制到：${pluginDirectory}`);
 console.log(`发布文件：${releaseFiles.join("、")}`);
-console.log("脚本未修改 community-plugins.json；请在 Obsidian 中手动启用“易记”。");
+console.log("脚本未修改 community-plugins.json；请在 Obsidian 中手动启用“Yiji Study”（应用内名称“易记”）。");
