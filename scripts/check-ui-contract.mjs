@@ -39,6 +39,7 @@ assert.match(
 );
 assert.match(css, /@media \(max-width:\s*375px\)/, "必须覆盖 375px 手机宽度");
 assert.match(css, /@media \(prefers-reduced-motion:\s*reduce\)/, "必须尊重减少动态效果设置");
+assert.doesNotMatch(css, /\bui-monospace\b/, "字体栈不能依赖旧版 Obsidian 不支持的扩展系统字体关键字");
 
 assert.match(
   viewSource,

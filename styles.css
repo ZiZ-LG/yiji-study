@@ -342,7 +342,7 @@ body.is-mobile .yiji-root {
 .yiji-domain-card span,
 .yiji-type-card span {
   color: var(--yiji-muted);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 13px;
 }
 
@@ -389,7 +389,7 @@ body.is-mobile .yiji-root {
 
 .yiji-domain-index {
   color: var(--yiji-accent);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 13px;
   font-weight: 650;
 }
@@ -429,7 +429,7 @@ body.is-mobile .yiji-root {
 .yiji-wrong-row > strong,
 .yiji-wrong-entry-count {
   color: var(--yiji-muted);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
@@ -453,7 +453,7 @@ body.is-mobile .yiji-root {
 }
 
 .yiji-question-position strong {
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 15px;
   font-weight: 650;
 }
@@ -566,7 +566,7 @@ button.yiji-option:active {
   border: 1px solid var(--yiji-line-strong);
   border-radius: 10px;
   color: var(--yiji-muted);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 14px;
   font-weight: 650;
 }
@@ -800,7 +800,7 @@ button.yiji-option:active {
 
 .yiji-stat-card strong {
   color: var(--yiji-text);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 26px;
   font-weight: 650;
   line-height: 1.2;
@@ -865,7 +865,7 @@ button.yiji-option:active {
 
 .yiji-wrong-summary > div strong {
   color: var(--yiji-danger);
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-family: var(--font-monospace), "IBM Plex Mono", monospace;
   font-size: 34px;
   line-height: 1.15;
 }

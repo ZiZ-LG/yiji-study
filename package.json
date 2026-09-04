@@ -1,6 +1,6 @@
 {
   "name": "yiji-study",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "易记：面向 Obsidian Mobile 的本地题库刷题插件",
   "private": true,
   "main": "main.js",
@@ -26,7 +26,7 @@
     "study"
   ],
   "author": "Leonge",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "SEE LICENSE IN LICENSES.md",
   "engines": {
     "node": ">=20.19.0"
   },

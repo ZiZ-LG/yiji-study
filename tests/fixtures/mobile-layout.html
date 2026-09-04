@@ -82,34 +82,32 @@
 
     <script>
       window.addEventListener("load", () => {
-        requestAnimationFrame(() => {
-          const rect = (selector) => document.querySelector(selector).getBoundingClientRect();
-          const navRoot = rect("#nav-root");
-          const dockRoot = rect("#dock-root");
-          const nav = rect("#bottom-nav");
-          const dock = rect("#action-dock");
-          const option = rect("#long-option");
-          const key = rect("#option-key");
-          const domainCard = rect("#long-domain");
-          const domainTitle = document.querySelector("#long-domain-title");
-          const domainTitleRect = domainTitle.getBoundingClientRect();
-          const optionCopy = document.querySelector("#option-copy");
-          const result = {
-            navBottomClearance: navRoot.bottom - nav.bottom,
-            dockBottomClearance: dockRoot.bottom - dock.bottom,
-            navScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#nav-scroll")).paddingBottom),
-            dockScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#dock-scroll")).paddingBottom),
-            domainTitleOverflow: domainTitle.scrollWidth - domainTitle.clientWidth,
-            domainTitleRightOverflow: domainTitleRect.right - domainCard.right,
-            domainTitleHeight: domainTitle.getBoundingClientRect().height,
-            domainTitleWhiteSpace: getComputedStyle(domainTitle).whiteSpace,
-            optionHeight: option.height,
-            optionKeyContained: key.top >= option.top && key.bottom <= option.bottom,
-            optionCopyOverflow: optionCopy.scrollWidth - optionCopy.clientWidth,
-            optionCopyWhiteSpace: getComputedStyle(optionCopy).whiteSpace,
-          };
-          document.body.dataset.layoutResult = encodeURIComponent(JSON.stringify(result));
-        });
+        const rect = (selector) => document.querySelector(selector).getBoundingClientRect();
+        const navRoot = rect("#nav-root");
+        const dockRoot = rect("#dock-root");
+        const nav = rect("#bottom-nav");
+        const dock = rect("#action-dock");
+        const option = rect("#long-option");
+        const key = rect("#option-key");
+        const domainCard = rect("#long-domain");
+        const domainTitle = document.querySelector("#long-domain-title");
+        const domainTitleRect = domainTitle.getBoundingClientRect();
+        const optionCopy = document.querySelector("#option-copy");
+        const result = {
+          navBottomClearance: navRoot.bottom - nav.bottom,
+          dockBottomClearance: dockRoot.bottom - dock.bottom,
+          navScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#nav-scroll")).paddingBottom),
+          dockScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#dock-scroll")).paddingBottom),
+          domainTitleOverflow: domainTitle.scrollWidth - domainTitle.clientWidth,
+          domainTitleRightOverflow: domainTitleRect.right - domainCard.right,
+          domainTitleHeight: domainTitle.getBoundingClientRect().height,
+          domainTitleWhiteSpace: getComputedStyle(domainTitle).whiteSpace,
+          optionHeight: option.height,
+          optionKeyContained: key.top >= option.top && key.bottom <= option.bottom,
+          optionCopyOverflow: optionCopy.scrollWidth - optionCopy.clientWidth,
+          optionCopyWhiteSpace: getComputedStyle(optionCopy).whiteSpace,
+        };
+        document.body.dataset.layoutResult = encodeURIComponent(JSON.stringify(result));
       });
     </script>
   </body>

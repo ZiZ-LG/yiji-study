@@ -1,9 +1,3 @@
-易记（Yiji Study）采用双重许可。
-
-1. 插件代码
-
-除下述“题库内容”之外，本仓库中的软件源代码使用 MIT License：
-
 MIT License
 
 Copyright (c) 2026 Leonge
@@ -25,20 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-2. 题库内容
-
-`src/generated/electricity-trader-pack.ts` 中的结构化题库、对应元数据，以及
-`main.js` 中由这些内容编译形成的数据部分，采用 Creative Commons
-Attribution-NonCommercial-NoDerivatives 4.0 International
-（CC BY-NC-ND 4.0）许可：
-
-https://creativecommons.org/licenses/by-nc-nd/4.0/
-
-在遵守署名、非商业使用和禁止传播演绎版本等条款的前提下，可以复制和原样
-分享这些题库内容。完整法律文本以 Creative Commons 官方页面为准：
-
-https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-
-题目中标注的第三方来源、名称和材料，其权利仍归相应权利人所有。本许可不授予
-许可人无权授予的第三方权利。
