@@ -40,6 +40,7 @@ const [
   licenseOverview,
   contentLicense,
   readme,
+  translatedReadme,
 ] =
   await Promise.all([
     readJson("manifest.json"),
@@ -53,6 +54,7 @@ const [
     readOptionalText("LICENSES.md"),
     readOptionalText("LICENSE-CONTENT.md"),
     readText("README.md"),
+    readOptionalText("README.zh-CN.md"),
   ]);
 
 assert(expectedTag === manifest.version, `标签 ${expectedTag} 与 manifest ${manifest.version} 不一致`);
@@ -67,6 +69,8 @@ assert(license.startsWith("MIT License\n"), "根 LICENSE 必须使用 GitHub 可
 assert(licenseOverview.includes("LICENSE-CONTENT.md"), "双许可总览必须指向题库内容许可证");
 assert(contentLicense.includes("CC BY-NC-ND 4.0"), "题库内容必须继续声明 CC BY-NC-ND 4.0");
 assert(/## English[\s\S]+Yiji Study is/.test(readme), "README 必须包含社区目录要求的英文产品说明");
+assert(!/[\u3400-\u9fff]/.test(readme), "社区目录读取的根 README 必须保持为英文");
+assert(translatedReadme.includes("易记"), "必须保留独立的中文 README 翻译");
 
 assert(metadata.schemaVersion === 1, "内置题包元数据版本不受支持");
 assert(metadata.sourceFileCount === 20, "内置题包必须来自 20 个题源文件");
