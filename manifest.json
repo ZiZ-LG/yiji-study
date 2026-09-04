@@ -1,7 +1,7 @@
 {
   "id": "yiji-study",
-  "name": "易记",
-  "version": "0.1.3",
+  "name": "Yiji Study",
+  "version": "0.1.4",
   "minAppVersion": "1.7.2",
   "description": "在手机上使用本地题库刷题，自动整理错题，并保存学习断点与统计数据.",
   "author": "Leonge",

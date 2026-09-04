@@ -5,7 +5,8 @@
 ## iPhone / Android 安装
 
 正式进入 Obsidian 社区插件市场后，推荐在 Obsidian 中依次打开“设置 → 第三方插件
-→ 浏览”，搜索“易记”并安装。
+→ 浏览”，搜索“Yiji Study”并安装。受社区目录当前仅允许 Basic Latin 名称的规则限制，
+市场显示名为 “Yiji Study”，插件内仍使用中文产品名“易记”。
 
 在社区目录审核期间，可继续使用 BRAT 安装测试版。把下面的安装页直接发给同事：
 
@@ -67,7 +68,7 @@ npm run lint:obsidian           # Obsidian 官方插件规范检查
 npm run build                   # 生产构建
 npm run check:ui                # 手机端字号、触控、导航和依赖契约扫描
 npm run verify                  # 完整开发验证
-npm run verify:release -- 0.1.3 # 生成校验和并验证 Release 契约
+npm run verify:release -- 0.1.4 # 生成校验和并验证 Release 契约
 ```
 
 推送与 `manifest.json` 版本完全一致的 Git 标签后，GitHub Actions 会验证并发布 BRAT 所需的 `main.js`、`manifest.json`、`styles.css` 和 `SHA256SUMS.txt`。
