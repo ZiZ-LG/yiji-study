@@ -1,6 +1,6 @@
 {
   "name": "yiji-study",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "易记：面向 Obsidian Mobile 的本地题库刷题插件",
   "private": true,
   "main": "main.js",
@@ -12,9 +12,10 @@
     "check": "tsc --noEmit --skipLibCheck",
     "build": "npm run check && node esbuild.config.mjs production",
     "test": "vitest run",
+    "check:mobile-layout": "node scripts/check-mobile-layout.mjs",
     "check:ui": "node scripts/check-ui-contract.mjs",
     "install:local": "node scripts/install-local.mjs",
-    "verify": "npm test && npm run check && npm run build && npm run check:ui",
+    "verify": "npm test && npm run check && npm run build && npm run check:ui && npm run check:mobile-layout",
     "verify:release": "npm run verify && npm run checksums && node scripts/check-release.mjs"
   },
   "keywords": [

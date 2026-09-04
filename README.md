@@ -63,7 +63,7 @@ npm run check                   # TypeScript 检查
 npm run build                   # 生产构建
 npm run check:ui                # 手机端字号、触控、导航和依赖契约扫描
 npm run verify                  # 完整开发验证
-npm run verify:release -- 0.1.0 # 生成校验和并验证 Release 契约
+npm run verify:release -- 0.1.1 # 生成校验和并验证 Release 契约
 ```
 
 推送与 `manifest.json` 版本完全一致的 Git 标签后，GitHub Actions 会验证并发布 BRAT 所需的 `main.js`、`manifest.json`、`styles.css` 和 `SHA256SUMS.txt`。

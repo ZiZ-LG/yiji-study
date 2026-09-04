@@ -21,6 +21,9 @@
   --yiji-radius-sm: 10px;
   --yiji-radius: 16px;
   --yiji-shadow: 0 14px 36px rgb(0 0 0 / 20%);
+  /* Obsidian Mobile exposes the space occupied by its floating navbar here. */
+  --yiji-host-bottom-offset: var(--view-bottom-spacing, 0px);
+  --yiji-safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
   position: relative;
   width: 100%;
   height: 100%;
@@ -34,6 +37,10 @@
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+body.is-mobile .yiji-root {
+  --yiji-safe-bottom: 0px;
 }
 
 .yiji-root,
@@ -51,6 +58,13 @@
   font: inherit;
   line-height: inherit;
   -webkit-tap-highlight-color: transparent;
+}
+
+.yiji-root button:not(.yiji-icon-button) {
+  height: auto !important;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .yiji-root button:not(:disabled) {
@@ -103,11 +117,11 @@
 }
 
 .yiji-has-nav .yiji-screen-scroll {
-  padding-bottom: calc(104px + env(safe-area-inset-bottom));
+  padding-bottom: calc(104px + var(--yiji-safe-bottom) + var(--yiji-host-bottom-offset));
 }
 
 .yiji-has-dock .yiji-screen-scroll {
-  padding-bottom: calc(112px + env(safe-area-inset-bottom));
+  padding-bottom: calc(112px + var(--yiji-safe-bottom) + var(--yiji-host-bottom-offset));
 }
 
 .yiji-page-header,
@@ -315,10 +329,14 @@
 
 .yiji-domain-card strong,
 .yiji-type-card strong {
+  width: 100%;
+  min-width: 0;
   color: var(--yiji-text);
   font-size: 16px;
   font-weight: 680;
   line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .yiji-domain-card span,
@@ -506,7 +524,8 @@
 .yiji-option {
   display: grid;
   width: 100%;
-  min-height: 64px;
+  height: auto !important;
+  min-height: 64px !important;
   grid-template-columns: 36px minmax(0, 1fr) auto;
   align-items: center;
   gap: 12px;
@@ -601,7 +620,7 @@ button.yiji-option:active {
   position: absolute;
   z-index: 10;
   right: 0;
-  bottom: 0;
+  bottom: var(--yiji-host-bottom-offset);
   left: 0;
   border-top: 1px solid var(--yiji-line);
   background: rgb(11 17 23 / 96%);
@@ -610,13 +629,13 @@ button.yiji-option:active {
 }
 
 .yiji-action-dock {
-  padding: 12px 18px calc(12px + env(safe-area-inset-bottom));
+  padding: 12px 18px calc(12px + var(--yiji-safe-bottom));
 }
 
 .yiji-bottom-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 7px 12px calc(7px + env(safe-area-inset-bottom));
+  padding: 7px 12px calc(7px + var(--yiji-safe-bottom));
 }
 
 .yiji-nav-button {

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        --input-height: 36px;
+        --safe-area-inset-bottom: 34px;
+        --navbar-height: 52px;
+        --navbar-bottom-offset: 34px;
+        --view-bottom-spacing: 86px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #ddd;
+      }
+
+      button {
+        height: var(--input-height);
+        padding: 4px 12px;
+        white-space: nowrap;
+      }
+
+      .fixture-viewport {
+        position: relative;
+        width: 402px;
+        height: 760px;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="is-mobile is-phone is-ios is-floating-nav">
+    <div class="fixture-viewport" id="nav-viewport">
+      <div class="yiji-root" id="nav-root">
+        <section class="yiji-screen yiji-has-nav">
+          <div class="yiji-screen-scroll" id="nav-scroll">
+            <div class="yiji-domain-grid">
+              <button class="yiji-domain-card" id="long-domain">
+                <strong id="long-domain-title">信息披露与交易平台操作</strong>
+                <span>135 题</span>
+              </button>
+              <button class="yiji-domain-card">
+                <strong>电力现货市场</strong>
+                <span>160 题</span>
+              </button>
+            </div>
+          </div>
+          <nav class="yiji-bottom-nav" id="bottom-nav">
+            <button class="yiji-nav-button"><span>题库</span></button>
+            <button class="yiji-nav-button"><span>模考</span></button>
+            <button class="yiji-nav-button"><span>统计</span></button>
+          </nav>
+        </section>
+      </div>
+    </div>
+
+    <div class="fixture-viewport" id="dock-viewport">
+      <div class="yiji-root" id="dock-root">
+        <section class="yiji-screen yiji-has-dock">
+          <div class="yiji-screen-scroll" id="dock-scroll">
+            <div class="yiji-options">
+              <button class="yiji-option" id="long-option">
+                <span class="yiji-option-key" id="option-key">A</span>
+                <span class="yiji-option-copy" id="option-copy">这是一个需要在窄屏幕内正确换行且不能越过选项框边缘的答案选项</span>
+                <span class="yiji-option-marker"></span>
+              </button>
+            </div>
+          </div>
+          <div class="yiji-action-dock" id="action-dock">
+            <button class="yiji-primary-button">确认答案</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("load", () => {
+        requestAnimationFrame(() => {
+          const rect = (selector) => document.querySelector(selector).getBoundingClientRect();
+          const navRoot = rect("#nav-root");
+          const dockRoot = rect("#dock-root");
+          const nav = rect("#bottom-nav");
+          const dock = rect("#action-dock");
+          const option = rect("#long-option");
+          const key = rect("#option-key");
+          const domainCard = rect("#long-domain");
+          const domainTitle = document.querySelector("#long-domain-title");
+          const domainTitleRect = domainTitle.getBoundingClientRect();
+          const optionCopy = document.querySelector("#option-copy");
+          const result = {
+            navBottomClearance: navRoot.bottom - nav.bottom,
+            dockBottomClearance: dockRoot.bottom - dock.bottom,
+            navScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#nav-scroll")).paddingBottom),
+            dockScrollPaddingBottom: Number.parseFloat(getComputedStyle(document.querySelector("#dock-scroll")).paddingBottom),
+            domainTitleOverflow: domainTitle.scrollWidth - domainTitle.clientWidth,
+            domainTitleRightOverflow: domainTitleRect.right - domainCard.right,
+            domainTitleHeight: domainTitle.getBoundingClientRect().height,
+            optionHeight: option.height,
+            optionKeyContained: key.top >= option.top && key.bottom <= option.bottom,
+            optionCopyOverflow: optionCopy.scrollWidth - optionCopy.clientWidth,
+          };
+          document.body.dataset.layoutResult = encodeURIComponent(JSON.stringify(result));
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -23,7 +23,16 @@ assert.match(css, /\.yiji-root button\s*\{[^}]*min-height:\s*44px/s, "按钮触�
 assert.match(css, /\.yiji-question-title\s*\{[^}]*font-size:\s*22px/s, "题干字号必须为 22px");
 assert.match(css, /\.yiji-question-title\s*\{[^}]*line-height:\s*1\.75/s, "题干行高必须为 1.75");
 assert.match(css, /\.yiji-option\s*\{[^}]*min-height:\s*64px/s, "答题选项高度必须至少为 64px");
-assert.match(css, /env\(safe-area-inset-bottom\)/, "底部操作必须适配手机安全区");
+assert.match(
+  css,
+  /--yiji-host-bottom-offset:\s*var\(--view-bottom-spacing,\s*0px\)/,
+  "底部操作必须读取 Obsidian 视图底部留白",
+);
+assert.match(
+  css,
+  /--yiji-safe-bottom:\s*var\(--safe-area-inset-bottom,\s*env\(safe-area-inset-bottom,\s*0px\)\)/,
+  "底部操作必须保留系统安全区回退",
+);
 assert.match(css, /@media \(max-width:\s*375px\)/, "必须覆盖 375px 手机宽度");
 assert.match(css, /@media \(prefers-reduced-motion:\s*reduce\)/, "必须尊重减少动态效果设置");
 
