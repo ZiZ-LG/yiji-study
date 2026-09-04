@@ -18,7 +18,7 @@ function assert(condition, message) {
   }
 }
 
-const [manifest, packageJson, versions, metadata, generatedSource, bundle, checksums] =
+const [manifest, packageJson, versions, metadata, generatedSource, bundle, checksums, license] =
   await Promise.all([
     readJson("manifest.json"),
     readJson("package.json"),
@@ -27,6 +27,7 @@ const [manifest, packageJson, versions, metadata, generatedSource, bundle, check
     readText("src/generated/electricity-trader-pack.ts"),
     readText("main.js"),
     readText("SHA256SUMS.txt"),
+    readText("LICENSE"),
   ]);
 
 assert(expectedTag === manifest.version, `标签 ${expectedTag} 与 manifest ${manifest.version} 不一致`);
@@ -34,6 +35,10 @@ assert(packageJson.version === manifest.version, "package.json 与 manifest.json
 assert(versions[manifest.version] === manifest.minAppVersion, "versions.json 缺少当前版本或最低版本不一致");
 assert(manifest.id === "yiji-study", "插件 ID 必须为 yiji-study");
 assert(manifest.isDesktopOnly === false, "发布版必须允许 Obsidian Mobile 加载");
+assert(manifest.description.length <= 250, "插件描述不能超过 250 个字符");
+assert(manifest.description.endsWith("."), "插件描述必须以英文句点结尾");
+assert(packageJson.license !== "UNLICENSED", "package.json 必须声明许可证");
+assert(license.trim().length > 0, "LICENSE 文件不能为空");
 
 assert(metadata.schemaVersion === 1, "内置题包元数据版本不受支持");
 assert(metadata.sourceFileCount === 20, "内置题包必须来自 20 个题源文件");
@@ -59,6 +64,7 @@ for (const fileName of releaseFiles) {
 
 assert(Buffer.byteLength(bundle) > 500_000, "main.js 体积异常，可能没有打包内置题库");
 assert(!/\brequire\(["'](?:electron|node:fs|fs)["']\)/.test(bundle), "main.js 包含移动端不可用依赖");
+assert(!bundle.includes("detachLeavesOfType"), "插件卸载时不应主动关闭自定义页面");
 
 console.log(`RELEASE_CONTRACT: PASS (${manifest.id} ${manifest.version})`);
 console.log(`CONTENT_PACK: PASS (${metadata.questionCounts.total} questions, ${metadata.sourceDigest})`);

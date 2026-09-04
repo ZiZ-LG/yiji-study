@@ -8,7 +8,7 @@ export function element<K extends keyof HTMLElementTagNameMap>(
   tag: K,
   options: ElementOptions = {},
 ): HTMLElementTagNameMap[K] {
-  const node = document.createElement(tag);
+  const node = createEl(tag);
   if (options.className) node.className = options.className;
   if (options.text !== undefined) node.textContent = options.text;
   for (const [name, value] of Object.entries(options.attrs ?? {})) {

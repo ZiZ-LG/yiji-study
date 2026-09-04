@@ -4,7 +4,10 @@
 
 ## iPhone / Android 安装
 
-推荐把安装页直接发给同事：
+正式进入 Obsidian 社区插件市场后，推荐在 Obsidian 中依次打开“设置 → 第三方插件
+→ 浏览”，搜索“易记”并安装。
+
+在社区目录审核期间，可继续使用 BRAT 安装测试版。把下面的安装页直接发给同事：
 
 <https://ziz-lg.github.io/yiji-study/>
 
@@ -34,11 +37,11 @@
 
 ## 使用入口
 
-启用插件后，通过 Obsidian 功能区的书本图标，或命令面板中的“易记：打开易记”进入。题库、模考、统计三个一级入口位于界面底部。
+启用插件后，通过 Obsidian 功能区的书本图标，或命令面板中的“易记：打开刷题器”进入。题库、模考、统计三个一级入口位于界面底部。
 
 ## 本地开发
 
-要求 Node.js 18 或更高版本。
+要求 Node.js 20.19 或更高版本。
 
 ```bash
 npm install
@@ -60,10 +63,11 @@ Study_Vault/电力交易员StudyVault-题型版/
 npm run dev                     # 监听源码并增量构建 main.js
 npm test                        # 解析器、内置题包、题库和学习状态测试
 npm run check                   # TypeScript 检查
+npm run lint:obsidian           # Obsidian 官方插件规范检查
 npm run build                   # 生产构建
 npm run check:ui                # 手机端字号、触控、导航和依赖契约扫描
 npm run verify                  # 完整开发验证
-npm run verify:release -- 0.1.2 # 生成校验和并验证 Release 契约
+npm run verify:release -- 0.1.3 # 生成校验和并验证 Release 契约
 ```
 
 推送与 `manifest.json` 版本完全一致的 Git 标签后，GitHub Actions 会验证并发布 BRAT 所需的 `main.js`、`manifest.json`、`styles.css` 和 `SHA256SUMS.txt`。
@@ -76,3 +80,11 @@ npm run verify:release -- 0.1.2 # 生成校验和并验证 Release 契约
 - 原始 `Study_Vault`、真题 PDF、本机 `.obsidian` 配置和内部产品文档不进入公开仓库。
 
 插件结构和发布文件约定参考 [Obsidian 官方示例插件](https://github.com/obsidianmd/obsidian-sample-plugin)。
+
+## 许可
+
+- 插件代码采用 MIT License。
+- 内置结构化题库采用 CC BY-NC-ND 4.0，仅允许在遵守署名、非商业使用和禁止传播演绎版本等条款的前提下复制与原样分享。
+- 题目中标注的第三方来源及材料，其权利仍归相应权利人所有。
+
+完整条款见 [LICENSE](./LICENSE)。
