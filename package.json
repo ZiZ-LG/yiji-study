@@ -1,0 +1,41 @@
+{
+  "name": "yiji-study",
+  "version": "0.1.0",
+  "description": "易记：面向 Obsidian Mobile 的本地题库刷题插件",
+  "private": true,
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "content:generate": "node scripts/run-content-generator.mjs",
+    "checksums": "node scripts/create-checksums.mjs",
+    "dev": "node esbuild.config.mjs",
+    "check": "tsc --noEmit --skipLibCheck",
+    "build": "npm run check && node esbuild.config.mjs production",
+    "test": "vitest run",
+    "check:ui": "node scripts/check-ui-contract.mjs",
+    "install:local": "node scripts/install-local.mjs",
+    "verify": "npm test && npm run check && npm run build && npm run check:ui",
+    "verify:release": "npm run verify && npm run checksums && node scripts/check-release.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "mobile",
+    "quiz",
+    "study"
+  ],
+  "author": "Leonge",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZiZ-LG/yiji-study.git"
+  },
+  "homepage": "https://ziz-lg.github.io/yiji-study/",
+  "bugs": "https://github.com/ZiZ-LG/yiji-study/issues",
+  "devDependencies": {
+    "@types/node": "22.15.17",
+    "esbuild": "0.25.5",
+    "obsidian": "1.12.3",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

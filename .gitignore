@@ -1,0 +1,12 @@
+node_modules/
+main.js
+*.map
+.DS_Store
+.obsidian/
+.artifacts/
+.gstack/
+SHA256SUMS.txt
+Study_Vault/
+真题参考/
+产品方案-Obsidian移动刷题插件.md
+docs/superpowers/

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "contentPackageId": "electricity-trader-level-4",
+  "contentVersion": "study-vault-2026-09-03",
+  "sourceDigest": "44d9c34728dfd0c6f4f04c966a45fe6d57cb55f23724c75c8135a1b0f9ede177",
+  "sourceFileCount": 20,
+  "questionCounts": {
+    "single": 503,
+    "multiple": 277,
+    "judge": 305,
+    "total": 1085
+  }
+}

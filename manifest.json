@@ -1,0 +1,10 @@
+{
+  "id": "yiji-study",
+  "name": "易记",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "内置本地题库，支持手机刷题、自动错题本、断点与统计。",
+  "author": "Leonge",
+  "authorUrl": "https://github.com/ZiZ-LG",
+  "isDesktopOnly": false
+}
