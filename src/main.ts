@@ -24,15 +24,11 @@ export default class YijiPlugin extends Plugin {
 
     this.addCommand({
       id: "open-yiji",
-      name: "打开易记",
+      name: "打开刷题器",
       callback: () => {
         void this.activateView();
       },
     });
-  }
-
-  override onunload(): void {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE_YIJI);
   }
 
   getStudyData(): StudyDataV1 {

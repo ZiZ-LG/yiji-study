@@ -1,6 +1,6 @@
 {
   "name": "yiji-study",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "易记：面向 Obsidian Mobile 的本地题库刷题插件",
   "private": true,
   "main": "main.js",
@@ -12,10 +12,11 @@
     "check": "tsc --noEmit --skipLibCheck",
     "build": "npm run check && node esbuild.config.mjs production",
     "test": "vitest run",
+    "lint:obsidian": "eslint src package.json --max-warnings 0",
     "check:mobile-layout": "node scripts/check-mobile-layout.mjs",
     "check:ui": "node scripts/check-ui-contract.mjs",
     "install:local": "node scripts/install-local.mjs",
-    "verify": "npm test && npm run check && npm run build && npm run check:ui && npm run check:mobile-layout",
+    "verify": "npm test && npm run check && npm run lint:obsidian && npm run build && npm run check:ui && npm run check:mobile-layout",
     "verify:release": "npm run verify && npm run checksums && node scripts/check-release.mjs"
   },
   "keywords": [
@@ -25,7 +26,10 @@
     "study"
   ],
   "author": "Leonge",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ZiZ-LG/yiji-study.git"
@@ -35,6 +39,8 @@
   "devDependencies": {
     "@types/node": "22.15.17",
     "esbuild": "0.25.5",
+    "eslint": "10.9.1",
+    "eslint-plugin-obsidianmd": "0.4.2",
     "obsidian": "1.12.3",
     "typescript": "5.9.3",
     "vitest": "3.2.4"
