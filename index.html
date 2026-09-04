@@ -280,14 +280,25 @@
       </footer>
     </main>
     <script>
+      const repository = "ZiZ-LG/yiji-study";
       const copyButton = document.querySelector("#copy-repository");
       copyButton.addEventListener("click", async () => {
+        let copied = false;
         try {
-          await navigator.clipboard.writeText("ZiZ-LG/yiji-study");
-          copyButton.textContent = "已复制";
+          await navigator.clipboard.writeText(repository);
+          copied = true;
         } catch {
-          window.prompt("请复制仓库地址", "ZiZ-LG/yiji-study");
+          const helper = document.createElement("textarea");
+          helper.value = repository;
+          helper.setAttribute("readonly", "");
+          helper.style.position = "fixed";
+          helper.style.opacity = "0";
+          document.body.appendChild(helper);
+          helper.select();
+          copied = document.execCommand("copy");
+          helper.remove();
         }
+        copyButton.textContent = copied ? "已复制" : "请长按地址";
       });
     </script>
   </body>
