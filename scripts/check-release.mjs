@@ -73,17 +73,19 @@ assert(!/[\u3400-\u9fff]/.test(readme), "社区目录读取的根 README 必须�
 assert(translatedReadme.includes("易记"), "必须保留独立的中文 README 翻译");
 
 assert(metadata.schemaVersion === 1, "内置题包元数据版本不受支持");
-assert(metadata.sourceFileCount === 20, "内置题包必须来自 20 个题源文件");
-assert(metadata.questionCounts.single === 503, "单选题数量必须为 503");
-assert(metadata.questionCounts.multiple === 277, "多选题数量必须为 277");
-assert(metadata.questionCounts.judge === 305, "判断题数量必须为 305");
-assert(metadata.questionCounts.total === 1085, "题目总数必须为 1085");
+assert(metadata.sourceFileCount === 31, "内置题包必须来自 31 个题源文件");
+assert(metadata.questionCounts.single === 704, "单选题数量必须为 704");
+assert(metadata.questionCounts.multiple === 351, "多选题数量必须为 351");
+assert(metadata.questionCounts.judge === 378, "判断题数量必须为 378");
+assert(metadata.questionCounts.total === 1433, "题目总数必须为 1433");
+assert(metadata.recentQuestionCount === 605, "新增真题去重后应为 605 题");
+assert(metadata.papers.length === 4 && metadata.papers.every((paper) => paper.questionCount === 170), "新增四套真题必须完整");
 assert(/^[a-f0-9]{64}$/.test(metadata.sourceDigest), "题源摘要格式无效");
 assert(generatedSource.includes(metadata.sourceDigest), "生成题包与元数据摘要不一致");
 
 const generatedIds = generatedSource.match(/"id": "q_[a-f0-9]{16}"/g) ?? [];
-assert(generatedIds.length === 1085, `生成题包实际仅发现 ${generatedIds.length} 个题目 ID`);
-assert(new Set(generatedIds).size === 1085, "生成题包存在重复题目 ID");
+assert(generatedIds.length === 1433, `生成题包实际仅发现 ${generatedIds.length} 个题目 ID`);
+assert(new Set(generatedIds).size === 1433, "生成题包存在重复题目 ID");
 
 const releaseFiles = ["main.js", "manifest.json", "styles.css"];
 for (const fileName of releaseFiles) {

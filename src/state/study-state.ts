@@ -1,3 +1,6 @@
+import { parseExamAttempts } from "./exam-state";
+import type { ExamAttempt } from "./exam-state";
+
 export interface QuestionProgress {
   attempts: number;
   correctCount: number;
@@ -24,6 +27,7 @@ export interface StudyDataV1 {
   questions: Record<string, QuestionProgress>;
   cursors: Record<string, StudyCursor>;
   history: StudyHistoryEntry[];
+  exams?: Record<string, ExamAttempt>;
 }
 
 export type WrongAction = "added" | "kept" | "removed" | "correct";
@@ -122,7 +126,9 @@ export function parseStudyData(raw: unknown): StudyDataV1 {
         .slice(-HISTORY_LIMIT)
     : [];
 
-  return { version: 1, questions, cursors, history };
+  return { version: 1, questions, cursors, history,
+    ...(raw.exams !== undefined ? { exams: parseExamAttempts(raw.exams) } : {}),
+  };
 }
 
 export function recordAnswer(

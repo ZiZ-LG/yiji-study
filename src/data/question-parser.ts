@@ -89,8 +89,8 @@ function parseMetadata(lines: readonly string[]): {
 } {
   const line = lines.map(cleanQuoteLine).find((entry) => entry.includes("归属：")) ?? "";
   const domainMatch = line.match(/归属：\s*(.*?)\s*来源：/);
-  const sourceMatch = line.match(/来源：\s*`?(.+?)`?\s*(?:跨卷重复|$)/);
-  const repeatMatch = line.match(/跨卷重复\s*[×xX]\s*(\d+)/);
+  const sourceMatch = line.match(/来源：\s*`?(.+?)`?\s*(?:跨卷(?:重复)?|$)/);
+  const repeatMatch = line.match(/跨卷(?:重复)?\s*[×xX]\s*(\d+)/);
 
   return {
     domain: domainMatch?.[1]?.trim() ?? "",

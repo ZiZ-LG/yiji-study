@@ -78,7 +78,7 @@ describe("real Study_Vault question bank", () => {
     const emptyBank = await loadQuestionBank(createFakeVault([]));
 
     expect(emptyBank.sourceKind).toBe("embedded");
-    expect(emptyBank.counts.total).toBe(1085);
+    expect(emptyBank.counts.total).toBe(1433);
   });
 
   realSourceIt("题源不完整时使用内置题包", async () => {
@@ -86,14 +86,19 @@ describe("real Study_Vault question bank", () => {
     const partialBank = await loadQuestionBank(createFakeVault(realFiles.slice(0, 1)));
 
     expect(partialBank.sourceKind).toBe("embedded");
-    expect(partialBank.counts.total).toBe(1085);
+    expect(partialBank.counts.total).toBe(1433);
   });
 
   realSourceIt("完整开发题源存在时继续读取 Markdown", async () => {
     const bank = await loadQuestionBank(createFakeVault(loadRealQuestionFiles()));
 
     expect(bank.sourceKind).toBe("markdown");
-    expect(bank.counts).toEqual({ single: 503, multiple: 277, judge: 305, total: 1085 });
+    expect(bank.counts).toEqual({ single: 704, multiple: 351, judge: 378, total: 1433 });
     expect(bank.issues).toEqual([]);
+    const original = buildQuestionBank(loadRealQuestionFiles());
+    for (const question of original.questions) {
+      expect(bank.byId.get(question.id)?.answers).toEqual(question.answers);
+      expect(bank.byId.get(question.id)?.stem).toBe(question.stem);
+    }
   });
 });

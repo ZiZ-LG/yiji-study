@@ -1,8 +1,9 @@
 /* 此文件由 npm run content:generate 生成，请勿手工编辑。 */
 import type { Question } from "../domain/question";
+import type { ExamPaper } from "../content/exam-paper";
 
-export const EMBEDDED_CONTENT_VERSION = "study-vault-2026-09-03";
-export const EMBEDDED_SOURCE_DIGEST = "44d9c34728dfd0c6f4f04c966a45fe6d57cb55f23724c75c8135a1b0f9ede177";
+export const EMBEDDED_CONTENT_VERSION = "study-vault-2026-09-13";
+export const EMBEDDED_SOURCE_DIGEST = "766faf41594baf6a1b1422704668480368d3fcae7648a14d89c4a303ae7301af";
 export const EMBEDDED_QUESTIONS: readonly Question[] = [
   {
     "type": "single",
@@ -68,9 +69,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "sources": [
       "bank#314",
       "四级-第1套#99",
-      "四级-第2套#96"
+      "四级-第2套#96",
+      "6-30#94"
     ],
-    "repeatCount": 3,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 2
   },
@@ -343,9 +345,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力系统基础知识",
     "sources": [
       "四级-第1套#26",
-      "四级-第2套#30"
+      "四级-第2套#30",
+      "6-26-A#23",
+      "6-26-B#27"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 10
   },
@@ -411,9 +415,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "职业道德与电力精神",
     "sources": [
       "四级-第1套#65",
-      "四级-第2套#62"
+      "四级-第2套#62",
+      "6-26-A#59",
+      "6-26-B#59"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 12
   },
@@ -479,9 +485,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "市场准入与注册管理",
     "sources": [
       "bank#12",
-      "四级-第2套#64"
+      "四级-第2套#64",
+      "6-26-B#63",
+      "6-30#63"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 14
   },
@@ -513,9 +521,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "市场准入与注册管理",
     "sources": [
       "bank#18",
-      "四级-第2套#65"
+      "四级-第2套#65",
+      "7-18#68"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 15
   },
@@ -819,9 +828,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "中长期交易",
     "sources": [
       "bank#108",
-      "四级-第1套#72"
+      "四级-第1套#72",
+      "6-26-A#69",
+      "6-26-B#76"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 24
   },
@@ -1023,9 +1034,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "bank#347",
-      "四级-第2套#98"
+      "四级-第2套#98",
+      "6-30#100"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 30
   },
@@ -1057,9 +1069,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "bank#208",
-      "四级-第2套#82"
+      "四级-第2套#82",
+      "6-26-B#84",
+      "7-18#84"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 31
   },
@@ -1091,9 +1105,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "bank#216",
-      "四级-第1套#83"
+      "四级-第1套#83",
+      "6-26-A#77"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 32
   },
@@ -1159,9 +1174,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "bank#256",
-      "四级-第1套#95"
+      "四级-第1套#95",
+      "6-26-A#86",
+      "6-30#88"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 34
   },
@@ -1291,9 +1308,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "四级-第1套#36",
-      "四级-第2套#39"
+      "四级-第2套#39",
+      "6-30#41"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 38
   },
@@ -1325,9 +1343,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "辅助服务市场",
     "sources": [
       "bank#257",
-      "四级-第2套#91"
+      "四级-第2套#91",
+      "6-26-A#87",
+      "6-30#89"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 39
   },
@@ -1359,9 +1379,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "辅助服务市场",
     "sources": [
       "五级-第2套#26",
-      "四级-第2套#18"
+      "四级-第2套#18",
+      "6-26-B#15"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 40
   },
@@ -1631,9 +1652,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "交易组织与执行流程",
     "sources": [
       "bank#131",
-      "四级-第2套#78"
+      "四级-第2套#78",
+      "7-18#76"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 48
   },
@@ -1699,9 +1721,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "合同管理与履约",
     "sources": [
       "bank#97",
-      "四级-第2套#73"
+      "四级-第2套#73",
+      "7-18#75"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 50
   },
@@ -1971,9 +1994,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "信息披露与交易平台操作",
     "sources": [
       "bank#308",
-      "四级-第2套#95"
+      "四级-第2套#95",
+      "6-26-B#94"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第1卷.md",
     "sourceOrdinal": 58
   },
@@ -2344,9 +2368,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5d3406a504c7ef11",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#59"
+      "bank#59",
+      "6-26-A#66"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 9
   },
@@ -2410,9 +2435,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0678741465f09c70",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#77"
+      "bank#77",
+      "7-18#74"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 11
   },
@@ -2476,9 +2502,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_fa9f7ea4bed98280",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#145"
+      "bank#145",
+      "6-30#75"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 13
   },
@@ -2608,9 +2635,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c8295774e7e56e30",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第1套#52"
+      "四级-第1套#52",
+      "6-26-A#43"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 17
   },
@@ -2670,9 +2698,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1c0eaed2de8068fe",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第1套#56"
+      "四级-第1套#56",
+      "7-18#49"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 19
   },
@@ -2703,9 +2732,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_71c37482f037ddae",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第1套#78"
+      "四级-第1套#78",
+      "6-26-A#74"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 20
   },
@@ -2835,9 +2865,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_bc373d5356ec9dff",
     "domain": "电力系统基础知识",
     "sources": [
-      "bank#85"
+      "bank#85",
+      "6-26-B#72"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 24
   },
@@ -2901,9 +2932,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_494748aae539baf6",
     "domain": "电力系统基础知识",
     "sources": [
-      "bank#289"
+      "bank#289",
+      "6-26-A#92"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 26
   },
@@ -2934,9 +2966,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_bbb871dfc044e853",
     "domain": "电力系统基础知识",
     "sources": [
-      "四级-第1套#19"
+      "四级-第1套#19",
+      "6-26-B#24"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 27
   },
@@ -3066,9 +3099,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_ac445a4d33c25f21",
     "domain": "电力系统基础知识",
     "sources": [
-      "四级-第1套#27"
+      "四级-第1套#27",
+      "6-30#24"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 31
   },
@@ -3264,9 +3298,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4f95b7f87ca940ec",
     "domain": "电力系统基础知识",
     "sources": [
-      "四级-第2套#22"
+      "四级-第2套#22",
+      "6-26-B#19"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 37
   },
@@ -3557,9 +3592,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1b37d59f3e306aab",
     "domain": "电力系统基础知识",
     "sources": [
-      "四级-第2套#32"
+      "四级-第2套#32",
+      "6-26-A#24"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 46
   },
@@ -3590,9 +3626,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5e7cd57eeb9d7282",
     "domain": "经济学基础",
     "sources": [
-      "四级-第1套#32"
+      "四级-第1套#32",
+      "7-18#33"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 47
   },
@@ -3689,9 +3726,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1a674fc6d265a172",
     "domain": "经济学基础",
     "sources": [
-      "四级-第1套#40"
+      "四级-第1套#40",
+      "7-18#43"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 50
   },
@@ -3755,9 +3793,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9b134f352ed635a1",
     "domain": "经济学基础",
     "sources": [
-      "四级-第1套#42"
+      "四级-第1套#42",
+      "7-18#45"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 52
   },
@@ -3854,9 +3893,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_775b90c6c1756aea",
     "domain": "经济学基础",
     "sources": [
-      "四级-第1套#45"
+      "四级-第1套#45",
+      "6-30#43"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 55
   },
@@ -3920,9 +3960,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_00501becc5614c78",
     "domain": "经济学基础",
     "sources": [
-      "四级-第1套#47"
+      "四级-第1套#47",
+      "6-30#44"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第2卷.md",
     "sourceOrdinal": 57
   },
@@ -4246,9 +4287,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b740e9d74c05f56b",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第1套#66"
+      "四级-第1套#66",
+      "6-30#59"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 7
   },
@@ -4312,9 +4354,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_37b5e2e99be3e315",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第2套#54"
+      "四级-第2套#54",
+      "6-26-A#53"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 9
   },
@@ -4708,9 +4751,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_535a2f79d547588d",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#9"
+      "bank#9",
+      "6-30#61"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 21
   },
@@ -4741,9 +4785,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_173f824d609b5f49",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#11"
+      "bank#11",
+      "6-30#62"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 22
   },
@@ -4906,9 +4951,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_178b432936da0a35",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#19"
+      "bank#19",
+      "6-26-A#63",
+      "7-18#69"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 27
   },
@@ -5071,9 +5118,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c9967915bb273ec1",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#66"
+      "bank#66",
+      "6-26-B#69"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 32
   },
@@ -5104,9 +5152,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0b1910da9fe66cbe",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#117"
+      "bank#117",
+      "6-26-B#78"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 33
   },
@@ -5137,9 +5186,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3a67f842896e26d6",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#318"
+      "bank#318",
+      "6-26-B#96",
+      "7-18#98"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 34
   },
@@ -5236,9 +5287,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f94743a705781c53",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#219"
+      "bank#219",
+      "6-26-B#61"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 37
   },
@@ -5269,9 +5321,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_868b03495892e3ed",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#220"
+      "bank#220",
+      "6-26-A#62"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 38
   },
@@ -5401,9 +5454,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c909c7b458f138e8",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#225"
+      "bank#225",
+      "6-26-B#87"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 42
   },
@@ -5467,9 +5521,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6033cfa4c3167540",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#266"
+      "bank#266",
+      "6-26-A#89"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 44
   },
@@ -5500,9 +5555,12 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5f21d4cab00e346e",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#267"
+      "bank#267",
+      "6-26-A#90",
+      "6-26-B#91",
+      "6-30#90"
     ],
-    "repeatCount": 1,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 45
   },
@@ -5698,9 +5756,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_eab3d7ab24debf87",
     "domain": "市场准入与注册管理",
     "sources": [
-      "四级-第1套#89"
+      "四级-第1套#89",
+      "6-30#81"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 51
   },
@@ -5764,9 +5823,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_04c53b320c786dc6",
     "domain": "市场准入与注册管理",
     "sources": [
-      "四级-第2套#84"
+      "四级-第2套#84",
+      "6-26-A#80"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第3卷.md",
     "sourceOrdinal": 53
   },
@@ -6028,9 +6088,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6071aef3ad67e6e7",
     "domain": "中长期交易",
     "sources": [
-      "bank#95"
+      "bank#95",
+      "6-30#70"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 1
   },
@@ -6094,9 +6155,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3f1348df76305e93",
     "domain": "中长期交易",
     "sources": [
-      "bank#104"
+      "bank#104",
+      "6-26-B#74"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 3
   },
@@ -6127,9 +6189,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6086e546b2183cda",
     "domain": "中长期交易",
     "sources": [
-      "bank#106"
+      "bank#106",
+      "6-26-B#75"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 4
   },
@@ -6226,9 +6289,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_818e68d15bd1354d",
     "domain": "中长期交易",
     "sources": [
-      "bank#114"
+      "bank#114",
+      "6-26-A#70"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 7
   },
@@ -6292,9 +6356,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_35bbe2766881026a",
     "domain": "中长期交易",
     "sources": [
-      "bank#123"
+      "bank#123",
+      "6-30#73"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 9
   },
@@ -6523,9 +6588,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_ce5c536e0f191482",
     "domain": "中长期交易",
     "sources": [
-      "bank#146"
+      "bank#146",
+      "6-26-A#71"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 16
   },
@@ -6556,9 +6622,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1523b3a214e17756",
     "domain": "中长期交易",
     "sources": [
-      "bank#313"
+      "bank#313",
+      "6-26-B#95"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 17
   },
@@ -6589,9 +6656,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_ee176700ab33c76c",
     "domain": "中长期交易",
     "sources": [
-      "bank#204"
+      "bank#204",
+      "6-30#74"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 18
   },
@@ -6655,9 +6723,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_988356a532437be9",
     "domain": "中长期交易",
     "sources": [
-      "bank#251"
+      "bank#251",
+      "7-18#94"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 20
   },
@@ -6754,9 +6823,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8dbbca4a6cb03b76",
     "domain": "中长期交易",
     "sources": [
-      "五级-第2套#5"
+      "五级-第2套#5",
+      "6-30#14"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 23
   },
@@ -6787,9 +6857,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b6d237bbc4336ec7",
     "domain": "中长期交易",
     "sources": [
-      "四级-第1套#1"
+      "四级-第1套#1",
+      "6-30#3"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 24
   },
@@ -6820,9 +6891,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_454c37e1f1203f45",
     "domain": "中长期交易",
     "sources": [
-      "四级-第1套#7"
+      "四级-第1套#7",
+      "7-18#12"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 25
   },
@@ -6886,9 +6958,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b58fbbd8ed38d394",
     "domain": "中长期交易",
     "sources": [
-      "四级-第2套#2"
+      "四级-第2套#2",
+      "6-30#5"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 27
   },
@@ -6952,9 +7025,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_858c28ec71cf99e0",
     "domain": "电力现货市场",
     "sources": [
-      "bank#22"
+      "bank#22",
+      "6-26-B#64"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 29
   },
@@ -6985,9 +7059,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_33ae3dda3380a116",
     "domain": "电力现货市场",
     "sources": [
-      "bank#26"
+      "bank#26",
+      "6-30#66"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 30
   },
@@ -7051,9 +7126,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d228fe87541f465b",
     "domain": "电力现货市场",
     "sources": [
-      "bank#33"
+      "bank#33",
+      "6-30#67"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 32
   },
@@ -7150,9 +7226,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5f052a513363cc75",
     "domain": "电力现货市场",
     "sources": [
-      "bank#151"
+      "bank#151",
+      "7-18#77"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 35
   },
@@ -7216,9 +7293,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1f2bb37d712e9bc9",
     "domain": "电力现货市场",
     "sources": [
-      "bank#153"
+      "bank#153",
+      "7-18#78"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 37
   },
@@ -7315,9 +7393,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_e569fb9ec6a4ba22",
     "domain": "电力现货市场",
     "sources": [
-      "bank#156"
+      "bank#156",
+      "6-30#76",
+      "7-18#79"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 40
   },
@@ -7447,9 +7527,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_cdfba1fc5b648988",
     "domain": "电力现货市场",
     "sources": [
-      "bank#160"
+      "bank#160",
+      "7-18#80"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 44
   },
@@ -7480,9 +7561,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_730190feb57c289a",
     "domain": "电力现货市场",
     "sources": [
-      "bank#161"
+      "bank#161",
+      "6-26-A#73",
+      "6-30#77"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 45
   },
@@ -7579,9 +7662,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_bf7f750467e65d50",
     "domain": "电力现货市场",
     "sources": [
-      "bank#164"
+      "bank#164",
+      "6-26-B#82"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 48
   },
@@ -7744,9 +7828,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_593e353ec1d5f34a",
     "domain": "电力现货市场",
     "sources": [
-      "bank#172"
+      "bank#172",
+      "6-26-A#75"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 53
   },
@@ -7777,9 +7862,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1087bda81869e25c",
     "domain": "电力现货市场",
     "sources": [
-      "bank#177"
+      "bank#177",
+      "7-18#81"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第4卷.md",
     "sourceOrdinal": 54
   },
@@ -8173,9 +8259,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d1c138ce2b33736a",
     "domain": "电力现货市场",
     "sources": [
-      "bank#194"
+      "bank#194",
+      "7-18#82"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 6
   },
@@ -8272,9 +8359,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_88d10fb21cef8cbe",
     "domain": "电力现货市场",
     "sources": [
-      "bank#197"
+      "bank#197",
+      "6-26-A#76"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 9
   },
@@ -8338,9 +8426,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_853c63849d5454a0",
     "domain": "电力现货市场",
     "sources": [
-      "bank#199"
+      "bank#199",
+      "7-18#83"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 11
   },
@@ -8503,9 +8592,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_269bc3e5750e8cb9",
     "domain": "电力现货市场",
     "sources": [
-      "bank#210"
+      "bank#210",
+      "6-26-B#85"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 16
   },
@@ -8602,9 +8692,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8091923b0ccd992f",
     "domain": "电力现货市场",
     "sources": [
-      "bank#213"
+      "bank#213",
+      "7-18#85"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 19
   },
@@ -8701,9 +8792,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8f9138c90e4b764d",
     "domain": "电力现货市场",
     "sources": [
-      "bank#217"
+      "bank#217",
+      "6-30#78"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 22
   },
@@ -8767,9 +8859,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2b220a7c4de46c40",
     "domain": "电力现货市场",
     "sources": [
-      "bank#254"
+      "bank#254",
+      "6-30#87"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 24
   },
@@ -8800,9 +8893,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_93d1e9978ae72173",
     "domain": "电力现货市场",
     "sources": [
-      "bank#255"
+      "bank#255",
+      "6-26-B#89"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 25
   },
@@ -9126,9 +9220,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5b2e9b62705facbe",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第1套#37"
+      "四级-第1套#37",
+      "7-18#40"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 35
   },
@@ -9386,9 +9481,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_81db19cab70795ce",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第2套#38"
+      "四级-第2套#38",
+      "6-26-A#36",
+      "7-18#39"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 43
   },
@@ -9485,9 +9582,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_bb89d240f2b9a274",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第2套#49"
+      "四级-第2套#49",
+      "7-18#48"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 46
   },
@@ -9518,9 +9616,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0d6748d86c3bddd4",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第2套#51"
+      "四级-第2套#51",
+      "6-26-B#54"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 47
   },
@@ -9617,9 +9716,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a1d48f02ca647b66",
     "domain": "辅助服务市场",
     "sources": [
-      "五级-第2套#11"
+      "五级-第2套#11",
+      "7-18#15"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 50
   },
@@ -9650,9 +9750,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f2282bfd4acc66e1",
     "domain": "辅助服务市场",
     "sources": [
-      "五级-第2套#12"
+      "五级-第2套#12",
+      "6-26-A#99"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 51
   },
@@ -9683,9 +9784,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a649949811a0d954",
     "domain": "辅助服务市场",
     "sources": [
-      "五级-第2套#13"
+      "五级-第2套#13",
+      "6-26-A#15"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 52
   },
@@ -9716,9 +9818,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_85cfe0d47a4e8ce8",
     "domain": "辅助服务市场",
     "sources": [
-      "五级-第2套#14"
+      "五级-第2套#14",
+      "6-26-A#100"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第5卷.md",
     "sourceOrdinal": 53
   },
@@ -10046,9 +10149,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_060ba66d8d7172d9",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第1套#23"
+      "四级-第1套#23",
+      "6-30#23"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 3
   },
@@ -10079,9 +10183,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_7e6f2db77f53c9db",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第1套#29"
+      "四级-第1套#29",
+      "6-26-A#25"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 4
   },
@@ -10244,9 +10349,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d8c0b41a96110166",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第2套#5"
+      "四级-第2套#5",
+      "6-26-B#5"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 9
   },
@@ -10277,9 +10383,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4f7a2234985e14e0",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第2套#6"
+      "四级-第2套#6",
+      "6-26-B#7",
+      "7-18#6"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 10
   },
@@ -10310,9 +10418,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_38ef274aeb3989ae",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第2套#99"
+      "四级-第2套#99",
+      "6-26-B#100",
+      "7-18#100"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 11
   },
@@ -10541,9 +10651,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0befe28e897bd66a",
     "domain": "电价机制与成本",
     "sources": [
-      "bank#265"
+      "bank#265",
+      "6-26-A#88",
+      "6-26-B#90"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 18
   },
@@ -10838,9 +10950,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_28b9ad834a2b9c5f",
     "domain": "电价机制与成本",
     "sources": [
-      "四级-第2套#85"
+      "四级-第2套#85",
+      "6-30#82"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 27
   },
@@ -10904,9 +11017,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_55fbbe4c569dba10",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#68"
+      "bank#68",
+      "6-26-B#70"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 29
   },
@@ -10937,9 +11051,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_43b85fc8ab580e3c",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#69"
+      "bank#69",
+      "6-26-B#71"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 30
   },
@@ -11036,9 +11151,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_29df1a58bf305324",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#84"
+      "bank#84",
+      "6-26-A#68"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 33
   },
@@ -11069,9 +11185,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_eea9a0dccf87e790",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#178"
+      "bank#178",
+      "6-26-B#83"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 34
   },
@@ -11168,9 +11285,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_733c31a7b58a8d8b",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#330"
+      "bank#330",
+      "6-30#96"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 37
   },
@@ -11234,9 +11352,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_686473a2e728b896",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#332"
+      "bank#332",
+      "6-26-A#95"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 39
   },
@@ -11333,9 +11452,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_35aeb64cd6f68150",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "五级-第2套#25"
+      "五级-第2套#25",
+      "6-30#16"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 42
   },
@@ -11399,9 +11519,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f3f13f825a9bc356",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "四级-第1套#49"
+      "四级-第1套#49",
+      "6-26-B#50"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 44
   },
@@ -11630,9 +11751,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_e554747125c8ae9d",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#2"
+      "bank#2",
+      "7-18#99"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 51
   },
@@ -11828,9 +11950,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d4117c81fb4a3dad",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#119"
+      "bank#119",
+      "6-30#71"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 57
   },
@@ -11861,9 +11984,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_dc87b35fb8b7d4ab",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#120"
+      "bank#120",
+      "6-30#72"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第6卷.md",
     "sourceOrdinal": 58
   },
@@ -11993,9 +12117,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6a48d898775f3574",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#128"
+      "bank#128",
+      "6-26-B#79"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 2
   },
@@ -12092,9 +12217,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_46adea4d20ea7299",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#300"
+      "bank#300",
+      "6-30#92"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 5
   },
@@ -12158,9 +12284,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_76a85ef533e656d1",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#315"
+      "bank#315",
+      "7-18#97"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 7
   },
@@ -12224,9 +12351,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_89328c3271b9f326",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#326"
+      "bank#326",
+      "6-26-B#97"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 9
   },
@@ -12257,9 +12385,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f891b8ae86df9e72",
     "domain": "交易组织与执行流程",
     "sources": [
-      "五级-第2套#4"
+      "五级-第2套#4",
+      "6-26-B#14"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 10
   },
@@ -12290,9 +12419,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_42ceacab15ae7127",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#83"
+      "bank#83",
+      "6-26-A#67"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 11
   },
@@ -12323,9 +12453,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_902ff73e6ee8f54a",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#96"
+      "bank#96",
+      "6-26-B#73"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 12
   },
@@ -12422,9 +12553,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_94441add1328eb59",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#203"
+      "bank#203",
+      "6-26-B#81"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 15
   },
@@ -12455,9 +12587,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_485ed9e86a676f54",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#223"
+      "bank#223",
+      "7-18#90"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 16
   },
@@ -12488,9 +12621,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a327022c7b957788",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#231"
+      "bank#231",
+      "7-18#92"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 17
   },
@@ -12554,9 +12688,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c5f454f867936604",
     "domain": "合同管理与履约",
     "sources": [
-      "bank#269"
+      "bank#269",
+      "6-26-A#91"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 19
   },
@@ -12686,9 +12821,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_68f835340adc2800",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#349"
+      "bank#349",
+      "6-26-B#99"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 23
   },
@@ -12818,9 +12954,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c7b2f7504cd12574",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#273"
+      "bank#273",
+      "6-26-B#92"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 27
   },
@@ -12950,9 +13087,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_992b99ab229fdb87",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#23"
+      "bank#23",
+      "6-30#64"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 31
   },
@@ -12983,9 +13121,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5c4799b64c35134a",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#24"
+      "bank#24",
+      "6-26-A#64",
+      "6-30#65"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 32
   },
@@ -13016,9 +13156,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4ebf08a2723d065e",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#25"
+      "bank#25",
+      "6-26-B#65"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 33
   },
@@ -13049,9 +13190,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_479ae0e9db034eb5",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#27"
+      "bank#27",
+      "6-26-B#66"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 34
   },
@@ -13148,9 +13290,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8af9f4da3739e1fe",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#30"
+      "bank#30",
+      "7-18#70"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 37
   },
@@ -13214,9 +13357,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_17e028bbfc548407",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#34"
+      "bank#34",
+      "6-26-A#65"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 39
   },
@@ -13313,9 +13457,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9bd6b61ae703ce6e",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#44"
+      "bank#44",
+      "6-26-B#67"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 42
   },
@@ -13445,9 +13590,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9a8c26ed1647cbd9",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#52"
+      "bank#52",
+      "6-26-B#68"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 46
   },
@@ -13478,9 +13624,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b1d40f0394596077",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#53"
+      "bank#53",
+      "7-18#71"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 47
   },
@@ -13511,9 +13658,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_62655518f15039a4",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#54"
+      "bank#54",
+      "7-18#72"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 48
   },
@@ -13676,9 +13824,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_01a658b429061e48",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#61"
+      "bank#61",
+      "6-30#69"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 53
   },
@@ -13808,9 +13957,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a20ddefa6a4c092e",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#132"
+      "bank#132",
+      "6-26-B#80"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 57
   },
@@ -13907,9 +14057,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3bd7b83048978754",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#301"
+      "bank#301",
+      "7-18#96"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第7卷.md",
     "sourceOrdinal": 60
   },
@@ -14039,9 +14190,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3913d26c1e189368",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#307"
+      "bank#307",
+      "6-26-A#93"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 4
   },
@@ -14105,9 +14257,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a3cf701e38f89afa",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#311"
+      "bank#311",
+      "6-30#93"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 6
   },
@@ -14468,9 +14621,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_03ceee95e9668e29",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#344"
+      "bank#344",
+      "6-26-A#96"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 17
   },
@@ -14501,9 +14655,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_cac4228f737832db",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#345"
+      "bank#345",
+      "6-30#99"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 18
   },
@@ -14765,9 +14920,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c83f088c94cbf4b0",
     "domain": "负荷预测与数据分析",
     "sources": [
-      "bank#328"
+      "bank#328",
+      "6-26-A#94"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 26
   },
@@ -14798,9 +14954,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_70bab30100a1292d",
     "domain": "负荷预测与数据分析",
     "sources": [
-      "bank#336"
+      "bank#336",
+      "6-30#97"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 27
   },
@@ -14897,9 +15054,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2fa1ee2d426e16c1",
     "domain": "负荷预测与数据分析",
     "sources": [
-      "bank#339"
+      "bank#339",
+      "6-30#98"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 30
   },
@@ -15227,9 +15385,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_61badcd0120cbcb4",
     "domain": "交易员岗位与市场分析",
     "sources": [
-      "bank#278"
+      "bank#278",
+      "7-18#95"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 40
   },
@@ -15260,9 +15419,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f4b07c8b8ad72a87",
     "domain": "交易员岗位与市场分析",
     "sources": [
-      "bank#293"
+      "bank#293",
+      "6-26-B#93"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 41
   },
@@ -15388,9 +15548,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_20399764f3b6ae00",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#64"
+      "bank#64",
+      "7-18#73"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 45
   },
@@ -15487,9 +15648,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b862867c92850430",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#242"
+      "bank#242",
+      "6-26-A#84"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 48
   },
@@ -15586,9 +15748,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b0889b0dec7bc849",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#249"
+      "bank#249",
+      "6-30#86"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 51
   },
@@ -15751,9 +15914,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8af6af554e260aa9",
     "domain": "信用管理与评价",
     "sources": [
-      "bank#291"
+      "bank#291",
+      "6-30#91"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第8卷.md",
     "sourceOrdinal": 56
   },
@@ -16180,9 +16344,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_02e80196c00d036a",
     "domain": "零售市场与售电服务",
     "sources": [
-      "四级-第1套#90"
+      "四级-第1套#90",
+      "6-26-A#78"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第9卷.md",
     "sourceOrdinal": 9
   },
@@ -16246,9 +16411,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_625cf3a9de63b8fd",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "bank#329"
+      "bank#329",
+      "6-30#95"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第9卷.md",
     "sourceOrdinal": 11
   },
@@ -16279,9 +16445,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4e42badf56ab6e2b",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "bank#235"
+      "bank#235",
+      "6-26-A#83",
+      "7-18#93"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第9卷.md",
     "sourceOrdinal": 12
   },
@@ -16609,9 +16777,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_252ef4bd59969bb9",
     "domain": "省间与跨区交易",
     "sources": [
-      "bank#239"
+      "bank#239",
+      "6-26-B#88"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/01-单选题专项/单选题专项-测验-第9卷.md",
     "sourceOrdinal": 22
   },
@@ -16946,9 +17115,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "信息披露与交易平台操作",
     "sources": [
       "五级-第2套#7",
-      "四级-第2套#30"
+      "四级-第2套#30",
+      "6-26-B#129"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 8
   },
@@ -17022,7 +17192,6 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_dcdec21b72822257",
     "domain": "合规管理与风险控制",
     "sources": [
-      "bank#360",
       "bank#360"
     ],
     "repeatCount": 2,
@@ -17256,9 +17425,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2d2cb44d03381469",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#548"
+      "bank#548",
+      "7-18#118"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 16
   },
@@ -17330,9 +17500,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_88b662a63f4c9cb2",
     "domain": "电力市场基础与政策",
     "sources": [
-      "五级-第2套#1"
+      "五级-第2套#1",
+      "6-30#106"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 18
   },
@@ -17473,9 +17644,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5eb4b1c61b5b6e82",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第1套#1"
+      "四级-第1套#1",
+      "7-18#101"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 22
   },
@@ -17578,9 +17750,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_46e07284ffc56d08",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第2套#5"
+      "四级-第2套#5",
+      "6-26-A#101"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 25
   },
@@ -17683,9 +17856,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d5cb279aa01eae36",
     "domain": "电力系统基础知识",
     "sources": [
-      "五级-第2套#18"
+      "五级-第2套#18",
+      "6-26-A#107"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 28
   },
@@ -17979,9 +18153,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_ac2744dcd4ce2860",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第1套#23"
+      "四级-第1套#23",
+      "6-26-B#126",
+      "6-30#126"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 36
   },
@@ -18215,9 +18391,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_90539b88ccee6df4",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第2套#19"
+      "四级-第2套#19",
+      "6-26-A#124",
+      "6-26-B#120"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 42
   },
@@ -18255,9 +18433,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f2a237b38cd747f7",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第2套#20"
+      "四级-第2套#20",
+      "6-26-B#124"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 43
   },
@@ -18295,9 +18474,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3a2e8674c1a46750",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第2套#21"
+      "四级-第2套#21",
+      "7-18#116"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第1卷.md",
     "sourceOrdinal": 44
   },
@@ -19122,9 +19302,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a3acf23b50294bf7",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#545"
+      "bank#545",
+      "6-30#129"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第2卷.md",
     "sourceOrdinal": 5
   },
@@ -19743,9 +19924,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8e3f9c7d06644621",
     "domain": "中长期交易",
     "sources": [
-      "五级-第2套#16"
+      "五级-第2套#16",
+      "6-30#108"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第2卷.md",
     "sourceOrdinal": 21
   },
@@ -21062,9 +21244,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_450cf7c7d5595733",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第1套#18"
+      "四级-第1套#18",
+      "6-26-B#115"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第2卷.md",
     "sourceOrdinal": 55
   },
@@ -21881,9 +22064,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_42f413e8be43289c",
     "domain": "电价机制与成本",
     "sources": [
-      "五级-第2套#14"
+      "五级-第2套#14",
+      "6-26-A#106"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第3卷.md",
     "sourceOrdinal": 16
   },
@@ -21916,9 +22100,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5728a424ea1b49e8",
     "domain": "电价机制与成本",
     "sources": [
-      "四级-第1套#5"
+      "四级-第1套#5",
+      "6-30#105"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第3卷.md",
     "sourceOrdinal": 17
   },
@@ -21987,9 +22172,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9ee56e263d2981c2",
     "domain": "电价机制与成本",
     "sources": [
-      "四级-第1套#15"
+      "四级-第1套#15",
+      "6-26-B#111"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第3卷.md",
     "sourceOrdinal": 19
   },
@@ -22056,9 +22242,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2fec256c39bc6488",
     "domain": "电价机制与成本",
     "sources": [
-      "四级-第2套#10"
+      "四级-第2套#10",
+      "6-26-A#118",
+      "6-30#112"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第3卷.md",
     "sourceOrdinal": 21
   },
@@ -23668,9 +23856,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5243e176edd03d0a",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "五级-第2套#2"
+      "五级-第2套#2",
+      "6-26-B#106"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第4卷.md",
     "sourceOrdinal": 2
   },
@@ -23848,9 +24037,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_e2cee2ab4eee24ef",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "五级-第2套#9"
+      "五级-第2套#9",
+      "6-26-A#105"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第4卷.md",
     "sourceOrdinal": 7
   },
@@ -23883,9 +24073,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_430570d3b1b733df",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "五级-第2套#10"
+      "五级-第2套#10",
+      "6-26-B#107",
+      "6-30#107"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第4卷.md",
     "sourceOrdinal": 8
   },
@@ -24025,9 +24217,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9640300df1ea2ae9",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "四级-第2套#16"
+      "四级-第2套#16",
+      "6-26-A#122"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第4卷.md",
     "sourceOrdinal": 12
   },
@@ -26067,9 +26260,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6f412e9ec6f9f79a",
     "domain": "合规管理与风险控制",
     "sources": [
-      "五级-第2套#22"
+      "五级-第2套#22",
+      "6-26-B#130"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第5卷.md",
     "sourceOrdinal": 4
   },
@@ -26103,9 +26297,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_45e8bf1e01099c12",
     "domain": "合规管理与风险控制",
     "sources": [
-      "四级-第1套#17"
+      "四级-第1套#17",
+      "6-26-B#113"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第5卷.md",
     "sourceOrdinal": 5
   },
@@ -26569,9 +26764,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c8f4dddbb29ad1f7",
     "domain": "零售市场与售电服务",
     "sources": [
-      "五级-第2套#25"
+      "五级-第2套#25",
+      "6-30#130"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第5卷.md",
     "sourceOrdinal": 17
   },
@@ -26912,9 +27108,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2ef803a9685c67ad",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "四级-第1套#7"
+      "四级-第1套#7",
+      "6-26-A#103"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第5卷.md",
     "sourceOrdinal": 26
   },
@@ -27026,9 +27223,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d64cc4efe8b3ccc3",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "四级-第2套#28"
+      "四级-第2套#28",
+      "7-18#119"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/02-多选题专项/多选题专项-测验-第5卷.md",
     "sourceOrdinal": 29
   },
@@ -27411,9 +27609,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "sources": [
       "bank#680",
       "四级-第1套#37",
-      "四级-第2套#38"
+      "四级-第2套#38",
+      "7-18#164"
     ],
-    "repeatCount": 3,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 3
   },
@@ -27463,9 +27662,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力系统基础知识",
     "sources": [
       "bank#571",
-      "四级-第2套#27"
+      "四级-第2套#27",
+      "7-18#149"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 5
   },
@@ -27645,9 +27845,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电力现货市场",
     "sources": [
       "bank#690",
-      "四级-第2套#36"
+      "四级-第2套#36",
+      "6-26-A#166"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 12
   },
@@ -27801,9 +28002,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电价机制与成本",
     "sources": [
       "bank#643",
-      "四级-第1套#39"
+      "四级-第1套#39",
+      "6-26-B#168"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 18
   },
@@ -27827,9 +28029,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "电价机制与成本",
     "sources": [
       "bank#716",
-      "四级-第2套#35"
+      "四级-第2套#35",
+      "6-26-B#162"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 19
   },
@@ -28061,9 +28264,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "信息披露与交易平台操作",
     "sources": [
       "bank#732",
-      "四级-第2套#33"
+      "四级-第2套#33",
+      "6-30#164",
+      "7-18#159"
     ],
-    "repeatCount": 2,
+    "repeatCount": 4,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 28
   },
@@ -28165,9 +28370,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "政策文件解读与查询",
     "sources": [
       "bank#726",
-      "四级-第1套#32"
+      "四级-第1套#32",
+      "7-18#160"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 32
   },
@@ -28191,9 +28397,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "domain": "合规管理与风险控制",
     "sources": [
       "bank#641",
-      "四级-第2套#40"
+      "四级-第2套#40",
+      "6-26-B#169"
     ],
-    "repeatCount": 2,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 33
   },
@@ -28371,9 +28578,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_52e96f530e3504af",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#633"
+      "bank#633",
+      "6-26-A#153",
+      "7-18#145"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 40
   },
@@ -28396,9 +28605,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_77f575f5baf0c319",
     "domain": "电力市场基础与政策",
     "sources": [
-      "bank#778"
+      "bank#778",
+      "6-30#161"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 41
   },
@@ -28446,9 +28656,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_515ebb7fab4aabfb",
     "domain": "电力市场基础与政策",
     "sources": [
-      "四级-第2套#8"
+      "四级-第2套#8",
+      "7-18#132"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 43
   },
@@ -28471,9 +28682,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2bd29f777b15c96b",
     "domain": "电力系统基础知识",
     "sources": [
-      "bank#626"
+      "bank#626",
+      "6-30#167"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 44
   },
@@ -28771,9 +28983,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_672c3c70f58cedb4",
     "domain": "职业道德与电力精神",
     "sources": [
-      "四级-第1套#17"
+      "四级-第1套#17",
+      "6-30#150"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第1卷.md",
     "sourceOrdinal": 56
   },
@@ -28946,9 +29159,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c45cd1e2d089c596",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#567"
+      "bank#567",
+      "6-26-A#159"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 3
   },
@@ -28971,9 +29185,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5786e7f1905f2675",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#574"
+      "bank#574",
+      "6-26-A#158"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 4
   },
@@ -28996,9 +29211,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_11a67c79a8eb2e05",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#593"
+      "bank#593",
+      "6-26-A#155"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 5
   },
@@ -29071,9 +29287,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_121b53ed75a84671",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#607"
+      "bank#607",
+      "7-18#144"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 8
   },
@@ -29146,9 +29363,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_27d38d6cbe159430",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#610"
+      "bank#610",
+      "6-26-B#149"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 11
   },
@@ -29271,9 +29489,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0e4258777d113173",
     "domain": "市场准入与注册管理",
     "sources": [
-      "bank#650"
+      "bank#650",
+      "6-30#169"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 16
   },
@@ -29646,9 +29865,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_24ded3b07e028c04",
     "domain": "中长期交易",
     "sources": [
-      "bank#554"
+      "bank#554",
+      "6-26-B#155"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 31
   },
@@ -29771,9 +29991,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a8a2de31328f5df5",
     "domain": "中长期交易",
     "sources": [
-      "bank#624"
+      "bank#624",
+      "6-26-B#166"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 36
   },
@@ -29896,9 +30117,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d7cc2c1eb4c7bf0a",
     "domain": "中长期交易",
     "sources": [
-      "五级-第2套#2"
+      "五级-第2套#2",
+      "6-26-A#170",
+      "6-26-B#170"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 41
   },
@@ -29971,9 +30194,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_37fde7598c749835",
     "domain": "中长期交易",
     "sources": [
-      "四级-第2套#30"
+      "四级-第2套#30",
+      "6-30#158"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 44
   },
@@ -30021,9 +30245,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_02aacaa67e5436d2",
     "domain": "电力现货市场",
     "sources": [
-      "bank#572"
+      "bank#572",
+      "6-30#157"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 46
   },
@@ -30071,9 +30296,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f1ac31ae77ea0902",
     "domain": "电力现货市场",
     "sources": [
-      "bank#634"
+      "bank#634",
+      "6-26-B#152"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 48
   },
@@ -30146,9 +30372,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_985d9672393b60ee",
     "domain": "电力现货市场",
     "sources": [
-      "bank#688"
+      "bank#688",
+      "7-18#162"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 51
   },
@@ -30196,9 +30423,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_e808910acb1042c6",
     "domain": "电力现货市场",
     "sources": [
-      "bank#752"
+      "bank#752",
+      "6-26-B#159"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 53
   },
@@ -30221,9 +30449,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_98a9178bbd959597",
     "domain": "电力现货市场",
     "sources": [
-      "bank#753"
+      "bank#753",
+      "6-26-B#158"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 54
   },
@@ -30246,9 +30475,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_22405963ce291b97",
     "domain": "电力现货市场",
     "sources": [
-      "bank#754"
+      "bank#754",
+      "6-26-A#163"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 55
   },
@@ -30271,9 +30501,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_751688b28ddba046",
     "domain": "电力现货市场",
     "sources": [
-      "bank#756"
+      "bank#756",
+      "6-30#163"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第2卷.md",
     "sourceOrdinal": 56
   },
@@ -30496,9 +30727,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_19dd2a6da8d69171",
     "domain": "电力现货市场",
     "sources": [
-      "bank#784"
+      "bank#784",
+      "6-26-B#156"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 5
   },
@@ -30521,9 +30753,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_8fc5b93102cdcc9d",
     "domain": "电力现货市场",
     "sources": [
-      "bank#785"
+      "bank#785",
+      "6-30#160"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 6
   },
@@ -30671,9 +30904,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5e426c95fcc5cd69",
     "domain": "电力现货市场",
     "sources": [
-      "四级-第2套#6"
+      "四级-第2套#6",
+      "7-18#128"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 12
   },
@@ -31021,9 +31255,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_712dbc3db5ae5861",
     "domain": "辅助服务市场",
     "sources": [
-      "五级-第2套#23"
+      "五级-第2套#23",
+      "6-30#144"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 26
   },
@@ -31071,9 +31306,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_b844679015cf2964",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第1套#3"
+      "四级-第1套#3",
+      "6-30#135"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 28
   },
@@ -31121,9 +31357,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0ff026c6231ce7da",
     "domain": "辅助服务市场",
     "sources": [
-      "四级-第1套#6"
+      "四级-第1套#6",
+      "7-18#129"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 30
   },
@@ -31221,9 +31458,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_15785e74c0001098",
     "domain": "电价机制与成本",
     "sources": [
-      "bank#678"
+      "bank#678",
+      "7-18#165"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 34
   },
@@ -31346,9 +31584,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1a8b810b1d518567",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#578"
+      "bank#578",
+      "6-26-B#153",
+      "7-18#148"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 39
   },
@@ -31446,9 +31686,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0386c8d644e75d32",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#657"
+      "bank#657",
+      "6-26-A#169"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 43
   },
@@ -31546,9 +31787,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_7cd4272c26604d88",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "bank#765"
+      "bank#765",
+      "7-18#154"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 47
   },
@@ -31571,9 +31813,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_14791279e46e14ad",
     "domain": "发电机组参数与成本分析",
     "sources": [
-      "四级-第1套#14"
+      "四级-第1套#14",
+      "6-30#147"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 48
   },
@@ -31646,9 +31889,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_96e9f8b98c757bbd",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#553"
+      "bank#553",
+      "6-26-A#161"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 51
   },
@@ -31846,9 +32090,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_28c8847fbb9f6d63",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#667"
+      "bank#667",
+      "6-26-A#168",
+      "6-30#166"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第3卷.md",
     "sourceOrdinal": 59
   },
@@ -31921,9 +32167,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_27903ad9248b469d",
     "domain": "交易组织与执行流程",
     "sources": [
-      "bank#774"
+      "bank#774",
+      "6-26-B#157"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 2
   },
@@ -31996,9 +32243,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_cabbb063113723a7",
     "domain": "交易组织与执行流程",
     "sources": [
-      "四级-第2套#29"
+      "四级-第2套#29",
+      "7-18#151"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 5
   },
@@ -32071,9 +32319,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6b9ad339e71dcbfd",
     "domain": "合同管理与履约",
     "sources": [
-      "四级-第1套#1"
+      "四级-第1套#1",
+      "6-26-A#132"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 8
   },
@@ -32146,9 +32395,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_89f9bf3cf2b3ceb8",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#689"
+      "bank#689",
+      "6-26-A#167"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 11
   },
@@ -32271,9 +32521,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1a44c2546fc17130",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#699"
+      "bank#699",
+      "6-26-B#165"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 16
   },
@@ -32321,9 +32572,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_1cfbb5b671f94822",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#701"
+      "bank#701",
+      "7-18#161"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 18
   },
@@ -32421,9 +32673,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4a5c27a16923999d",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#710"
+      "bank#710",
+      "6-26-B#164"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 22
   },
@@ -32446,9 +32699,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c1ef14fd4ee48b49",
     "domain": "计量结算与偏差处理",
     "sources": [
-      "bank#711"
+      "bank#711",
+      "6-26-B#163"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 23
   },
@@ -32521,9 +32775,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_3bf9c7237f7b520f",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#555"
+      "bank#555",
+      "6-26-A#160"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 26
   },
@@ -32546,9 +32801,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_34000254c641c8b8",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#556"
+      "bank#556",
+      "6-26-B#154"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 27
   },
@@ -32596,9 +32852,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_21665c71e9452f9d",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#579"
+      "bank#579",
+      "6-26-A#157"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 29
   },
@@ -32621,9 +32878,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_470b8e9954534e9d",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#580"
+      "bank#580",
+      "6-30#156",
+      "7-18#147"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 30
   },
@@ -32721,9 +32980,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_0db8cb001733a9f4",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#592"
+      "bank#592",
+      "6-30#154"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 34
   },
@@ -32746,9 +33006,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_7710abcd084301a1",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#594"
+      "bank#594",
+      "6-26-A#154"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 35
   },
@@ -32946,9 +33207,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4f700f809e02a33c",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#614"
+      "bank#614",
+      "6-26-B#150"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 43
   },
@@ -33021,9 +33283,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9f1f6621ce78e68d",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#618"
+      "bank#618",
+      "6-26-A#152"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 46
   },
@@ -33121,9 +33384,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_7c30bee932dbadad",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#637"
+      "bank#637",
+      "6-26-B#151"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 50
   },
@@ -33196,9 +33460,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_5c1a156b9b98c8e7",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#647"
+      "bank#647",
+      "7-18#169"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 53
   },
@@ -33371,9 +33636,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_4c23ec72d2303116",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#671"
+      "bank#671",
+      "7-18#167"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第4卷.md",
     "sourceOrdinal": 60
   },
@@ -33446,9 +33712,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_a3a2fc49a68b1ccd",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#776"
+      "bank#776",
+      "6-30#162"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 3
   },
@@ -33471,9 +33738,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_011b5373d971b8af",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#786"
+      "bank#786",
+      "6-30#159",
+      "7-18#152"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 4
   },
@@ -33521,9 +33790,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_6dde47c822372b34",
     "domain": "信息披露与交易平台操作",
     "sources": [
-      "bank#788"
+      "bank#788",
+      "6-26-A#162"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 6
   },
@@ -33621,9 +33891,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_557ac8ba3acfca8e",
     "domain": "负荷预测与数据分析",
     "sources": [
-      "bank#569"
+      "bank#569",
+      "7-18#150"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 10
   },
@@ -33721,9 +33992,11 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_db2018df6dd48933",
     "domain": "负荷预测与数据分析",
     "sources": [
-      "bank#651"
+      "bank#651",
+      "6-30#168",
+      "7-18#168"
     ],
-    "repeatCount": 1,
+    "repeatCount": 3,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 14
   },
@@ -33946,9 +34219,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_48d5d9815437cb6d",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#583"
+      "bank#583",
+      "6-26-A#156"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 23
   },
@@ -33996,9 +34270,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_05d54b72c9950a6e",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#587"
+      "bank#587",
+      "6-30#155"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 25
   },
@@ -34096,9 +34371,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_9f1733bad4d2adde",
     "domain": "政策文件解读与查询",
     "sources": [
-      "bank#632"
+      "bank#632",
+      "7-18#146"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 29
   },
@@ -34146,9 +34422,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_635ea26fda6c196b",
     "domain": "信用管理与评价",
     "sources": [
-      "bank#684"
+      "bank#684",
+      "7-18#163"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 31
   },
@@ -34171,9 +34448,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_2d8b3e98327d01ac",
     "domain": "合规管理与风险控制",
     "sources": [
-      "bank#627"
+      "bank#627",
+      "6-30#170"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 32
   },
@@ -34221,9 +34499,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_ac9a3c4c9c413cb8",
     "domain": "合规管理与风险控制",
     "sources": [
-      "bank#677"
+      "bank#677",
+      "7-18#166"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 34
   },
@@ -34296,9 +34575,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_de2346679a00fe8b",
     "domain": "合规管理与风险控制",
     "sources": [
-      "bank#685"
+      "bank#685",
+      "6-26-B#167"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 37
   },
@@ -34371,9 +34651,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_75e658d99c45b1dd",
     "domain": "合规管理与风险控制",
     "sources": [
-      "四级-第1套#11"
+      "四级-第1套#11",
+      "7-18#133"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 40
   },
@@ -34471,9 +34752,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_fae1c4f05598a95c",
     "domain": "零售市场与售电服务",
     "sources": [
-      "bank#734"
+      "bank#734",
+      "7-18#158"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 44
   },
@@ -34546,9 +34828,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_7600c350f7457a44",
     "domain": "零售市场与售电服务",
     "sources": [
-      "bank#738"
+      "bank#738",
+      "6-26-A#164"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 47
   },
@@ -34571,9 +34854,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_c5cdebabad648e07",
     "domain": "零售市场与售电服务",
     "sources": [
-      "bank#740"
+      "bank#740",
+      "7-18#157"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 48
   },
@@ -34771,9 +35055,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_e05d109e424a5782",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "bank#721"
+      "bank#721",
+      "6-26-A#165"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 56
   },
@@ -34871,9 +35156,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_029c22ba8dd0b75e",
     "domain": "绿电新能源与需求响应",
     "sources": [
-      "bank#771"
+      "bank#771",
+      "7-18#153"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第5卷.md",
     "sourceOrdinal": 60
   },
@@ -34971,9 +35257,10 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_d351a668003d9f0c",
     "domain": "省间与跨区交易",
     "sources": [
-      "bank#708"
+      "bank#708",
+      "6-30#165"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第6卷.md",
     "sourceOrdinal": 4
   },
@@ -34996,10 +35283,15263 @@ export const EMBEDDED_QUESTIONS: readonly Question[] = [
     "id": "q_f733baf0152012bc",
     "domain": "省间与跨区交易",
     "sources": [
-      "五级-第2套#4"
+      "五级-第2套#4",
+      "7-18#170"
     ],
-    "repeatCount": 1,
+    "repeatCount": 2,
     "sourceFile": "Study_Vault/电力交易员StudyVault-题型版/03-判断题专项/判断题专项-测验-第6卷.md",
     "sourceOrdinal": 5
+  },
+  {
+    "type": "single",
+    "stem": "完全竞争厂商在实现长期均衡时，其经济利润",
+    "options": [
+      {
+        "key": "A",
+        "text": "大于零"
+      },
+      {
+        "key": "B",
+        "text": "小于零"
+      },
+      {
+        "key": "C",
+        "text": "等于零"
+      },
+      {
+        "key": "D",
+        "text": "可以大于零或小于零，也可以等于零"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_be81e008416f37f4",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#32",
+      "6-30#34"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 1
+  },
+  {
+    "type": "single",
+    "stem": "售电公司资产总额大于1亿元不到2亿元，可以从事年售电量不超（）亿千万时的售电业务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "不限制其售电量"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_ca6b15b13b8cf70d",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-30#84",
+      "7-18#88"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "single",
+    "stem": "调峰是指发电机组为了跟踪负荷的峰谷变化而有计划的、按照一定调节速度进行的发电机组出力调整所提供的服务。调峰根据出力调整范围分为（）调峰和（）调峰。",
+    "options": [
+      {
+        "key": "A",
+        "text": "无偿,有偿"
+      },
+      {
+        "key": "B",
+        "text": "基本,无偿"
+      },
+      {
+        "key": "C",
+        "text": "基本,有偿"
+      },
+      {
+        "key": "D",
+        "text": "以上都不对"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_f0fe01fd55839dc9",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#3",
+      "6-26-B#1"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 3
+  },
+  {
+    "type": "single",
+    "stem": "根据履约保证金、保险和风险管理存款的执行时间表，以下哪个选项是正确的？",
+    "options": [
+      {
+        "key": "A",
+        "text": "履约保证金、保险和风险管理存款的执行时间表为交易完成后的3个工作日内"
+      },
+      {
+        "key": "B",
+        "text": "履约保证金、保险和风险管理存款的执行时间表为交易完成后的5个工作日内"
+      },
+      {
+        "key": "C",
+        "text": "履约保证金、保险和风险管理存款的执行时间表为交易完成后的7个工作日内"
+      },
+      {
+        "key": "D",
+        "text": "履约保证金、保险和风险管理存款的执行时间表为交易完成后的10个工作日内"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_f6a51b67c60f0f5b",
+    "domain": "合同管理与履约",
+    "sources": [
+      "6-26-A#29",
+      "6-26-B#35"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "single",
+    "stem": "四川市场建设初期，采用了丰枯分期的特色模式，丰水期（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "仅水电机组参与市场"
+      },
+      {
+        "key": "B",
+        "text": "仅火电机组参与市场"
+      },
+      {
+        "key": "C",
+        "text": "水电、火电同时参与市场"
+      },
+      {
+        "key": "D",
+        "text": "采用非市场模式"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_583e8b8a6c9668de",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#42",
+      "6-26-B#51"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "single",
+    "stem": "产业集中度指数CR8<20%为哪一类型",
+    "options": [
+      {
+        "key": "A",
+        "text": "极高寡占型"
+      },
+      {
+        "key": "B",
+        "text": "低集中寡占型"
+      },
+      {
+        "key": "C",
+        "text": "低集中竞争型"
+      },
+      {
+        "key": "D",
+        "text": "分散竞争型"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_ca31e6c650a92baa",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#46",
+      "7-18#52"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "single",
+    "stem": "以下哪种拍卖类型往往能实现资源的最优配置",
+    "options": [
+      {
+        "key": "A",
+        "text": "英式拍卖"
+      },
+      {
+        "key": "B",
+        "text": "荷兰式拍卖"
+      },
+      {
+        "key": "C",
+        "text": "美式拍卖"
+      },
+      {
+        "key": "D",
+        "text": "一级价格密封拍卖"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_070dbf02ac7abe56",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#55",
+      "7-18#53"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "single",
+    "stem": "根据2021年11月11日印发的《售电公司管理办法》，自愿退出售电市场的申请应提前（）个工作日提交给电力交易机构？",
+    "options": [
+      {
+        "key": "A",
+        "text": "30个工作日"
+      },
+      {
+        "key": "B",
+        "text": "45个工作日"
+      },
+      {
+        "key": "C",
+        "text": "60个工作日"
+      },
+      {
+        "key": "D",
+        "text": "90个工作日"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_dca2d607c48fdaab",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-A#18"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "single",
+    "stem": "根据2021年11月11日印发的《售电公司管理办法》，保底售电公司应当向（）部门提交保底售电计划？",
+    "options": [
+      {
+        "key": "A",
+        "text": "地方主管部门和能源监管机构"
+      },
+      {
+        "key": "B",
+        "text": "电力交易机构和能源监管机构"
+      },
+      {
+        "key": "C",
+        "text": "地方主管部门和电力交易机构"
+      },
+      {
+        "key": "D",
+        "text": "地方主管部门、能源监管机构和电力交易机构"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_b012117753ac08db",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-B#17"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 11
+  },
+  {
+    "type": "single",
+    "stem": "系统频率上升将使负荷所需要的有功功率()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "上升"
+      },
+      {
+        "key": "B",
+        "text": "下降"
+      },
+      {
+        "key": "C",
+        "text": "不变"
+      },
+      {
+        "key": "D",
+        "text": "以上情况都有可能"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_21b78e9dfe41d411",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-A#21"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "single",
+    "stem": "输电线路上消耗的无功功率为()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "零"
+      },
+      {
+        "key": "B",
+        "text": "容性"
+      },
+      {
+        "key": "C",
+        "text": "感性"
+      },
+      {
+        "key": "D",
+        "text": "以上皆有可能"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_d8cd6ea6dbe3c612",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#22"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "single",
+    "stem": "电力系统频率的()次调整是指运行人员手动增减发电机组的发电出力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一"
+      },
+      {
+        "key": "B",
+        "text": "二"
+      },
+      {
+        "key": "C",
+        "text": "三"
+      },
+      {
+        "key": "D",
+        "text": "其他三个选项都不是"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_9f7c1cc767c36783",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#25"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "single",
+    "stem": "关于变压器，下述说法中错误的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对电压进行变化，升高电压满足大容量远距离输电的需要，降低电压满足用电要求"
+      },
+      {
+        "key": "B",
+        "text": "变压器不仅可以对电压大小进行变换，也可以对功率大小进行变换"
+      },
+      {
+        "key": "C",
+        "text": "当变压器原边与发电机直接相连时，(发电厂升压变压器的低压绕组)变压器原边绕组的额定电压应与发电机额定电压相同"
+      },
+      {
+        "key": "D",
+        "text": "对降压变压器来讲，其副边绕组额定电压一般应为用电设备额定电压的1.1倍"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_98071884adc23d28",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#20"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 15
+  },
+  {
+    "type": "single",
+    "stem": "当边际产量为0时，（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "平均产量最大"
+      },
+      {
+        "key": "B",
+        "text": "平均产量最小"
+      },
+      {
+        "key": "C",
+        "text": "总产量最大"
+      },
+      {
+        "key": "D",
+        "text": "总产量最小"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_f41a24423c660a86",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#39"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "single",
+    "stem": "完全竞争市场的需求曲线是一条（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "向下倾斜的直线"
+      },
+      {
+        "key": "B",
+        "text": "向上倾斜的直线"
+      },
+      {
+        "key": "C",
+        "text": "向下倾斜的曲线"
+      },
+      {
+        "key": "D",
+        "text": "不确定"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_08a9f308b68d0804",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#37"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "single",
+    "stem": "直线型供给曲线斜率为正且延长线与横轴的交点位于坐标原点的左边，其供给价格弹性（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "等于0"
+      },
+      {
+        "key": "B",
+        "text": "等于1"
+      },
+      {
+        "key": "C",
+        "text": "大于1"
+      },
+      {
+        "key": "D",
+        "text": "小于1"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_d6555e84b59de6e8",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#40"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "single",
+    "stem": "需求完全无弹性可以用（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一条与横轴平行的线表示"
+      },
+      {
+        "key": "B",
+        "text": "一条与纵轴平行的线表示"
+      },
+      {
+        "key": "C",
+        "text": "一条向上倾斜的直线"
+      },
+      {
+        "key": "D",
+        "text": "一条向下倾斜的直线"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_c85c70b4286a1070",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#43"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "single",
+    "stem": "厂商的短期成本分为固定成本和（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "边际成本"
+      },
+      {
+        "key": "B",
+        "text": "平均成本"
+      },
+      {
+        "key": "C",
+        "text": "总成本"
+      },
+      {
+        "key": "D",
+        "text": "可变成本"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_f7dad6c24712d45e",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#44"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "single",
+    "stem": "导致电力供给减少的原因可能是",
+    "options": [
+      {
+        "key": "A",
+        "text": "消费者收入的增加"
+      },
+      {
+        "key": "B",
+        "text": "技术的进步"
+      },
+      {
+        "key": "C",
+        "text": "成本的上涨"
+      },
+      {
+        "key": "D",
+        "text": "电价下降"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_089ebd64d2fbbcf8",
+    "domain": "经济学基础",
+    "sources": [
+      "6-30#32"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 21
+  },
+  {
+    "type": "single",
+    "stem": "“己所不欲，勿施于人”对应的职业守则是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "遵规守纪"
+      },
+      {
+        "key": "B",
+        "text": "诚实守信"
+      },
+      {
+        "key": "C",
+        "text": "团结协作"
+      },
+      {
+        "key": "D",
+        "text": "节约资源"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_5dafbab766cfb753",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#57"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 22
+  },
+  {
+    "type": "single",
+    "stem": "从出清方式来说，辅助服务市场可以采用（）出清，也可以考虑辅助服务市场与电能量市场的（）出清。",
+    "options": [
+      {
+        "key": "A",
+        "text": "独立、联合"
+      },
+      {
+        "key": "B",
+        "text": "单一、联合"
+      },
+      {
+        "key": "C",
+        "text": "独立、顺序"
+      },
+      {
+        "key": "D",
+        "text": "单一、顺序"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_27fb3fdbbe7c5c57",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#6"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "single",
+    "stem": "以下关于调峰市场出清模式的描述错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "以机组组合状态、调峰需求、机组调峰下限、机组爬坡滑坡能力等作为边界条件"
+      },
+      {
+        "key": "B",
+        "text": "以购买调峰资源费用最小为目标"
+      },
+      {
+        "key": "C",
+        "text": "集中出清各交易时段的调峰中标机组，形成调峰市场出清价格"
+      },
+      {
+        "key": "D",
+        "text": "不考虑市场主体的申报数据"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_f9ac242428463950",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#9"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "single",
+    "stem": "以下对部分电力市场改革试点省份的现货与辅助服务市场出清模式描述，错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "以广东电力市场为代表，先进行调频辅助服务市场出清，再开展电能量市场出清，机组在调频市场的出清结果作为电能量市场的边界条件"
+      },
+      {
+        "key": "B",
+        "text": "以甘肃电力市场为代表，先进行电能量市场出清，再开展调频辅助服务市场出清，电能量市场出清结果的机组组合作为调频市场的基础"
+      },
+      {
+        "key": "C",
+        "text": "以浙江电力市场为代表，电能量市场与调频辅助服务市场联合出清，机组参与调频市场的结果，作为机组参与实时市场的边界条件"
+      },
+      {
+        "key": "D",
+        "text": "以山西电力市场为代表，电能量市场与调频辅助服务市场联合出清，机组参与调频市场的结果，作为机组参与实时市场的边界条件"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_36c3d85b099682bf",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#11"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "single",
+    "stem": "系统边际电价模式主要适用于（）地区。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经济发达"
+      },
+      {
+        "key": "B",
+        "text": "市场化程度较高"
+      },
+      {
+        "key": "C",
+        "text": "电网阻塞较少"
+      },
+      {
+        "key": "D",
+        "text": "电网阻塞较大"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_6309074b8dd380bf",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#45"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "single",
+    "stem": "从国内实践来看，关于预调度计划和预出清，我国电力市场一般采用（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "预调度计划"
+      },
+      {
+        "key": "B",
+        "text": "预出清"
+      },
+      {
+        "key": "C",
+        "text": "都采用"
+      },
+      {
+        "key": "D",
+        "text": "都不采用"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_2652898aa143b43e",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#49"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "single",
+    "stem": "以下（）不属于售电公司出清数据整理的分类。",
+    "options": [
+      {
+        "key": "A",
+        "text": "代理电力用户类"
+      },
+      {
+        "key": "B",
+        "text": "中长期交易类"
+      },
+      {
+        "key": "C",
+        "text": "零售用户类"
+      },
+      {
+        "key": "D",
+        "text": "现货交易类"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_c031de1093a12dc4",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#87"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "single",
+    "stem": "除了原国家电监会颁布的《并网发电厂辅助服务管理暂行办法》中所定义的 8 个辅助服务品种外，各区域在制定、修订“两个细则”过程中均结合本区域电力系统运行的实际情况定义了一些辅助服务品种，包括以下哪些？ ○1自动电压控制 ○2低频调节 ○3热备用 ○4快速甩负荷 ○5调停备用 ○6冷备用 ○7稳控装置切机服务 ○8黑启动",
+    "options": [
+      {
+        "key": "A",
+        "text": "1234567"
+      },
+      {
+        "key": "B",
+        "text": "12457"
+      },
+      {
+        "key": "C",
+        "text": "124578"
+      },
+      {
+        "key": "D",
+        "text": "以上都是"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ccd4806927231315",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#2"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "single",
+    "stem": "各市场成员的备用申报量与其在电能市场的中标结果相关。在电能市场中标的机组，其剩余出力的多少决定其在备用市场能够申报的容量大小。在电能市场未中标的机组，可以申报（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "旋转备用"
+      },
+      {
+        "key": "B",
+        "text": "非旋转备用"
+      },
+      {
+        "key": "C",
+        "text": "AGC"
+      },
+      {
+        "key": "D",
+        "text": "黑启动"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_5cee1735bea49e29",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#4"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "single",
+    "stem": "由于市场价格下限一般低于机组边际成本，深度调峰机组可以通过（）以及实时与日前市场的差量结算来减少损失。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行在额定出力"
+      },
+      {
+        "key": "B",
+        "text": "降至最低技术出力以下运行"
+      },
+      {
+        "key": "C",
+        "text": "降至最低技术出力运行"
+      },
+      {
+        "key": "D",
+        "text": "空载运行"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_596533544c4f9eb8",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#10"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 35
+  },
+  {
+    "type": "single",
+    "stem": "以下关于“双碳”目标下，关于机组调峰的相关描述，错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "在增加清洁能源装机量、减少弃风弃光限电的背景下，机组调峰的需求越来越高"
+      },
+      {
+        "key": "B",
+        "text": "在构建以新能源为主体的新型电力系统的伟大征程上，煤电作为我国主要调峰电源，将为新能源持续发展起到保驾护航的重要作用。煤电的“深度调峰”这一最优发展路径已经凸显"
+      },
+      {
+        "key": "C",
+        "text": "随着新能源发电份额迅速增加，火电机组的调峰压力将持续加大。煤电机组在未来持续低负荷运行或深度调峰将成为常态，因此对参加深度调峰的煤电机组应该尽可能减少其发电运行时间"
+      },
+      {
+        "key": "D",
+        "text": "在从煤电为主体过渡到以新能源为主体的新型电力系统期间，作为我国电力稳定生产和供应‘压舱石’的煤电不可能退出我国的电力生产，而是应该转型成为更灵活的调节性电源"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_d806eb01793d0f2d",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#12"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "single",
+    "stem": "辅助服务市场中，省内主要开展（）辅助服务市场、省间主要开展（）辅助服务市场。",
+    "options": [
+      {
+        "key": "A",
+        "text": "调频、调峰"
+      },
+      {
+        "key": "B",
+        "text": "调频、备用"
+      },
+      {
+        "key": "C",
+        "text": "调峰、备用"
+      },
+      {
+        "key": "D",
+        "text": "调频、调压"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_c5eb259e0c7c568a",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#53"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "single",
+    "stem": "关于顺价模式，下列表述错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "有助于厘清、逐步减少或取消交叉补贴"
+      },
+      {
+        "key": "B",
+        "text": "还原电价的本来属性"
+      },
+      {
+        "key": "C",
+        "text": "电网企业的收益跟原计划体制下完全相同"
+      },
+      {
+        "key": "D",
+        "text": "电网企业只收取核定的输配电价"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_fe8bf1d5b8cc3d71",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-B#48"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "single",
+    "stem": "省级电网输配电准许收入中的税金包含（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "增值税、所得税、城市维护建设税"
+      },
+      {
+        "key": "B",
+        "text": "增值税、教育费附加、城市维护建设税"
+      },
+      {
+        "key": "C",
+        "text": "所得税、城市维护建设税、教育费附加"
+      },
+      {
+        "key": "D",
+        "text": "增值税、所得税、房产税"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_db2aee0821c18064",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#13"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "single",
+    "stem": "PJM市场采用基于( )的定价机制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "系统边际电价"
+      },
+      {
+        "key": "B",
+        "text": "节点边际电价"
+      },
+      {
+        "key": "C",
+        "text": "分区电价"
+      },
+      {
+        "key": "D",
+        "text": "平均电价"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_d1098ca45622bfd0",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#30"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 40
+  },
+  {
+    "type": "single",
+    "stem": "空压机启动时，要求()启动",
+    "options": [
+      {
+        "key": "A",
+        "text": "空载"
+      },
+      {
+        "key": "B",
+        "text": "降温"
+      },
+      {
+        "key": "C",
+        "text": "快速启动打压"
+      },
+      {
+        "key": "D",
+        "text": "定时"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_5352e3fbd8bcbcbf",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#47"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "single",
+    "stem": "假定某商品的价格从3元降到2元，需求量将从9单位增加到11单位，则该商品卖者的收益将（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "保持不变"
+      },
+      {
+        "key": "B",
+        "text": "增加"
+      },
+      {
+        "key": "C",
+        "text": "减少"
+      },
+      {
+        "key": "D",
+        "text": "不确定"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_71761aa29d0ddcae",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#38",
+      "6-30#42",
+      "7-18#42"
+    ],
+    "repeatCount": 3,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "single",
+    "stem": "电力精神的终极意义不包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提升凝聚力"
+      },
+      {
+        "key": "B",
+        "text": "提高职工福利"
+      },
+      {
+        "key": "C",
+        "text": "注入发展动力"
+      },
+      {
+        "key": "D",
+        "text": "点亮万家灯火"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_b8eb34b13821e505",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#56",
+      "6-26-B#57",
+      "6-30#56"
+    ],
+    "repeatCount": 3,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "single",
+    "stem": "单独出清模式下，由于电力辅助服务市场与电能量现货市场的出清目标分离优化，系统整体的机会成本会部分淹没，社会效益将（）联合优化情况。",
+    "options": [
+      {
+        "key": "A",
+        "text": "高于"
+      },
+      {
+        "key": "B",
+        "text": "低于"
+      },
+      {
+        "key": "C",
+        "text": "等同"
+      },
+      {
+        "key": "D",
+        "text": "其他选项都有可能"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_e86272db09bef75f",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#8",
+      "6-30#17",
+      "7-18#19"
+    ],
+    "repeatCount": 3,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 50
+  },
+  {
+    "type": "single",
+    "stem": "在辅助服务市场中标因素分析中，备用市场中标的主要影响除了备用供需情况，电能市场的中标情况，市场成员的备用申报价格，还包括以下哪个？",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场成员的机组参数"
+      },
+      {
+        "key": "B",
+        "text": "调频供需情况"
+      },
+      {
+        "key": "C",
+        "text": "市场成员的历史调频服务质量"
+      },
+      {
+        "key": "D",
+        "text": "市场成员的调频申报情况"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_064d6450af2f0374",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#16",
+      "6-30#15",
+      "7-18#16"
+    ],
+    "repeatCount": 3,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 51
+  },
+  {
+    "type": "single",
+    "stem": "电力线路中，电抗X主要反映线路带压运行后产生的()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "热效应"
+      },
+      {
+        "key": "B",
+        "text": "电场效应"
+      },
+      {
+        "key": "C",
+        "text": "磁场效应"
+      },
+      {
+        "key": "D",
+        "text": "电晕效应"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_6ee221cbea029c3f",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-A#20",
+      "6-30#21"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 52
+  },
+  {
+    "type": "single",
+    "stem": "网损（也叫线损）指的是电能从（）传输到客户过程中所产生的电能损耗和损失",
+    "options": [
+      {
+        "key": "A",
+        "text": "变电站"
+      },
+      {
+        "key": "B",
+        "text": "配电网"
+      },
+      {
+        "key": "C",
+        "text": "输电网"
+      },
+      {
+        "key": "D",
+        "text": "发电厂"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_dc38ac58877b0bd4",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#38",
+      "7-18#36"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 54
+  },
+  {
+    "type": "single",
+    "stem": "劣等品是指需求量与消费者的收入水平呈（）变动关系的商品。",
+    "options": [
+      {
+        "key": "A",
+        "text": "反方向"
+      },
+      {
+        "key": "B",
+        "text": "同方向"
+      },
+      {
+        "key": "C",
+        "text": "垂直方向"
+      },
+      {
+        "key": "D",
+        "text": "水平方向"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_a03401b292cd79b6",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#41",
+      "7-18#47"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 55
+  },
+  {
+    "type": "single",
+    "stem": "完全竞争厂商的水平的需求曲线意味着该厂商",
+    "options": [
+      {
+        "key": "A",
+        "text": "是一个价格制定者"
+      },
+      {
+        "key": "B",
+        "text": "是一个价格接受者"
+      },
+      {
+        "key": "C",
+        "text": "拥有垄断权力"
+      },
+      {
+        "key": "D",
+        "text": "无法控制其产量"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_0d7aaeb67f259b52",
+    "domain": "经济学基础",
+    "sources": [
+      "6-30#33",
+      "7-18#32"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 56
+  },
+  {
+    "type": "single",
+    "stem": "电力行业职业守则适用于（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "所有管理层"
+      },
+      {
+        "key": "B",
+        "text": "所有职工"
+      },
+      {
+        "key": "C",
+        "text": "所有技术岗位"
+      },
+      {
+        "key": "D",
+        "text": "所有新员工"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_d4b7d56b32f7795f",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#61",
+      "6-30#60"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 58
+  },
+  {
+    "type": "single",
+    "stem": "没有规矩，不成方圆”对应的职业守则是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "保护环境"
+      },
+      {
+        "key": "B",
+        "text": "遵规守纪"
+      },
+      {
+        "key": "C",
+        "text": "节约资源"
+      },
+      {
+        "key": "D",
+        "text": "诚实守信"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_cad2f40c76ab6e08",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#58",
+      "7-18#63"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 59
+  },
+  {
+    "type": "single",
+    "stem": "市场主体违反国家有关法律法规、严重违反交易规则和破产倒闭的须强制退出市场，列入黑名单，（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经重新申请可进入"
+      },
+      {
+        "key": "B",
+        "text": "可以重新进入"
+      },
+      {
+        "key": "C",
+        "text": "不得再进入市场"
+      },
+      {
+        "key": "D",
+        "text": "可能可以进入市场"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_27a71c5950553e75",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-A#9",
+      "7-18#9"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "single",
+    "stem": "售电公司资产总额大于2千万不到1亿元，可以从事年售电量不超（）亿千万时的售电业务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "5"
+      },
+      {
+        "key": "B",
+        "text": "30"
+      },
+      {
+        "key": "C",
+        "text": "60"
+      },
+      {
+        "key": "D",
+        "text": "不限"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_a4c9f89e2b120a9a",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-A#81",
+      "6-30#83"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "single",
+    "stem": "当前我国以（）为单位试点开展电力现货市场建设。",
+    "options": [
+      {
+        "key": "A",
+        "text": "南、北地区"
+      },
+      {
+        "key": "B",
+        "text": "全国统一市场"
+      },
+      {
+        "key": "C",
+        "text": "省"
+      },
+      {
+        "key": "D",
+        "text": "东、西地区"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_9d302e7a8aa0ab26",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#47",
+      "6-30#48"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "single",
+    "stem": "以下哪个特征属于辅助服务产品中的价值核算制？",
+    "options": [
+      {
+        "key": "A",
+        "text": "估算购买方由于获得了辅助服务而创造的价值，然后以此为基础定价"
+      },
+      {
+        "key": "B",
+        "text": "双方协商形成辅助服务的价格"
+      },
+      {
+        "key": "C",
+        "text": "价格通常是由市场竞争或交易协议短期提前确定的"
+      },
+      {
+        "key": "D",
+        "text": "系统强制性要求供给方提供辅助服务并且没有额外的付费"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_22f0792a26ff3c5e",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#5",
+      "6-30#8"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "single",
+    "stem": "辅助服务过补偿会造成资源错配，（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "推高供电成本"
+      },
+      {
+        "key": "B",
+        "text": "价格高涨"
+      },
+      {
+        "key": "C",
+        "text": "供电可靠性降低"
+      },
+      {
+        "key": "D",
+        "text": "影响可再生能源消纳"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_7ea276ff71c8d83b",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#14",
+      "6-30#6"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "single",
+    "stem": "在受约束的电网中，一台发电机组故意报出足够高的价格，使其无法中标造成电力短缺，从而使该发电商其他机组获利这种操纵市场的行为属于（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "实物持留"
+      },
+      {
+        "key": "B",
+        "text": "开市砸盘"
+      },
+      {
+        "key": "C",
+        "text": "收盘作价"
+      },
+      {
+        "key": "D",
+        "text": "经济持留"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_b4721947b7a790eb",
+    "domain": "合规管理与风险控制",
+    "sources": [
+      "6-26-A#35",
+      "7-18#34"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "single",
+    "stem": "飞轮储能技术如何进行储能？",
+    "options": [
+      {
+        "key": "A",
+        "text": "将机械能转化为磁能"
+      },
+      {
+        "key": "B",
+        "text": "将机械能转化为化学能"
+      },
+      {
+        "key": "C",
+        "text": "将电能转化为机械能"
+      },
+      {
+        "key": "D",
+        "text": "将机械能转化为动能"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_994afa540b149e70",
+    "domain": "绿电新能源与需求响应",
+    "sources": [
+      "6-26-B#30",
+      "6-30#28"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "single",
+    "stem": "以下哪种情况下，被暂停交易的虚拟电厂可以恢复其虚拟电厂资格？",
+    "options": [
+      {
+        "key": "A",
+        "text": "在暂停期限内完成整改并履行注册变更程序"
+      },
+      {
+        "key": "B",
+        "text": "在暂停期限内完成整改但未履行注册变更程序"
+      },
+      {
+        "key": "C",
+        "text": "未在暂停期限内完成整改但履行了注册变更程序"
+      },
+      {
+        "key": "D",
+        "text": "未在暂停期限内完成整改且未履行注册变更程序"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_a3b4c7f69b17a0c2",
+    "domain": "绿电新能源与需求响应",
+    "sources": [
+      "6-30#31",
+      "7-18#29"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "single",
+    "stem": "pool模式的无约束计划主要在于不考虑（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电商的固定成本"
+      },
+      {
+        "key": "B",
+        "text": "发电商的边际成本"
+      },
+      {
+        "key": "C",
+        "text": "电网的输电约束"
+      },
+      {
+        "key": "D",
+        "text": "输电网络损耗"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_5cb7dc8ecb9880ca",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#26",
+      "7-18#27"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 21
+  },
+  {
+    "type": "single",
+    "stem": "调整控制潮流的手段中串联电容的作用是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "抵偿线路的感抗"
+      },
+      {
+        "key": "B",
+        "text": "限流"
+      },
+      {
+        "key": "C",
+        "text": "产生一环流或强制循环功率"
+      },
+      {
+        "key": "D",
+        "text": "抵偿线路的容抗"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_9556f2dce9209078",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#23",
+      "6-30#22"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 22
+  },
+  {
+    "type": "single",
+    "stem": "跨区跨省优先发电计划和政府间协议价格应随着电量计划和政府定价的放开逐步采取____方式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政府定价"
+      },
+      {
+        "key": "B",
+        "text": "市场化定价"
+      },
+      {
+        "key": "C",
+        "text": "双边协商定价"
+      },
+      {
+        "key": "D",
+        "text": "节点电价"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_c39ef4eb7eabe1ff",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-A#2"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "single",
+    "stem": "根据《关于推进售电侧改革的实施意见》，电网企业要按要求规范代理购电方式流程，单独归集、单独反映代理购电机制执行情况，做好信息公开、电费结算等工作，并按（）将代理购电及变化情况报价格主管部门。",
+    "options": [
+      {
+        "key": "A",
+        "text": "日"
+      },
+      {
+        "key": "B",
+        "text": "月度"
+      },
+      {
+        "key": "C",
+        "text": "季度"
+      },
+      {
+        "key": "D",
+        "text": "年度"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_518fa1caa7f10786",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#26"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "single",
+    "stem": "（）负责市场信息的管理和发布，会同电力调度机构向市场主体发布市场交易以及电网运行的相关信息。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电企业"
+      },
+      {
+        "key": "B",
+        "text": "售电公司"
+      },
+      {
+        "key": "C",
+        "text": "电网企业"
+      },
+      {
+        "key": "D",
+        "text": "电力交易机构"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_c764d2a69556ef6a",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "7-18#10"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "single",
+    "stem": "根据《关于提升电力系统调节能力的指导意见》，我国提出了2020年、2030年非化石能源消费比重分别达到（）、（）的目标",
+    "options": [
+      {
+        "key": "A",
+        "text": "10%，15%"
+      },
+      {
+        "key": "B",
+        "text": "15%，20%"
+      },
+      {
+        "key": "C",
+        "text": "20%，25%"
+      },
+      {
+        "key": "D",
+        "text": "25%，30%"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_efa0a91c00808fe0",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-A#33"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "single",
+    "stem": "在美国区域电力市场中，解除输电阻塞的主要方法为（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "改变网络中同一位置发电机组的出力"
+      },
+      {
+        "key": "B",
+        "text": "不改变发电机组的出力"
+      },
+      {
+        "key": "C",
+        "text": "通过市场机制处理"
+      },
+      {
+        "key": "D",
+        "text": "改变网络中不同位置发电机组的出力"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_cee8c7ccb0836b10",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-A#48"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "single",
+    "stem": "发电机作为电源一般将额定电压提高(B)，以补偿输电过程的电压损耗。",
+    "options": [
+      {
+        "key": "A",
+        "text": "3%"
+      },
+      {
+        "key": "B",
+        "text": "5%"
+      },
+      {
+        "key": "C",
+        "text": "10%"
+      },
+      {
+        "key": "D",
+        "text": "±5%"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_01996dd47a7cdc00",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#20"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "single",
+    "stem": "电力系统无功过剩，会造成()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "频率升高"
+      },
+      {
+        "key": "B",
+        "text": "频率降低"
+      },
+      {
+        "key": "C",
+        "text": "电压升高"
+      },
+      {
+        "key": "D",
+        "text": "电压降低"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_a1637ae2fc7b19ce",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#26"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "single",
+    "stem": "以高压甚至超高压将发电厂、变电所或变电所之间连接起来的送电网络称为( )。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电网"
+      },
+      {
+        "key": "B",
+        "text": "输电网"
+      },
+      {
+        "key": "C",
+        "text": "配电网"
+      },
+      {
+        "key": "D",
+        "text": "以上都对"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_0693dd23a239518f",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#19"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 41
+  },
+  {
+    "type": "single",
+    "stem": "在并联运行的同一电力系统，任意瞬间()在全网都是统一的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电压"
+      },
+      {
+        "key": "B",
+        "text": "频率"
+      },
+      {
+        "key": "C",
+        "text": "波形"
+      },
+      {
+        "key": "D",
+        "text": "电流"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_38238c42451e5b3e",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "7-18#21"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "single",
+    "stem": "某电力系统共有6台150MW发电机，功率因数为0.8，实际运行4台，系统总装机容量为()MW。",
+    "options": [
+      {
+        "key": "A",
+        "text": "900"
+      },
+      {
+        "key": "B",
+        "text": "600"
+      },
+      {
+        "key": "C",
+        "text": "300"
+      },
+      {
+        "key": "D",
+        "text": "700"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_db19caa1e8edfbc5",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "7-18#22"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 44
+  },
+  {
+    "type": "single",
+    "stem": "在某一时间段，电力需求曲线向右移动的原因可能是",
+    "options": [
+      {
+        "key": "A",
+        "text": "电价上涨"
+      },
+      {
+        "key": "B",
+        "text": "消费者收入增加"
+      },
+      {
+        "key": "C",
+        "text": "人口数量下降"
+      },
+      {
+        "key": "D",
+        "text": "电价下降"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_117c1b8b4bfcd27f",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#31"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 45
+  },
+  {
+    "type": "single",
+    "stem": "若某产品的供给弹性无穷大，当该产品的需求增加时，则（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "均衡产量和均衡价格同时增加"
+      },
+      {
+        "key": "B",
+        "text": "均衡产量和均衡价格同时减少"
+      },
+      {
+        "key": "C",
+        "text": "均衡产量增加，但价格不变"
+      },
+      {
+        "key": "D",
+        "text": "均衡价格上升但产量不变"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_9c0eff5c9b3b1190",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#37"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "single",
+    "stem": "消费者剩余是消费者的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实际所得"
+      },
+      {
+        "key": "B",
+        "text": "主观感受"
+      },
+      {
+        "key": "C",
+        "text": "没有购买的部分"
+      },
+      {
+        "key": "D",
+        "text": "消费剩余部分"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_f821e4b09439e314",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#40"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "single",
+    "stem": "完全竞争市场中的厂商总收益曲线的斜率",
+    "options": [
+      {
+        "key": "A",
+        "text": "固定不变"
+      },
+      {
+        "key": "B",
+        "text": "经常变动"
+      },
+      {
+        "key": "C",
+        "text": "为1"
+      },
+      {
+        "key": "D",
+        "text": "为零"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_3e3af1224dafcd0e",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#36"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "single",
+    "stem": "完全竞争市场实现长期均衡时（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "企业的数量不再变化"
+      },
+      {
+        "key": "B",
+        "text": "企业的数量会减少"
+      },
+      {
+        "key": "C",
+        "text": "企业的数量会增加"
+      },
+      {
+        "key": "D",
+        "text": "企业数量变化不确定"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_4e41205be5e47817",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#38"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 49
+  },
+  {
+    "type": "single",
+    "stem": "当汽油的价格上升时，对小汽车的需求量将（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少"
+      },
+      {
+        "key": "B",
+        "text": "保持不变"
+      },
+      {
+        "key": "C",
+        "text": "增加"
+      },
+      {
+        "key": "D",
+        "text": "无法确定"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_944234563f06e29a",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#41"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 50
+  },
+  {
+    "type": "single",
+    "stem": "均衡价格是指商品的市场需求量（）市场供给量时的价格。",
+    "options": [
+      {
+        "key": "A",
+        "text": "大于"
+      },
+      {
+        "key": "B",
+        "text": "小于"
+      },
+      {
+        "key": "C",
+        "text": "等于"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_29a2b6855976ff59",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#42"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 51
+  },
+  {
+    "type": "single",
+    "stem": "为了使垄断产生，就应该（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "使某个行业的产品只有一个供给者"
+      },
+      {
+        "key": "B",
+        "text": "使这种产品没有相近的替代者"
+      },
+      {
+        "key": "C",
+        "text": "限制其他企业进入"
+      },
+      {
+        "key": "D",
+        "text": "以上都对"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_cc259c722d5b0826",
+    "domain": "经济学基础",
+    "sources": [
+      "6-30#35"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 52
+  },
+  {
+    "type": "single",
+    "stem": "职业变迁的六大因素中，（）属于技术革新的影响。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经济衰退导致需求减少"
+      },
+      {
+        "key": "B",
+        "text": "储能系统设计需求激增"
+      },
+      {
+        "key": "C",
+        "text": "劳动保护法规完善"
+      },
+      {
+        "key": "D",
+        "text": "产业结构调整"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_0f1152f1d37ea5ad",
+    "domain": "经济学基础",
+    "sources": [
+      "6-30#54"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 55
+  },
+  {
+    "type": "single",
+    "stem": "竞争最公平的是（）市场",
+    "options": [
+      {
+        "key": "A",
+        "text": "完全竞争"
+      },
+      {
+        "key": "B",
+        "text": "寡头"
+      },
+      {
+        "key": "C",
+        "text": "垄断竞争"
+      },
+      {
+        "key": "D",
+        "text": "垄断"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_03774789939919b5",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#13"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 56
+  },
+  {
+    "type": "single",
+    "stem": "若电价下降5％，电力需求量上涨1％，则这种商品的需求弹性",
+    "options": [
+      {
+        "key": "A",
+        "text": "富有弹性"
+      },
+      {
+        "key": "B",
+        "text": "具有单位弹性"
+      },
+      {
+        "key": "C",
+        "text": "缺乏弹性"
+      },
+      {
+        "key": "D",
+        "text": "弹性不能确定"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_6943dc10eaa0e88c",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#30"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 57
+  },
+  {
+    "type": "single",
+    "stem": "边际成本是指",
+    "options": [
+      {
+        "key": "A",
+        "text": "总成本除以产量"
+      },
+      {
+        "key": "B",
+        "text": "平均成本除以产量"
+      },
+      {
+        "key": "C",
+        "text": "每增加一单位生产要素所增加的产量"
+      },
+      {
+        "key": "D",
+        "text": "增加一单位产量所增加的成本"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_7366e97480c55f48",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#31"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 58
+  },
+  {
+    "type": "single",
+    "stem": "若市场需求减少大于市场供给减少，则市场价格（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "上升"
+      },
+      {
+        "key": "B",
+        "text": "下降"
+      },
+      {
+        "key": "C",
+        "text": "不变"
+      },
+      {
+        "key": "D",
+        "text": "不确定"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_5a9657a99a5d4c25",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#41"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "single",
+    "stem": "正常品的需求曲线是一条（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "向右下方倾斜的曲线"
+      },
+      {
+        "key": "B",
+        "text": "向左下方倾斜的曲线"
+      },
+      {
+        "key": "C",
+        "text": "垂线"
+      },
+      {
+        "key": "D",
+        "text": "水平线"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ef95d6b466eb4730",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#44"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "single",
+    "stem": "生产上的短期是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一年或者更短的时间"
+      },
+      {
+        "key": "B",
+        "text": "至少有一种生产要素不变"
+      },
+      {
+        "key": "C",
+        "text": "所有投入要素都不变"
+      },
+      {
+        "key": "D",
+        "text": "所有投入要素都是可变的"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_6f5c71391086aa95",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#46"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "single",
+    "stem": "全球化对职业的影响不包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "职业机会国际化"
+      },
+      {
+        "key": "B",
+        "text": "职业标准趋同"
+      },
+      {
+        "key": "C",
+        "text": "传统职业消失"
+      },
+      {
+        "key": "D",
+        "text": "跨国电网建设推动技术认可"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_37cf64566830ff3a",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#49"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 5
+  },
+  {
+    "type": "single",
+    "stem": "道德一词在汉语中的起源较早，可追溯到（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "汉"
+      },
+      {
+        "key": "B",
+        "text": "先秦"
+      },
+      {
+        "key": "C",
+        "text": "三国"
+      },
+      {
+        "key": "D",
+        "text": "晋"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_392d33c6a8185dda",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#50"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "single",
+    "stem": "道德的首要功能是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "评价与教育"
+      },
+      {
+        "key": "B",
+        "text": "行为规范与指导"
+      },
+      {
+        "key": "C",
+        "text": "促进社会和谐"
+      },
+      {
+        "key": "D",
+        "text": "提升经济效益"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_89b70f1ad183f0a6",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#51"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "single",
+    "stem": "道德修养对个人发展的作用是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "增加工作时间"
+      },
+      {
+        "key": "B",
+        "text": "实现自我完善"
+      },
+      {
+        "key": "C",
+        "text": "提高学历水平"
+      },
+      {
+        "key": "D",
+        "text": "扩大社交范围"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_5f93d657bd57dc0b",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#52"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "single",
+    "stem": "电力行业的特殊性要求职工具备（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "高学历和高收入"
+      },
+      {
+        "key": "B",
+        "text": "高业务素质和职业道德"
+      },
+      {
+        "key": "C",
+        "text": "丰富的国际经验"
+      },
+      {
+        "key": "D",
+        "text": "灵活的工作时间"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_64d91c64a318c470",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#54"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "single",
+    "stem": "（）不符合“诚实守信”的要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "守信用"
+      },
+      {
+        "key": "B",
+        "text": "提素质"
+      },
+      {
+        "key": "C",
+        "text": "讲信誉"
+      },
+      {
+        "key": "D",
+        "text": "重信义"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_faef545eb6b381ca",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#60"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 11
+  },
+  {
+    "type": "single",
+    "stem": "道德规范的核心目标是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "区分善与恶"
+      },
+      {
+        "key": "B",
+        "text": "增加企业利润"
+      },
+      {
+        "key": "C",
+        "text": "提升技术水平"
+      },
+      {
+        "key": "D",
+        "text": "扩大市场份额"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_e741410a38f72cd6",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#56"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "single",
+    "stem": "电力职工“爱岗敬业”的表现不包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "热爱本职工作"
+      },
+      {
+        "key": "B",
+        "text": "提升个人修养"
+      },
+      {
+        "key": "C",
+        "text": "解决问题"
+      },
+      {
+        "key": "D",
+        "text": "激发动力"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_6a925fdb2f505267",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#60"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "single",
+    "stem": "职业道德的核心思想是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "集体主义"
+      },
+      {
+        "key": "B",
+        "text": "为人民服务"
+      },
+      {
+        "key": "C",
+        "text": "五爱"
+      },
+      {
+        "key": "D",
+        "text": "爱岗敬业"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_980b4527d2f3bf33",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#53"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "single",
+    "stem": "员工应对职业变迁的正确做法是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "拒绝学习新技能"
+      },
+      {
+        "key": "B",
+        "text": "忽视行业动态"
+      },
+      {
+        "key": "C",
+        "text": "调整职业规划"
+      },
+      {
+        "key": "D",
+        "text": "避免人际网络建立"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_f283b0db58beb907",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#55"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 15
+  },
+  {
+    "type": "single",
+    "stem": "电力行业职业守则中，“干一行、爱一行、专一行、精一行”体现了（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "按章作业"
+      },
+      {
+        "key": "B",
+        "text": "爱岗敬业"
+      },
+      {
+        "key": "C",
+        "text": "团结协作"
+      },
+      {
+        "key": "D",
+        "text": "持续学习"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_860d38ea05ad8cbe",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#57"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "single",
+    "stem": "电力职工在安全生产中应优先考虑（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "社会影响"
+      },
+      {
+        "key": "B",
+        "text": "安全规范"
+      },
+      {
+        "key": "C",
+        "text": "经济效益"
+      },
+      {
+        "key": "D",
+        "text": "上级指令"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_584d65d024cb8264",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#58"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "single",
+    "stem": "劳模精神的特点包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "传承性"
+      },
+      {
+        "key": "B",
+        "text": "政治性"
+      },
+      {
+        "key": "C",
+        "text": "社会性"
+      },
+      {
+        "key": "D",
+        "text": "教育性"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_cac9c9c56e72c211",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#56"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "single",
+    "stem": "职业道德的核心思想与（）原则相关。",
+    "options": [
+      {
+        "key": "A",
+        "text": "集体主义"
+      },
+      {
+        "key": "B",
+        "text": "为人民服务"
+      },
+      {
+        "key": "C",
+        "text": "五爱"
+      },
+      {
+        "key": "D",
+        "text": "爱岗敬业"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_8c10d74d11072241",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#57"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "single",
+    "stem": "《能源法》对电力职业发展的作用主要体现在（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "限制全球化进程"
+      },
+      {
+        "key": "B",
+        "text": "推动了可再生能源相关职业发展"
+      },
+      {
+        "key": "C",
+        "text": "减少职业多样性"
+      },
+      {
+        "key": "D",
+        "text": "降低职业稳定性"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_fbd98dc6f7e4b1b2",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#58"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 21
+  },
+  {
+    "type": "single",
+    "stem": "职业的规范性是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "需要遵守行业标准和法律法规"
+      },
+      {
+        "key": "B",
+        "text": "提供长期稳定的就业机会"
+      },
+      {
+        "key": "C",
+        "text": "工作内容可复制"
+      },
+      {
+        "key": "D",
+        "text": "无需培训即可胜任"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_6f9643f0ad8df2ac",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#59"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 22
+  },
+  {
+    "type": "single",
+    "stem": "（）不属于道德的作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少社会冲突"
+      },
+      {
+        "key": "B",
+        "text": "增强社会凝聚力"
+      },
+      {
+        "key": "C",
+        "text": "提高生产效率"
+      },
+      {
+        "key": "D",
+        "text": "促进个人全面发展"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_ad3cfd76b91936ea",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#61"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "single",
+    "stem": "职业道德的出发点和归宿是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "爱岗敬业"
+      },
+      {
+        "key": "B",
+        "text": "奉献社会"
+      },
+      {
+        "key": "C",
+        "text": "诚实守信"
+      },
+      {
+        "key": "D",
+        "text": "办事公道"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_63dbe0aa30aef826",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#62"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "single",
+    "stem": "电力职工发现安全隐患时应（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "隐瞒不报"
+      },
+      {
+        "key": "B",
+        "text": "立即处理并上报"
+      },
+      {
+        "key": "C",
+        "text": "上报后原地等待"
+      },
+      {
+        "key": "D",
+        "text": "忽略风险"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_58462a208d450044",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#64"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "single",
+    "stem": "中华民族优秀传统文化中的“五个突出特性”不包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "连续性"
+      },
+      {
+        "key": "B",
+        "text": "创新性"
+      },
+      {
+        "key": "C",
+        "text": "排他性"
+      },
+      {
+        "key": "D",
+        "text": "和平性"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_216df1ae59333a22",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#65"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "single",
+    "stem": "电力职工提升业务水平的核心方法是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "不断学习和实践"
+      },
+      {
+        "key": "B",
+        "text": "研究上级政策"
+      },
+      {
+        "key": "C",
+        "text": "提升工作速度"
+      },
+      {
+        "key": "D",
+        "text": "研究竞争对手"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_01644cdcc6a1bea0",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#67"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "single",
+    "stem": "售电公司的专业人员至少拥有（）名高级职称人员。",
+    "options": [
+      {
+        "key": "A",
+        "text": "10"
+      },
+      {
+        "key": "B",
+        "text": "3"
+      },
+      {
+        "key": "C",
+        "text": "5"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_15ef1ad84e5f1624",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-A#82"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "single",
+    "stem": "根据2021年11月11日印发的《售电公司管理办法》，售电公司未按要求持续满足注册条件的处理方式包括以下哪些（）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "电力交易机构应立即通知售电公司限期整改，未在规定期限内整改到位的，经地方主管部门同意后予以强制退出"
+      },
+      {
+        "key": "B",
+        "text": "电力交易机构应立即通知售电公司限期整改，未在规定期限内整改到位的，将其信用记录记为不良"
+      },
+      {
+        "key": "C",
+        "text": "电力交易机构应立即通知售电公司限期整改，未在规定期限内整改到位的，暂停其交易资格"
+      },
+      {
+        "key": "D",
+        "text": "电力交易机构应立即通知售电公司限期整改，未在规定期限内整改到位的，将其交易资格转让给其他售电公司"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_6ca352b791eb0533",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-B#18"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "single",
+    "stem": "售电公司发生资产总额超出注册条件所规定的范围时，必须（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "办理变更手续"
+      },
+      {
+        "key": "B",
+        "text": "暂停交易"
+      },
+      {
+        "key": "C",
+        "text": "暂停结算"
+      },
+      {
+        "key": "D",
+        "text": "以上全对。"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_2c042565d5aaff71",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-B#86"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "single",
+    "stem": "根据2021年11月11日印发的《售电公司管理办法》，强制退出售电市场的条件确认和公示期为（）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "5个工作日"
+      },
+      {
+        "key": "B",
+        "text": "10个工作日"
+      },
+      {
+        "key": "C",
+        "text": "15个工作日"
+      },
+      {
+        "key": "D",
+        "text": "20个工作日"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_4426505c29fc2e28",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-30#18"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "single",
+    "stem": "售电公司注册遵循“（），信息共享”的原则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "线上注册"
+      },
+      {
+        "key": "B",
+        "text": "线下注册"
+      },
+      {
+        "key": "C",
+        "text": "一地注册"
+      },
+      {
+        "key": "D",
+        "text": "工商所在地注册"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_6552ba3ed723c542",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-30#85"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 42
+  },
+  {
+    "type": "single",
+    "stem": "（）包括发电企业、售电企业和电力用户。",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场主体"
+      },
+      {
+        "key": "B",
+        "text": "交易中心"
+      },
+      {
+        "key": "C",
+        "text": "交易系统"
+      },
+      {
+        "key": "D",
+        "text": "市场人"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ebd0c3b3c0db0c8f",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "7-18#8"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "single",
+    "stem": "在2020年颁布的新版《电力中长期交易基本规则》中，增加了哪种交易周期（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "多年交易"
+      },
+      {
+        "key": "B",
+        "text": "年度交易"
+      },
+      {
+        "key": "C",
+        "text": "月内交易"
+      },
+      {
+        "key": "D",
+        "text": "多日交易"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_5e04eec63a835f72",
+    "domain": "中长期交易",
+    "sources": [
+      "6-26-B#13"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "single",
+    "stem": "在规定的交易起止时间内，市场主体可以随时提交购电或者售电信息，电力交易平台按照时间优先、价格优先的原则进行成交的是（）交易。",
+    "options": [
+      {
+        "key": "A",
+        "text": "集中竞价交易"
+      },
+      {
+        "key": "B",
+        "text": "滚动凑合交易"
+      },
+      {
+        "key": "C",
+        "text": "挂牌交易"
+      },
+      {
+        "key": "D",
+        "text": "双边交易"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_479f0c8db1455eb1",
+    "domain": "中长期交易",
+    "sources": [
+      "6-30#27"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 52
+  },
+  {
+    "type": "single",
+    "stem": "单独出清模式下，若电力辅助服务市场的中标机组未能在电能量现货市场内成功中标，则对应时段该机组（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "无法进入开机组合"
+      },
+      {
+        "key": "B",
+        "text": "必须列入开机组合"
+      },
+      {
+        "key": "C",
+        "text": "由辅助服务市场的出清结果决定"
+      },
+      {
+        "key": "D",
+        "text": "由电能量现货市场的出清结果决定"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ad51c38f8e0742c3",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#6"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 59
+  },
+  {
+    "type": "single",
+    "stem": "联合出清的特点是（）；独立出清的特点是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "算法复杂，理解难度大；算法简单，易于理解"
+      },
+      {
+        "key": "B",
+        "text": "算法简单，易于理解；算法复杂，理解难度大"
+      },
+      {
+        "key": "C",
+        "text": "算法复杂，但易于理解；算法简单，但理解难度大"
+      },
+      {
+        "key": "D",
+        "text": "算法简单，但理解难度大；算法复杂，但易于理解"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_20fd2b5eecb71dfa",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#7"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "single",
+    "stem": "对于售电公司来说，其在现货市场中将面临更大的不确定性，其最大的风险来自现货市场的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "生产不确定性"
+      },
+      {
+        "key": "B",
+        "text": "客户拓展"
+      },
+      {
+        "key": "C",
+        "text": "负荷预测偏差"
+      },
+      {
+        "key": "D",
+        "text": "价格波动"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_d6a20d90461b5dbc",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#44"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 1
+  },
+  {
+    "type": "single",
+    "stem": "当前我国山西、山东、广东等电力现货市场的日前市场交易时序描述正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "在中长期市场之前"
+      },
+      {
+        "key": "B",
+        "text": "介于中长期市场和实时市场间"
+      },
+      {
+        "key": "C",
+        "text": "在日内市场之后"
+      },
+      {
+        "key": "D",
+        "text": "介于日内市场和实时市场间"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_2d00a5c6a0a7311a",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#72"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "single",
+    "stem": "电力交易系统中，（）是“阻塞管理”的主要目标。",
+    "options": [
+      {
+        "key": "A",
+        "text": "确保电力传输网络的容量充足"
+      },
+      {
+        "key": "B",
+        "text": "防止电力传输网络过载"
+      },
+      {
+        "key": "C",
+        "text": "提高电力交易的价格"
+      },
+      {
+        "key": "D",
+        "text": "减少电力生产商的利润"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_f7680543ea0929a7",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#98"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "single",
+    "stem": "以下电力辅助服务中的哪项服务，产生于厂网分开、可再生能源大规模并网和电力现货市场尚未建立的背景，有效激励了灵活性发电资源的开发利用，但随着电力现货市场的建设和运行，将逐步与电能量日前、日内和实时（平衡）市场相融合？",
+    "options": [
+      {
+        "key": "A",
+        "text": "调峰"
+      },
+      {
+        "key": "B",
+        "text": "调频"
+      },
+      {
+        "key": "C",
+        "text": "备用"
+      },
+      {
+        "key": "D",
+        "text": "黑启动"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_292a49cd70a255f9",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#3"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "single",
+    "stem": "SCED是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "安全约束机组组合"
+      },
+      {
+        "key": "B",
+        "text": "安全约束经济调度"
+      },
+      {
+        "key": "C",
+        "text": "安全校核"
+      },
+      {
+        "key": "D",
+        "text": "负荷预测"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_88684a3e49443ed2",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#32"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "single",
+    "stem": "下列不属于影响电力现货市场出清价格的因素是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电厂商电量成本"
+      },
+      {
+        "key": "B",
+        "text": "输电阻塞"
+      },
+      {
+        "key": "C",
+        "text": "市场供需比"
+      },
+      {
+        "key": "D",
+        "text": "中长期交易价格"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_d8aa39aa5c4b1a8e",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#46"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "single",
+    "stem": "从市场设计角度来说，电力辅助服务市场与电力现货市场的出清模式有较大相关性。电力现货市场与电力辅助服务市场的出清模式可以分为以下哪些？ ○1单独出清模式 ○2联合出清模式 ○3集中出清模式",
+    "options": [
+      {
+        "key": "A",
+        "text": "13"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "23"
+      },
+      {
+        "key": "D",
+        "text": "123"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_e18287f6bcc9a2da",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#7"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "single",
+    "stem": "集中竞价交易中，为避免市场操纵以及恶性竞争，可对报价或者出清价格（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "设置上限"
+      },
+      {
+        "key": "B",
+        "text": "设置下限"
+      },
+      {
+        "key": "C",
+        "text": "设置上下限"
+      },
+      {
+        "key": "D",
+        "text": "不设限"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_cf8e00020d1c78a6",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#25"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "single",
+    "stem": "电力日内交易是指在日前市场闭市后至实时平衡市场开启前的某（些）时段的电力交易，通常每个交易时段为（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "5□15min"
+      },
+      {
+        "key": "B",
+        "text": "10□30min"
+      },
+      {
+        "key": "C",
+        "text": "15□60min"
+      },
+      {
+        "key": "D",
+        "text": "30□60min"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_2d073dd3f0db64df",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#39"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 15,
+    "sourceNote": "原 PDF 的选项区间符号已缺字，使用 □ 保留缺字位置，未推测补写。"
+  },
+  {
+    "type": "single",
+    "stem": "平衡调节市场是系统实时运行前的最后一道关口，用于保障系统的（）平衡与稳定运行",
+    "options": [
+      {
+        "key": "A",
+        "text": "日前"
+      },
+      {
+        "key": "B",
+        "text": "日内"
+      },
+      {
+        "key": "C",
+        "text": "实时"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_510ef3e7cfc784b3",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#40"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "single",
+    "stem": "欧洲跨国输电通道的输电阻塞处理方式一般为输电通道的显式和隐式拍卖，其中隐式拍卖主要适用于（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "日前市场耦合"
+      },
+      {
+        "key": "B",
+        "text": "实时平衡市场耦合"
+      },
+      {
+        "key": "C",
+        "text": "跨境双边电力交易"
+      },
+      {
+        "key": "D",
+        "text": "区内双边电力交易"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_2b5afddef6258ab2",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#45"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "single",
+    "stem": "再调度法是一种实时（）的方法，这种方法不直接改变日前市场中标的发电量和电价，而是一个独立、资源参与的市场。",
+    "options": [
+      {
+        "key": "A",
+        "text": "控制电价"
+      },
+      {
+        "key": "B",
+        "text": "消除阻塞"
+      },
+      {
+        "key": "C",
+        "text": "调整电量"
+      },
+      {
+        "key": "D",
+        "text": "系统平衡"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_11a2511bde76f10f",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#46"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "single",
+    "stem": "2017年8月，国家发改委、能源局联合下发《关于开展电力现货市场建设试点工作的通知》（发改办能源〔2017〕1453号），选择（）8个地区作为第一批试点单位。",
+    "options": [
+      {
+        "key": "A",
+        "text": "广东、山西、山东、上海、江苏、安徽、河南、福建"
+      },
+      {
+        "key": "B",
+        "text": "广东、山西、山东、福建、四川、甘肃、蒙西、浙江"
+      },
+      {
+        "key": "C",
+        "text": "广东、山东、山西、江苏、浙江、安徽、蒙西、福建"
+      },
+      {
+        "key": "D",
+        "text": "广东、山东、江苏、浙江、安徽、河南、湖北、山西"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_3c9884af87ebe3eb",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#47"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "single",
+    "stem": "必开机组在必开时段内的机组状态为开机，不参与优化，（）优先出清，其之上的发电能力根据发电机组的电能量报价参与优化出清。",
+    "options": [
+      {
+        "key": "A",
+        "text": "必开最小出力"
+      },
+      {
+        "key": "B",
+        "text": "必开最大出力"
+      },
+      {
+        "key": "C",
+        "text": "额定容量"
+      },
+      {
+        "key": "D",
+        "text": "最优效率出力"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_1c228927dd793323",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#49"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 21
+  },
+  {
+    "type": "single",
+    "stem": "在省内实时电力现货市场的出清数据中，（）主要反映了发电侧的报价意愿和成本结构。",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场价格数据"
+      },
+      {
+        "key": "B",
+        "text": "发电计划数据"
+      },
+      {
+        "key": "C",
+        "text": "报价与出清数据"
+      },
+      {
+        "key": "D",
+        "text": "负荷与需求数据"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_a0588a62961ac3e6",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#79"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "single",
+    "stem": "在发电侧省内现货数据整理过程中，（）工作通常放在最后进行。",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据收集"
+      },
+      {
+        "key": "B",
+        "text": "数据分类"
+      },
+      {
+        "key": "C",
+        "text": "数据汇总"
+      },
+      {
+        "key": "D",
+        "text": "数据分析"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_4d3af714b89937b0",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#80"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "single",
+    "stem": "调度机构基于日前现货市场出清边界条件以及申报信息，以发电成本和备用成本之和最低（或者社会福利扣减备用成本最高）为优化目标，考虑系统功率平衡约束、备用需求约束、机组运行类约束（其中包含备用爬坡约束以及电能与备用电力总加不超过出力上限约束）、电网安全类约束等，进行日前电能量与（）联合优化出清，得到日前机组中标出力、中标备用、节点边际电价、备用价格。",
+    "options": [
+      {
+        "key": "A",
+        "text": "调频辅助服务"
+      },
+      {
+        "key": "B",
+        "text": "事故恢复辅助服务小"
+      },
+      {
+        "key": "C",
+        "text": "备用辅助服务"
+      },
+      {
+        "key": "D",
+        "text": "辅助服务"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_60a53372d3d5969e",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#3"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "single",
+    "stem": "以下关于调频辅助服务市场日前预出清与日内正式出清模式的描述正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "日前开展调频市场预出清，预出清结果不用于最终调用及结算；日内开展正式出清，正式出清结果用于调用及结算"
+      },
+      {
+        "key": "B",
+        "text": "日前开展调频市场预出清，预出清结果用于最终调用；日内开展正式出清，正式出清结果用于结算"
+      },
+      {
+        "key": "C",
+        "text": "日前开展调频市场预出清，日内开展正式出清，预出清和正式出清结果按照一定比例计算得到调用结果及结算费用"
+      },
+      {
+        "key": "D",
+        "text": "其他选项都不对"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_0418bbdcae179b80",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#7"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "single",
+    "stem": "以下哪个不是批发用户电能电费的组成部分？",
+    "options": [
+      {
+        "key": "A",
+        "text": "合约电能电费"
+      },
+      {
+        "key": "B",
+        "text": "日前市场电能电费"
+      },
+      {
+        "key": "C",
+        "text": "实时市场电能电费"
+      },
+      {
+        "key": "D",
+        "text": "辅助服务市场电能电费"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_7f9c54310e1afb9d",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#28"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 31
+  },
+  {
+    "type": "single",
+    "stem": "现货系统的灵敏度分析功能以（）提供的实时断面为基础",
+    "options": [
+      {
+        "key": "A",
+        "text": "状态估计"
+      },
+      {
+        "key": "B",
+        "text": "调节备用"
+      },
+      {
+        "key": "C",
+        "text": "旋转备用"
+      },
+      {
+        "key": "D",
+        "text": "安全约束"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_e8274aa5acd53751",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#37"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "single",
+    "stem": "（）是边际电能价格、网损价格和阻塞价格的总和",
+    "options": [
+      {
+        "key": "A",
+        "text": "SMP"
+      },
+      {
+        "key": "B",
+        "text": "LMP"
+      },
+      {
+        "key": "C",
+        "text": "ZMP"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_2fb3006bdb252d17",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#38"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "single",
+    "stem": "以下（）因素通常不会对发电侧省内现货市场的电费产生直接影响。",
+    "options": [
+      {
+        "key": "A",
+        "text": "燃料价格的波动"
+      },
+      {
+        "key": "B",
+        "text": "发电厂的运营效率"
+      },
+      {
+        "key": "C",
+        "text": "地区的天气条件"
+      },
+      {
+        "key": "D",
+        "text": "国家的货币政策"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_9107ed8607cdac5a",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#86"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "single",
+    "stem": "辅助服务的需求方与提供者协商确定辅助服务的数量、质量、价格和支付条件。这种获取方式最大的优势是便于实现，特别是对于需要特定主体提供的辅助服务（如黑启动、发电机组进相运行提供的无功功率服务等），但是缺乏（），因而不适于可竞争的辅助服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "时效性"
+      },
+      {
+        "key": "B",
+        "text": "公平性"
+      },
+      {
+        "key": "C",
+        "text": "透明性"
+      },
+      {
+        "key": "D",
+        "text": "一致性"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_e1bf0c1f9f0a280b",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#4"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 44
+  },
+  {
+    "type": "single",
+    "stem": "以下关于国内调峰市场建设现状的描述错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "我国的辅助服务市场按全国统一模式开展"
+      },
+      {
+        "key": "B",
+        "text": "各省、分中心调度机构在规则设计时，需要结合电网实际情况，并综合考虑与电力现货市场衔接的发展需要"
+      },
+      {
+        "key": "C",
+        "text": "各地辅助服务市场已陆续正式投入运行，并在促进新能源消纳方面发挥了重要作用"
+      },
+      {
+        "key": "D",
+        "text": "随着现货市场建设的不断推进，将促使各省调峰市场和现货市场深度融合"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_8ce2c8804c1be5dc",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#8"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 45
+  },
+  {
+    "type": "single",
+    "stem": "以下不属于电力辅助服务品种的是（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "一次调频"
+      },
+      {
+        "key": "B",
+        "text": "自动电压控制"
+      },
+      {
+        "key": "C",
+        "text": "黑启动"
+      },
+      {
+        "key": "D",
+        "text": "电能量"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_604269e1d58611fd",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#11"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "single",
+    "stem": "理论上，电力辅助服务市场定价机制可以包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "不付费"
+      },
+      {
+        "key": "B",
+        "text": "基于成本的补偿制"
+      },
+      {
+        "key": "C",
+        "text": "双边合同"
+      },
+      {
+        "key": "D",
+        "text": "其他选项都对"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_e8a8c6953665ce41",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#17"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "single",
+    "stem": "以下哪项属于辅助服务？",
+    "options": [
+      {
+        "key": "A",
+        "text": "月度用电侧市场化合约电量转让交易"
+      },
+      {
+        "key": "B",
+        "text": "可再生能源证书交易"
+      },
+      {
+        "key": "C",
+        "text": "调频、调峰辅助服务"
+      },
+      {
+        "key": "D",
+        "text": "容量补偿机制"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_9ce023e4a3395818",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#34"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 54
+  },
+  {
+    "type": "single",
+    "stem": "随着我国电力体制改革的逐步推进，我国调峰服务的发展基本上可以分为（）、（）和（）三个主要阶段。",
+    "options": [
+      {
+        "key": "A",
+        "text": "无偿提供、有偿分配和市场化演绎"
+      },
+      {
+        "key": "B",
+        "text": "计划分配、计划补偿和市场化探索"
+      },
+      {
+        "key": "C",
+        "text": "无偿提供、计划补偿和市场化探索"
+      },
+      {
+        "key": "D",
+        "text": "计划分配、计划补偿和市场化演绎"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_7d180965278dc301",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#9"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 55
+  },
+  {
+    "type": "single",
+    "stem": "我国首个电力调峰市场于（）年启动，标志着市场化补偿电力调峰服务尝试开始。",
+    "options": [
+      {
+        "key": "A",
+        "text": "2006"
+      },
+      {
+        "key": "B",
+        "text": "2009"
+      },
+      {
+        "key": "C",
+        "text": "2014"
+      },
+      {
+        "key": "D",
+        "text": "2017"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_054c9731f85912f5",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#10"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 56
+  },
+  {
+    "type": "single",
+    "stem": "各省调峰市场中深度调峰交易大多采用（）、分机组的报价方式，",
+    "options": [
+      {
+        "key": "A",
+        "text": "阶梯式"
+      },
+      {
+        "key": "B",
+        "text": "矩阵式"
+      },
+      {
+        "key": "C",
+        "text": "一次曲线"
+      },
+      {
+        "key": "D",
+        "text": "二次曲线"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_22530c175bd40c1b",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#11"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 57
+  },
+  {
+    "type": "single",
+    "stem": "以下关于发电机组参与电力市场的描述，不正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "机组的成本补偿通常包括启动成本、空载成本和电能边际成本等"
+      },
+      {
+        "key": "B",
+        "text": "对于新能源机组，边际发电成本接近于零，特别是并网较早、有补贴收入的项目，在市场中可能会采取报零或负价的方式提高上网电量"
+      },
+      {
+        "key": "C",
+        "text": "机组参与现货市场的价格必然比辅助服务市场高"
+      },
+      {
+        "key": "D",
+        "text": "当系统出现负备用不足时，需要进一步降低机组出力，此时由调度员下达指令要求部分机组进行深度调峰，相应时段内市场价格可能会是零或负价"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_c0d35e6bc03b3e1f",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#12"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 58
+  },
+  {
+    "type": "single",
+    "stem": "联合出清模式将电能量与（）、（）等同时段交易获取的辅助服务放在统一的数学模型中集中优化，求解得到满足系统安全运行约束的最经济的出清结果。",
+    "options": [
+      {
+        "key": "A",
+        "text": "调峰、备用"
+      },
+      {
+        "key": "B",
+        "text": "调频、黑启动"
+      },
+      {
+        "key": "C",
+        "text": "调峰、黑启动"
+      },
+      {
+        "key": "D",
+        "text": "调频、备用"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_6c12f666f8eab6c2",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#4"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第4卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "single",
+    "stem": "从充分发挥市场配置资源来说，省市电网按照电网运行需求优先调用（）调峰资源，若调峰资源无法满足平衡需求时，可通过（）调峰服务市场购买（）调峰资源。",
+    "options": [
+      {
+        "key": "A",
+        "text": "本省、省内、省外"
+      },
+      {
+        "key": "B",
+        "text": "本省、省间、省外"
+      },
+      {
+        "key": "C",
+        "text": "省外、省间、本省"
+      },
+      {
+        "key": "D",
+        "text": "省外、省内、本省"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_59a98dd4471935d0",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#5"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 1
+  },
+  {
+    "type": "single",
+    "stem": "调峰可分为基本调峰和（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "有偿调峰"
+      },
+      {
+        "key": "B",
+        "text": "计划调峰"
+      },
+      {
+        "key": "C",
+        "text": "分配调峰"
+      },
+      {
+        "key": "D",
+        "text": "无偿调峰"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_b62f57c1187489d5",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#17"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 3
+  },
+  {
+    "type": "single",
+    "stem": "我国首个电力调峰市场是（）电力辅助服务调峰市场。",
+    "options": [
+      {
+        "key": "A",
+        "text": "西北"
+      },
+      {
+        "key": "B",
+        "text": "东北"
+      },
+      {
+        "key": "C",
+        "text": "华北"
+      },
+      {
+        "key": "D",
+        "text": "华东"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_8f522147172bb9bb",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#18"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "single",
+    "stem": "有备用电源接线方式的优缺点是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "可靠性高、电压高"
+      },
+      {
+        "key": "B",
+        "text": "可靠性高、造价高"
+      },
+      {
+        "key": "C",
+        "text": "供电可靠性和电压质量高、造价高、调度复杂"
+      },
+      {
+        "key": "D",
+        "text": "供电可靠性高、调度方便、造价高"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_b8554ff367edef9f",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#23"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 5
+  },
+  {
+    "type": "single",
+    "stem": "电力系统有功负荷最优分配又称为()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一次调频"
+      },
+      {
+        "key": "B",
+        "text": "二次调频"
+      },
+      {
+        "key": "C",
+        "text": "三次调频"
+      },
+      {
+        "key": "D",
+        "text": "惯性响应"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_ea98b671544d7ced",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#25"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "single",
+    "stem": "辅助服务的补偿机制可以分为基于（）和基于市场价格",
+    "options": [
+      {
+        "key": "A",
+        "text": "会计成本"
+      },
+      {
+        "key": "B",
+        "text": "统计成本"
+      },
+      {
+        "key": "C",
+        "text": "机会成本"
+      },
+      {
+        "key": "D",
+        "text": "边际成本"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_8f4e6e5e6b2bfae2",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#54"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "single",
+    "stem": "燃煤发电电量原则上全部进入电力市场，通过市场交易在“（）”范围内形成上网电价。",
+    "options": [
+      {
+        "key": "A",
+        "text": "基准价+浮动范围"
+      },
+      {
+        "key": "B",
+        "text": "基准价×浮动比例"
+      },
+      {
+        "key": "C",
+        "text": "基准价+上下浮动"
+      },
+      {
+        "key": "D",
+        "text": "基准价范围内"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_46404cce366d9902",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#13"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "single",
+    "stem": "需求规律表明，当电价上涨时，电力",
+    "options": [
+      {
+        "key": "A",
+        "text": "需求量增加，需求曲线不变"
+      },
+      {
+        "key": "B",
+        "text": "需求量减少，需求曲线不变"
+      },
+      {
+        "key": "C",
+        "text": "需求量增加，需求曲线右移"
+      },
+      {
+        "key": "D",
+        "text": "需求量减少，需求曲线左移"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_ea1637e6b374d6a2",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#30"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "single",
+    "stem": "不考虑用电设备的耗用电量和用电时间，只按用电设备容量大小乘以设备单位容量的电价(如每kW每月多少元)计收电费的电价是（）电价。",
+    "options": [
+      {
+        "key": "A",
+        "text": "定额电价"
+      },
+      {
+        "key": "B",
+        "text": "单一制电价"
+      },
+      {
+        "key": "C",
+        "text": "两部制电价"
+      },
+      {
+        "key": "D",
+        "text": "目录电价"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_2ec2e57df0bf5111",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-B#29"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "single",
+    "stem": "集中竞价交易申报截止后，北京电力交易中心依据交易公告，将市场主体申报的购售电价格，考虑输配电价、输电损耗、政府性基金及附加后统一计算到____，形成购电方报价和售电方报价。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电侧关口"
+      },
+      {
+        "key": "B",
+        "text": "用户侧关口"
+      },
+      {
+        "key": "C",
+        "text": "联络线关口"
+      },
+      {
+        "key": "D",
+        "text": "约定的交易关口"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_b629a4b7f0f90f7b",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#1"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 11
+  },
+  {
+    "type": "single",
+    "stem": "电价政策是国家物价政策的组成部分，也是国家制定和管理电价的()",
+    "options": [
+      {
+        "key": "A",
+        "text": "行为准则"
+      },
+      {
+        "key": "B",
+        "text": "经济原则"
+      },
+      {
+        "key": "C",
+        "text": "利益关系"
+      },
+      {
+        "key": "D",
+        "text": "产业政策"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_3ac179f6eecb2232",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#36"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "single",
+    "stem": "缺点是操作复杂、运作的交易成本很大，但是已经广泛应用于电能量交易市场中的是哪种辅助服务产品定价方式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场化竞标"
+      },
+      {
+        "key": "B",
+        "text": "双边合约"
+      },
+      {
+        "key": "C",
+        "text": "实时竞价"
+      },
+      {
+        "key": "D",
+        "text": "价值核算制"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_d00dee79a5dac6f5",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#2"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "single",
+    "stem": "省级电网输配电价在每一监管周期开始前核定，监管周期为（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "两年"
+      },
+      {
+        "key": "B",
+        "text": "三年"
+      },
+      {
+        "key": "C",
+        "text": "四年"
+      },
+      {
+        "key": "D",
+        "text": "五年"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_26717c53ff778747",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#14"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 15
+  },
+  {
+    "type": "single",
+    "stem": "已直接参与市场交易（不含已在电力交易平台注册但未曾参与电力市场交易，仍按目录销售电价执行的用户）在无正当理由情况下改由电网企业代理购电的用户，其价格按电网企业代理其他用户购电价格的（）倍、输配电价、政府性基金及附加组成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "1.5"
+      },
+      {
+        "key": "B",
+        "text": "2"
+      },
+      {
+        "key": "C",
+        "text": "2.5"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_6093ad3545ea7c61",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#20"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "single",
+    "stem": "如果发电厂商与电力用户签订了以它的发电成本作为成交价的合同，那么发电厂商属于（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "多头"
+      },
+      {
+        "key": "B",
+        "text": "平头"
+      },
+      {
+        "key": "C",
+        "text": "空头"
+      },
+      {
+        "key": "D",
+        "text": "不确定"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_252f347b85ec2f8f",
+    "domain": "发电机组参数与成本分析",
+    "sources": [
+      "6-30#37"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "single",
+    "stem": "相较于火电，以下不属于水电优势的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "绿色环保"
+      },
+      {
+        "key": "B",
+        "text": "成本低"
+      },
+      {
+        "key": "C",
+        "text": "易调节"
+      },
+      {
+        "key": "D",
+        "text": "发电稳定"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_4938f5e199067ee5",
+    "domain": "发电机组参数与成本分析",
+    "sources": [
+      "6-30#50"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "single",
+    "stem": "以下符合双边交易申报流程的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "一方申报，一方确认"
+      },
+      {
+        "key": "B",
+        "text": "双方申报，集中竞价"
+      },
+      {
+        "key": "C",
+        "text": "一方申报，一方不确认"
+      },
+      {
+        "key": "D",
+        "text": "双方都不申报"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ecea02d1627dd7dd",
+    "domain": "交易组织与执行流程",
+    "sources": [
+      "6-26-B#31"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "single",
+    "stem": "在英国电力市场中，由于英国电网结构比较（）、阻塞较（），英国电力交易所的各类交易以及场外的双边合约均不考虑电网运行约束，也就是说不进行安全校核，电网在实时运行中可能发生的阻塞等问题由调度机构通过平衡机制予以解决",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚强、少"
+      },
+      {
+        "key": "B",
+        "text": "坚强、多"
+      },
+      {
+        "key": "C",
+        "text": "薄弱、少"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ebb0443d4c965601",
+    "domain": "交易组织与执行流程",
+    "sources": [
+      "6-26-B#39"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "single",
+    "stem": "安全校核结果由（）发布。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电力调度机构"
+      },
+      {
+        "key": "B",
+        "text": "电力交易机构"
+      },
+      {
+        "key": "C",
+        "text": "电网企业"
+      },
+      {
+        "key": "D",
+        "text": "发电企业"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_35a0c8f0fb9fce74",
+    "domain": "交易组织与执行流程",
+    "sources": [
+      "6-26-B#77"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "single",
+    "stem": "集中竞价的结果要给( )安全校核。",
+    "options": [
+      {
+        "key": "A",
+        "text": "调度机构"
+      },
+      {
+        "key": "B",
+        "text": "市场运营机构"
+      },
+      {
+        "key": "C",
+        "text": "发电商"
+      },
+      {
+        "key": "D",
+        "text": "质监部门"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_58b872570c912ebb",
+    "domain": "交易组织与执行流程",
+    "sources": [
+      "6-30#29"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "single",
+    "stem": "电力用户拥有储能，或者电力用户参加特定时段的需求侧响应，由此产生的偏差电量，由（）承担。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电企业"
+      },
+      {
+        "key": "B",
+        "text": "电力用户"
+      },
+      {
+        "key": "C",
+        "text": "售电公司"
+      },
+      {
+        "key": "D",
+        "text": "发电厂"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_c45c09d0b06bf914",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-B#28"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "single",
+    "stem": "电网企业应根据什么要求为市场主体安装计量装置",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场需求"
+      },
+      {
+        "key": "B",
+        "text": "国家和行业规程规范要求"
+      },
+      {
+        "key": "C",
+        "text": "电网企业自身要求"
+      },
+      {
+        "key": "D",
+        "text": "政府部门要求"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_92d2bdc8cf6e0264",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-B#33"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "single",
+    "stem": "在双边交易申报中，用户通过（）新增申报信息。",
+    "options": [
+      {
+        "key": "A",
+        "text": "点击“新增”按钮，选择交易单元和时间段"
+      },
+      {
+        "key": "B",
+        "text": "点击“编辑”按钮，选择交易单元和时间段"
+      },
+      {
+        "key": "C",
+        "text": "点击“删除”按钮，选择交易单元和时间段"
+      },
+      {
+        "key": "D",
+        "text": "点击“申报”按钮，选择交易单元和时间段"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_6460159518595ea1",
+    "domain": "信息披露与交易平台操作",
+    "sources": [
+      "6-26-B#98"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 56
+  },
+  {
+    "type": "single",
+    "stem": "电力交易机构以（）为基础设立信息披露平台。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电力调度平台"
+      },
+      {
+        "key": "B",
+        "text": "政府公开网站"
+      },
+      {
+        "key": "C",
+        "text": "电力交易平台"
+      },
+      {
+        "key": "D",
+        "text": "微信公众号"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_543f081a3b5798ee",
+    "domain": "信息披露与交易平台操作",
+    "sources": [
+      "6-30#68"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第5卷.md",
+    "sourceOrdinal": 58
+  },
+  {
+    "type": "single",
+    "stem": "信息披露主体应对信息披露的真实性、（）、完整性负责",
+    "options": [
+      {
+        "key": "A",
+        "text": "安全性"
+      },
+      {
+        "key": "B",
+        "text": "科学性"
+      },
+      {
+        "key": "C",
+        "text": "准确性"
+      },
+      {
+        "key": "D",
+        "text": "合理性"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_79ea622bafa1a31f",
+    "domain": "信息披露与交易平台操作",
+    "sources": [
+      "7-18#11"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "single",
+    "stem": "某个时段预测市场化负荷为30000MW，各发电厂申报的出力-报价曲线最大发电功率之和为39000MW，则申报充足率为（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "1.1"
+      },
+      {
+        "key": "C",
+        "text": "1.2"
+      },
+      {
+        "key": "D",
+        "text": "1.3"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_de3d03aa9c4fcaae",
+    "domain": "负荷预测与数据分析",
+    "sources": [
+      "6-26-A#34"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "single",
+    "stem": "发电厂商在用电负荷需求高峰时段安排机组停运检修，这种操纵市场的行为属于（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实物持留"
+      },
+      {
+        "key": "B",
+        "text": "开市砸盘"
+      },
+      {
+        "key": "C",
+        "text": "收盘作价"
+      },
+      {
+        "key": "D",
+        "text": "经济持留"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_8a61c4e18a9c81bd",
+    "domain": "负荷预测与数据分析",
+    "sources": [
+      "6-26-A#45"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "single",
+    "stem": "系统负荷预测决定了市场的总发电容量需求，也是（）的关键依据。",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户侧电价"
+      },
+      {
+        "key": "B",
+        "text": "节点边际电价"
+      },
+      {
+        "key": "C",
+        "text": "系统边际电价"
+      },
+      {
+        "key": "D",
+        "text": "分区边际电价"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_98548a6d5b1173d1",
+    "domain": "负荷预测与数据分析",
+    "sources": [
+      "6-30#52"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "single",
+    "stem": "那些由于公用事业单位履行其竞争对手无须承担的义务而产生，并在原有管制体系下允许收回的，但由于体制的改变而无法回收的成本是（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "机会成本"
+      },
+      {
+        "key": "B",
+        "text": "搁浅成本"
+      },
+      {
+        "key": "C",
+        "text": "沉没成本"
+      },
+      {
+        "key": "D",
+        "text": "边际成本"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_4104566523bb3821",
+    "domain": "交易员岗位与市场分析",
+    "sources": [
+      "7-18#35"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "single",
+    "stem": "（）是指交易员出售自己未持有的合同",
+    "options": [
+      {
+        "key": "A",
+        "text": "买空"
+      },
+      {
+        "key": "B",
+        "text": "卖空"
+      },
+      {
+        "key": "C",
+        "text": "满仓"
+      },
+      {
+        "key": "D",
+        "text": "平仓"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_8793b692705e4326",
+    "domain": "交易员岗位与市场分析",
+    "sources": [
+      "7-18#55"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 15
+  },
+  {
+    "type": "single",
+    "stem": "高效检索绿电政策文件时，应优先使用的关键词是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "“电价调整”+“地方规定”"
+      },
+      {
+        "key": "B",
+        "text": "“绿电交易”+“指导意见”"
+      },
+      {
+        "key": "C",
+        "text": "“电力改革”+“企业名录”"
+      },
+      {
+        "key": "D",
+        "text": "“新能源补贴”+“申报流程”"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_e5568a03742d39d7",
+    "domain": "政策文件解读与查询",
+    "sources": [
+      "6-26-A#85"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "single",
+    "stem": "电力市场的风险主要表现在（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场政策变动"
+      },
+      {
+        "key": "B",
+        "text": "市场信息不对称"
+      },
+      {
+        "key": "C",
+        "text": "市场价格波动"
+      },
+      {
+        "key": "D",
+        "text": "以上皆是"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_5145ad25088f43e9",
+    "domain": "合规管理与风险控制",
+    "sources": [
+      "6-26-A#1"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 22
+  },
+  {
+    "type": "single",
+    "stem": "在售电侧管理中，交易中心负责()",
+    "options": [
+      {
+        "key": "A",
+        "text": "零售用户绑定关系的确定"
+      },
+      {
+        "key": "B",
+        "text": "提供计量服务"
+      },
+      {
+        "key": "C",
+        "text": "安全校核"
+      },
+      {
+        "key": "D",
+        "text": "以上都不对"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ee252fef97b0fd4b",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "6-26-A#79"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "single",
+    "stem": "（）在辅助服务费用分摊中遵循“谁收益,谁承担”的原则",
+    "options": [
+      {
+        "key": "A",
+        "text": "英国电力市场"
+      },
+      {
+        "key": "B",
+        "text": "PJM电力市场"
+      },
+      {
+        "key": "C",
+        "text": "北欧电力市场"
+      },
+      {
+        "key": "D",
+        "text": "澳大利亚电力市场"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_51622d65efe4a6d1",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "7-18#50"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "single",
+    "stem": "零售套餐的设计遵循“公平合理、风险可控、（）、动态评估”的主要原则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "清晰易懂"
+      },
+      {
+        "key": "B",
+        "text": "专业解读"
+      },
+      {
+        "key": "C",
+        "text": "宣贯落实"
+      },
+      {
+        "key": "D",
+        "text": "以上全对"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_62c5c177c518584b",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "7-18#89"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "single",
+    "stem": "零售用户向售电公司发起邀约，售电公司响应并配置套餐的交易方式称之为（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "挂牌交易"
+      },
+      {
+        "key": "B",
+        "text": "线下交易"
+      },
+      {
+        "key": "C",
+        "text": "邀约交易"
+      },
+      {
+        "key": "D",
+        "text": "以上都不对"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_d170d147f711fb2b",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "7-18#91"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "single",
+    "stem": "可再生能源不包括（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "太阳能"
+      },
+      {
+        "key": "B",
+        "text": "地热能"
+      },
+      {
+        "key": "C",
+        "text": "生物质能"
+      },
+      {
+        "key": "D",
+        "text": "核能"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_bbe9d6fcf3ec74f0",
+    "domain": "绿电新能源与需求响应",
+    "sources": [
+      "6-26-A#12"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "single",
+    "stem": "从市场品种来说，调峰服务包括（）、启停调峰、跨省跨区调峰等类型。",
+    "options": [
+      {
+        "key": "A",
+        "text": "上调峰"
+      },
+      {
+        "key": "B",
+        "text": "下调峰"
+      },
+      {
+        "key": "C",
+        "text": "实时调峰"
+      },
+      {
+        "key": "D",
+        "text": "实时深度调峰"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_200578142e935b70",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-26-B#16"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "single",
+    "stem": "任何一次交易组织中，____，鼓励有段市场主体签订3年以上的跨区跨省交易合同。",
+    "options": [
+      {
+        "key": "A",
+        "text": "同一市场主体不能同时开展购电和售电交易"
+      },
+      {
+        "key": "B",
+        "text": "同一市场主体可同时开展购电和售电交易"
+      },
+      {
+        "key": "C",
+        "text": "只能开展购电交易"
+      },
+      {
+        "key": "D",
+        "text": "只能开展售电交易"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_f3808c9228a41816",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-30#4"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 31
+  },
+  {
+    "type": "single",
+    "stem": "电力交易、（）、生产、使用都在瞬间发生。",
+    "options": [
+      {
+        "key": "A",
+        "text": "交割"
+      },
+      {
+        "key": "B",
+        "text": "储存"
+      },
+      {
+        "key": "C",
+        "text": "买卖"
+      },
+      {
+        "key": "D",
+        "text": "故障处理"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_dca043d8d90e91ac",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#10"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "single",
+    "stem": "中性点不接地系统发生单相接地时，非接地相对地电压升高为相电压的()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "√2"
+      },
+      {
+        "key": "C",
+        "text": "√3"
+      },
+      {
+        "key": "D",
+        "text": "2"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_9f615c1b63375ab7",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#19"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "single",
+    "stem": "系统的单位调节功率Ks的单位是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "MW/Hz"
+      },
+      {
+        "key": "B",
+        "text": "kW/Hz"
+      },
+      {
+        "key": "C",
+        "text": "W/Hz"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_05702249ac53c1f5",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#22"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "single",
+    "stem": "哪些情况下市场交易可以被撤销？",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场交易违反法律法规、规章制度或市场规则"
+      },
+      {
+        "key": "B",
+        "text": "市场交易存在重大错误或失误"
+      },
+      {
+        "key": "C",
+        "text": "市场交易双方协商一致"
+      },
+      {
+        "key": "D",
+        "text": "所有选项都正确"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_24fe652708b37ba3",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#27"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 35
+  },
+  {
+    "type": "single",
+    "stem": "以下哪种情况下，被暂停交易的市场主体必须在退出前进行任何损失的赔偿？",
+    "options": [
+      {
+        "key": "A",
+        "text": "存在不履行合约、欠费等不良市场行为的市场主体"
+      },
+      {
+        "key": "B",
+        "text": "存在违约用电、违法转供电等不良用电行为情节严重的市场主体"
+      },
+      {
+        "key": "C",
+        "text": "存在恶意报价、伪造合同等扰乱市场秩序行为的市场主体"
+      },
+      {
+        "key": "D",
+        "text": "所有被暂停交易的市场主体都必须在退出前进行任何损失的赔偿"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_809296f7bd0175ab",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#28"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "single",
+    "stem": "电力行业转型升级的方向不包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "安全"
+      },
+      {
+        "key": "B",
+        "text": "效率"
+      },
+      {
+        "key": "C",
+        "text": "服务"
+      },
+      {
+        "key": "D",
+        "text": "成本压缩"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_f698962f6926056b",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#55"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "single",
+    "stem": "（）是“保护环境，文明生产”的具体行动。",
+    "options": [
+      {
+        "key": "A",
+        "text": "随意排放废弃物"
+      },
+      {
+        "key": "B",
+        "text": "参与节能减排"
+      },
+      {
+        "key": "C",
+        "text": "使用文明用语"
+      },
+      {
+        "key": "D",
+        "text": "加快资源消耗"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_638a9f4c0b775d98",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#58"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "single",
+    "stem": "电力交易系统中，（）是“双边交易”的特点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "交易通过集中市场进行"
+      },
+      {
+        "key": "B",
+        "text": "交易双方直接协商价格和数量"
+      },
+      {
+        "key": "C",
+        "text": "交易价格由市场统一确定"
+      },
+      {
+        "key": "D",
+        "text": "交易仅适用于长期合同"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_f84d23229674417e",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#97"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "single",
+    "stem": "目前，我国最高直流电压等级为()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "±500kV"
+      },
+      {
+        "key": "B",
+        "text": "±750kV"
+      },
+      {
+        "key": "C",
+        "text": "±800kV"
+      },
+      {
+        "key": "D",
+        "text": "±1000kV"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_97d034e7d1ecdcd3",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#21"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 40
+  },
+  {
+    "type": "single",
+    "stem": "下列关于抽水蓄能机组的缺点，表述错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "投资较大"
+      },
+      {
+        "key": "B",
+        "text": "消耗一定电能"
+      },
+      {
+        "key": "C",
+        "text": "启停缓慢"
+      },
+      {
+        "key": "D",
+        "text": "需具有一定的地理条件"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_0fb1dcbd7a353841",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#52"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 41
+  },
+  {
+    "type": "single",
+    "stem": "发电企业中的并网自备电厂进入电力市场的条件，不包括以下哪一项（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "取得电力业务许可证（发电类）"
+      },
+      {
+        "key": "B",
+        "text": "达到能效、环保要求"
+      },
+      {
+        "key": "C",
+        "text": "与电网企业签订并网调度协议"
+      },
+      {
+        "key": "D",
+        "text": "年发电量达到一定规模"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_cb8570a468e05350",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#62"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 42
+  },
+  {
+    "type": "single",
+    "stem": "单一市场主体摘牌电量或最大电力不得____对应挂牌电量或最大电力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "少于"
+      },
+      {
+        "key": "B",
+        "text": "超过"
+      },
+      {
+        "key": "C",
+        "text": "等于"
+      },
+      {
+        "key": "D",
+        "text": "少于等于"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_99db9c7fc27625f3",
+    "domain": "未归类",
+    "sources": [
+      "6-30#2"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "single",
+    "stem": "下列关于燃气轮机组的优点，表述错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "启动迅速"
+      },
+      {
+        "key": "B",
+        "text": "运行灵活"
+      },
+      {
+        "key": "C",
+        "text": "厂用电率低"
+      },
+      {
+        "key": "D",
+        "text": "发电成本低"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_14109bdbff828367",
+    "domain": "未归类",
+    "sources": [
+      "6-30#51"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 44
+  },
+  {
+    "type": "single",
+    "stem": "当计算后的购电方报价等于计算后的售电方报价，则匹配成交电量为____。",
+    "options": [
+      {
+        "key": "A",
+        "text": "配对双方申报电量的较小者"
+      },
+      {
+        "key": "B",
+        "text": "0"
+      },
+      {
+        "key": "C",
+        "text": "配对双方申报电量的较大者"
+      },
+      {
+        "key": "D",
+        "text": "售电方申报电量"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_b8686d403a8a011c",
+    "domain": "未归类",
+    "sources": [
+      "7-18#1"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 45
+  },
+  {
+    "type": "single",
+    "stem": "在标幺值中，只需选定两个基准值，常选的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电压、电流"
+      },
+      {
+        "key": "B",
+        "text": "电压、功率"
+      },
+      {
+        "key": "C",
+        "text": "电压、阻抗"
+      },
+      {
+        "key": "D",
+        "text": "电流、阻抗"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "id": "q_852a38f9a15f6615",
+    "domain": "未归类",
+    "sources": [
+      "7-18#24"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "single",
+    "stem": "在网络损耗中，与负荷的平方成正比的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "机械损耗"
+      },
+      {
+        "key": "B",
+        "text": "厂用电损耗"
+      },
+      {
+        "key": "C",
+        "text": "不变损耗"
+      },
+      {
+        "key": "D",
+        "text": "可变损耗"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "id": "q_5daa6eb97b687785",
+    "domain": "未归类",
+    "sources": [
+      "7-18#26"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "single",
+    "stem": "微电网电压等级一般在（）以下",
+    "options": [
+      {
+        "key": "A",
+        "text": "10KV"
+      },
+      {
+        "key": "B",
+        "text": "35KV"
+      },
+      {
+        "key": "C",
+        "text": "110KV"
+      },
+      {
+        "key": "D",
+        "text": "60KV"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_ebcdff2472b1b530",
+    "domain": "未归类",
+    "sources": [
+      "7-18#51"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "single",
+    "stem": "在培养新型劳动者的过程中，理想标准是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "以才为先"
+      },
+      {
+        "key": "B",
+        "text": "以德为先"
+      },
+      {
+        "key": "C",
+        "text": "德才兼备"
+      },
+      {
+        "key": "D",
+        "text": "专业突出"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "id": "q_724139a5dd0c0ea1",
+    "domain": "未归类",
+    "sources": [
+      "7-18#60"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 49
+  },
+  {
+    "type": "single",
+    "stem": "（）是党的“四个自信”之一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文化自信"
+      },
+      {
+        "key": "B",
+        "text": "经济自信"
+      },
+      {
+        "key": "C",
+        "text": "军事自信"
+      },
+      {
+        "key": "D",
+        "text": "科技自信"
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "id": "q_cfe2b78d739f78a9",
+    "domain": "未归类",
+    "sources": [
+      "7-18#66"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/01-单选题专项/单选题专项-近期真题-测验-第6卷.md",
+    "sourceOrdinal": 50
+  },
+  {
+    "type": "multiple",
+    "stem": "国家发展改革委《关于进一步深化燃煤发电上网电价市场化改革》的通知中提出的保障措施有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "全面推进电力市场建设"
+      },
+      {
+        "key": "B",
+        "text": "加强与分时电价政策衔接"
+      },
+      {
+        "key": "C",
+        "text": "避免不合理行政干预"
+      },
+      {
+        "key": "D",
+        "text": "加强煤电市场监管"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_ec1aaa41ec6c8845",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#119",
+      "7-18#109"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "multiple",
+    "stem": "道德在职业活动中的体现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "爱岗敬业"
+      },
+      {
+        "key": "B",
+        "text": "诚实守信"
+      },
+      {
+        "key": "C",
+        "text": "提高利润"
+      },
+      {
+        "key": "D",
+        "text": "按章作业"
+      },
+      {
+        "key": "E",
+        "text": "增加效益"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_8be94d0f15d3b8db",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#123"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "multiple",
+    "stem": "需求响应能参加的电力市场类型是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "黑启动服务"
+      },
+      {
+        "key": "B",
+        "text": "电能市场"
+      },
+      {
+        "key": "C",
+        "text": "调频服务"
+      },
+      {
+        "key": "D",
+        "text": "备用市场"
+      }
+    ],
+    "answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_df49684fdfed11db",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#118"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "multiple",
+    "stem": "电网企业应当按照输配电成本监审要求，区分()，分电压等级、用户类别单独核算并合理归集输配电的生产经营成本（费用）及收入等数据。",
+    "options": [
+      {
+        "key": "A",
+        "text": "省级电网"
+      },
+      {
+        "key": "B",
+        "text": "区域电网"
+      },
+      {
+        "key": "C",
+        "text": "地方电网"
+      },
+      {
+        "key": "D",
+        "text": "专项工程"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_9c4c14401b87bc8c",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#102"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "multiple",
+    "stem": "根据不同的电源结构或者不同类型能源发电的技术和特点，上网电价可以分为（）、（）、（）等。",
+    "options": [
+      {
+        "key": "A",
+        "text": "火电上网电价"
+      },
+      {
+        "key": "B",
+        "text": "新能源上网电价"
+      },
+      {
+        "key": "C",
+        "text": "抽水蓄能上网电价"
+      },
+      {
+        "key": "D",
+        "text": "标杆电价"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_090a2533969cbabf",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#113"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "multiple",
+    "stem": "国际上输配电价的主要定价方法有：（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "邮票法"
+      },
+      {
+        "key": "B",
+        "text": "兆瓦千米法"
+      },
+      {
+        "key": "C",
+        "text": "边界潮流法"
+      },
+      {
+        "key": "D",
+        "text": "边际成本法"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_867c5e1e6a4091ba",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#114"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "multiple",
+    "stem": "以下措施有助于完善峰谷分时电价机制的是：（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "科学划分峰谷时段"
+      },
+      {
+        "key": "B",
+        "text": "合理确定峰谷电价价差"
+      },
+      {
+        "key": "C",
+        "text": "建立尖峰电价机制"
+      },
+      {
+        "key": "D",
+        "text": "健全季节性电价机制"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_710fcbc42e7663c0",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#115"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "multiple",
+    "stem": "纳入国家补贴范围的可再生能源发电项目上网电价在当地基准价(含（）电价)以内的部分，由当地省级电网结算，高出部分按程序申请国家可再生能源发展基金补贴。",
+    "options": [
+      {
+        "key": "A",
+        "text": "脱硫"
+      },
+      {
+        "key": "B",
+        "text": "脱硝"
+      },
+      {
+        "key": "C",
+        "text": "超低排放"
+      },
+      {
+        "key": "D",
+        "text": "除尘"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_cc4282575d962e63",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#111"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 11
+  },
+  {
+    "type": "multiple",
+    "stem": "《关于“十四五”时期深化价格机制改革行动方案的通知》提出针对（）行业完善差别电价、阶梯电价等绿色电价政策",
+    "options": [
+      {
+        "key": "A",
+        "text": "高耗能"
+      },
+      {
+        "key": "B",
+        "text": "高排放"
+      },
+      {
+        "key": "C",
+        "text": "高污染"
+      },
+      {
+        "key": "D",
+        "text": "高消耗"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_8892a8f71d2fd8e3",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#102"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "multiple",
+    "stem": "电压质量指标有()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电压降落"
+      },
+      {
+        "key": "B",
+        "text": "电压损耗"
+      },
+      {
+        "key": "C",
+        "text": "电压偏移"
+      },
+      {
+        "key": "D",
+        "text": "电压调整"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_b42baf45fcba5471",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#109"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "multiple",
+    "stem": "电力精神的形成背景包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电力工业从无到有"
+      },
+      {
+        "key": "B",
+        "text": "电力职工艰苦奋斗"
+      },
+      {
+        "key": "C",
+        "text": "国际竞争压力"
+      },
+      {
+        "key": "D",
+        "text": "技术引进依赖"
+      },
+      {
+        "key": "E",
+        "text": "从落后到追赶"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "E"
+    ],
+    "id": "q_1ddf1365c7239641",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#126",
+      "6-30#127"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "multiple",
+    "stem": "爱岗敬业的道德要求包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "乐业敬业"
+      },
+      {
+        "key": "B",
+        "text": "精益求精"
+      },
+      {
+        "key": "C",
+        "text": "主动热情周到"
+      },
+      {
+        "key": "D",
+        "text": "信守承诺"
+      },
+      {
+        "key": "E",
+        "text": "热爱本职"
+      },
+      {
+        "key": "F",
+        "text": "勇于创新"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "E",
+      "F"
+    ],
+    "id": "q_62d5ed48cf90e214",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#122",
+      "7-18#113"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "multiple",
+    "stem": "我国调频和备用辅助服务市场采用（）模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "双边协议"
+      },
+      {
+        "key": "B",
+        "text": "与电能量统一出清联合市场"
+      },
+      {
+        "key": "C",
+        "text": "独立出清"
+      },
+      {
+        "key": "D",
+        "text": "挂牌"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_3a171594e1296898",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#118",
+      "7-18#110"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "multiple",
+    "stem": "电力行业“团结协作”需要做到（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "增强团队意识"
+      },
+      {
+        "key": "B",
+        "text": "相互尊重"
+      },
+      {
+        "key": "C",
+        "text": "个人英雄主义"
+      },
+      {
+        "key": "D",
+        "text": "加强沟通"
+      },
+      {
+        "key": "E",
+        "text": "增进了解"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "id": "q_c61f9714532761f0",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#128",
+      "6-26-B#127"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "multiple",
+    "stem": "严谨工作作风的表现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "注重细节"
+      },
+      {
+        "key": "B",
+        "text": "严肃认真"
+      },
+      {
+        "key": "C",
+        "text": "随意应付"
+      },
+      {
+        "key": "D",
+        "text": "精益求精"
+      },
+      {
+        "key": "E",
+        "text": "优化流程"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "id": "q_07aeb0dadec987fe",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#129",
+      "6-30#128"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 21
+  },
+  {
+    "type": "multiple",
+    "stem": "根据《关于电力交易机构组建和规范运行的实施意见》，电力市场管理委员会由（）等派委员组成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电网企业"
+      },
+      {
+        "key": "B",
+        "text": "发电企业"
+      },
+      {
+        "key": "C",
+        "text": "售电企业"
+      },
+      {
+        "key": "D",
+        "text": "监管机构"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_8224c317db9096cb",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-A#120"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委、国家能源局印发《电力中长期交易基本规则》，电力交易机构的权利和义务包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "组织交易"
+      },
+      {
+        "key": "B",
+        "text": "披露信息"
+      },
+      {
+        "key": "C",
+        "text": "分析市场运行情况"
+      },
+      {
+        "key": "D",
+        "text": "提供交易结算依据"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_47f5665dde2f1cf9",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-B#101"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委国家能源局印发《电力中长期交易基本规则》，电力交易机构的权利和义务包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "组织交易"
+      },
+      {
+        "key": "B",
+        "text": "披露信息"
+      },
+      {
+        "key": "C",
+        "text": "分析市场运行情况"
+      },
+      {
+        "key": "D",
+        "text": "提供交易结算依据"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_ddbd3e98ed164f0c",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-B#119"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委、国家能源局印发《电力中长期交易基本规则》，电网企业的权利和义务包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "披露所有信息"
+      },
+      {
+        "key": "B",
+        "text": "保障电网安全稳定运行"
+      },
+      {
+        "key": "C",
+        "text": "收取输配电费"
+      },
+      {
+        "key": "D",
+        "text": "组织交易"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_84c3b199d218864d",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#102"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "multiple",
+    "stem": "电改9号文强调“三放开，一独立，三加强”中，“三放开”是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "有序放开输配以外的竞争性环节电价"
+      },
+      {
+        "key": "B",
+        "text": "有序向社会资本开放配售电业务"
+      },
+      {
+        "key": "C",
+        "text": "有序放开公益性和调节性以外的发用电计划"
+      },
+      {
+        "key": "D",
+        "text": "有序放开政府监管权力"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_89f72e415d323ebd",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#114"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委国家能源局印发《电力中长期交易基本规则》，电力用户的权利和义务包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "参与交易"
+      },
+      {
+        "key": "B",
+        "text": "履行合同"
+      },
+      {
+        "key": "C",
+        "text": "获得披露信息"
+      },
+      {
+        "key": "D",
+        "text": "获得电网接入服务"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_1e4a26b35204cbff",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#119"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委国家能源局印发《电力中长期交易基本规则》，电网企业的权利和义务包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "披露所有信息"
+      },
+      {
+        "key": "B",
+        "text": "保障电网安全稳定运行"
+      },
+      {
+        "key": "C",
+        "text": "收取输配电费"
+      },
+      {
+        "key": "D",
+        "text": "组织交易"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_ad69859891636a14",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#120"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "multiple",
+    "stem": "根据《关于进一步深化电力体制改革的若干意见》，新一轮电力体制改革的基本原则是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持安全可靠"
+      },
+      {
+        "key": "B",
+        "text": "坚持市场化改革"
+      },
+      {
+        "key": "C",
+        "text": "坚持保障民生"
+      },
+      {
+        "key": "D",
+        "text": "坚持科学监管"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_7ec372b214be25f6",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "7-18#111"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "multiple",
+    "stem": "电压等级与电力系统成本的关系，以下说法正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "各电压等级对应不同的输送容量和输送距离"
+      },
+      {
+        "key": "B",
+        "text": "电压等级越低，输电损耗越小"
+      },
+      {
+        "key": "C",
+        "text": "输送距离越长，输送损失越大"
+      },
+      {
+        "key": "D",
+        "text": "从电厂到用户要经过多次升压和降压，因此，电压等级越低，占用的电力设施耗费的投资和运行成本越多"
+      }
+    ],
+    "answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "id": "q_1cf0de646cffc918",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-A#121"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 35
+  },
+  {
+    "type": "multiple",
+    "stem": "输电线路等值电路中消耗有功功率的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电抗"
+      },
+      {
+        "key": "B",
+        "text": "电阻"
+      },
+      {
+        "key": "C",
+        "text": "电纳"
+      },
+      {
+        "key": "D",
+        "text": "电导"
+      }
+    ],
+    "answers": [
+      "B",
+      "D"
+    ],
+    "id": "q_4ffe90f178fddcb5",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#108"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "multiple",
+    "stem": "电力系统是由()用电构成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电"
+      },
+      {
+        "key": "B",
+        "text": "输电"
+      },
+      {
+        "key": "C",
+        "text": "变电"
+      },
+      {
+        "key": "D",
+        "text": "配电"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_9346e7a4b7a46c78",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#109"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "multiple",
+    "stem": "电力系统安全控制包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "预防控制"
+      },
+      {
+        "key": "B",
+        "text": "校正控制"
+      },
+      {
+        "key": "C",
+        "text": "紧急控制"
+      },
+      {
+        "key": "D",
+        "text": "恢复控制"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_2fe7eff46ca4ad48",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#115"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "multiple",
+    "stem": "电力行业构建新型电力系统的目标包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实现“双碳”目标"
+      },
+      {
+        "key": "B",
+        "text": "提高供电质量"
+      },
+      {
+        "key": "C",
+        "text": "降低员工数量"
+      },
+      {
+        "key": "D",
+        "text": "确保电力系统安全稳定"
+      },
+      {
+        "key": "E",
+        "text": "提高员工收入"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_5e1033e5392c2d19",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-30#125"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "multiple",
+    "stem": "下列选项中，（）是电力商品的属性和特点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "准公共物品属性"
+      },
+      {
+        "key": "B",
+        "text": "规模经济和垄断属性"
+      },
+      {
+        "key": "C",
+        "text": "时间属性"
+      },
+      {
+        "key": "D",
+        "text": "空间（网络）属性"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_469c38ba3735bc36",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-B#117"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 40
+  },
+  {
+    "type": "multiple",
+    "stem": "电力行业员工应具备的主要素质有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "专业技能"
+      },
+      {
+        "key": "B",
+        "text": "职业道德"
+      },
+      {
+        "key": "C",
+        "text": "创新意识"
+      },
+      {
+        "key": "D",
+        "text": "计算能力"
+      },
+      {
+        "key": "E",
+        "text": "领导力F.组织能力"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_f8cc029fceb8f973",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#123"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 41
+  },
+  {
+    "type": "multiple",
+    "stem": "电力行业的特殊性决定了电力职工需要具备（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "吃苦意识"
+      },
+      {
+        "key": "B",
+        "text": "业务素质"
+      },
+      {
+        "key": "C",
+        "text": "职业道德"
+      },
+      {
+        "key": "D",
+        "text": "牺牲精神"
+      },
+      {
+        "key": "E",
+        "text": "上进意识"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_efa7405e7556c352",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#125"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 42
+  },
+  {
+    "type": "multiple",
+    "stem": "电力精神的核心价值包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "忠诚担当"
+      },
+      {
+        "key": "B",
+        "text": "求实创新"
+      },
+      {
+        "key": "C",
+        "text": "追求卓越"
+      },
+      {
+        "key": "D",
+        "text": "奉献光明"
+      },
+      {
+        "key": "E",
+        "text": "文化自信"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_8d073377492c8923",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#127"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "multiple",
+    "stem": "电力职工提升自身价值的途径包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高业务水平"
+      },
+      {
+        "key": "B",
+        "text": "善于总结反思"
+      },
+      {
+        "key": "C",
+        "text": "提升学历水平"
+      },
+      {
+        "key": "D",
+        "text": "持续自我突破"
+      },
+      {
+        "key": "E",
+        "text": "增加业余爱好"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_3d2fdec249d1b3be",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#130"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 44
+  },
+  {
+    "type": "multiple",
+    "stem": "道德的作用包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "行为规范与指导"
+      },
+      {
+        "key": "B",
+        "text": "评价与教育"
+      },
+      {
+        "key": "C",
+        "text": "促进社会和谐"
+      },
+      {
+        "key": "D",
+        "text": "提高生产效率"
+      },
+      {
+        "key": "E",
+        "text": "促进个人全面发展"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "id": "q_a5caa9260e5b9f32",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#121"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 45
+  },
+  {
+    "type": "multiple",
+    "stem": "道德评价的激励作用体现在（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "表彰正义行为"
+      },
+      {
+        "key": "B",
+        "text": "抵制不良风气"
+      },
+      {
+        "key": "C",
+        "text": "提高工资待遇"
+      },
+      {
+        "key": "D",
+        "text": "扩大企业规模"
+      },
+      {
+        "key": "E",
+        "text": "提升企业效益"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_1e3b430b7ed495e7",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#122"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "multiple",
+    "stem": "电力行业职业道德的特殊性源于其（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "社会公益性"
+      },
+      {
+        "key": "B",
+        "text": "生产关联性"
+      },
+      {
+        "key": "C",
+        "text": "资源密集型"
+      },
+      {
+        "key": "D",
+        "text": "基础支撑性"
+      },
+      {
+        "key": "E",
+        "text": "企业效益性"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_f89705ca50cbacce",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#125"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 47
+  },
+  {
+    "type": "multiple",
+    "stem": "职业道德的体现方式包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "劳模精神"
+      },
+      {
+        "key": "B",
+        "text": "劳动精神"
+      },
+      {
+        "key": "C",
+        "text": "工匠精神"
+      },
+      {
+        "key": "D",
+        "text": "创新精神"
+      },
+      {
+        "key": "E",
+        "text": "奋斗精神"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_f70aa956cc7ee77a",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#121"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "multiple",
+    "stem": "技术革新对职业变迁的影响有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "传统职业消失"
+      },
+      {
+        "key": "B",
+        "text": "新能源技术催生新工种"
+      },
+      {
+        "key": "C",
+        "text": "经济周期波动加剧"
+      },
+      {
+        "key": "D",
+        "text": "全球气温变暖"
+      },
+      {
+        "key": "E",
+        "text": "劳动法规完善"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_ad453c1fcece601b",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#123"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 49
+  },
+  {
+    "type": "multiple",
+    "stem": "（）是电力行业“资源密集型”的表现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "需要高新技术应用"
+      },
+      {
+        "key": "B",
+        "text": "资金占用比率高"
+      },
+      {
+        "key": "C",
+        "text": "产业集聚效应强"
+      },
+      {
+        "key": "D",
+        "text": "履行社会公益责任"
+      },
+      {
+        "key": "E",
+        "text": "源网荷储一体化"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_789c1ddddc9a4c11",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#124"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 50
+  },
+  {
+    "type": "multiple",
+    "stem": "诚实守信的具体要求包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "光明磊落，不歪曲事实"
+      },
+      {
+        "key": "B",
+        "text": "忠诚老实，不弄虚作假"
+      },
+      {
+        "key": "C",
+        "text": "坚持原则，秉公办事"
+      },
+      {
+        "key": "D",
+        "text": "信守合同，不言而无信"
+      },
+      {
+        "key": "E",
+        "text": "精益求精，勇于创新"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_2cd73000e3449834",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#114"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 51
+  },
+  {
+    "type": "multiple",
+    "stem": "电力职工在创新中应关注（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "提高供电可靠性"
+      },
+      {
+        "key": "B",
+        "text": "提升职业道德"
+      },
+      {
+        "key": "C",
+        "text": "推动绿色低碳转型"
+      },
+      {
+        "key": "D",
+        "text": "扩大电网规模"
+      },
+      {
+        "key": "E",
+        "text": "提高运行效率"
+      }
+    ],
+    "answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "id": "q_b3b53334c465ba70",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#117"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 53
+  },
+  {
+    "type": "multiple",
+    "stem": "交易主体参与现货市场的方式有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电侧报量报价，用户侧不申报"
+      },
+      {
+        "key": "B",
+        "text": "发电侧报量报价，用户侧报量不报价"
+      },
+      {
+        "key": "C",
+        "text": "发用电双向报量又报价"
+      },
+      {
+        "key": "D",
+        "text": "发电侧报量报价，用户侧报价不报量"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_f1d59b4236dbee56",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#112"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 56
+  },
+  {
+    "type": "multiple",
+    "stem": "批发电力市场可以按电力交易标的分类，一般包括（）输电权市场辅助服务市场等等。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实物电能量市场"
+      },
+      {
+        "key": "B",
+        "text": "电力金融（衍生品）市场"
+      },
+      {
+        "key": "C",
+        "text": "发电容量市场"
+      },
+      {
+        "key": "D",
+        "text": "机组组合"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_6f90396a9ea0974e",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#112"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 57
+  },
+  {
+    "type": "multiple",
+    "stem": "电能结算包括（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "中长期合约分解曲线结算"
+      },
+      {
+        "key": "B",
+        "text": "日前电能交易结算"
+      },
+      {
+        "key": "C",
+        "text": "日内电能交易结算"
+      },
+      {
+        "key": "D",
+        "text": "实时电能交易结算"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_2c0f8dc3cfc82adf",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#101"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 59
+  },
+  {
+    "type": "multiple",
+    "stem": "电力调度机构基于发电机组及输变电设备日前检修计划，综合考虑电网实时运行要求（）现场操作准备等，执行发输变电设备停送电操作，并做好相应记录。",
+    "options": [
+      {
+        "key": "A",
+        "text": "气象因素"
+      },
+      {
+        "key": "B",
+        "text": "节假日影响"
+      },
+      {
+        "key": "C",
+        "text": "现场设备状态"
+      },
+      {
+        "key": "D",
+        "text": "不同检修设备停送电顺序衔接"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_633bfd5ee74cab22",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#107"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "multiple",
+    "stem": "日前省内现货市场组织的边界条件包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "联络线外送电曲线"
+      },
+      {
+        "key": "B",
+        "text": "必开必停机组"
+      },
+      {
+        "key": "C",
+        "text": "新能源机组申报次日发电预测曲线"
+      },
+      {
+        "key": "D",
+        "text": "次日系统母线负荷预测曲线"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_02b6ba466d8d81fa",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#108"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 1
+  },
+  {
+    "type": "multiple",
+    "stem": "与检修备用密切相关的有()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "负荷大小"
+      },
+      {
+        "key": "B",
+        "text": "负荷性质"
+      },
+      {
+        "key": "C",
+        "text": "检修时间长短"
+      },
+      {
+        "key": "D",
+        "text": "设备新旧程度"
+      }
+    ],
+    "answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_1e5a5b931eb76f47",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-B#110"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "multiple",
+    "stem": "调频有偿服务一般指的是二次调频，所获得的激励补偿与其调频的（）等响应情况有关，反映了其在平衡市场上的实际贡献。",
+    "options": [
+      {
+        "key": "A",
+        "text": "容量"
+      },
+      {
+        "key": "B",
+        "text": "总步长"
+      },
+      {
+        "key": "C",
+        "text": "精度"
+      },
+      {
+        "key": "D",
+        "text": "响应时间及速率"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_b66f97b91f3f0eb5",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#110"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 3
+  },
+  {
+    "type": "multiple",
+    "stem": "电网实时运行应按照电力系统运行有关规则规定，保留合理的（），以及各输变电断面合理的潮流波动空间，满足电网风险防控措施要求，保障系统安全稳定运行和电力电量平衡。",
+    "options": [
+      {
+        "key": "A",
+        "text": "调频"
+      },
+      {
+        "key": "B",
+        "text": "调峰"
+      },
+      {
+        "key": "C",
+        "text": "调压"
+      },
+      {
+        "key": "D",
+        "text": "备用容量"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_3082f7a17a4cec65",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#113"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "multiple",
+    "stem": "发电商在提供备用服务时会产生的成本有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "运行成本"
+      },
+      {
+        "key": "B",
+        "text": "机会成本"
+      },
+      {
+        "key": "C",
+        "text": "维护成本"
+      },
+      {
+        "key": "D",
+        "text": "监测成本"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_dea434021850bf5e",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#116"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 5
+  },
+  {
+    "type": "multiple",
+    "stem": "党中央国务院关于电力体制改革和价格机制改革的相关文件明确提出，要坚持“（）”，有序放开输配以外的竞争性环节电力价格 ;",
+    "options": [
+      {
+        "key": "A",
+        "text": "管住中间"
+      },
+      {
+        "key": "B",
+        "text": "管住两头"
+      },
+      {
+        "key": "C",
+        "text": "放开中间"
+      },
+      {
+        "key": "D",
+        "text": "放开两头"
+      }
+    ],
+    "answers": [
+      "A",
+      "D"
+    ],
+    "id": "q_51014b502d1306fc",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#116"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "multiple",
+    "stem": "通过市场化方式形成上网电价的工商业用户用电价格，包括（），不再执行目录电价。",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场化方式形成上网电价"
+      },
+      {
+        "key": "B",
+        "text": "输配电价(含交叉补贴和线损，下同)"
+      },
+      {
+        "key": "C",
+        "text": "政府性基金"
+      },
+      {
+        "key": "D",
+        "text": "还贷基金"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_d42a305094796e1c",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#117"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "multiple",
+    "stem": "输配电费核定包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "准许成本"
+      },
+      {
+        "key": "B",
+        "text": "售电收入"
+      },
+      {
+        "key": "C",
+        "text": "合理收益"
+      },
+      {
+        "key": "D",
+        "text": "依法缴纳的税金"
+      }
+    ],
+    "answers": [
+      "A",
+      "C",
+      "D"
+    ],
+    "id": "q_e5416eaf62a08feb",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-B#116"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "multiple",
+    "stem": "鼓励北方地区研究制定季节性电采暖电价政策，通过（）等方式，推动进一步降低清洁取暖用电成本，有效保障居民冬季清洁取暖需求",
+    "options": [
+      {
+        "key": "A",
+        "text": "减少低谷时段"
+      },
+      {
+        "key": "B",
+        "text": "拉长低谷时段"
+      },
+      {
+        "key": "C",
+        "text": "降低谷段电价"
+      },
+      {
+        "key": "D",
+        "text": "提高尖峰电价"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_002d1f1206a6802e",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#103"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "multiple",
+    "stem": "市场用户的用电价格由（）等构成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "电能量交易价格"
+      },
+      {
+        "key": "B",
+        "text": "输配电价格"
+      },
+      {
+        "key": "C",
+        "text": "辅助服务费用"
+      },
+      {
+        "key": "D",
+        "text": "政府性基金及附加"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_56362eb67068e902",
+    "domain": "电价机制与成本",
+    "sources": [
+      "7-18#105"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "multiple",
+    "stem": "执行代理购电价格机制后，电网企业为保障()用电价格稳定产生的新增损益（含偏差电费），按月由全体工商业用户分摊或分享。",
+    "options": [
+      {
+        "key": "A",
+        "text": "居民"
+      },
+      {
+        "key": "B",
+        "text": "农业"
+      },
+      {
+        "key": "C",
+        "text": "公益性服务"
+      },
+      {
+        "key": "D",
+        "text": "重要公用事业"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_7d8f07cb5762f987",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-A#104"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 14
+  },
+  {
+    "type": "multiple",
+    "stem": "电力交易的结算就是对电力商品按照市场交易价格，并根据交易规则，把规定周期内各项经济收支往来核算清楚并完成支付。从主要工作环节上区分，可以分为（）、（）、（）、（）等几个主要环节",
+    "options": [
+      {
+        "key": "A",
+        "text": "清算（结算计算）"
+      },
+      {
+        "key": "B",
+        "text": "收（付）款"
+      },
+      {
+        "key": "C",
+        "text": "结算调整"
+      },
+      {
+        "key": "D",
+        "text": "违约处理"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_f64e9b1364c6897f",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-A#110"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 15
+  },
+  {
+    "type": "multiple",
+    "stem": "不平衡费用分摊机制中，参与分摊的对象有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场化用户"
+      },
+      {
+        "key": "B",
+        "text": "偏差机组"
+      },
+      {
+        "key": "C",
+        "text": "非市场化用户"
+      },
+      {
+        "key": "D",
+        "text": "市场化机组"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_4a89fb15e8279aa1",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-A#111"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "multiple",
+    "stem": "2020年6月,国家发改委、国家能源局印发《电力中长期交易基本规则》,规则中信息披露部分称市场公开信息包括但不限于（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电设备信息"
+      },
+      {
+        "key": "B",
+        "text": "电网运行信息"
+      },
+      {
+        "key": "C",
+        "text": "市场交易类信息"
+      },
+      {
+        "key": "D",
+        "text": "结算类信息"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_a00c9716de453c8a",
+    "domain": "信息披露与交易平台操作",
+    "sources": [
+      "6-26-B#102"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "multiple",
+    "stem": "电力交易机构主要负责市场交易平台的( )，负责市场交易组织，提供结算依据和服务，汇总用户与发电企业自主签订的双边合同，负责市场主体注册和相应管理，披露和发布市场信息等",
+    "options": [
+      {
+        "key": "A",
+        "text": "投资"
+      },
+      {
+        "key": "B",
+        "text": "建设"
+      },
+      {
+        "key": "C",
+        "text": "运营"
+      },
+      {
+        "key": "D",
+        "text": "管理"
+      }
+    ],
+    "answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_bffe1d42a4815a1e",
+    "domain": "信息披露与交易平台操作",
+    "sources": [
+      "6-26-B#105"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 20
+  },
+  {
+    "type": "multiple",
+    "stem": "产业结构调整会导致（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "汽车装配工需求下降"
+      },
+      {
+        "key": "B",
+        "text": "电力市场分析师需求增加"
+      },
+      {
+        "key": "C",
+        "text": "打字员需求上升"
+      },
+      {
+        "key": "D",
+        "text": "居家办公普及"
+      },
+      {
+        "key": "E",
+        "text": "电话交换操作员的消失"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_a209f68fc216e7cb",
+    "domain": "交易员岗位与市场分析",
+    "sources": [
+      "7-18#115"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "multiple",
+    "stem": "根据《关于推进售电侧改革的实施意见》，在信用体系建设环节中，关于建立市场主体信用评价机制，下列说法正确的是（）",
+    "options": [
+      {
+        "key": "A",
+        "text": "由省级政府或由省级政府授权的部门依据企业市场履约情况等市场行为建立市场主体信用评价制度"
+      },
+      {
+        "key": "B",
+        "text": "评价结果应向社会公示"
+      },
+      {
+        "key": "C",
+        "text": "建立黑名单制度，对严重违法、违规的市场主体提出警告，勒令整改"
+      },
+      {
+        "key": "D",
+        "text": "拒不整改的列入黑名单，不得再进入市场"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_66f744065ec686da",
+    "domain": "信用管理与评价",
+    "sources": [
+      "6-30#103"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "multiple",
+    "stem": "售电业务面临的风险包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "投资风险"
+      },
+      {
+        "key": "B",
+        "text": "管理风险"
+      },
+      {
+        "key": "C",
+        "text": "价格风险"
+      },
+      {
+        "key": "D",
+        "text": "信用风险"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_107e6742f3a5b4de",
+    "domain": "合规管理与风险控制",
+    "sources": [
+      "6-30#117"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "multiple",
+    "stem": "新一代电力交易平台用户注册时，市场成员类型可选择（）、电网企业、独立储能、辅助服务聚合商等。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电企业"
+      },
+      {
+        "key": "B",
+        "text": "售电公司"
+      },
+      {
+        "key": "C",
+        "text": "批发用户"
+      },
+      {
+        "key": "D",
+        "text": "电力用户"
+      },
+      {
+        "key": "E",
+        "text": "。零售用户"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_2f236c45c66e7b59",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "7-18#120"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "multiple",
+    "stem": "绿色电力交易初期，绿色电力交易品种主要为（）企业发电上网电量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "水电发电"
+      },
+      {
+        "key": "B",
+        "text": "风电发电"
+      },
+      {
+        "key": "C",
+        "text": "光伏发电"
+      },
+      {
+        "key": "D",
+        "text": "生物质发电"
+      }
+    ],
+    "answers": [
+      "B",
+      "C"
+    ],
+    "id": "q_15d387554d9f4a81",
+    "domain": "绿电新能源与需求响应",
+    "sources": [
+      "6-26-B#103"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "multiple",
+    "stem": "在优先安排优先发电合同输电容量的前提下，鼓励____利用剩余输电容量直接进行跨区跨省交易。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发电企业"
+      },
+      {
+        "key": "B",
+        "text": "电力用户"
+      },
+      {
+        "key": "C",
+        "text": "售电公司"
+      },
+      {
+        "key": "D",
+        "text": "电网公司"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "id": "q_db9fd72a1c7ffcc6",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-26-B#104"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "multiple",
+    "stem": "跨省跨区送电由送电受电市场主体双方在自愿平等基础上，在贯彻落实国家能源战略的前提下，按照“（）”原则协商或通过市场化交易方式确定送受电量价格，并建立相应的价格调整机制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "风险共担"
+      },
+      {
+        "key": "B",
+        "text": "利益共享"
+      },
+      {
+        "key": "C",
+        "text": "风险管控"
+      },
+      {
+        "key": "D",
+        "text": "利益均分"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_66e40ba617e803da",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-26-B#114"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "multiple",
+    "stem": "组织年度交易时，在年底特定时间，电力交易机构应通过交易平台发布下一年度交易相关信息，包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "次年关键输电通道剩余可用输送能力"
+      },
+      {
+        "key": "B",
+        "text": "次年直接交易电量需求预测"
+      },
+      {
+        "key": "C",
+        "text": "次年跨省跨区交易电量需求预测"
+      },
+      {
+        "key": "D",
+        "text": "次年发电机组可发电量上限"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_c2c3cf43b376c377",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "7-18#112"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "multiple",
+    "stem": "分裂导线的主要目的是()。",
+    "options": [
+      {
+        "key": "A",
+        "text": "减小线路电抗"
+      },
+      {
+        "key": "B",
+        "text": "减小电晕损耗"
+      },
+      {
+        "key": "C",
+        "text": "增大线路电阻"
+      },
+      {
+        "key": "D",
+        "text": "提高输送能力"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_9c8b1a9addba147e",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#108"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 35
+  },
+  {
+    "type": "multiple",
+    "stem": "架空线由()、金具组成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "导线"
+      },
+      {
+        "key": "B",
+        "text": "避雷线"
+      },
+      {
+        "key": "C",
+        "text": "杆塔"
+      },
+      {
+        "key": "D",
+        "text": "绝缘子"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "id": "q_10b9cabe99eae8da",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#109"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "multiple",
+    "stem": "“保护环境，文明生产”应做到（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "践行绿色理念"
+      },
+      {
+        "key": "B",
+        "text": "参与双碳行动"
+      },
+      {
+        "key": "C",
+        "text": "忽视环保"
+      },
+      {
+        "key": "D",
+        "text": "加速减排"
+      },
+      {
+        "key": "E",
+        "text": "“双碳行动”"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "id": "q_a0521f6d03adcba9",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#128"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "multiple",
+    "stem": "税金是指除增值税外的其他税金，包括()、()、()，依据现行国家相关税法规定核定。",
+    "options": [
+      {
+        "key": "A",
+        "text": "所得税"
+      },
+      {
+        "key": "B",
+        "text": "城市维护建设税"
+      },
+      {
+        "key": "C",
+        "text": "印花税"
+      },
+      {
+        "key": "D",
+        "text": "教育费附加"
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "id": "q_8103f1dccbccdf00",
+    "domain": "未归类",
+    "sources": [
+      "6-30#104"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "multiple",
+    "stem": "关于中性点非有效接地电网的中性点对地电压，下面说法中正确的是",
+    "options": [
+      {
+        "key": "A",
+        "text": "正常运行情况下为零"
+      },
+      {
+        "key": "B",
+        "text": "单相接地故障时等于相电压"
+      },
+      {
+        "key": "C",
+        "text": "正常运行时为相电压"
+      },
+      {
+        "key": "D",
+        "text": "单相接地故障时为线电压"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_d1fe87d67bd3db0a",
+    "domain": "未归类",
+    "sources": [
+      "7-18#104"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "multiple",
+    "stem": "如果经济低于充分就业水平，价格水平固定，（）能使经济更接近于充分就业。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政府支出增加"
+      },
+      {
+        "key": "B",
+        "text": "税收削减"
+      },
+      {
+        "key": "C",
+        "text": "政府支出削减"
+      },
+      {
+        "key": "D",
+        "text": "税收增加"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "id": "q_7017b494a10acac0",
+    "domain": "未归类",
+    "sources": [
+      "7-18#106"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/02-多选题专项/多选题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 40
+  },
+  {
+    "type": "judge",
+    "stem": "省级电网输配电价在每一监管周期结束后核定，监管周期为三年。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_5eac1db0c2046c44",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#143",
+      "6-26-B#136",
+      "6-30#143"
+    ],
+    "repeatCount": 3,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 1
+  },
+  {
+    "type": "judge",
+    "stem": "我国电力系统对频率偏移的具体规定是任何电力系统、任何情况下频率偏移都不得超过±0.2Hz。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_4afb9fb8b99d4d94",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "6-26-B#141",
+      "6-30#145"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "judge",
+    "stem": "厂网分开之前，电力系统中没有辅助服务的概念。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_2fac6f37aee0b893",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#135",
+      "6-26-B#131"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 3
+  },
+  {
+    "type": "judge",
+    "stem": "根据《输配电定价成本监审办法》，计入定价成本的折旧费，按照监审期间最末一年的可计提折旧输配电固定资产原值和本办法规定的输配电固定资产分类定价折旧年限，采用年数总和法分类核定。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_910fa58e6f57c58a",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-B#135",
+      "6-30#142"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "judge",
+    "stem": "2019年1月，国家发改委、国家能源局印发《关于规范优先发电优先购电计划管理》的通知，文件提出优先发电价格按照“保量保价”和“保量限价”相结合的方式形成，实行“保量保价”的优先发电计划电量由电网企业按照政府定价收购，实行“保量限价”的优先发电计划电量通过市场化方式形成价格",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_92113876f37ec17a",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-30#131"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 5
+  },
+  {
+    "type": "judge",
+    "stem": "职业的多样性指同一职业在各行业中的要求不同。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_ae8798369623ed8a",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#147"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 6
+  },
+  {
+    "type": "judge",
+    "stem": "电力用户或者售电公司关联的用户发生并户、销户、过户、改名或者用电类别、电压等级等信息发生变化时，市场主体应当在电网企业办理注册信息变更手续。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_0eb6160c87f08620",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-B#134"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 7
+  },
+  {
+    "type": "judge",
+    "stem": "年度合同转让交易随年度（电能量）交易一并开展。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_436d45f142b55575",
+    "domain": "中长期交易",
+    "sources": [
+      "6-26-A#133"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "judge",
+    "stem": "我国辅助服务市场是和电力现货市场同步建立的。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_8b2399f6a065b9b2",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#133"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "judge",
+    "stem": "所有开展日前市场的交易中心或者电力库均采用统一边际出清方式，所有中标的售电和购电申报都分别按照统一的市场出清电价进行结算，与市场成员实际的售电报价和购电报价无关",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_5865f24792b8ec63",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#138"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 10
+  },
+  {
+    "type": "judge",
+    "stem": "从出清价格来说，辅助服务市场可以采用日前价格出清，也可以采用实时价格出清。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_ae3385f6d4e402e2",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#124"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "judge",
+    "stem": "电网企业应当积极配合政府财政部门实施的成本监审工作，客观如实反映情况，并提供其所要求的财务报告、会计凭证、账簿、科目汇总表等相关文件资料和电子原始数据。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_dada694f21e5eb53",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#142"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 13
+  },
+  {
+    "type": "judge",
+    "stem": "发电企业、电力用户、售电公司可利用剩余交易电能量直接进行跨区跨省交易。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_34be02c153c8112d",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-26-A#137"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "judge",
+    "stem": "我国电力系统对于调峰最早期的设计思路是：调峰服务是由一部分机组服务另一部分机组乃至整个系统。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_ef176b9fe1d8196b",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#136",
+      "7-18#127"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "judge",
+    "stem": "110kV 电力网采用中性点直接接地方式",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_8d89f79ec47db4d2",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#142",
+      "7-18#136"
+    ],
+    "repeatCount": 2,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "judge",
+    "stem": "\"追求卓越\"的目标是为服务国际能源市场。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_f5b0f777a0d0a95b",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "6-26-B#148"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "judge",
+    "stem": "2020年6月,国家发改委、国家能源局印发《电力中长期交易基本规则》,规则所称电力中长期交易市场成员包括各类发电企业、电网企业、配售电企业、电力交易机构、电力调度机构、电力用户、储能企业等。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_9eb916f76e6b985b",
+    "domain": "电力市场基础与政策",
+    "sources": [
+      "7-18#121"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "judge",
+    "stem": "发电机组(或无功补偿设备)向电力系统注入或吸收有功功率，以维持系统正常运行时节点电压在允许范围内。（）",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_3b47f75fa596534b",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "7-18#131"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "judge",
+    "stem": "发电厂升压变压器低压绕组的额定电压应等于发电机的额定电压。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_6d3017c0d994cfb4",
+    "domain": "电力系统基础知识",
+    "sources": [
+      "7-18#135"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "judge",
+    "stem": "消费者剩余是消费者愿意支付的商品价格",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_6a7086bedcbfdbd2",
+    "domain": "经济学基础",
+    "sources": [
+      "6-26-A#146"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "judge",
+    "stem": "垄断厂商提高商品价格，一定能够获得更多利润。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_15bfd13ce6be38e0",
+    "domain": "经济学基础",
+    "sources": [
+      "6-30#148"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 37
+  },
+  {
+    "type": "judge",
+    "stem": "决定供给变动的因素主要包括价格、生产成本、生产技术水平等",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_8e6000f67a0d2d5a",
+    "domain": "经济学基础",
+    "sources": [
+      "7-18#134"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 38
+  },
+  {
+    "type": "judge",
+    "stem": "电力行业的职业道德不需要高业务素质。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_13b002a1fa46066d",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#149"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "judge",
+    "stem": "电力职工应坚持“人民至上，生命至上”。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_17a5fb0a478d4736",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-A#151"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 40
+  },
+  {
+    "type": "judge",
+    "stem": "道德建设是社会主义道德体系的重要组成部分。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_6da2b1bbb63574b7",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#143"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 41
+  },
+  {
+    "type": "judge",
+    "stem": "电力行业的职业道德要求与其他行业相同。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_42aabcd9d486575d",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#144"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 42
+  },
+  {
+    "type": "judge",
+    "stem": "电力行业的基础支撑性决定了其必须满足社会用电需求。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_3816ca6f9c2379b3",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#145"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 43
+  },
+  {
+    "type": "judge",
+    "stem": "电力精神是社会主义核心价值观在电力行业的具体体现。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_dda613b676233542",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#146"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 44
+  },
+  {
+    "type": "judge",
+    "stem": "电力职工应具备以提升效率为主的思维方式。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_bc1f81b4cf2292c8",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-26-B#147"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 45
+  },
+  {
+    "type": "judge",
+    "stem": "工匠精神强调\"公平公正，光明磊落\"。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_ec831716b7360642",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#149"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 46
+  },
+  {
+    "type": "judge",
+    "stem": "职业守则仅适用于管理层。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_e7feac295ef1d405",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#151"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "judge",
+    "stem": "安全生产方针的核心是事后及时处理。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_8ed1cccd6ea7bad1",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "6-30#152"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 49
+  },
+  {
+    "type": "judge",
+    "stem": "电力职工只需具备专业技能，无需职业道德。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_c24150fd18725a51",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#138"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 50
+  },
+  {
+    "type": "judge",
+    "stem": "道德规范与法律标准一致。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_bbca7bc8ebd2e76c",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#139"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 51
+  },
+  {
+    "type": "judge",
+    "stem": "道德评价标准仅用于衡量个人品质。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_8aff51ec061a9048",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#140"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 52
+  },
+  {
+    "type": "judge",
+    "stem": "\"忠诚担当\"要求电力职工优先保护个人利益。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_fe92a79aabe9eb7e",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#141"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 53
+  },
+  {
+    "type": "judge",
+    "stem": "电力职工需参与环保行动。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_ac76868bd1bd13af",
+    "domain": "职业道德与电力精神",
+    "sources": [
+      "7-18#143"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 54
+  },
+  {
+    "type": "judge",
+    "stem": "2019年9月，国家能源局印发《关于加强电力中长期交易监管的意见》的通知提出，关于加强电力中长期交易监管的意见，拥有配电网运营权的售电企业，其配电业务与参与市场交易的售电业务应当实现财务分离",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_4f5736a8990855bc",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-26-A#131"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 55
+  },
+  {
+    "type": "judge",
+    "stem": "内部核算的发电企业、电力用户无需经法人单位授权即可参与市场交易。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_a7512aa319bab957",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "6-30#132"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第1卷.md",
+    "sourceOrdinal": 60
+  },
+  {
+    "type": "judge",
+    "stem": "电力用户和售电公司在单笔电力交易中的售电量不得超过其购入电能量的净值。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_5ce7a22a50854466",
+    "domain": "市场准入与注册管理",
+    "sources": [
+      "7-18#130"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 2
+  },
+  {
+    "type": "judge",
+    "stem": "除国家有明确规定的情况外，集中竞价交易原则上不进行限价。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_6779d7e6c45ad262",
+    "domain": "中长期交易",
+    "sources": [
+      "6-26-A#138"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 4
+  },
+  {
+    "type": "judge",
+    "stem": "当在市场交易中未考虑电网安全约束时，市场成员在市场关闸时间提交的发电和用电计划可能会由于不满足输电网安全约束，而无法实际执行。这种情况就是常说的输电阻塞。（）",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_64ebc93ec33d09ca",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#139"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 8
+  },
+  {
+    "type": "judge",
+    "stem": "燃煤发电市场交易价格浮动范围由现行的上浮不超过10%、下浮原则上不超过15%，扩大为上下浮动原则上均不超过20%，高耗能企业市场交易电价不受上浮20%限制。电力现货价格参照上述幅度执行。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_a3c3d23a220b7e76",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-A#141"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 9
+  },
+  {
+    "type": "judge",
+    "stem": "若电能量市场和辅助服务市场联合出清，其电能量和辅助服务在市场上是紧密结合的，耦合关系较强。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_c360bf1e835c3a8a",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#132"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 12
+  },
+  {
+    "type": "judge",
+    "stem": "负荷峰谷比是发电侧省内现货市场数据分析中的一个重要指标，用于衡量市场负荷的波动情况。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_c7abfcc366b7acbf",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-26-B#160"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 16
+  },
+  {
+    "type": "judge",
+    "stem": "电力现货市场与调峰市场深度融合前，机组在最小技术出力以上部分参与现货市场，最小技术出力以下部分参加深度调峰市场竞价。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_20b80c389a8248c4",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#137"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "judge",
+    "stem": "美国的优化机制为单独优化出清，而澳大利亚则采用的是多市场联合优化出清。（）",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_7ffd4de32b1dc4a7",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#139"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "judge",
+    "stem": "电力现货市场引入之后，考虑运行过程中的经济性，运行备用根据按需购买的原则进行获取。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_2269374922666355",
+    "domain": "电力现货市场",
+    "sources": [
+      "6-30#140"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "judge",
+    "stem": "结算电费指发电企业与电力用户在现货市场和中长期交易市场中以电能量为交易标的物的电费。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_52f84a4202453066",
+    "domain": "电力现货市场",
+    "sources": [
+      "7-18#155"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 24
+  },
+  {
+    "type": "judge",
+    "stem": "电网无功补偿的原则是一般都是按分区分层和就地平衡原则。()",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_206099313bb03615",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-26-A#145"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 26
+  },
+  {
+    "type": "judge",
+    "stem": "26. 调峰服务指发电机组根据电网运行需要，按照电网调度指令通过调减出力至基本调峰范围以下，所提供的辅助服务。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_ddd27b0cba18cf38",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#136"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 28
+  },
+  {
+    "type": "judge",
+    "stem": "基本调峰的范围，一般是参考常规火电机组可调节范围确定。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_4632f005eb4957b9",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#138"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "judge",
+    "stem": "有备用接线方式供电可靠性高，在任何情况下都具有良好的电能质量。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_5c62048b7fb29ac7",
+    "domain": "辅助服务市场",
+    "sources": [
+      "6-30#146"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 31
+  },
+  {
+    "type": "judge",
+    "stem": "2002年厂网分开以前，辅助服务和发电量捆绑在一起结算，并没有辅助服务的概念，也没有单独的辅助服务补偿机制。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_7410c9bb0b51346f",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#123"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "judge",
+    "stem": "我国首个电力调峰市场是华东电力辅助服务调峰市场。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_a30ad5f151131be5",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#125"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "judge",
+    "stem": "从充分发挥市场配置资源来说，省市电网按照电网运行需求优先调用省外调峰资源。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_99b71abf48f3b3c3",
+    "domain": "辅助服务市场",
+    "sources": [
+      "7-18#126"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "judge",
+    "stem": "差价合约有多种形式，如单向/双向差价合约，政府授权/市场化合约，确定数量/非确定数量合约，确定价格/非确定价格合约，用来解决不同的问题。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_e55a0b2c498907c8",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-26-A#144"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 36
+  },
+  {
+    "type": "judge",
+    "stem": "12. 当前国内外辅助服务产品的定价方式有不付费、基于成本的补偿制、价值核算制、双边合约、市场化竞标和实时竞价6种。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_4931ec3128648095",
+    "domain": "电价机制与成本",
+    "sources": [
+      "6-30#134"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 39
+  },
+  {
+    "type": "judge",
+    "stem": "电力交易电子合同与纸质合同具备同等效力。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_c8e22dd0ec1c3414",
+    "domain": "合同管理与履约",
+    "sources": [
+      "6-30#141"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 48
+  },
+  {
+    "type": "judge",
+    "stem": "对于同时装有主、副表的计量点，以副表计量电能量作为结算依据，主表电能计量数据作为参照。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_e0695f5b1d6aa947",
+    "domain": "计量结算与偏差处理",
+    "sources": [
+      "6-26-A#134"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第2卷.md",
+    "sourceOrdinal": 49
+  },
+  {
+    "type": "judge",
+    "stem": "根据《省间电力现货交易规则》，目前用户侧只能由电网公司代理用户进行省间现货交易，大用户、售电公司等不能参与。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_898202947723f478",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "6-26-B#139"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 17
+  },
+  {
+    "type": "judge",
+    "stem": "报价单必须有时间限制但无需售电公司盖章落款",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_88ae1674844c0850",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "6-26-B#161"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 18
+  },
+  {
+    "type": "judge",
+    "stem": "售电公司对代理电力用户实际用电量情况汇总整理的主要目的在于盘点代理电力用户实际用电情况与计划电量之间偏差，及时发现主要代理电力用户用能行为的变化，对于电力用户反馈用能变化情况进行核实，为后续是否继续代理及如何配置签约套餐提供依据。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_fbafd688a91566f4",
+    "domain": "零售市场与售电服务",
+    "sources": [
+      "7-18#156"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 19
+  },
+  {
+    "type": "judge",
+    "stem": "《能源法》明确支持可再生能源的开发利用。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_23c6d37ba877e3c7",
+    "domain": "绿电新能源与需求响应",
+    "sources": [
+      "7-18#137"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 23
+  },
+  {
+    "type": "judge",
+    "stem": "跨区跨省交易的标的物为分时段的电能量",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_be72059cf041c5d8",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "6-30#133"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 25
+  },
+  {
+    "type": "judge",
+    "stem": "外送交易指售电公司与电网或电网间开展的跨区跨省购售电交易。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_bf6f87d98ed93595",
+    "domain": "省间与跨区交易",
+    "sources": [
+      "7-18#122"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 27
+  },
+  {
+    "type": "judge",
+    "stem": "网损是指电能量输送过程中以热能形式散发的功率损失，即为电阻、电导产生的电能损耗。（）",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_55a91224cde385d8",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#140"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 29
+  },
+  {
+    "type": "judge",
+    "stem": "\"五爱\"包括爱社会主义。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_bb040a89b8ecd655",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#148"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 30
+  },
+  {
+    "type": "judge",
+    "stem": "电力行业转型升级的方向包括压缩开支。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_846f83d3fcca2d57",
+    "domain": "未归类",
+    "sources": [
+      "6-26-A#150"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 31
+  },
+  {
+    "type": "judge",
+    "stem": "新兴市场主体不需要服从电力调度机构统一调度。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_20bbd76eed3bff42",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#137"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 32
+  },
+  {
+    "type": "judge",
+    "stem": "二级负荷可以采用单电源双回路供电。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_ffe2e7fb2a730c47",
+    "domain": "未归类",
+    "sources": [
+      "6-26-B#140"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 33
+  },
+  {
+    "type": "judge",
+    "stem": "党的“四个自信”包括制度自信、理论自信、道路自信、文化自信。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "对"
+    ],
+    "id": "q_a1b701fc13295eb0",
+    "domain": "未归类",
+    "sources": [
+      "6-30#153"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 34
+  },
+  {
+    "type": "judge",
+    "stem": "团结协作在电力行业中不重要。",
+    "options": [
+      {
+        "key": "对",
+        "text": "正确"
+      },
+      {
+        "key": "错",
+        "text": "错误"
+      }
+    ],
+    "answers": [
+      "错"
+    ],
+    "id": "q_ff1ca3647dde9058",
+    "domain": "未归类",
+    "sources": [
+      "7-18#142"
+    ],
+    "repeatCount": 1,
+    "sourceFile": "电力交易员StudyVault-近期真题版/03-判断题专项/判断题专项-近期真题-测验-第3卷.md",
+    "sourceOrdinal": 35
+  }
+];
+export const EMBEDDED_RECENT_QUESTION_IDS: readonly string[] = [
+  "q_be81e008416f37f4",
+  "q_ca6b15b13b8cf70d",
+  "q_f0fe01fd55839dc9",
+  "q_4f7a2234985e14e0",
+  "q_0befe28e897bd66a",
+  "q_f6a51b67c60f0f5b",
+  "q_583e8b8a6c9668de",
+  "q_ca31e6c650a92baa",
+  "q_070dbf02ac7abe56",
+  "q_dca2d607c48fdaab",
+  "q_b012117753ac08db",
+  "q_21b78e9dfe41d411",
+  "q_d8cd6ea6dbe3c612",
+  "q_9f7c1cc767c36783",
+  "q_98071884adc23d28",
+  "q_f41a24423c660a86",
+  "q_08a9f308b68d0804",
+  "q_d6555e84b59de6e8",
+  "q_c85c70b4286a1070",
+  "q_f7dad6c24712d45e",
+  "q_089ebd64d2fbbcf8",
+  "q_5dafbab766cfb753",
+  "q_3f1348df76305e93",
+  "q_1523b3a214e17756",
+  "q_27fb3fdbbe7c5c57",
+  "q_f9ac242428463950",
+  "q_36c3d85b099682bf",
+  "q_6309074b8dd380bf",
+  "q_2652898aa143b43e",
+  "q_0d6748d86c3bddd4",
+  "q_269bc3e5750e8cb9",
+  "q_c031de1093a12dc4",
+  "q_ccd4806927231315",
+  "q_5cee1735bea49e29",
+  "q_596533544c4f9eb8",
+  "q_d806eb01793d0f2d",
+  "q_c5eb259e0c7c568a",
+  "q_fe8bf1d5b8cc3d71",
+  "q_db2aee0821c18064",
+  "q_d1098ca45622bfd0",
+  "q_55fbbe4c569dba10",
+  "q_68f835340adc2800",
+  "q_479ae0e9db034eb5",
+  "q_9bd6b61ae703ce6e",
+  "q_252ef4bd59969bb9",
+  "q_5352e3fbd8bcbcbf",
+  "q_71761aa29d0ddcae",
+  "q_b8eb34b13821e505",
+  "q_5f21d4cab00e346e",
+  "q_e86272db09bef75f",
+  "q_064d6450af2f0374",
+  "q_6ee221cbea029c3f",
+  "q_e5be79f45f75fc00",
+  "q_dc38ac58877b0bd4",
+  "q_a03401b292cd79b6",
+  "q_0d7aaeb67f259b52",
+  "q_2c2499882e55b4c4",
+  "q_d4b7d56b32f7795f",
+  "q_cad2f40c76ab6e08",
+  "q_27a71c5950553e75",
+  "q_178b432936da0a35",
+  "q_a4c9f89e2b120a9a",
+  "q_46d2be1065255734",
+  "q_3a67f842896e26d6",
+  "q_1846527162fdde35",
+  "q_81db19cab70795ce",
+  "q_730190feb57c289a",
+  "q_62eafe66aa2802d2",
+  "q_9d302e7a8aa0ab26",
+  "q_d14aee9c55635498",
+  "q_e569fb9ec6a4ba22",
+  "q_22f0792a26ff3c5e",
+  "q_7ea276ff71c8d83b",
+  "q_9a474c7e978d47e2",
+  "q_38ef274aeb3989ae",
+  "q_5c4799b64c35134a",
+  "q_b4721947b7a790eb",
+  "q_4e42badf56ab6e2b",
+  "q_994afa540b149e70",
+  "q_a3b4c7f69b17a0c2",
+  "q_5cb7dc8ecb9880ca",
+  "q_9556f2dce9209078",
+  "q_c39ef4eb7eabe1ff",
+  "q_c8295774e7e56e30",
+  "q_5d3406a504c7ef11",
+  "q_71c37482f037ddae",
+  "q_518fa1caa7f10786",
+  "q_fa9f7ea4bed98280",
+  "q_c764d2a69556ef6a",
+  "q_1c0eaed2de8068fe",
+  "q_0678741465f09c70",
+  "q_1b37d59f3e306aab",
+  "q_efa0a91c00808fe0",
+  "q_cee8c7ccb0836b10",
+  "q_494748aae539baf6",
+  "q_4f95b7f87ca940ec",
+  "q_01996dd47a7cdc00",
+  "q_bbb871dfc044e853",
+  "q_a1637ae2fc7b19ce",
+  "q_bc373d5356ec9dff",
+  "q_0693dd23a239518f",
+  "q_ac445a4d33c25f21",
+  "q_38238c42451e5b3e",
+  "q_db19caa1e8edfbc5",
+  "q_117c1b8b4bfcd27f",
+  "q_9c0eff5c9b3b1190",
+  "q_f821e4b09439e314",
+  "q_3e3af1224dafcd0e",
+  "q_4e41205be5e47817",
+  "q_944234563f06e29a",
+  "q_29a2b6855976ff59",
+  "q_cc259c722d5b0826",
+  "q_775b90c6c1756aea",
+  "q_00501becc5614c78",
+  "q_0f1152f1d37ea5ad",
+  "q_03774789939919b5",
+  "q_6943dc10eaa0e88c",
+  "q_7366e97480c55f48",
+  "q_5e7cd57eeb9d7282",
+  "q_5a9657a99a5d4c25",
+  "q_1a674fc6d265a172",
+  "q_ef95d6b466eb4730",
+  "q_9b134f352ed635a1",
+  "q_6f5c71391086aa95",
+  "q_37cf64566830ff3a",
+  "q_392d33c6a8185dda",
+  "q_89b70f1ad183f0a6",
+  "q_5f93d657bd57dc0b",
+  "q_37b5e2e99be3e315",
+  "q_64d91c64a318c470",
+  "q_faef545eb6b381ca",
+  "q_e741410a38f72cd6",
+  "q_6a925fdb2f505267",
+  "q_980b4527d2f3bf33",
+  "q_f283b0db58beb907",
+  "q_860d38ea05ad8cbe",
+  "q_584d65d024cb8264",
+  "q_b740e9d74c05f56b",
+  "q_cac9c9c56e72c211",
+  "q_8c10d74d11072241",
+  "q_fbd98dc6f7e4b1b2",
+  "q_6f9643f0ad8df2ac",
+  "q_ad3cfd76b91936ea",
+  "q_63dbe0aa30aef826",
+  "q_58462a208d450044",
+  "q_216df1ae59333a22",
+  "q_01644cdcc6a1bea0",
+  "q_868b03495892e3ed",
+  "q_04c53b320c786dc6",
+  "q_15ef1ad84e5f1624",
+  "q_6033cfa4c3167540",
+  "q_6ca352b791eb0533",
+  "q_f94743a705781c53",
+  "q_c9967915bb273ec1",
+  "q_0b1910da9fe66cbe",
+  "q_2c042565d5aaff71",
+  "q_c909c7b458f138e8",
+  "q_4426505c29fc2e28",
+  "q_535a2f79d547588d",
+  "q_173f824d609b5f49",
+  "q_eab3d7ab24debf87",
+  "q_6552ba3ed723c542",
+  "q_ebd0c3b3c0db0c8f",
+  "q_2374580fc736784b",
+  "q_818e68d15bd1354d",
+  "q_ce5c536e0f191482",
+  "q_5e04eec63a835f72",
+  "q_6086e546b2183cda",
+  "q_b6d237bbc4336ec7",
+  "q_b58fbbd8ed38d394",
+  "q_8dbbca4a6cb03b76",
+  "q_479f0c8db1455eb1",
+  "q_6071aef3ad67e6e7",
+  "q_35bbe2766881026a",
+  "q_ee176700ab33c76c",
+  "q_3c383e72a3aa5c06",
+  "q_454c37e1f1203f45",
+  "q_988356a532437be9",
+  "q_ad51c38f8e0742c3",
+  "q_20fd2b5eecb71dfa",
+  "q_d6a20d90461b5dbc",
+  "q_2d00a5c6a0a7311a",
+  "q_593e353ec1d5f34a",
+  "q_88d10fb21cef8cbe",
+  "q_f3f9946c640702f0",
+  "q_f7680543ea0929a7",
+  "q_292a49cd70a255f9",
+  "q_88684a3e49443ed2",
+  "q_d8aa39aa5c4b1a8e",
+  "q_858c28ec71cf99e0",
+  "q_bf7f750467e65d50",
+  "q_93d1e9978ae72173",
+  "q_e18287f6bcc9a2da",
+  "q_cf8e00020d1c78a6",
+  "q_2d073dd3f0db64df",
+  "q_510ef3e7cfc784b3",
+  "q_dc279475621db571",
+  "q_2b5afddef6258ab2",
+  "q_11a2511bde76f10f",
+  "q_3c9884af87ebe3eb",
+  "q_1c228927dd793323",
+  "q_33ae3dda3380a116",
+  "q_d228fe87541f465b",
+  "q_8f9138c90e4b764d",
+  "q_a0588a62961ac3e6",
+  "q_4d3af714b89937b0",
+  "q_2b220a7c4de46c40",
+  "q_0b6a3bdd458ad5e9",
+  "q_60a53372d3d5969e",
+  "q_0418bbdcae179b80",
+  "q_7f9c54310e1afb9d",
+  "q_e8274aa5acd53751",
+  "q_2fb3006bdb252d17",
+  "q_5b2e9b62705facbe",
+  "q_bb89d240f2b9a274",
+  "q_5f052a513363cc75",
+  "q_1f2bb37d712e9bc9",
+  "q_cdfba1fc5b648988",
+  "q_1087bda81869e25c",
+  "q_d1c138ce2b33736a",
+  "q_853c63849d5454a0",
+  "q_8091923b0ccd992f",
+  "q_9107ed8607cdac5a",
+  "q_e1bf0c1f9f0a280b",
+  "q_8ce2c8804c1be5dc",
+  "q_604269e1d58611fd",
+  "q_a649949811a0d954",
+  "q_e8a8c6953665ce41",
+  "q_7e6f2db77f53c9db",
+  "q_f2282bfd4acc66e1",
+  "q_85cfe0d47a4e8ce8",
+  "q_d8c0b41a96110166",
+  "q_8349c2adde9d7a81",
+  "q_9ce023e4a3395818",
+  "q_7d180965278dc301",
+  "q_054c9731f85912f5",
+  "q_22530c175bd40c1b",
+  "q_c0d35e6bc03b3e1f",
+  "q_060ba66d8d7172d9",
+  "q_6c12f666f8eab6c2",
+  "q_59a98dd4471935d0",
+  "q_a1d48f02ca647b66",
+  "q_b62f57c1187489d5",
+  "q_8f522147172bb9bb",
+  "q_b8554ff367edef9f",
+  "q_ea98b671544d7ced",
+  "q_8f4e6e5e6b2bfae2",
+  "q_46404cce366d9902",
+  "q_ea1637e6b374d6a2",
+  "q_2ec2e57df0bf5111",
+  "q_b629a4b7f0f90f7b",
+  "q_3ac179f6eecb2232",
+  "q_28b9ad834a2b9c5f",
+  "q_d00dee79a5dac6f5",
+  "q_26717c53ff778747",
+  "q_6093ad3545ea7c61",
+  "q_29df1a58bf305324",
+  "q_686473a2e728b896",
+  "q_f3f13f825a9bc356",
+  "q_43b85fc8ab580e3c",
+  "q_eea9a0dccf87e790",
+  "q_35aeb64cd6f68150",
+  "q_252f347b85ec2f8f",
+  "q_4938f5e199067ee5",
+  "q_733c31a7b58a8d8b",
+  "q_f891b8ae86df9e72",
+  "q_ecea02d1627dd7dd",
+  "q_ebb0443d4c965601",
+  "q_35a0c8f0fb9fce74",
+  "q_6a48d898775f3574",
+  "q_89328c3271b9f326",
+  "q_58b872570c912ebb",
+  "q_d4117c81fb4a3dad",
+  "q_dc87b35fb8b7d4ab",
+  "q_46adea4d20ea7299",
+  "q_f86a790a94ca33c6",
+  "q_76a85ef533e656d1",
+  "q_e554747125c8ae9d",
+  "q_42ceacab15ae7127",
+  "q_c5f454f867936604",
+  "q_902ff73e6ee8f54a",
+  "q_94441add1328eb59",
+  "q_80bdeaa925c26cfd",
+  "q_485ed9e86a676f54",
+  "q_a327022c7b957788",
+  "q_c45c09d0b06bf914",
+  "q_92d2bdc8cf6e0264",
+  "q_c7b2f7504cd12574",
+  "q_17e028bbfc548407",
+  "q_3913d26c1e189368",
+  "q_03ceee95e9668e29",
+  "q_4ebf08a2723d065e",
+  "q_9a8c26ed1647cbd9",
+  "q_a20ddefa6a4c092e",
+  "q_481a803546477b21",
+  "q_6460159518595ea1",
+  "q_992b99ab229fdb87",
+  "q_543f081a3b5798ee",
+  "q_01a658b429061e48",
+  "q_a3cf701e38f89afa",
+  "q_cac4228f737832db",
+  "q_79ea622bafa1a31f",
+  "q_8af9f4da3739e1fe",
+  "q_b1d40f0394596077",
+  "q_62655518f15039a4",
+  "q_3bd7b83048978754",
+  "q_de3d03aa9c4fcaae",
+  "q_8a61c4e18a9c81bd",
+  "q_c83f088c94cbf4b0",
+  "q_98548a6d5b1173d1",
+  "q_70bab30100a1292d",
+  "q_2fa1ee2d426e16c1",
+  "q_f4b07c8b8ad72a87",
+  "q_4104566523bb3821",
+  "q_8793b692705e4326",
+  "q_61badcd0120cbcb4",
+  "q_b862867c92850430",
+  "q_e5568a03742d39d7",
+  "q_b0889b0dec7bc849",
+  "q_20399764f3b6ae00",
+  "q_8af6af554e260aa9",
+  "q_5145ad25088f43e9",
+  "q_02e80196c00d036a",
+  "q_ee252fef97b0fd4b",
+  "q_51622d65efe4a6d1",
+  "q_62c5c177c518584b",
+  "q_d170d147f711fb2b",
+  "q_bbe9d6fcf3ec74f0",
+  "q_625cf3a9de63b8fd",
+  "q_200578142e935b70",
+  "q_f3808c9228a41816",
+  "q_dca043d8d90e91ac",
+  "q_9f615c1b63375ab7",
+  "q_05702249ac53c1f5",
+  "q_24fe652708b37ba3",
+  "q_809296f7bd0175ab",
+  "q_f698962f6926056b",
+  "q_638a9f4c0b775d98",
+  "q_f84d23229674417e",
+  "q_97d034e7d1ecdcd3",
+  "q_0fb1dcbd7a353841",
+  "q_cb8570a468e05350",
+  "q_99db9c7fc27625f3",
+  "q_14109bdbff828367",
+  "q_b8686d403a8a011c",
+  "q_852a38f9a15f6615",
+  "q_5daa6eb97b687785",
+  "q_ebcdff2472b1b530",
+  "q_724139a5dd0c0ea1",
+  "q_cfe2b78d739f78a9",
+  "q_ac2744dcd4ce2860",
+  "q_ec1aaa41ec6c8845",
+  "q_430570d3b1b733df",
+  "q_8be94d0f15d3b8db",
+  "q_f2a237b38cd747f7",
+  "q_df49684fdfed11db",
+  "q_9c4c14401b87bc8c",
+  "q_090a2533969cbabf",
+  "q_867c5e1e6a4091ba",
+  "q_710fcbc42e7663c0",
+  "q_cc4282575d962e63",
+  "q_8892a8f71d2fd8e3",
+  "q_6f412e9ec6f9f79a",
+  "q_b42baf45fcba5471",
+  "q_90539b88ccee6df4",
+  "q_1ddf1365c7239641",
+  "q_62d5ed48cf90e214",
+  "q_3a171594e1296898",
+  "q_2fec256c39bc6488",
+  "q_c61f9714532761f0",
+  "q_07aeb0dadec987fe",
+  "q_46e07284ffc56d08",
+  "q_8224c317db9096cb",
+  "q_47f5665dde2f1cf9",
+  "q_ddbd3e98ed164f0c",
+  "q_84c3b199d218864d",
+  "q_88b662a63f4c9cb2",
+  "q_89f72e415d323ebd",
+  "q_1e4a26b35204cbff",
+  "q_ad69859891636a14",
+  "q_5eb4b1c61b5b6e82",
+  "q_7ec372b214be25f6",
+  "q_2d2cb44d03381469",
+  "q_d5cb279aa01eae36",
+  "q_1cf0de646cffc918",
+  "q_4ffe90f178fddcb5",
+  "q_9346e7a4b7a46c78",
+  "q_2fe7eff46ca4ad48",
+  "q_5e1033e5392c2d19",
+  "q_469c38ba3735bc36",
+  "q_f8cc029fceb8f973",
+  "q_efa7405e7556c352",
+  "q_8d073377492c8923",
+  "q_3d2fdec249d1b3be",
+  "q_a5caa9260e5b9f32",
+  "q_1e3b430b7ed495e7",
+  "q_f89705ca50cbacce",
+  "q_f70aa956cc7ee77a",
+  "q_ad453c1fcece601b",
+  "q_789c1ddddc9a4c11",
+  "q_2cd73000e3449834",
+  "q_3a2e8674c1a46750",
+  "q_b3b53334c465ba70",
+  "q_a3acf23b50294bf7",
+  "q_8e3f9c7d06644621",
+  "q_f1d59b4236dbee56",
+  "q_6f90396a9ea0974e",
+  "q_450cf7c7d5595733",
+  "q_2c0f8dc3cfc82adf",
+  "q_633bfd5ee74cab22",
+  "q_02b6ba466d8d81fa",
+  "q_1e5a5b931eb76f47",
+  "q_b66f97b91f3f0eb5",
+  "q_3082f7a17a4cec65",
+  "q_dea434021850bf5e",
+  "q_42f413e8be43289c",
+  "q_51014b502d1306fc",
+  "q_d42a305094796e1c",
+  "q_9ee56e263d2981c2",
+  "q_e5416eaf62a08feb",
+  "q_5728a424ea1b49e8",
+  "q_002d1f1206a6802e",
+  "q_56362eb67068e902",
+  "q_7d8f07cb5762f987",
+  "q_f64e9b1364c6897f",
+  "q_4a89fb15e8279aa1",
+  "q_e2cee2ab4eee24ef",
+  "q_9640300df1ea2ae9",
+  "q_a00c9716de453c8a",
+  "q_bffe1d42a4815a1e",
+  "q_5243e176edd03d0a",
+  "q_4fe6b1186538a024",
+  "q_a209f68fc216e7cb",
+  "q_66f744065ec686da",
+  "q_45e8bf1e01099c12",
+  "q_107e6742f3a5b4de",
+  "q_c8f4dddbb29ad1f7",
+  "q_2f236c45c66e7b59",
+  "q_2ef803a9685c67ad",
+  "q_15d387554d9f4a81",
+  "q_d64cc4efe8b3ccc3",
+  "q_db9fd72a1c7ffcc6",
+  "q_66e40ba617e803da",
+  "q_c2c3cf43b376c377",
+  "q_9c8b1a9addba147e",
+  "q_10b9cabe99eae8da",
+  "q_a0521f6d03adcba9",
+  "q_8103f1dccbccdf00",
+  "q_d1fe87d67bd3db0a",
+  "q_7017b494a10acac0",
+  "q_5eac1db0c2046c44",
+  "q_4afb9fb8b99d4d94",
+  "q_2fac6f37aee0b893",
+  "q_910fa58e6f57c58a",
+  "q_92113876f37ec17a",
+  "q_ae8798369623ed8a",
+  "q_0eb6160c87f08620",
+  "q_436d45f142b55575",
+  "q_8b2399f6a065b9b2",
+  "q_5865f24792b8ec63",
+  "q_e808910acb1042c6",
+  "q_ae3385f6d4e402e2",
+  "q_dada694f21e5eb53",
+  "q_1a44c2546fc17130",
+  "q_3bf9c7237f7b520f",
+  "q_34be02c153c8112d",
+  "q_52e96f530e3504af",
+  "q_d7cc2c1eb4c7bf0a",
+  "q_ef176b9fe1d8196b",
+  "q_1a8b810b1d518567",
+  "q_28c8847fbb9f6d63",
+  "q_470b8e9954534e9d",
+  "q_011b5373d971b8af",
+  "q_19aa6a72b35e31be",
+  "q_db2018df6dd48933",
+  "q_8d89f79ec47db4d2",
+  "q_f5b0f777a0d0a95b",
+  "q_0db8cb001733a9f4",
+  "q_77f575f5baf0c319",
+  "q_9eb916f76e6b985b",
+  "q_515ebb7fab4aabfb",
+  "q_2bd29f777b15c96b",
+  "q_3b47f75fa596534b",
+  "q_6d3017c0d994cfb4",
+  "q_5bd68d0f6de3a073",
+  "q_6a7086bedcbfdbd2",
+  "q_15bfd13ce6be38e0",
+  "q_8e6000f67a0d2d5a",
+  "q_13b002a1fa46066d",
+  "q_17a5fb0a478d4736",
+  "q_6da2b1bbb63574b7",
+  "q_42aabcd9d486575d",
+  "q_3816ca6f9c2379b3",
+  "q_dda613b676233542",
+  "q_bc1f81b4cf2292c8",
+  "q_ec831716b7360642",
+  "q_672c3c70f58cedb4",
+  "q_e7feac295ef1d405",
+  "q_8ed1cccd6ea7bad1",
+  "q_c24150fd18725a51",
+  "q_bbca7bc8ebd2e76c",
+  "q_8aff51ec061a9048",
+  "q_fe92a79aabe9eb7e",
+  "q_ac76868bd1bd13af",
+  "q_4f5736a8990855bc",
+  "q_11a67c79a8eb2e05",
+  "q_5786e7f1905f2675",
+  "q_c45cd1e2d089c596",
+  "q_27d38d6cbe159430",
+  "q_a7512aa319bab957",
+  "q_0e4258777d113173",
+  "q_5ce7a22a50854466",
+  "q_121b53ed75a84671",
+  "q_6779d7e6c45ad262",
+  "q_24ded3b07e028c04",
+  "q_a8a2de31328f5df5",
+  "q_37fde7598c749835",
+  "q_64ebc93ec33d09ca",
+  "q_a3c3d23a220b7e76",
+  "q_22405963ce291b97",
+  "q_10330889cd5fa625",
+  "q_c360bf1e835c3a8a",
+  "q_f1ac31ae77ea0902",
+  "q_19dd2a6da8d69171",
+  "q_98a9178bbd959597",
+  "q_c7abfcc366b7acbf",
+  "q_20b80c389a8248c4",
+  "q_7ffd4de32b1dc4a7",
+  "q_2269374922666355",
+  "q_02aacaa67e5436d2",
+  "q_8fc5b93102cdcc9d",
+  "q_751688b28ddba046",
+  "q_5e426c95fcc5cd69",
+  "q_52f84a4202453066",
+  "q_985d9672393b60ee",
+  "q_206099313bb03615",
+  "q_b844679015cf2964",
+  "q_ddd27b0cba18cf38",
+  "q_4632f005eb4957b9",
+  "q_712dbc3db5ae5861",
+  "q_5c62048b7fb29ac7",
+  "q_7410c9bb0b51346f",
+  "q_a30ad5f151131be5",
+  "q_99b71abf48f3b3c3",
+  "q_0ff026c6231ce7da",
+  "q_e55a0b2c498907c8",
+  "q_e02dab446c505f50",
+  "q_c81c5699e0dd0f05",
+  "q_4931ec3128648095",
+  "q_15785e74c0001098",
+  "q_0386c8d644e75d32",
+  "q_14791279e46e14ad",
+  "q_7cd4272c26604d88",
+  "q_96e9f8b98c757bbd",
+  "q_27903ad9248b469d",
+  "q_cabbb063113723a7",
+  "q_6b9ad339e71dcbfd",
+  "q_c8e22dd0ec1c3414",
+  "q_e0695f5b1d6aa947",
+  "q_89f9bf3cf2b3ceb8",
+  "q_c1ef14fd4ee48b49",
+  "q_4a5c27a16923999d",
+  "q_1cfbb5b671f94822",
+  "q_9f1f6621ce78e68d",
+  "q_7710abcd084301a1",
+  "q_21665c71e9452f9d",
+  "q_6dde47c822372b34",
+  "q_4f700f809e02a33c",
+  "q_7c30bee932dbadad",
+  "q_34000254c641c8b8",
+  "q_a3a2fc49a68b1ccd",
+  "q_4c23ec72d2303116",
+  "q_5c1a156b9b98c8e7",
+  "q_557ac8ba3acfca8e",
+  "q_48d5d9815437cb6d",
+  "q_05d54b72c9950a6e",
+  "q_9f1733bad4d2adde",
+  "q_e9da329006bf8c94",
+  "q_635ea26fda6c196b",
+  "q_de2346679a00fe8b",
+  "q_29b8aaf2c681d61e",
+  "q_2d8b3e98327d01ac",
+  "q_75e658d99c45b1dd",
+  "q_37792a3e7947fafa",
+  "q_ac9a3c4c9c413cb8",
+  "q_7600c350f7457a44",
+  "q_898202947723f478",
+  "q_88ae1674844c0850",
+  "q_fbafd688a91566f4",
+  "q_c5cdebabad648e07",
+  "q_fae1c4f05598a95c",
+  "q_e05d109e424a5782",
+  "q_23c6d37ba877e3c7",
+  "q_029c22ba8dd0b75e",
+  "q_be72059cf041c5d8",
+  "q_d351a668003d9f0c",
+  "q_bf6f87d98ed93595",
+  "q_f733baf0152012bc",
+  "q_55a91224cde385d8",
+  "q_bb040a89b8ecd655",
+  "q_846f83d3fcca2d57",
+  "q_20bbd76eed3bff42",
+  "q_ffe2e7fb2a730c47",
+  "q_a1b701fc13295eb0",
+  "q_ff1ca3647dde9058"
+];
+export const EMBEDDED_EXAM_PAPERS: readonly ExamPaper[] = [
+  {
+    "id": "real-2026-6-26-A",
+    "title": "2026 年 6 月 26 日 · A 卷",
+    "sourcePdf": "电力交易员StudyVault-近期真题版/近期真题 pdf/2026-6-26-A.pdf",
+    "sourceSha256": "8b744060b04dbe8f14c8e3a622616e693122363fb76ba0a217c898a2f6a33fbc",
+    "durationMinutes": 120,
+    "declaredTotalScore": 100,
+    "totalScore": 100,
+    "counts": {
+      "single": 100,
+      "multiple": 30,
+      "judge": 40
+    },
+    "items": [
+      {
+        "ordinal": 1,
+        "questionId": "q_5145ad25088f43e9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 2,
+        "questionId": "q_c39ef4eb7eabe1ff",
+        "points": 0.5
+      },
+      {
+        "ordinal": 3,
+        "questionId": "q_f0fe01fd55839dc9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 4,
+        "questionId": "q_e1bf0c1f9f0a280b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 5,
+        "questionId": "q_22f0792a26ff3c5e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 6,
+        "questionId": "q_ad51c38f8e0742c3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 7,
+        "questionId": "q_20fd2b5eecb71dfa",
+        "points": 0.5
+      },
+      {
+        "ordinal": 8,
+        "questionId": "q_8ce2c8804c1be5dc",
+        "points": 0.5
+      },
+      {
+        "ordinal": 9,
+        "questionId": "q_27a71c5950553e75",
+        "points": 0.5
+      },
+      {
+        "ordinal": 10,
+        "questionId": "q_dca043d8d90e91ac",
+        "points": 0.5
+      },
+      {
+        "ordinal": 11,
+        "questionId": "q_604269e1d58611fd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 12,
+        "questionId": "q_bbe9d6fcf3ec74f0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 13,
+        "questionId": "q_46404cce366d9902",
+        "points": 0.5
+      },
+      {
+        "ordinal": 14,
+        "questionId": "q_7ea276ff71c8d83b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 15,
+        "questionId": "q_a649949811a0d954",
+        "points": 0.5
+      },
+      {
+        "ordinal": 16,
+        "questionId": "q_064d6450af2f0374",
+        "points": 0.5
+      },
+      {
+        "ordinal": 17,
+        "questionId": "q_e8a8c6953665ce41",
+        "points": 0.5
+      },
+      {
+        "ordinal": 18,
+        "questionId": "q_dca2d607c48fdaab",
+        "points": 0.5
+      },
+      {
+        "ordinal": 19,
+        "questionId": "q_9f615c1b63375ab7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 20,
+        "questionId": "q_6ee221cbea029c3f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 21,
+        "questionId": "q_21b78e9dfe41d411",
+        "points": 0.5
+      },
+      {
+        "ordinal": 22,
+        "questionId": "q_05702249ac53c1f5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 23,
+        "questionId": "q_e5be79f45f75fc00",
+        "points": 0.5
+      },
+      {
+        "ordinal": 24,
+        "questionId": "q_1b37d59f3e306aab",
+        "points": 0.5
+      },
+      {
+        "ordinal": 25,
+        "questionId": "q_7e6f2db77f53c9db",
+        "points": 0.5
+      },
+      {
+        "ordinal": 26,
+        "questionId": "q_5cb7dc8ecb9880ca",
+        "points": 0.5
+      },
+      {
+        "ordinal": 27,
+        "questionId": "q_24fe652708b37ba3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 28,
+        "questionId": "q_809296f7bd0175ab",
+        "points": 0.5
+      },
+      {
+        "ordinal": 29,
+        "questionId": "q_f6a51b67c60f0f5b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 30,
+        "questionId": "q_ea1637e6b374d6a2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 31,
+        "questionId": "q_117c1b8b4bfcd27f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 32,
+        "questionId": "q_be81e008416f37f4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 33,
+        "questionId": "q_efa0a91c00808fe0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 34,
+        "questionId": "q_de3d03aa9c4fcaae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 35,
+        "questionId": "q_b4721947b7a790eb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 36,
+        "questionId": "q_81db19cab70795ce",
+        "points": 0.5
+      },
+      {
+        "ordinal": 37,
+        "questionId": "q_9c0eff5c9b3b1190",
+        "points": 0.5
+      },
+      {
+        "ordinal": 38,
+        "questionId": "q_71761aa29d0ddcae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 39,
+        "questionId": "q_f41a24423c660a86",
+        "points": 0.5
+      },
+      {
+        "ordinal": 40,
+        "questionId": "q_f821e4b09439e314",
+        "points": 0.5
+      },
+      {
+        "ordinal": 41,
+        "questionId": "q_a03401b292cd79b6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 42,
+        "questionId": "q_583e8b8a6c9668de",
+        "points": 0.5
+      },
+      {
+        "ordinal": 43,
+        "questionId": "q_c8295774e7e56e30",
+        "points": 0.5
+      },
+      {
+        "ordinal": 44,
+        "questionId": "q_d6a20d90461b5dbc",
+        "points": 0.5
+      },
+      {
+        "ordinal": 45,
+        "questionId": "q_8a61c4e18a9c81bd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 46,
+        "questionId": "q_ca31e6c650a92baa",
+        "points": 0.5
+      },
+      {
+        "ordinal": 47,
+        "questionId": "q_5352e3fbd8bcbcbf",
+        "points": 0.5
+      },
+      {
+        "ordinal": 48,
+        "questionId": "q_cee8c7ccb0836b10",
+        "points": 0.5
+      },
+      {
+        "ordinal": 49,
+        "questionId": "q_37cf64566830ff3a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 50,
+        "questionId": "q_392d33c6a8185dda",
+        "points": 0.5
+      },
+      {
+        "ordinal": 51,
+        "questionId": "q_89b70f1ad183f0a6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 52,
+        "questionId": "q_5f93d657bd57dc0b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 53,
+        "questionId": "q_37b5e2e99be3e315",
+        "points": 0.5
+      },
+      {
+        "ordinal": 54,
+        "questionId": "q_64d91c64a318c470",
+        "points": 0.5
+      },
+      {
+        "ordinal": 55,
+        "questionId": "q_f698962f6926056b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 56,
+        "questionId": "q_b8eb34b13821e505",
+        "points": 0.5
+      },
+      {
+        "ordinal": 57,
+        "questionId": "q_5dafbab766cfb753",
+        "points": 0.5
+      },
+      {
+        "ordinal": 58,
+        "questionId": "q_638a9f4c0b775d98",
+        "points": 0.5
+      },
+      {
+        "ordinal": 59,
+        "questionId": "q_2c2499882e55b4c4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 60,
+        "questionId": "q_faef545eb6b381ca",
+        "points": 0.5
+      },
+      {
+        "ordinal": 61,
+        "questionId": "q_d4b7d56b32f7795f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 62,
+        "questionId": "q_868b03495892e3ed",
+        "points": 0.5
+      },
+      {
+        "ordinal": 63,
+        "questionId": "q_178b432936da0a35",
+        "points": 0.5
+      },
+      {
+        "ordinal": 64,
+        "questionId": "q_5c4799b64c35134a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 65,
+        "questionId": "q_17e028bbfc548407",
+        "points": 0.5
+      },
+      {
+        "ordinal": 66,
+        "questionId": "q_5d3406a504c7ef11",
+        "points": 0.5
+      },
+      {
+        "ordinal": 67,
+        "questionId": "q_42ceacab15ae7127",
+        "points": 0.5
+      },
+      {
+        "ordinal": 68,
+        "questionId": "q_29df1a58bf305324",
+        "points": 0.5
+      },
+      {
+        "ordinal": 69,
+        "questionId": "q_1846527162fdde35",
+        "points": 0.5
+      },
+      {
+        "ordinal": 70,
+        "questionId": "q_818e68d15bd1354d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 71,
+        "questionId": "q_ce5c536e0f191482",
+        "points": 0.5
+      },
+      {
+        "ordinal": 72,
+        "questionId": "q_2d00a5c6a0a7311a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 73,
+        "questionId": "q_730190feb57c289a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 74,
+        "questionId": "q_71c37482f037ddae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 75,
+        "questionId": "q_593e353ec1d5f34a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 76,
+        "questionId": "q_88d10fb21cef8cbe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 77,
+        "questionId": "q_f3f9946c640702f0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 78,
+        "questionId": "q_02e80196c00d036a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 79,
+        "questionId": "q_ee252fef97b0fd4b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 80,
+        "questionId": "q_04c53b320c786dc6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 81,
+        "questionId": "q_a4c9f89e2b120a9a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 82,
+        "questionId": "q_15ef1ad84e5f1624",
+        "points": 0.5
+      },
+      {
+        "ordinal": 83,
+        "questionId": "q_4e42badf56ab6e2b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 84,
+        "questionId": "q_b862867c92850430",
+        "points": 0.5
+      },
+      {
+        "ordinal": 85,
+        "questionId": "q_e5568a03742d39d7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 86,
+        "questionId": "q_62eafe66aa2802d2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 87,
+        "questionId": "q_9a474c7e978d47e2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 88,
+        "questionId": "q_0befe28e897bd66a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 89,
+        "questionId": "q_6033cfa4c3167540",
+        "points": 0.5
+      },
+      {
+        "ordinal": 90,
+        "questionId": "q_5f21d4cab00e346e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 91,
+        "questionId": "q_c5f454f867936604",
+        "points": 0.5
+      },
+      {
+        "ordinal": 92,
+        "questionId": "q_494748aae539baf6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 93,
+        "questionId": "q_3913d26c1e189368",
+        "points": 0.5
+      },
+      {
+        "ordinal": 94,
+        "questionId": "q_c83f088c94cbf4b0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 95,
+        "questionId": "q_686473a2e728b896",
+        "points": 0.5
+      },
+      {
+        "ordinal": 96,
+        "questionId": "q_03ceee95e9668e29",
+        "points": 0.5
+      },
+      {
+        "ordinal": 97,
+        "questionId": "q_f84d23229674417e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 98,
+        "questionId": "q_f7680543ea0929a7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 99,
+        "questionId": "q_f2282bfd4acc66e1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 100,
+        "questionId": "q_85cfe0d47a4e8ce8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 101,
+        "questionId": "q_46e07284ffc56d08",
+        "points": 1
+      },
+      {
+        "ordinal": 102,
+        "questionId": "q_9c4c14401b87bc8c",
+        "points": 1
+      },
+      {
+        "ordinal": 103,
+        "questionId": "q_2ef803a9685c67ad",
+        "points": 1
+      },
+      {
+        "ordinal": 104,
+        "questionId": "q_7d8f07cb5762f987",
+        "points": 1
+      },
+      {
+        "ordinal": 105,
+        "questionId": "q_e2cee2ab4eee24ef",
+        "points": 1
+      },
+      {
+        "ordinal": 106,
+        "questionId": "q_42f413e8be43289c",
+        "points": 1
+      },
+      {
+        "ordinal": 107,
+        "questionId": "q_d5cb279aa01eae36",
+        "points": 1
+      },
+      {
+        "ordinal": 108,
+        "questionId": "q_9c8b1a9addba147e",
+        "points": 1
+      },
+      {
+        "ordinal": 109,
+        "questionId": "q_b42baf45fcba5471",
+        "points": 1
+      },
+      {
+        "ordinal": 110,
+        "questionId": "q_f64e9b1364c6897f",
+        "points": 1
+      },
+      {
+        "ordinal": 111,
+        "questionId": "q_4a89fb15e8279aa1",
+        "points": 1
+      },
+      {
+        "ordinal": 112,
+        "questionId": "q_f1d59b4236dbee56",
+        "points": 1
+      },
+      {
+        "ordinal": 113,
+        "questionId": "q_090a2533969cbabf",
+        "points": 1
+      },
+      {
+        "ordinal": 114,
+        "questionId": "q_867c5e1e6a4091ba",
+        "points": 1
+      },
+      {
+        "ordinal": 115,
+        "questionId": "q_710fcbc42e7663c0",
+        "points": 1
+      },
+      {
+        "ordinal": 116,
+        "questionId": "q_51014b502d1306fc",
+        "points": 1
+      },
+      {
+        "ordinal": 117,
+        "questionId": "q_d42a305094796e1c",
+        "points": 1
+      },
+      {
+        "ordinal": 118,
+        "questionId": "q_2fec256c39bc6488",
+        "points": 1
+      },
+      {
+        "ordinal": 119,
+        "questionId": "q_ec1aaa41ec6c8845",
+        "points": 1
+      },
+      {
+        "ordinal": 120,
+        "questionId": "q_8224c317db9096cb",
+        "points": 1
+      },
+      {
+        "ordinal": 121,
+        "questionId": "q_1cf0de646cffc918",
+        "points": 1
+      },
+      {
+        "ordinal": 122,
+        "questionId": "q_9640300df1ea2ae9",
+        "points": 1
+      },
+      {
+        "ordinal": 123,
+        "questionId": "q_f8cc029fceb8f973",
+        "points": 1
+      },
+      {
+        "ordinal": 124,
+        "questionId": "q_90539b88ccee6df4",
+        "points": 1
+      },
+      {
+        "ordinal": 125,
+        "questionId": "q_efa7405e7556c352",
+        "points": 1
+      },
+      {
+        "ordinal": 126,
+        "questionId": "q_1ddf1365c7239641",
+        "points": 1
+      },
+      {
+        "ordinal": 127,
+        "questionId": "q_8d073377492c8923",
+        "points": 1
+      },
+      {
+        "ordinal": 128,
+        "questionId": "q_c61f9714532761f0",
+        "points": 1
+      },
+      {
+        "ordinal": 129,
+        "questionId": "q_07aeb0dadec987fe",
+        "points": 1
+      },
+      {
+        "ordinal": 130,
+        "questionId": "q_3d2fdec249d1b3be",
+        "points": 1
+      },
+      {
+        "ordinal": 131,
+        "questionId": "q_4f5736a8990855bc",
+        "points": 0.5
+      },
+      {
+        "ordinal": 132,
+        "questionId": "q_6b9ad339e71dcbfd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 133,
+        "questionId": "q_436d45f142b55575",
+        "points": 0.5
+      },
+      {
+        "ordinal": 134,
+        "questionId": "q_e0695f5b1d6aa947",
+        "points": 0.5
+      },
+      {
+        "ordinal": 135,
+        "questionId": "q_2fac6f37aee0b893",
+        "points": 0.5
+      },
+      {
+        "ordinal": 136,
+        "questionId": "q_ef176b9fe1d8196b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 137,
+        "questionId": "q_34be02c153c8112d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 138,
+        "questionId": "q_6779d7e6c45ad262",
+        "points": 0.5
+      },
+      {
+        "ordinal": 139,
+        "questionId": "q_64ebc93ec33d09ca",
+        "points": 0.5
+      },
+      {
+        "ordinal": 140,
+        "questionId": "q_55a91224cde385d8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 141,
+        "questionId": "q_a3c3d23a220b7e76",
+        "points": 0.5
+      },
+      {
+        "ordinal": 142,
+        "questionId": "q_dada694f21e5eb53",
+        "points": 0.5
+      },
+      {
+        "ordinal": 143,
+        "questionId": "q_5eac1db0c2046c44",
+        "points": 0.5
+      },
+      {
+        "ordinal": 144,
+        "questionId": "q_e55a0b2c498907c8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 145,
+        "questionId": "q_206099313bb03615",
+        "points": 0.5
+      },
+      {
+        "ordinal": 146,
+        "questionId": "q_6a7086bedcbfdbd2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 147,
+        "questionId": "q_ae8798369623ed8a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 148,
+        "questionId": "q_bb040a89b8ecd655",
+        "points": 0.5
+      },
+      {
+        "ordinal": 149,
+        "questionId": "q_13b002a1fa46066d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 150,
+        "questionId": "q_846f83d3fcca2d57",
+        "points": 0.5
+      },
+      {
+        "ordinal": 151,
+        "questionId": "q_17a5fb0a478d4736",
+        "points": 0.5
+      },
+      {
+        "ordinal": 152,
+        "questionId": "q_9f1f6621ce78e68d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 153,
+        "questionId": "q_52e96f530e3504af",
+        "points": 0.5
+      },
+      {
+        "ordinal": 154,
+        "questionId": "q_7710abcd084301a1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 155,
+        "questionId": "q_11a67c79a8eb2e05",
+        "points": 0.5
+      },
+      {
+        "ordinal": 156,
+        "questionId": "q_48d5d9815437cb6d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 157,
+        "questionId": "q_21665c71e9452f9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 158,
+        "questionId": "q_5786e7f1905f2675",
+        "points": 0.5
+      },
+      {
+        "ordinal": 159,
+        "questionId": "q_c45cd1e2d089c596",
+        "points": 0.5
+      },
+      {
+        "ordinal": 160,
+        "questionId": "q_3bf9c7237f7b520f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 161,
+        "questionId": "q_96e9f8b98c757bbd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 162,
+        "questionId": "q_6dde47c822372b34",
+        "points": 0.5
+      },
+      {
+        "ordinal": 163,
+        "questionId": "q_22405963ce291b97",
+        "points": 0.5
+      },
+      {
+        "ordinal": 164,
+        "questionId": "q_7600c350f7457a44",
+        "points": 0.5
+      },
+      {
+        "ordinal": 165,
+        "questionId": "q_e05d109e424a5782",
+        "points": 0.5
+      },
+      {
+        "ordinal": 166,
+        "questionId": "q_10330889cd5fa625",
+        "points": 0.5
+      },
+      {
+        "ordinal": 167,
+        "questionId": "q_89f9bf3cf2b3ceb8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 168,
+        "questionId": "q_28c8847fbb9f6d63",
+        "points": 0.5
+      },
+      {
+        "ordinal": 169,
+        "questionId": "q_0386c8d644e75d32",
+        "points": 0.5
+      },
+      {
+        "ordinal": 170,
+        "questionId": "q_d7cc2c1eb4c7bf0a",
+        "points": 0.5
+      }
+    ],
+    "ruleNote": "练习限时沿用易记的 120 分钟设置；原 PDF 只记录个人考试用时，未注明考试限时。多选须全部选对才得分。"
+  },
+  {
+    "id": "real-2026-6-26-B",
+    "title": "2026 年 6 月 26 日 · B 卷",
+    "sourcePdf": "电力交易员StudyVault-近期真题版/近期真题 pdf/2026-6-26-B.pdf",
+    "sourceSha256": "dfd1b2b7eb0c12d610146ac5fa67bf99ff0e33dc84a11ca82df2f35c7f3998b5",
+    "durationMinutes": 120,
+    "declaredTotalScore": 100,
+    "totalScore": 100,
+    "counts": {
+      "single": 100,
+      "multiple": 30,
+      "judge": 40
+    },
+    "items": [
+      {
+        "ordinal": 1,
+        "questionId": "q_f0fe01fd55839dc9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 2,
+        "questionId": "q_ccd4806927231315",
+        "points": 0.5
+      },
+      {
+        "ordinal": 3,
+        "questionId": "q_292a49cd70a255f9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 4,
+        "questionId": "q_5cee1735bea49e29",
+        "points": 0.5
+      },
+      {
+        "ordinal": 5,
+        "questionId": "q_d8c0b41a96110166",
+        "points": 0.5
+      },
+      {
+        "ordinal": 6,
+        "questionId": "q_27fb3fdbbe7c5c57",
+        "points": 0.5
+      },
+      {
+        "ordinal": 7,
+        "questionId": "q_4f7a2234985e14e0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 8,
+        "questionId": "q_e86272db09bef75f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 9,
+        "questionId": "q_f9ac242428463950",
+        "points": 0.5
+      },
+      {
+        "ordinal": 10,
+        "questionId": "q_596533544c4f9eb8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 11,
+        "questionId": "q_36c3d85b099682bf",
+        "points": 0.5
+      },
+      {
+        "ordinal": 12,
+        "questionId": "q_d806eb01793d0f2d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 13,
+        "questionId": "q_5e04eec63a835f72",
+        "points": 0.5
+      },
+      {
+        "ordinal": 14,
+        "questionId": "q_f891b8ae86df9e72",
+        "points": 0.5
+      },
+      {
+        "ordinal": 15,
+        "questionId": "q_8349c2adde9d7a81",
+        "points": 0.5
+      },
+      {
+        "ordinal": 16,
+        "questionId": "q_200578142e935b70",
+        "points": 0.5
+      },
+      {
+        "ordinal": 17,
+        "questionId": "q_b012117753ac08db",
+        "points": 0.5
+      },
+      {
+        "ordinal": 18,
+        "questionId": "q_6ca352b791eb0533",
+        "points": 0.5
+      },
+      {
+        "ordinal": 19,
+        "questionId": "q_4f95b7f87ca940ec",
+        "points": 0.5
+      },
+      {
+        "ordinal": 20,
+        "questionId": "q_01996dd47a7cdc00",
+        "points": 0.5
+      },
+      {
+        "ordinal": 21,
+        "questionId": "q_97d034e7d1ecdcd3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 22,
+        "questionId": "q_d8cd6ea6dbe3c612",
+        "points": 0.5
+      },
+      {
+        "ordinal": 23,
+        "questionId": "q_9556f2dce9209078",
+        "points": 0.5
+      },
+      {
+        "ordinal": 24,
+        "questionId": "q_bbb871dfc044e853",
+        "points": 0.5
+      },
+      {
+        "ordinal": 25,
+        "questionId": "q_9f7c1cc767c36783",
+        "points": 0.5
+      },
+      {
+        "ordinal": 26,
+        "questionId": "q_a1637ae2fc7b19ce",
+        "points": 0.5
+      },
+      {
+        "ordinal": 27,
+        "questionId": "q_e5be79f45f75fc00",
+        "points": 0.5
+      },
+      {
+        "ordinal": 28,
+        "questionId": "q_c45c09d0b06bf914",
+        "points": 0.5
+      },
+      {
+        "ordinal": 29,
+        "questionId": "q_2ec2e57df0bf5111",
+        "points": 0.5
+      },
+      {
+        "ordinal": 30,
+        "questionId": "q_994afa540b149e70",
+        "points": 0.5
+      },
+      {
+        "ordinal": 31,
+        "questionId": "q_ecea02d1627dd7dd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 32,
+        "questionId": "q_88684a3e49443ed2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 33,
+        "questionId": "q_92d2bdc8cf6e0264",
+        "points": 0.5
+      },
+      {
+        "ordinal": 34,
+        "questionId": "q_9ce023e4a3395818",
+        "points": 0.5
+      },
+      {
+        "ordinal": 35,
+        "questionId": "q_f6a51b67c60f0f5b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 36,
+        "questionId": "q_3e3af1224dafcd0e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 37,
+        "questionId": "q_08a9f308b68d0804",
+        "points": 0.5
+      },
+      {
+        "ordinal": 38,
+        "questionId": "q_4e41205be5e47817",
+        "points": 0.5
+      },
+      {
+        "ordinal": 39,
+        "questionId": "q_ebb0443d4c965601",
+        "points": 0.5
+      },
+      {
+        "ordinal": 40,
+        "questionId": "q_d6555e84b59de6e8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 41,
+        "questionId": "q_944234563f06e29a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 42,
+        "questionId": "q_29a2b6855976ff59",
+        "points": 0.5
+      },
+      {
+        "ordinal": 43,
+        "questionId": "q_c85c70b4286a1070",
+        "points": 0.5
+      },
+      {
+        "ordinal": 44,
+        "questionId": "q_f7dad6c24712d45e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 45,
+        "questionId": "q_6309074b8dd380bf",
+        "points": 0.5
+      },
+      {
+        "ordinal": 46,
+        "questionId": "q_d8aa39aa5c4b1a8e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 47,
+        "questionId": "q_9d302e7a8aa0ab26",
+        "points": 0.5
+      },
+      {
+        "ordinal": 48,
+        "questionId": "q_fe8bf1d5b8cc3d71",
+        "points": 0.5
+      },
+      {
+        "ordinal": 49,
+        "questionId": "q_2652898aa143b43e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 50,
+        "questionId": "q_f3f13f825a9bc356",
+        "points": 0.5
+      },
+      {
+        "ordinal": 51,
+        "questionId": "q_583e8b8a6c9668de",
+        "points": 0.5
+      },
+      {
+        "ordinal": 52,
+        "questionId": "q_0fb1dcbd7a353841",
+        "points": 0.5
+      },
+      {
+        "ordinal": 53,
+        "questionId": "q_c5eb259e0c7c568a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 54,
+        "questionId": "q_0d6748d86c3bddd4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 55,
+        "questionId": "q_070dbf02ac7abe56",
+        "points": 0.5
+      },
+      {
+        "ordinal": 56,
+        "questionId": "q_e741410a38f72cd6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 57,
+        "questionId": "q_b8eb34b13821e505",
+        "points": 0.5
+      },
+      {
+        "ordinal": 58,
+        "questionId": "q_cad2f40c76ab6e08",
+        "points": 0.5
+      },
+      {
+        "ordinal": 59,
+        "questionId": "q_2c2499882e55b4c4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 60,
+        "questionId": "q_6a925fdb2f505267",
+        "points": 0.5
+      },
+      {
+        "ordinal": 61,
+        "questionId": "q_f94743a705781c53",
+        "points": 0.5
+      },
+      {
+        "ordinal": 62,
+        "questionId": "q_cb8570a468e05350",
+        "points": 0.5
+      },
+      {
+        "ordinal": 63,
+        "questionId": "q_46d2be1065255734",
+        "points": 0.5
+      },
+      {
+        "ordinal": 64,
+        "questionId": "q_858c28ec71cf99e0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 65,
+        "questionId": "q_4ebf08a2723d065e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 66,
+        "questionId": "q_479ae0e9db034eb5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 67,
+        "questionId": "q_9bd6b61ae703ce6e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 68,
+        "questionId": "q_9a8c26ed1647cbd9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 69,
+        "questionId": "q_c9967915bb273ec1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 70,
+        "questionId": "q_55fbbe4c569dba10",
+        "points": 0.5
+      },
+      {
+        "ordinal": 71,
+        "questionId": "q_43b85fc8ab580e3c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 72,
+        "questionId": "q_bc373d5356ec9dff",
+        "points": 0.5
+      },
+      {
+        "ordinal": 73,
+        "questionId": "q_902ff73e6ee8f54a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 74,
+        "questionId": "q_3f1348df76305e93",
+        "points": 0.5
+      },
+      {
+        "ordinal": 75,
+        "questionId": "q_6086e546b2183cda",
+        "points": 0.5
+      },
+      {
+        "ordinal": 76,
+        "questionId": "q_1846527162fdde35",
+        "points": 0.5
+      },
+      {
+        "ordinal": 77,
+        "questionId": "q_35a0c8f0fb9fce74",
+        "points": 0.5
+      },
+      {
+        "ordinal": 78,
+        "questionId": "q_0b1910da9fe66cbe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 79,
+        "questionId": "q_6a48d898775f3574",
+        "points": 0.5
+      },
+      {
+        "ordinal": 80,
+        "questionId": "q_a20ddefa6a4c092e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 81,
+        "questionId": "q_94441add1328eb59",
+        "points": 0.5
+      },
+      {
+        "ordinal": 82,
+        "questionId": "q_bf7f750467e65d50",
+        "points": 0.5
+      },
+      {
+        "ordinal": 83,
+        "questionId": "q_eea9a0dccf87e790",
+        "points": 0.5
+      },
+      {
+        "ordinal": 84,
+        "questionId": "q_d14aee9c55635498",
+        "points": 0.5
+      },
+      {
+        "ordinal": 85,
+        "questionId": "q_269bc3e5750e8cb9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 86,
+        "questionId": "q_2c042565d5aaff71",
+        "points": 0.5
+      },
+      {
+        "ordinal": 87,
+        "questionId": "q_c909c7b458f138e8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 88,
+        "questionId": "q_252ef4bd59969bb9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 89,
+        "questionId": "q_93d1e9978ae72173",
+        "points": 0.5
+      },
+      {
+        "ordinal": 90,
+        "questionId": "q_0befe28e897bd66a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 91,
+        "questionId": "q_5f21d4cab00e346e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 92,
+        "questionId": "q_c7b2f7504cd12574",
+        "points": 0.5
+      },
+      {
+        "ordinal": 93,
+        "questionId": "q_f4b07c8b8ad72a87",
+        "points": 0.5
+      },
+      {
+        "ordinal": 94,
+        "questionId": "q_481a803546477b21",
+        "points": 0.5
+      },
+      {
+        "ordinal": 95,
+        "questionId": "q_1523b3a214e17756",
+        "points": 0.5
+      },
+      {
+        "ordinal": 96,
+        "questionId": "q_3a67f842896e26d6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 97,
+        "questionId": "q_89328c3271b9f326",
+        "points": 0.5
+      },
+      {
+        "ordinal": 98,
+        "questionId": "q_6460159518595ea1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 99,
+        "questionId": "q_68f835340adc2800",
+        "points": 0.5
+      },
+      {
+        "ordinal": 100,
+        "questionId": "q_38ef274aeb3989ae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 101,
+        "questionId": "q_47f5665dde2f1cf9",
+        "points": 1
+      },
+      {
+        "ordinal": 102,
+        "questionId": "q_a00c9716de453c8a",
+        "points": 1
+      },
+      {
+        "ordinal": 103,
+        "questionId": "q_15d387554d9f4a81",
+        "points": 1
+      },
+      {
+        "ordinal": 104,
+        "questionId": "q_db9fd72a1c7ffcc6",
+        "points": 1
+      },
+      {
+        "ordinal": 105,
+        "questionId": "q_bffe1d42a4815a1e",
+        "points": 1
+      },
+      {
+        "ordinal": 106,
+        "questionId": "q_5243e176edd03d0a",
+        "points": 1
+      },
+      {
+        "ordinal": 107,
+        "questionId": "q_430570d3b1b733df",
+        "points": 1
+      },
+      {
+        "ordinal": 108,
+        "questionId": "q_4ffe90f178fddcb5",
+        "points": 1
+      },
+      {
+        "ordinal": 109,
+        "questionId": "q_10b9cabe99eae8da",
+        "points": 1
+      },
+      {
+        "ordinal": 110,
+        "questionId": "q_1e5a5b931eb76f47",
+        "points": 1
+      },
+      {
+        "ordinal": 111,
+        "questionId": "q_9ee56e263d2981c2",
+        "points": 1
+      },
+      {
+        "ordinal": 112,
+        "questionId": "q_6f90396a9ea0974e",
+        "points": 1
+      },
+      {
+        "ordinal": 113,
+        "questionId": "q_45e8bf1e01099c12",
+        "points": 1
+      },
+      {
+        "ordinal": 114,
+        "questionId": "q_66e40ba617e803da",
+        "points": 1
+      },
+      {
+        "ordinal": 115,
+        "questionId": "q_450cf7c7d5595733",
+        "points": 1
+      },
+      {
+        "ordinal": 116,
+        "questionId": "q_e5416eaf62a08feb",
+        "points": 1
+      },
+      {
+        "ordinal": 117,
+        "questionId": "q_469c38ba3735bc36",
+        "points": 1
+      },
+      {
+        "ordinal": 118,
+        "questionId": "q_df49684fdfed11db",
+        "points": 1
+      },
+      {
+        "ordinal": 119,
+        "questionId": "q_ddbd3e98ed164f0c",
+        "points": 1
+      },
+      {
+        "ordinal": 120,
+        "questionId": "q_90539b88ccee6df4",
+        "points": 1
+      },
+      {
+        "ordinal": 121,
+        "questionId": "q_a5caa9260e5b9f32",
+        "points": 1
+      },
+      {
+        "ordinal": 122,
+        "questionId": "q_1e3b430b7ed495e7",
+        "points": 1
+      },
+      {
+        "ordinal": 123,
+        "questionId": "q_8be94d0f15d3b8db",
+        "points": 1
+      },
+      {
+        "ordinal": 124,
+        "questionId": "q_f2a237b38cd747f7",
+        "points": 1
+      },
+      {
+        "ordinal": 125,
+        "questionId": "q_f89705ca50cbacce",
+        "points": 1
+      },
+      {
+        "ordinal": 126,
+        "questionId": "q_ac2744dcd4ce2860",
+        "points": 1
+      },
+      {
+        "ordinal": 127,
+        "questionId": "q_c61f9714532761f0",
+        "points": 1
+      },
+      {
+        "ordinal": 128,
+        "questionId": "q_a0521f6d03adcba9",
+        "points": 1
+      },
+      {
+        "ordinal": 129,
+        "questionId": "q_4fe6b1186538a024",
+        "points": 1
+      },
+      {
+        "ordinal": 130,
+        "questionId": "q_6f412e9ec6f9f79a",
+        "points": 1
+      },
+      {
+        "ordinal": 131,
+        "questionId": "q_2fac6f37aee0b893",
+        "points": 0.5
+      },
+      {
+        "ordinal": 132,
+        "questionId": "q_c360bf1e835c3a8a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 133,
+        "questionId": "q_8b2399f6a065b9b2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 134,
+        "questionId": "q_0eb6160c87f08620",
+        "points": 0.5
+      },
+      {
+        "ordinal": 135,
+        "questionId": "q_910fa58e6f57c58a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 136,
+        "questionId": "q_5eac1db0c2046c44",
+        "points": 0.5
+      },
+      {
+        "ordinal": 137,
+        "questionId": "q_20bbd76eed3bff42",
+        "points": 0.5
+      },
+      {
+        "ordinal": 138,
+        "questionId": "q_5865f24792b8ec63",
+        "points": 0.5
+      },
+      {
+        "ordinal": 139,
+        "questionId": "q_898202947723f478",
+        "points": 0.5
+      },
+      {
+        "ordinal": 140,
+        "questionId": "q_ffe2e7fb2a730c47",
+        "points": 0.5
+      },
+      {
+        "ordinal": 141,
+        "questionId": "q_4afb9fb8b99d4d94",
+        "points": 0.5
+      },
+      {
+        "ordinal": 142,
+        "questionId": "q_8d89f79ec47db4d2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 143,
+        "questionId": "q_6da2b1bbb63574b7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 144,
+        "questionId": "q_42aabcd9d486575d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 145,
+        "questionId": "q_3816ca6f9c2379b3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 146,
+        "questionId": "q_dda613b676233542",
+        "points": 0.5
+      },
+      {
+        "ordinal": 147,
+        "questionId": "q_bc1f81b4cf2292c8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 148,
+        "questionId": "q_f5b0f777a0d0a95b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 149,
+        "questionId": "q_27d38d6cbe159430",
+        "points": 0.5
+      },
+      {
+        "ordinal": 150,
+        "questionId": "q_4f700f809e02a33c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 151,
+        "questionId": "q_7c30bee932dbadad",
+        "points": 0.5
+      },
+      {
+        "ordinal": 152,
+        "questionId": "q_f1ac31ae77ea0902",
+        "points": 0.5
+      },
+      {
+        "ordinal": 153,
+        "questionId": "q_1a8b810b1d518567",
+        "points": 0.5
+      },
+      {
+        "ordinal": 154,
+        "questionId": "q_34000254c641c8b8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 155,
+        "questionId": "q_24ded3b07e028c04",
+        "points": 0.5
+      },
+      {
+        "ordinal": 156,
+        "questionId": "q_19dd2a6da8d69171",
+        "points": 0.5
+      },
+      {
+        "ordinal": 157,
+        "questionId": "q_27903ad9248b469d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 158,
+        "questionId": "q_98a9178bbd959597",
+        "points": 0.5
+      },
+      {
+        "ordinal": 159,
+        "questionId": "q_e808910acb1042c6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 160,
+        "questionId": "q_c7abfcc366b7acbf",
+        "points": 0.5
+      },
+      {
+        "ordinal": 161,
+        "questionId": "q_88ae1674844c0850",
+        "points": 0.5
+      },
+      {
+        "ordinal": 162,
+        "questionId": "q_e02dab446c505f50",
+        "points": 0.5
+      },
+      {
+        "ordinal": 163,
+        "questionId": "q_c1ef14fd4ee48b49",
+        "points": 0.5
+      },
+      {
+        "ordinal": 164,
+        "questionId": "q_4a5c27a16923999d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 165,
+        "questionId": "q_1a44c2546fc17130",
+        "points": 0.5
+      },
+      {
+        "ordinal": 166,
+        "questionId": "q_a8a2de31328f5df5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 167,
+        "questionId": "q_de2346679a00fe8b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 168,
+        "questionId": "q_c81c5699e0dd0f05",
+        "points": 0.5
+      },
+      {
+        "ordinal": 169,
+        "questionId": "q_29b8aaf2c681d61e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 170,
+        "questionId": "q_d7cc2c1eb4c7bf0a",
+        "points": 0.5
+      }
+    ],
+    "ruleNote": "练习限时沿用易记的 120 分钟设置；原 PDF 只记录个人考试用时，未注明考试限时。多选须全部选对才得分。"
+  },
+  {
+    "id": "real-2026-6-30",
+    "title": "2026 年 6 月 30 日 · 真题",
+    "sourcePdf": "电力交易员StudyVault-近期真题版/近期真题 pdf/2026-6-30.pdf",
+    "sourceSha256": "bf2ae51f1a3d7d20dd6d13c99fa6d3085791dfafcd63ddb80fa3bc6d5a724410",
+    "durationMinutes": 120,
+    "declaredTotalScore": 100,
+    "totalScore": 100,
+    "counts": {
+      "single": 100,
+      "multiple": 30,
+      "judge": 40
+    },
+    "items": [
+      {
+        "ordinal": 1,
+        "questionId": "q_b629a4b7f0f90f7b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 2,
+        "questionId": "q_99db9c7fc27625f3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 3,
+        "questionId": "q_b6d237bbc4336ec7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 4,
+        "questionId": "q_f3808c9228a41816",
+        "points": 0.5
+      },
+      {
+        "ordinal": 5,
+        "questionId": "q_b58fbbd8ed38d394",
+        "points": 0.5
+      },
+      {
+        "ordinal": 6,
+        "questionId": "q_7ea276ff71c8d83b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 7,
+        "questionId": "q_e18287f6bcc9a2da",
+        "points": 0.5
+      },
+      {
+        "ordinal": 8,
+        "questionId": "q_22f0792a26ff3c5e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 9,
+        "questionId": "q_7d180965278dc301",
+        "points": 0.5
+      },
+      {
+        "ordinal": 10,
+        "questionId": "q_054c9731f85912f5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 11,
+        "questionId": "q_22530c175bd40c1b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 12,
+        "questionId": "q_c0d35e6bc03b3e1f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 13,
+        "questionId": "q_db2aee0821c18064",
+        "points": 0.5
+      },
+      {
+        "ordinal": 14,
+        "questionId": "q_8dbbca4a6cb03b76",
+        "points": 0.5
+      },
+      {
+        "ordinal": 15,
+        "questionId": "q_064d6450af2f0374",
+        "points": 0.5
+      },
+      {
+        "ordinal": 16,
+        "questionId": "q_35aeb64cd6f68150",
+        "points": 0.5
+      },
+      {
+        "ordinal": 17,
+        "questionId": "q_e86272db09bef75f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 18,
+        "questionId": "q_4426505c29fc2e28",
+        "points": 0.5
+      },
+      {
+        "ordinal": 19,
+        "questionId": "q_0693dd23a239518f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 20,
+        "questionId": "q_98071884adc23d28",
+        "points": 0.5
+      },
+      {
+        "ordinal": 21,
+        "questionId": "q_6ee221cbea029c3f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 22,
+        "questionId": "q_9556f2dce9209078",
+        "points": 0.5
+      },
+      {
+        "ordinal": 23,
+        "questionId": "q_060ba66d8d7172d9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 24,
+        "questionId": "q_ac445a4d33c25f21",
+        "points": 0.5
+      },
+      {
+        "ordinal": 25,
+        "questionId": "q_cf8e00020d1c78a6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 26,
+        "questionId": "q_518fa1caa7f10786",
+        "points": 0.5
+      },
+      {
+        "ordinal": 27,
+        "questionId": "q_479f0c8db1455eb1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 28,
+        "questionId": "q_994afa540b149e70",
+        "points": 0.5
+      },
+      {
+        "ordinal": 29,
+        "questionId": "q_58b872570c912ebb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 30,
+        "questionId": "q_d1098ca45622bfd0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 31,
+        "questionId": "q_a3b4c7f69b17a0c2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 32,
+        "questionId": "q_089ebd64d2fbbcf8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 33,
+        "questionId": "q_0d7aaeb67f259b52",
+        "points": 0.5
+      },
+      {
+        "ordinal": 34,
+        "questionId": "q_be81e008416f37f4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 35,
+        "questionId": "q_cc259c722d5b0826",
+        "points": 0.5
+      },
+      {
+        "ordinal": 36,
+        "questionId": "q_3ac179f6eecb2232",
+        "points": 0.5
+      },
+      {
+        "ordinal": 37,
+        "questionId": "q_252f347b85ec2f8f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 38,
+        "questionId": "q_dc38ac58877b0bd4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 39,
+        "questionId": "q_2d073dd3f0db64df",
+        "points": 0.5
+      },
+      {
+        "ordinal": 40,
+        "questionId": "q_510ef3e7cfc784b3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 41,
+        "questionId": "q_dc279475621db571",
+        "points": 0.5
+      },
+      {
+        "ordinal": 42,
+        "questionId": "q_71761aa29d0ddcae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 43,
+        "questionId": "q_775b90c6c1756aea",
+        "points": 0.5
+      },
+      {
+        "ordinal": 44,
+        "questionId": "q_00501becc5614c78",
+        "points": 0.5
+      },
+      {
+        "ordinal": 45,
+        "questionId": "q_2b5afddef6258ab2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 46,
+        "questionId": "q_11a2511bde76f10f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 47,
+        "questionId": "q_3c9884af87ebe3eb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 48,
+        "questionId": "q_9d302e7a8aa0ab26",
+        "points": 0.5
+      },
+      {
+        "ordinal": 49,
+        "questionId": "q_1c228927dd793323",
+        "points": 0.5
+      },
+      {
+        "ordinal": 50,
+        "questionId": "q_4938f5e199067ee5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 51,
+        "questionId": "q_14109bdbff828367",
+        "points": 0.5
+      },
+      {
+        "ordinal": 52,
+        "questionId": "q_98548a6d5b1173d1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 53,
+        "questionId": "q_980b4527d2f3bf33",
+        "points": 0.5
+      },
+      {
+        "ordinal": 54,
+        "questionId": "q_0f1152f1d37ea5ad",
+        "points": 0.5
+      },
+      {
+        "ordinal": 55,
+        "questionId": "q_f283b0db58beb907",
+        "points": 0.5
+      },
+      {
+        "ordinal": 56,
+        "questionId": "q_b8eb34b13821e505",
+        "points": 0.5
+      },
+      {
+        "ordinal": 57,
+        "questionId": "q_860d38ea05ad8cbe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 58,
+        "questionId": "q_584d65d024cb8264",
+        "points": 0.5
+      },
+      {
+        "ordinal": 59,
+        "questionId": "q_b740e9d74c05f56b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 60,
+        "questionId": "q_d4b7d56b32f7795f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 61,
+        "questionId": "q_535a2f79d547588d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 62,
+        "questionId": "q_173f824d609b5f49",
+        "points": 0.5
+      },
+      {
+        "ordinal": 63,
+        "questionId": "q_46d2be1065255734",
+        "points": 0.5
+      },
+      {
+        "ordinal": 64,
+        "questionId": "q_992b99ab229fdb87",
+        "points": 0.5
+      },
+      {
+        "ordinal": 65,
+        "questionId": "q_5c4799b64c35134a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 66,
+        "questionId": "q_33ae3dda3380a116",
+        "points": 0.5
+      },
+      {
+        "ordinal": 67,
+        "questionId": "q_d228fe87541f465b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 68,
+        "questionId": "q_543f081a3b5798ee",
+        "points": 0.5
+      },
+      {
+        "ordinal": 69,
+        "questionId": "q_01a658b429061e48",
+        "points": 0.5
+      },
+      {
+        "ordinal": 70,
+        "questionId": "q_6071aef3ad67e6e7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 71,
+        "questionId": "q_d4117c81fb4a3dad",
+        "points": 0.5
+      },
+      {
+        "ordinal": 72,
+        "questionId": "q_dc87b35fb8b7d4ab",
+        "points": 0.5
+      },
+      {
+        "ordinal": 73,
+        "questionId": "q_35bbe2766881026a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 74,
+        "questionId": "q_ee176700ab33c76c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 75,
+        "questionId": "q_fa9f7ea4bed98280",
+        "points": 0.5
+      },
+      {
+        "ordinal": 76,
+        "questionId": "q_e569fb9ec6a4ba22",
+        "points": 0.5
+      },
+      {
+        "ordinal": 77,
+        "questionId": "q_730190feb57c289a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 78,
+        "questionId": "q_8f9138c90e4b764d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 79,
+        "questionId": "q_a0588a62961ac3e6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 80,
+        "questionId": "q_4d3af714b89937b0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 81,
+        "questionId": "q_eab3d7ab24debf87",
+        "points": 0.5
+      },
+      {
+        "ordinal": 82,
+        "questionId": "q_28b9ad834a2b9c5f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 83,
+        "questionId": "q_a4c9f89e2b120a9a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 84,
+        "questionId": "q_ca6b15b13b8cf70d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 85,
+        "questionId": "q_6552ba3ed723c542",
+        "points": 0.5
+      },
+      {
+        "ordinal": 86,
+        "questionId": "q_b0889b0dec7bc849",
+        "points": 0.5
+      },
+      {
+        "ordinal": 87,
+        "questionId": "q_2b220a7c4de46c40",
+        "points": 0.5
+      },
+      {
+        "ordinal": 88,
+        "questionId": "q_62eafe66aa2802d2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 89,
+        "questionId": "q_9a474c7e978d47e2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 90,
+        "questionId": "q_5f21d4cab00e346e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 91,
+        "questionId": "q_8af6af554e260aa9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 92,
+        "questionId": "q_46adea4d20ea7299",
+        "points": 0.5
+      },
+      {
+        "ordinal": 93,
+        "questionId": "q_a3cf701e38f89afa",
+        "points": 0.5
+      },
+      {
+        "ordinal": 94,
+        "questionId": "q_3c383e72a3aa5c06",
+        "points": 0.5
+      },
+      {
+        "ordinal": 95,
+        "questionId": "q_625cf3a9de63b8fd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 96,
+        "questionId": "q_733c31a7b58a8d8b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 97,
+        "questionId": "q_70bab30100a1292d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 98,
+        "questionId": "q_2fa1ee2d426e16c1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 99,
+        "questionId": "q_cac4228f737832db",
+        "points": 0.5
+      },
+      {
+        "ordinal": 100,
+        "questionId": "q_0b6a3bdd458ad5e9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 101,
+        "questionId": "q_2c0f8dc3cfc82adf",
+        "points": 1
+      },
+      {
+        "ordinal": 102,
+        "questionId": "q_84c3b199d218864d",
+        "points": 1
+      },
+      {
+        "ordinal": 103,
+        "questionId": "q_66f744065ec686da",
+        "points": 1
+      },
+      {
+        "ordinal": 104,
+        "questionId": "q_8103f1dccbccdf00",
+        "points": 1
+      },
+      {
+        "ordinal": 105,
+        "questionId": "q_5728a424ea1b49e8",
+        "points": 1
+      },
+      {
+        "ordinal": 106,
+        "questionId": "q_88b662a63f4c9cb2",
+        "points": 1
+      },
+      {
+        "ordinal": 107,
+        "questionId": "q_430570d3b1b733df",
+        "points": 1
+      },
+      {
+        "ordinal": 108,
+        "questionId": "q_8e3f9c7d06644621",
+        "points": 1
+      },
+      {
+        "ordinal": 109,
+        "questionId": "q_9346e7a4b7a46c78",
+        "points": 1
+      },
+      {
+        "ordinal": 110,
+        "questionId": "q_b66f97b91f3f0eb5",
+        "points": 1
+      },
+      {
+        "ordinal": 111,
+        "questionId": "q_cc4282575d962e63",
+        "points": 1
+      },
+      {
+        "ordinal": 112,
+        "questionId": "q_2fec256c39bc6488",
+        "points": 1
+      },
+      {
+        "ordinal": 113,
+        "questionId": "q_3082f7a17a4cec65",
+        "points": 1
+      },
+      {
+        "ordinal": 114,
+        "questionId": "q_89f72e415d323ebd",
+        "points": 1
+      },
+      {
+        "ordinal": 115,
+        "questionId": "q_2fe7eff46ca4ad48",
+        "points": 1
+      },
+      {
+        "ordinal": 116,
+        "questionId": "q_dea434021850bf5e",
+        "points": 1
+      },
+      {
+        "ordinal": 117,
+        "questionId": "q_107e6742f3a5b4de",
+        "points": 1
+      },
+      {
+        "ordinal": 118,
+        "questionId": "q_3a171594e1296898",
+        "points": 1
+      },
+      {
+        "ordinal": 119,
+        "questionId": "q_1e4a26b35204cbff",
+        "points": 1
+      },
+      {
+        "ordinal": 120,
+        "questionId": "q_ad69859891636a14",
+        "points": 1
+      },
+      {
+        "ordinal": 121,
+        "questionId": "q_f70aa956cc7ee77a",
+        "points": 1
+      },
+      {
+        "ordinal": 122,
+        "questionId": "q_62d5ed48cf90e214",
+        "points": 1
+      },
+      {
+        "ordinal": 123,
+        "questionId": "q_ad453c1fcece601b",
+        "points": 1
+      },
+      {
+        "ordinal": 124,
+        "questionId": "q_789c1ddddc9a4c11",
+        "points": 1
+      },
+      {
+        "ordinal": 125,
+        "questionId": "q_5e1033e5392c2d19",
+        "points": 1
+      },
+      {
+        "ordinal": 126,
+        "questionId": "q_ac2744dcd4ce2860",
+        "points": 1
+      },
+      {
+        "ordinal": 127,
+        "questionId": "q_1ddf1365c7239641",
+        "points": 1
+      },
+      {
+        "ordinal": 128,
+        "questionId": "q_07aeb0dadec987fe",
+        "points": 1
+      },
+      {
+        "ordinal": 129,
+        "questionId": "q_a3acf23b50294bf7",
+        "points": 1
+      },
+      {
+        "ordinal": 130,
+        "questionId": "q_c8f4dddbb29ad1f7",
+        "points": 1
+      },
+      {
+        "ordinal": 131,
+        "questionId": "q_92113876f37ec17a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 132,
+        "questionId": "q_a7512aa319bab957",
+        "points": 0.5
+      },
+      {
+        "ordinal": 133,
+        "questionId": "q_be72059cf041c5d8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 134,
+        "questionId": "q_4931ec3128648095",
+        "points": 0.5
+      },
+      {
+        "ordinal": 135,
+        "questionId": "q_b844679015cf2964",
+        "points": 0.5
+      },
+      {
+        "ordinal": 136,
+        "questionId": "q_ddd27b0cba18cf38",
+        "points": 0.5
+      },
+      {
+        "ordinal": 137,
+        "questionId": "q_20b80c389a8248c4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 138,
+        "questionId": "q_4632f005eb4957b9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 139,
+        "questionId": "q_7ffd4de32b1dc4a7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 140,
+        "questionId": "q_2269374922666355",
+        "points": 0.5
+      },
+      {
+        "ordinal": 141,
+        "questionId": "q_c8e22dd0ec1c3414",
+        "points": 0.5
+      },
+      {
+        "ordinal": 142,
+        "questionId": "q_910fa58e6f57c58a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 143,
+        "questionId": "q_5eac1db0c2046c44",
+        "points": 0.5
+      },
+      {
+        "ordinal": 144,
+        "questionId": "q_712dbc3db5ae5861",
+        "points": 0.5
+      },
+      {
+        "ordinal": 145,
+        "questionId": "q_4afb9fb8b99d4d94",
+        "points": 0.5
+      },
+      {
+        "ordinal": 146,
+        "questionId": "q_5c62048b7fb29ac7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 147,
+        "questionId": "q_14791279e46e14ad",
+        "points": 0.5
+      },
+      {
+        "ordinal": 148,
+        "questionId": "q_15bfd13ce6be38e0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 149,
+        "questionId": "q_ec831716b7360642",
+        "points": 0.5
+      },
+      {
+        "ordinal": 150,
+        "questionId": "q_672c3c70f58cedb4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 151,
+        "questionId": "q_e7feac295ef1d405",
+        "points": 0.5
+      },
+      {
+        "ordinal": 152,
+        "questionId": "q_8ed1cccd6ea7bad1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 153,
+        "questionId": "q_a1b701fc13295eb0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 154,
+        "questionId": "q_0db8cb001733a9f4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 155,
+        "questionId": "q_05d54b72c9950a6e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 156,
+        "questionId": "q_470b8e9954534e9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 157,
+        "questionId": "q_02aacaa67e5436d2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 158,
+        "questionId": "q_37fde7598c749835",
+        "points": 0.5
+      },
+      {
+        "ordinal": 159,
+        "questionId": "q_011b5373d971b8af",
+        "points": 0.5
+      },
+      {
+        "ordinal": 160,
+        "questionId": "q_8fc5b93102cdcc9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 161,
+        "questionId": "q_77f575f5baf0c319",
+        "points": 0.5
+      },
+      {
+        "ordinal": 162,
+        "questionId": "q_a3a2fc49a68b1ccd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 163,
+        "questionId": "q_751688b28ddba046",
+        "points": 0.5
+      },
+      {
+        "ordinal": 164,
+        "questionId": "q_19aa6a72b35e31be",
+        "points": 0.5
+      },
+      {
+        "ordinal": 165,
+        "questionId": "q_d351a668003d9f0c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 166,
+        "questionId": "q_28c8847fbb9f6d63",
+        "points": 0.5
+      },
+      {
+        "ordinal": 167,
+        "questionId": "q_2bd29f777b15c96b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 168,
+        "questionId": "q_db2018df6dd48933",
+        "points": 0.5
+      },
+      {
+        "ordinal": 169,
+        "questionId": "q_0e4258777d113173",
+        "points": 0.5
+      },
+      {
+        "ordinal": 170,
+        "questionId": "q_2d8b3e98327d01ac",
+        "points": 0.5
+      }
+    ],
+    "ruleNote": "练习限时沿用易记的 120 分钟设置；原 PDF 只记录个人考试用时，未注明考试限时。多选须全部选对才得分。"
+  },
+  {
+    "id": "real-2026-7-18",
+    "title": "2026 年 7 月 18 日 · 真题",
+    "sourcePdf": "电力交易员StudyVault-近期真题版/近期真题 pdf/2026-7-18.pdf",
+    "sourceSha256": "5d53e6aaf972726c6baa5ceaa083231a8d51d81f5e617ec877dcb32b341abd9a",
+    "durationMinutes": 120,
+    "declaredTotalScore": 100,
+    "totalScore": 95,
+    "counts": {
+      "single": 100,
+      "multiple": 20,
+      "judge": 50
+    },
+    "items": [
+      {
+        "ordinal": 1,
+        "questionId": "q_b8686d403a8a011c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 2,
+        "questionId": "q_d00dee79a5dac6f5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 3,
+        "questionId": "q_60a53372d3d5969e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 4,
+        "questionId": "q_6c12f666f8eab6c2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 5,
+        "questionId": "q_59a98dd4471935d0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 6,
+        "questionId": "q_4f7a2234985e14e0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 7,
+        "questionId": "q_0418bbdcae179b80",
+        "points": 0.5
+      },
+      {
+        "ordinal": 8,
+        "questionId": "q_ebd0c3b3c0db0c8f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 9,
+        "questionId": "q_27a71c5950553e75",
+        "points": 0.5
+      },
+      {
+        "ordinal": 10,
+        "questionId": "q_c764d2a69556ef6a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 11,
+        "questionId": "q_79ea622bafa1a31f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 12,
+        "questionId": "q_454c37e1f1203f45",
+        "points": 0.5
+      },
+      {
+        "ordinal": 13,
+        "questionId": "q_03774789939919b5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 14,
+        "questionId": "q_26717c53ff778747",
+        "points": 0.5
+      },
+      {
+        "ordinal": 15,
+        "questionId": "q_a1d48f02ca647b66",
+        "points": 0.5
+      },
+      {
+        "ordinal": 16,
+        "questionId": "q_064d6450af2f0374",
+        "points": 0.5
+      },
+      {
+        "ordinal": 17,
+        "questionId": "q_b62f57c1187489d5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 18,
+        "questionId": "q_8f522147172bb9bb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 19,
+        "questionId": "q_e86272db09bef75f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 20,
+        "questionId": "q_6093ad3545ea7c61",
+        "points": 0.5
+      },
+      {
+        "ordinal": 21,
+        "questionId": "q_38238c42451e5b3e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 22,
+        "questionId": "q_db19caa1e8edfbc5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 23,
+        "questionId": "q_b8554ff367edef9f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 24,
+        "questionId": "q_852a38f9a15f6615",
+        "points": 0.5
+      },
+      {
+        "ordinal": 25,
+        "questionId": "q_ea98b671544d7ced",
+        "points": 0.5
+      },
+      {
+        "ordinal": 26,
+        "questionId": "q_5daa6eb97b687785",
+        "points": 0.5
+      },
+      {
+        "ordinal": 27,
+        "questionId": "q_5cb7dc8ecb9880ca",
+        "points": 0.5
+      },
+      {
+        "ordinal": 28,
+        "questionId": "q_7f9c54310e1afb9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 29,
+        "questionId": "q_a3b4c7f69b17a0c2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 30,
+        "questionId": "q_6943dc10eaa0e88c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 31,
+        "questionId": "q_7366e97480c55f48",
+        "points": 0.5
+      },
+      {
+        "ordinal": 32,
+        "questionId": "q_0d7aaeb67f259b52",
+        "points": 0.5
+      },
+      {
+        "ordinal": 33,
+        "questionId": "q_5e7cd57eeb9d7282",
+        "points": 0.5
+      },
+      {
+        "ordinal": 34,
+        "questionId": "q_b4721947b7a790eb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 35,
+        "questionId": "q_4104566523bb3821",
+        "points": 0.5
+      },
+      {
+        "ordinal": 36,
+        "questionId": "q_dc38ac58877b0bd4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 37,
+        "questionId": "q_e8274aa5acd53751",
+        "points": 0.5
+      },
+      {
+        "ordinal": 38,
+        "questionId": "q_2fb3006bdb252d17",
+        "points": 0.5
+      },
+      {
+        "ordinal": 39,
+        "questionId": "q_81db19cab70795ce",
+        "points": 0.5
+      },
+      {
+        "ordinal": 40,
+        "questionId": "q_5b2e9b62705facbe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 41,
+        "questionId": "q_5a9657a99a5d4c25",
+        "points": 0.5
+      },
+      {
+        "ordinal": 42,
+        "questionId": "q_71761aa29d0ddcae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 43,
+        "questionId": "q_1a674fc6d265a172",
+        "points": 0.5
+      },
+      {
+        "ordinal": 44,
+        "questionId": "q_ef95d6b466eb4730",
+        "points": 0.5
+      },
+      {
+        "ordinal": 45,
+        "questionId": "q_9b134f352ed635a1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 46,
+        "questionId": "q_6f5c71391086aa95",
+        "points": 0.5
+      },
+      {
+        "ordinal": 47,
+        "questionId": "q_a03401b292cd79b6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 48,
+        "questionId": "q_bb89d240f2b9a274",
+        "points": 0.5
+      },
+      {
+        "ordinal": 49,
+        "questionId": "q_1c0eaed2de8068fe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 50,
+        "questionId": "q_51622d65efe4a6d1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 51,
+        "questionId": "q_ebcdff2472b1b530",
+        "points": 0.5
+      },
+      {
+        "ordinal": 52,
+        "questionId": "q_ca31e6c650a92baa",
+        "points": 0.5
+      },
+      {
+        "ordinal": 53,
+        "questionId": "q_070dbf02ac7abe56",
+        "points": 0.5
+      },
+      {
+        "ordinal": 54,
+        "questionId": "q_8f4e6e5e6b2bfae2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 55,
+        "questionId": "q_8793b692705e4326",
+        "points": 0.5
+      },
+      {
+        "ordinal": 56,
+        "questionId": "q_cac9c9c56e72c211",
+        "points": 0.5
+      },
+      {
+        "ordinal": 57,
+        "questionId": "q_8c10d74d11072241",
+        "points": 0.5
+      },
+      {
+        "ordinal": 58,
+        "questionId": "q_fbd98dc6f7e4b1b2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 59,
+        "questionId": "q_6f9643f0ad8df2ac",
+        "points": 0.5
+      },
+      {
+        "ordinal": 60,
+        "questionId": "q_724139a5dd0c0ea1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 61,
+        "questionId": "q_ad3cfd76b91936ea",
+        "points": 0.5
+      },
+      {
+        "ordinal": 62,
+        "questionId": "q_63dbe0aa30aef826",
+        "points": 0.5
+      },
+      {
+        "ordinal": 63,
+        "questionId": "q_cad2f40c76ab6e08",
+        "points": 0.5
+      },
+      {
+        "ordinal": 64,
+        "questionId": "q_58462a208d450044",
+        "points": 0.5
+      },
+      {
+        "ordinal": 65,
+        "questionId": "q_216df1ae59333a22",
+        "points": 0.5
+      },
+      {
+        "ordinal": 66,
+        "questionId": "q_cfe2b78d739f78a9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 67,
+        "questionId": "q_01644cdcc6a1bea0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 68,
+        "questionId": "q_2374580fc736784b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 69,
+        "questionId": "q_178b432936da0a35",
+        "points": 0.5
+      },
+      {
+        "ordinal": 70,
+        "questionId": "q_8af9f4da3739e1fe",
+        "points": 0.5
+      },
+      {
+        "ordinal": 71,
+        "questionId": "q_b1d40f0394596077",
+        "points": 0.5
+      },
+      {
+        "ordinal": 72,
+        "questionId": "q_62655518f15039a4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 73,
+        "questionId": "q_20399764f3b6ae00",
+        "points": 0.5
+      },
+      {
+        "ordinal": 74,
+        "questionId": "q_0678741465f09c70",
+        "points": 0.5
+      },
+      {
+        "ordinal": 75,
+        "questionId": "q_80bdeaa925c26cfd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 76,
+        "questionId": "q_f86a790a94ca33c6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 77,
+        "questionId": "q_5f052a513363cc75",
+        "points": 0.5
+      },
+      {
+        "ordinal": 78,
+        "questionId": "q_1f2bb37d712e9bc9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 79,
+        "questionId": "q_e569fb9ec6a4ba22",
+        "points": 0.5
+      },
+      {
+        "ordinal": 80,
+        "questionId": "q_cdfba1fc5b648988",
+        "points": 0.5
+      },
+      {
+        "ordinal": 81,
+        "questionId": "q_1087bda81869e25c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 82,
+        "questionId": "q_d1c138ce2b33736a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 83,
+        "questionId": "q_853c63849d5454a0",
+        "points": 0.5
+      },
+      {
+        "ordinal": 84,
+        "questionId": "q_d14aee9c55635498",
+        "points": 0.5
+      },
+      {
+        "ordinal": 85,
+        "questionId": "q_8091923b0ccd992f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 86,
+        "questionId": "q_9107ed8607cdac5a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 87,
+        "questionId": "q_c031de1093a12dc4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 88,
+        "questionId": "q_ca6b15b13b8cf70d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 89,
+        "questionId": "q_62c5c177c518584b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 90,
+        "questionId": "q_485ed9e86a676f54",
+        "points": 0.5
+      },
+      {
+        "ordinal": 91,
+        "questionId": "q_d170d147f711fb2b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 92,
+        "questionId": "q_a327022c7b957788",
+        "points": 0.5
+      },
+      {
+        "ordinal": 93,
+        "questionId": "q_4e42badf56ab6e2b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 94,
+        "questionId": "q_988356a532437be9",
+        "points": 0.5
+      },
+      {
+        "ordinal": 95,
+        "questionId": "q_61badcd0120cbcb4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 96,
+        "questionId": "q_3bd7b83048978754",
+        "points": 0.5
+      },
+      {
+        "ordinal": 97,
+        "questionId": "q_76a85ef533e656d1",
+        "points": 0.5
+      },
+      {
+        "ordinal": 98,
+        "questionId": "q_3a67f842896e26d6",
+        "points": 0.5
+      },
+      {
+        "ordinal": 99,
+        "questionId": "q_e554747125c8ae9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 100,
+        "questionId": "q_38ef274aeb3989ae",
+        "points": 0.5
+      },
+      {
+        "ordinal": 101,
+        "questionId": "q_5eb4b1c61b5b6e82",
+        "points": 1
+      },
+      {
+        "ordinal": 102,
+        "questionId": "q_8892a8f71d2fd8e3",
+        "points": 1
+      },
+      {
+        "ordinal": 103,
+        "questionId": "q_002d1f1206a6802e",
+        "points": 1
+      },
+      {
+        "ordinal": 104,
+        "questionId": "q_d1fe87d67bd3db0a",
+        "points": 1
+      },
+      {
+        "ordinal": 105,
+        "questionId": "q_56362eb67068e902",
+        "points": 1
+      },
+      {
+        "ordinal": 106,
+        "questionId": "q_7017b494a10acac0",
+        "points": 1
+      },
+      {
+        "ordinal": 107,
+        "questionId": "q_633bfd5ee74cab22",
+        "points": 1
+      },
+      {
+        "ordinal": 108,
+        "questionId": "q_02b6ba466d8d81fa",
+        "points": 1
+      },
+      {
+        "ordinal": 109,
+        "questionId": "q_ec1aaa41ec6c8845",
+        "points": 1
+      },
+      {
+        "ordinal": 110,
+        "questionId": "q_3a171594e1296898",
+        "points": 1
+      },
+      {
+        "ordinal": 111,
+        "questionId": "q_7ec372b214be25f6",
+        "points": 1
+      },
+      {
+        "ordinal": 112,
+        "questionId": "q_c2c3cf43b376c377",
+        "points": 1
+      },
+      {
+        "ordinal": 113,
+        "questionId": "q_62d5ed48cf90e214",
+        "points": 1
+      },
+      {
+        "ordinal": 114,
+        "questionId": "q_2cd73000e3449834",
+        "points": 1
+      },
+      {
+        "ordinal": 115,
+        "questionId": "q_a209f68fc216e7cb",
+        "points": 1
+      },
+      {
+        "ordinal": 116,
+        "questionId": "q_3a2e8674c1a46750",
+        "points": 1
+      },
+      {
+        "ordinal": 117,
+        "questionId": "q_b3b53334c465ba70",
+        "points": 1
+      },
+      {
+        "ordinal": 118,
+        "questionId": "q_2d2cb44d03381469",
+        "points": 1
+      },
+      {
+        "ordinal": 119,
+        "questionId": "q_d64cc4efe8b3ccc3",
+        "points": 1
+      },
+      {
+        "ordinal": 120,
+        "questionId": "q_2f236c45c66e7b59",
+        "points": 1
+      },
+      {
+        "ordinal": 121,
+        "questionId": "q_9eb916f76e6b985b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 122,
+        "questionId": "q_bf6f87d98ed93595",
+        "points": 0.5
+      },
+      {
+        "ordinal": 123,
+        "questionId": "q_7410c9bb0b51346f",
+        "points": 0.5
+      },
+      {
+        "ordinal": 124,
+        "questionId": "q_ae3385f6d4e402e2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 125,
+        "questionId": "q_a30ad5f151131be5",
+        "points": 0.5
+      },
+      {
+        "ordinal": 126,
+        "questionId": "q_99b71abf48f3b3c3",
+        "points": 0.5
+      },
+      {
+        "ordinal": 127,
+        "questionId": "q_ef176b9fe1d8196b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 128,
+        "questionId": "q_5e426c95fcc5cd69",
+        "points": 0.5
+      },
+      {
+        "ordinal": 129,
+        "questionId": "q_0ff026c6231ce7da",
+        "points": 0.5
+      },
+      {
+        "ordinal": 130,
+        "questionId": "q_5ce7a22a50854466",
+        "points": 0.5
+      },
+      {
+        "ordinal": 131,
+        "questionId": "q_3b47f75fa596534b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 132,
+        "questionId": "q_515ebb7fab4aabfb",
+        "points": 0.5
+      },
+      {
+        "ordinal": 133,
+        "questionId": "q_75e658d99c45b1dd",
+        "points": 0.5
+      },
+      {
+        "ordinal": 134,
+        "questionId": "q_8e6000f67a0d2d5a",
+        "points": 0.5
+      },
+      {
+        "ordinal": 135,
+        "questionId": "q_6d3017c0d994cfb4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 136,
+        "questionId": "q_8d89f79ec47db4d2",
+        "points": 0.5
+      },
+      {
+        "ordinal": 137,
+        "questionId": "q_23c6d37ba877e3c7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 138,
+        "questionId": "q_c24150fd18725a51",
+        "points": 0.5
+      },
+      {
+        "ordinal": 139,
+        "questionId": "q_bbca7bc8ebd2e76c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 140,
+        "questionId": "q_8aff51ec061a9048",
+        "points": 0.5
+      },
+      {
+        "ordinal": 141,
+        "questionId": "q_fe92a79aabe9eb7e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 142,
+        "questionId": "q_ff1ca3647dde9058",
+        "points": 0.5
+      },
+      {
+        "ordinal": 143,
+        "questionId": "q_ac76868bd1bd13af",
+        "points": 0.5
+      },
+      {
+        "ordinal": 144,
+        "questionId": "q_121b53ed75a84671",
+        "points": 0.5
+      },
+      {
+        "ordinal": 145,
+        "questionId": "q_52e96f530e3504af",
+        "points": 0.5
+      },
+      {
+        "ordinal": 146,
+        "questionId": "q_9f1733bad4d2adde",
+        "points": 0.5
+      },
+      {
+        "ordinal": 147,
+        "questionId": "q_470b8e9954534e9d",
+        "points": 0.5
+      },
+      {
+        "ordinal": 148,
+        "questionId": "q_1a8b810b1d518567",
+        "points": 0.5
+      },
+      {
+        "ordinal": 149,
+        "questionId": "q_5bd68d0f6de3a073",
+        "points": 0.5
+      },
+      {
+        "ordinal": 150,
+        "questionId": "q_557ac8ba3acfca8e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 151,
+        "questionId": "q_cabbb063113723a7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 152,
+        "questionId": "q_011b5373d971b8af",
+        "points": 0.5
+      },
+      {
+        "ordinal": 153,
+        "questionId": "q_029c22ba8dd0b75e",
+        "points": 0.5
+      },
+      {
+        "ordinal": 154,
+        "questionId": "q_7cd4272c26604d88",
+        "points": 0.5
+      },
+      {
+        "ordinal": 155,
+        "questionId": "q_52f84a4202453066",
+        "points": 0.5
+      },
+      {
+        "ordinal": 156,
+        "questionId": "q_fbafd688a91566f4",
+        "points": 0.5
+      },
+      {
+        "ordinal": 157,
+        "questionId": "q_c5cdebabad648e07",
+        "points": 0.5
+      },
+      {
+        "ordinal": 158,
+        "questionId": "q_fae1c4f05598a95c",
+        "points": 0.5
+      },
+      {
+        "ordinal": 159,
+        "questionId": "q_19aa6a72b35e31be",
+        "points": 0.5
+      },
+      {
+        "ordinal": 160,
+        "questionId": "q_e9da329006bf8c94",
+        "points": 0.5
+      },
+      {
+        "ordinal": 161,
+        "questionId": "q_1cfbb5b671f94822",
+        "points": 0.5
+      },
+      {
+        "ordinal": 162,
+        "questionId": "q_985d9672393b60ee",
+        "points": 0.5
+      },
+      {
+        "ordinal": 163,
+        "questionId": "q_635ea26fda6c196b",
+        "points": 0.5
+      },
+      {
+        "ordinal": 164,
+        "questionId": "q_37792a3e7947fafa",
+        "points": 0.5
+      },
+      {
+        "ordinal": 165,
+        "questionId": "q_15785e74c0001098",
+        "points": 0.5
+      },
+      {
+        "ordinal": 166,
+        "questionId": "q_ac9a3c4c9c413cb8",
+        "points": 0.5
+      },
+      {
+        "ordinal": 167,
+        "questionId": "q_4c23ec72d2303116",
+        "points": 0.5
+      },
+      {
+        "ordinal": 168,
+        "questionId": "q_db2018df6dd48933",
+        "points": 0.5
+      },
+      {
+        "ordinal": 169,
+        "questionId": "q_5c1a156b9b98c8e7",
+        "points": 0.5
+      },
+      {
+        "ordinal": 170,
+        "questionId": "q_f733baf0152012bc",
+        "points": 0.5
+      }
+    ],
+    "ruleNote": "练习限时沿用易记的 120 分钟设置；原 PDF 只记录个人考试用时，未注明考试限时。多选须全部选对才得分。 原卷卷头标注 100 分，逐题合计 95 分；本卷按逐题标注计分，不折算为百分制。"
   }
 ];

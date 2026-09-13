@@ -3,10 +3,13 @@ import { VIEW_TYPE_YIJI } from "../constants";
 import {
   ACTIVE_CONTENT_PACKAGE,
   getExamQuestionCount,
-  getExamRuleText,
   getKnowledgeNotePath,
 } from "../content/content-package";
-import { DOMAIN_ORDER, QuestionBank } from "../data/question-bank";
+import { QuestionBank } from "../data/question-bank";
+import { EMBEDDED_EXAM_PAPERS } from "../generated/electricity-trader-pack";
+import type { ExamPaper } from "../content/exam-paper";
+import { isCorrectSelection, saveExam, startExam, submitExam } from "../state/exam-state";
+import type { ExamAttempt } from "../state/exam-state";
 import type { Question, QuestionType } from "../domain/question";
 import type YijiPlugin from "../main";
 import {
@@ -19,7 +22,8 @@ import type { StudyDataV1, WrongAction } from "../state/study-state";
 import { append, button, element, textPair } from "./dom";
 import { icon, iconButton } from "./icons";
 
-type Screen = "home" | "library" | "practice" | "feedback" | "exam" | "stats" | "wrongbook";
+type Screen = "home" | "library" | "practice" | "feedback" | "exam" | "stats" | "wrongbook"
+  | "exam-question" | "exam-sheet" | "exam-confirm" | "exam-result" | "exam-restart";
 
 type PracticeMode =
   | { kind: "domain"; value: string }
@@ -48,6 +52,7 @@ export class YijiView extends ItemView {
   private selected = new Set<string>();
   private feedback: FeedbackState | null = null;
   private actionPending = false;
+  private examId: string | null = null;
 
   constructor(
     leaf: WorkspaceLeaf,
@@ -79,6 +84,7 @@ export class YijiView extends ItemView {
       if (target) void this.handleActionSafely(target);
     });
     this.renderLoading();
+    this.registerInterval(this.containerEl.win.setInterval(() => { void this.tickExam(); }, 1000));
 
     try {
       this.bank = await this.plugin.getQuestionBank();
@@ -105,7 +111,7 @@ export class YijiView extends ItemView {
       state,
       icon("loader-circle", "yiji-system-icon"),
       element("h1", { text: "正在读取题库" }),
-      element("p", { text: "易记只读取本地 Markdown，不会改写原题库。" }),
+      element("p", { text: "正在读取本地题库与内置题包，不会改写原题库。" }),
     );
     this.rootEl.replaceChildren(state);
   }
@@ -136,6 +142,11 @@ export class YijiView extends ItemView {
       case "practice": return this.renderPractice();
       case "feedback": return this.renderFeedback();
       case "exam": return this.renderExam();
+      case "exam-question": return this.renderExamQuestion();
+      case "exam-sheet": return this.renderExamSheet();
+      case "exam-confirm": return this.renderExamConfirmation(false);
+      case "exam-restart": return this.renderExamConfirmation(true);
+      case "exam-result": return this.renderExamResult();
       case "stats": return this.renderStats();
       case "wrongbook": return this.renderWrongbook();
       default: return this.renderHome();
@@ -364,6 +375,7 @@ export class YijiView extends ItemView {
 
   private renderOptions(question: Question, feedbackMode: boolean): HTMLElement {
     const options = element("div", { className: "yiji-options", attrs: { role: "group" } });
+    if (question.sourceNote) options.appendChild(element("p", { className: "yiji-development-note", text: question.sourceNote }));
     for (const option of question.options) {
       const isSelected = this.selected.has(option.key);
       const isAnswer = question.answers.includes(option.key);
@@ -399,17 +411,34 @@ export class YijiView extends ItemView {
   private renderExam(): HTMLElement {
     const { screen, scroll } = this.createScreen(true);
     const examQuestionCount = getExamQuestionCount(ACTIVE_CONTENT_PACKAGE);
-    scroll.appendChild(this.pageHeader(`${ACTIVE_CONTENT_PACKAGE.name} · 固定考试规则`, "模考"));
+    scroll.appendChild(this.pageHeader(`${ACTIVE_CONTENT_PACKAGE.name} · 按原卷题号作答`, "模考"));
     const intro = element("article", { className: "yiji-exam-intro" });
     append(
       intro,
-      element("h2", { text: "规则与样卷保持一致" }),
+      element("h2", { text: "新增四套完整真题" }),
       element("p", {
-        text: getExamRuleText(ACTIVE_CONTENT_PACKAGE),
+        text: "每卷 170 题，按原题序作答，进度自动保存。练习限时 120 分钟（沿用易记设置，原 PDF 未注明限时），多选须全部选对才得分。",
       }),
     );
     scroll.appendChild(intro);
-    scroll.appendChild(this.sectionHeader("真题参考与固定模拟卷"));
+    for (const paper of EMBEDDED_EXAM_PAPERS) {
+      const attempt = this.studyData.exams?.[paper.id];
+      const compatible = attempt?.paperDigest === paper.sourceSha256;
+      const card = element("article", { className: "yiji-exam-intro" });
+      append(card,
+        element("h2", { text: paper.title }),
+        element("p", { text: `${paper.counts.single} 单选 · ${paper.counts.multiple} 多选 · ${paper.counts.judge} 判断 · ${paper.totalScore} 分` }),
+        element("p", { className: "yiji-paper-meta", text: paper.totalScore !== paper.declaredTotalScore
+          ? `原卷卷头标注 ${paper.declaredTotalScore} 分，逐题合计 ${paper.totalScore} 分；按逐题分值计分，不折算。`
+          : "按原卷逐题分值计分 · 交卷后查看答案" }),
+        button(compatible ? attempt.submittedAt !== undefined ? "查看成绩与答案" : "继续作答" : "开始整卷", "exam-open", "yiji-primary-button", { value: paper.id }),
+      );
+      if (compatible && attempt.submittedAt !== undefined) {
+        card.appendChild(button("再练一次", "exam-restart", "yiji-secondary-button", { value: paper.id }));
+      }
+      scroll.appendChild(card);
+    }
+    scroll.appendChild(this.sectionHeader("原有样卷与模拟卷 · 待开放"));
     const list = element("div", { className: "yiji-paper-list" });
     for (const paper of ACTIVE_CONTENT_PACKAGE.exam.papers) {
       const card = element("article", { className: "yiji-paper-card" });
@@ -430,11 +459,165 @@ export class YijiView extends ItemView {
     scroll.appendChild(
       element("p", {
         className: "yiji-development-note",
-        text: "开考功能将在原卷映射和模拟卷体检全部通过后开放；当前开发版不会用随机题冒充固定试卷。",
+        text: "以上原有两套样卷和五套模拟卷仍待映射与体检；新增四套真题已可完整作答。",
       }),
     );
     screen.appendChild(this.bottomNav("exam"));
     return screen;
+  }
+
+  private currentExam(): { paper: ExamPaper; attempt: ExamAttempt } {
+    const paper = EMBEDDED_EXAM_PAPERS.find((entry) => entry.id === this.examId);
+    const attempt = paper && this.studyData.exams?.[paper.id];
+    if (!paper || !attempt || attempt.paperDigest !== paper.sourceSha256) throw new Error("试卷尚未开始或版本已变更");
+    return { paper, attempt };
+  }
+
+  private examTimerText(attempt: ExamAttempt): string {
+    const seconds = Math.max(0, Math.ceil((attempt.deadlineAt - Date.now()) / 1000));
+    return `剩余 ${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}`;
+  }
+
+  private async tickExam(): Promise<void> {
+    if (!this.rootEl || this.actionPending || !this.examId || !this.screen.startsWith("exam-")) return;
+    const attempt = this.studyData.exams?.[this.examId];
+    if (!attempt || attempt.submittedAt !== undefined) return;
+    const timer = this.rootEl.querySelector(".yiji-exam-timer");
+    if (timer) timer.textContent = this.examTimerText(attempt);
+    if (Date.now() >= attempt.deadlineAt) {
+      this.actionPending = true;
+      try { await this.finishExam(); }
+      catch (error) { console.error("易记自动交卷失败", error); }
+      finally { this.actionPending = false; }
+    }
+  }
+
+  private async finishExam(): Promise<void> {
+    const { paper } = this.currentExam();
+    await this.plugin.persistStudyData(submitExam(this.studyData, paper, this.requireBank().byId, Date.now()));
+    this.screen = "exam-result";
+    this.render();
+  }
+
+  private renderExamQuestion(): HTMLElement {
+    const { paper, attempt } = this.currentExam();
+    const item = paper.items[attempt.index]!;
+    const question = this.requireBank().byId.get(item.questionId)!;
+    const review = attempt.submittedAt !== undefined;
+    const { screen, scroll } = this.createScreen(false);
+    append(scroll,
+      button("返回试卷列表", "nav-exam", "yiji-text-button"),
+      this.pageHeader(paper.title, `第 ${item.ordinal} / ${paper.items.length} 题`),
+      element("p", { className: "yiji-exam-timer", text: review ? "已交卷 · 答案回顾" : this.examTimerText(attempt) }),
+      element("p", { className: "yiji-paper-meta", text: `${TYPE_LABELS[question.type]}题 · ${item.points} 分 · ${question.domain}` }),
+      element("h2", { className: "yiji-question-title", text: question.stem }),
+    );
+    const saved = this.selected;
+    this.selected = new Set(attempt.answers[String(item.ordinal)] ?? []);
+    const options = this.renderOptions(question, review);
+    this.selected = saved;
+    options.querySelectorAll<HTMLElement>("[data-action]").forEach((row) => { row.dataset.action = "exam-select"; });
+    scroll.appendChild(options);
+    if (review) {
+      append(scroll, element("p", { className: "yiji-explanation", text: `你的答案：${attempt.answers[String(item.ordinal)]?.join("、") || "未作答"}；参考答案：${question.answers.join("、")}。原题库未提供详细解析。` }));
+    }
+    const controls = element("div", { className: "yiji-exam-controls" });
+    const previous = button("上一题", "exam-move", "yiji-secondary-button", { value: String(attempt.index - 1) });
+    previous.disabled = attempt.index === 0;
+    const next = button("下一题", "exam-move", "yiji-primary-button", { value: String(attempt.index + 1) });
+    next.disabled = attempt.index === paper.items.length - 1;
+    append(controls, previous, button("答题卡", "exam-sheet", "yiji-secondary-button"), next);
+    screen.appendChild(this.actionDock(controls));
+    return screen;
+  }
+
+  private renderExamSheet(): HTMLElement {
+    const { paper, attempt } = this.currentExam();
+    const { screen, scroll } = this.createScreen(false);
+    const review = attempt.submittedAt !== undefined;
+    const answered = Object.values(attempt.answers).filter((answer) => answer.length).length;
+    append(scroll, button("返回当前题", "exam-question", "yiji-text-button"),
+      this.pageHeader(paper.title, "答题卡"),
+      element("p", { text: `已答 ${answered} / ${paper.items.length} 题 · 点击题号跳转` }));
+    const grid = element("div", { className: "yiji-exam-grid" });
+    for (const item of paper.items) {
+      const selected = attempt.answers[String(item.ordinal)] ?? [];
+      const correct = isCorrectSelection(this.requireBank().byId.get(item.questionId)!, selected);
+      const status = !selected.length ? "未答" : review ? correct ? "正确" : "错误" : "已答";
+      grid.appendChild(button(`${item.ordinal}\n${status}`, "exam-move", `yiji-exam-number ${selected.length ? review && !correct ? "is-wrong" : "is-selected" : ""}`, { value: String(item.ordinal - 1) }));
+    }
+    scroll.appendChild(grid);
+    screen.appendChild(this.actionDock(button(review ? "返回成绩" : "交卷", review ? "exam-result" : "exam-confirm", "yiji-primary-button")));
+    return screen;
+  }
+
+  private renderExamConfirmation(restart: boolean): HTMLElement {
+    const { paper, attempt } = this.currentExam();
+    const { screen, scroll } = this.createScreen(false);
+    const unanswered = paper.items.filter((item) => !attempt.answers[String(item.ordinal)]?.length).length;
+    append(scroll, this.pageHeader(paper.title, restart ? "再练一次？" : "确认交卷？"),
+      element("p", { className: "yiji-explanation", text: restart
+        ? "将替换本卷上一次成绩和作答快照。累计答题记录、错题与收藏仍然保留。"
+        : `还有 ${unanswered} 题未作答。交卷后不可修改答案；未答题计 0 分，不加入错题本。` }),
+      button("返回", restart ? "nav-exam" : "exam-sheet", "yiji-secondary-button"));
+    screen.appendChild(this.actionDock(button(restart ? "确认重新开始" : "确认交卷", restart ? "exam-start-again" : "exam-submit", "yiji-primary-button")));
+    return screen;
+  }
+
+  private renderExamResult(): HTMLElement {
+    const { paper, attempt } = this.currentExam();
+    const { screen, scroll } = this.createScreen(false);
+    append(scroll, this.pageHeader(paper.title, `${attempt.score ?? 0} / ${paper.totalScore} 分`),
+      element("p", { className: "yiji-explanation", text: `答对 ${attempt.correctCount ?? 0} 题 · 答错 ${(attempt.answeredCount ?? 0) - (attempt.correctCount ?? 0)} 题 · 未答 ${paper.items.length - (attempt.answeredCount ?? 0)} 题。已作答题目的结果已同步到统计和错题本。` }),
+      element("p", { className: "yiji-paper-meta", text: paper.ruleNote }),
+      button("查看答题卡与答案", "exam-sheet", "yiji-primary-button"));
+    screen.appendChild(this.actionDock(button("返回试卷列表", "nav-exam", "yiji-secondary-button")));
+    return screen;
+  }
+
+  private async handleExamAction(action: string, value: string | undefined): Promise<void> {
+    if (action === "exam-open" || action === "exam-restart") {
+      const paper = EMBEDDED_EXAM_PAPERS.find((entry) => entry.id === value);
+      if (!paper || paper.items.some((item) => !this.requireBank().byId.has(item.questionId))) throw new Error("试卷不完整");
+      this.examId = paper.id;
+      const existing = this.studyData.exams?.[paper.id];
+      if (!existing || existing.paperDigest !== paper.sourceSha256) {
+        await this.plugin.persistStudyData(saveExam(this.studyData, startExam(paper, Date.now())));
+      }
+      const { attempt } = this.currentExam();
+      if (attempt.submittedAt === undefined && Date.now() >= attempt.deadlineAt) { await this.finishExam(); return; }
+      this.screen = action === "exam-restart" ? "exam-restart" : attempt.submittedAt !== undefined ? "exam-result" : "exam-question";
+      this.render();
+      return;
+    }
+    const { paper, attempt } = this.currentExam();
+    if (attempt.submittedAt === undefined && Date.now() >= attempt.deadlineAt) { await this.finishExam(); return; }
+    if (action === "exam-submit") { await this.finishExam(); return; }
+    if (action === "exam-start-again" && this.screen === "exam-restart") {
+      await this.plugin.persistStudyData(saveExam(this.studyData, startExam(paper, Date.now())));
+      this.screen = "exam-question";
+    } else if (action === "exam-select" && value && attempt.submittedAt === undefined) {
+      const item = paper.items[attempt.index]!;
+      const question = this.requireBank().byId.get(item.questionId)!;
+      if (!question.options.some((option) => option.key === value)) return;
+      const selected = new Set(attempt.answers[String(item.ordinal)] ?? []);
+      if (question.type !== "multiple") selected.clear();
+      if (selected.has(value)) selected.delete(value); else selected.add(value);
+      await this.plugin.persistStudyData(saveExam(this.studyData, { ...attempt, answers: { ...attempt.answers, [item.ordinal]: [...selected] } }));
+      const scrollTop = this.rootEl?.querySelector(".yiji-screen-scroll")?.scrollTop ?? 0;
+      this.render();
+      const scroll = this.rootEl?.querySelector(".yiji-screen-scroll");
+      if (scroll) scroll.scrollTop = scrollTop;
+      return;
+    } else if (action === "exam-move" && value !== undefined) {
+      const index = Number(value);
+      if (!Number.isInteger(index) || index < 0 || index >= paper.items.length) return;
+      await this.plugin.persistStudyData(saveExam(this.studyData, { ...attempt, index }));
+      this.screen = "exam-question";
+    } else if (action === "exam-sheet" || action === "exam-question" || action === "exam-result" || action === "exam-confirm") {
+      this.screen = action;
+    }
+    this.render();
   }
 
   private renderStats(): HTMLElement {
@@ -470,6 +653,15 @@ export class YijiView extends ItemView {
     }
     scroll.appendChild(grid);
 
+    const completedExams = EMBEDDED_EXAM_PAPERS.filter((paper) => this.studyData.exams?.[paper.id]?.submittedAt !== undefined);
+    if (completedExams.length) {
+      scroll.appendChild(this.sectionHeader("近期真题成绩"));
+      for (const paper of completedExams) {
+        const attempt = this.studyData.exams?.[paper.id];
+        scroll.appendChild(button(`${paper.title} · ${attempt?.score ?? 0} / ${paper.totalScore} 分`, "exam-open", "yiji-secondary-button", { value: paper.id }));
+      }
+    }
+
     scroll.appendChild(this.sectionHeader("最近活动"));
     const history = element("div", { className: "yiji-history-list" });
     const recent = [...this.studyData.history].slice(-3).reverse();
@@ -493,7 +685,7 @@ export class YijiView extends ItemView {
     scroll.appendChild(history);
 
     const health = element("div", { className: "yiji-health-row" });
-    const sourceLabel = bank.sourceKind === "embedded" ? "内置题包" : "本地 Markdown";
+    const sourceLabel = bank.sourceKind === "embedded" ? "内置题包" : "本地 Markdown + 内置题包";
     append(
       health,
       icon("activity", "yiji-health-icon"),
@@ -553,7 +745,7 @@ export class YijiView extends ItemView {
       );
       list.appendChild(empty);
     }
-    for (const domain of DOMAIN_ORDER) {
+    for (const { name: domain } of bank.domains) {
       const count = grouped.get(domain) ?? 0;
       if (!count) continue;
       const row = button("", "start-wrong-domain", "yiji-wrong-row", { value: domain });
@@ -733,6 +925,10 @@ export class YijiView extends ItemView {
   private async handleAction(target: HTMLElement): Promise<void> {
     const action = target.dataset.action;
     if (!action) return;
+    if (action.startsWith("exam-")) {
+      await this.handleExamAction(action, target.dataset.value);
+      return;
+    }
     if (action === "nav-home") {
       this.screen = "home";
       this.render();

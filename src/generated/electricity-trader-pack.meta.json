@@ -1,13 +1,64 @@
 {
   "schemaVersion": 1,
   "contentPackageId": "electricity-trader-level-4",
-  "contentVersion": "study-vault-2026-09-03",
-  "sourceDigest": "44d9c34728dfd0c6f4f04c966a45fe6d57cb55f23724c75c8135a1b0f9ede177",
-  "sourceFileCount": 20,
+  "contentVersion": "study-vault-2026-09-13",
+  "sourceDigest": "766faf41594baf6a1b1422704668480368d3fcae7648a14d89c4a303ae7301af",
+  "sourceFileCount": 31,
   "questionCounts": {
-    "single": 503,
-    "multiple": 277,
-    "judge": 305,
-    "total": 1085
-  }
+    "single": 704,
+    "multiple": 351,
+    "judge": 378,
+    "total": 1433
+  },
+  "recentQuestionCount": 605,
+  "papers": [
+    {
+      "id": "real-2026-6-26-A",
+      "counts": {
+        "single": 100,
+        "multiple": 30,
+        "judge": 40
+      },
+      "questionCount": 170,
+      "totalScore": 100,
+      "declaredTotalScore": 100,
+      "sourceSha256": "8b744060b04dbe8f14c8e3a622616e693122363fb76ba0a217c898a2f6a33fbc"
+    },
+    {
+      "id": "real-2026-6-26-B",
+      "counts": {
+        "single": 100,
+        "multiple": 30,
+        "judge": 40
+      },
+      "questionCount": 170,
+      "totalScore": 100,
+      "declaredTotalScore": 100,
+      "sourceSha256": "dfd1b2b7eb0c12d610146ac5fa67bf99ff0e33dc84a11ca82df2f35c7f3998b5"
+    },
+    {
+      "id": "real-2026-6-30",
+      "counts": {
+        "single": 100,
+        "multiple": 30,
+        "judge": 40
+      },
+      "questionCount": 170,
+      "totalScore": 100,
+      "declaredTotalScore": 100,
+      "sourceSha256": "bf2ae51f1a3d7d20dd6d13c99fa6d3085791dfafcd63ddb80fa3bc6d5a724410"
+    },
+    {
+      "id": "real-2026-7-18",
+      "counts": {
+        "single": 100,
+        "multiple": 20,
+        "judge": 50
+      },
+      "questionCount": 170,
+      "totalScore": 95,
+      "declaredTotalScore": 100,
+      "sourceSha256": "5d53e6aaf972726c6baa5ceaa083231a8d51d81f5e617ec877dcb32b341abd9a"
+    }
+  ]
 }

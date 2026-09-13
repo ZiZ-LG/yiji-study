@@ -36,8 +36,8 @@ export default class YijiPlugin extends Plugin {
   }
 
   async persistStudyData(data: StudyDataV1): Promise<void> {
-    this.studyData = data;
     await this.saveData(data);
+    this.studyData = data;
   }
 
   getQuestionBank(): Promise<QuestionBank> {

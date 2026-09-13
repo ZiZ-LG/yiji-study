@@ -12,10 +12,10 @@ describe("active content package", () => {
     expect(ACTIVE_CONTENT_PACKAGE.domains).toHaveLength(22);
     expect(ACTIVE_CONTENT_PACKAGE.sourceFileCount).toBe(20);
     expect(ACTIVE_CONTENT_PACKAGE.expectedQuestionCounts).toEqual({
-      single: 503,
-      multiple: 277,
-      judge: 305,
-      total: 1085,
+      single: 704,
+      multiple: 351,
+      judge: 378,
+      total: 1433,
     });
     expect(ACTIVE_CONTENT_PACKAGE.exam.papers).toHaveLength(7);
     expect(ACTIVE_CONTENT_PACKAGE.exam.papers.filter((paper) => paper.badge === "原卷")).toHaveLength(2);

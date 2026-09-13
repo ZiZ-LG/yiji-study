@@ -58,13 +58,13 @@ const ELECTRICITY_TRADER_DOMAINS = [
 
 export const ACTIVE_CONTENT_PACKAGE: StudyContentPackage = {
   id: "electricity-trader-level-4",
-  contentVersion: "study-vault-2026-09-03",
+  contentVersion: "study-vault-2026-09-13",
   name: "电力交易员四级",
   questionBankRoot: "Study_Vault/电力交易员StudyVault-题型版",
   knowledgeRoot: "Study_Vault/电力交易员StudyVault",
   domains: ELECTRICITY_TRADER_DOMAINS,
   sourceFileCount: 20,
-  expectedQuestionCounts: { single: 503, multiple: 277, judge: 305, total: 1085 },
+  expectedQuestionCounts: { single: 704, multiple: 351, judge: 378, total: 1433 },
   questionTypeDirectories: {
     single: "01-单选题专项",
     multiple: "02-多选题专项",

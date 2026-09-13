@@ -12,7 +12,7 @@ describe("embedded electricity trader content", () => {
     expect(EMBEDDED_SOURCE_DIGEST).toMatch(/^[a-f0-9]{64}$/);
   });
 
-  it("包含 1085 道可判题题目且稳定 ID 唯一", () => {
+  it("包含 1433 道可判题题目且稳定 ID 唯一", () => {
     const counts = EMBEDDED_QUESTIONS.reduce(
       (result, question) => {
         result[question.type] += 1;
@@ -21,9 +21,9 @@ describe("embedded electricity trader content", () => {
       { single: 0, multiple: 0, judge: 0 },
     );
 
-    expect(counts).toEqual({ single: 503, multiple: 277, judge: 305 });
-    expect(EMBEDDED_QUESTIONS).toHaveLength(1085);
-    expect(new Set(EMBEDDED_QUESTIONS.map((question) => question.id)).size).toBe(1085);
+    expect(counts).toEqual({ single: 704, multiple: 351, judge: 378 });
+    expect(EMBEDDED_QUESTIONS).toHaveLength(1433);
+    expect(new Set(EMBEDDED_QUESTIONS.map((question) => question.id)).size).toBe(1433);
     expect(
       EMBEDDED_QUESTIONS.every(
         (question) =>

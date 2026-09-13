@@ -989,3 +989,43 @@ button.yiji-option:active {
     animation-iteration-count: 1 !important;
   }
 }
+.yiji-root .yiji-exam-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.yiji-root .yiji-exam-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(56px, 1fr));
+  gap: 8px;
+  padding-block: 16px;
+}
+
+.yiji-root button.yiji-exam-number {
+  height: auto;
+  min-height: 60px;
+  padding: 8px 4px;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.yiji-root button.yiji-exam-number.is-selected {
+  border: 2px solid #f6b846;
+}
+
+.yiji-root button.yiji-exam-number.is-wrong {
+  border: 2px solid #e87979;
+}
+
+.yiji-root .yiji-exam-timer {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 12px;
+}
+
+.yiji-root .yiji-exam-intro button {
+  margin-top: 14px;
+}

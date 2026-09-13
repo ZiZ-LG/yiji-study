@@ -13,6 +13,7 @@ export interface QuestionIdentityInput {
 }
 
 export interface Question extends QuestionIdentityInput {
+  sourceNote?: string;
   id: string;
   options: QuestionOption[];
   answers: string[];

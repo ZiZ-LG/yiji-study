@@ -3,6 +3,7 @@ import { ACTIVE_CONTENT_PACKAGE } from "../content/content-package";
 import type { ParseIssue, Question, QuestionType } from "../domain/question";
 import { EMBEDDED_QUESTIONS } from "../generated/electricity-trader-pack";
 import { parseQuestionFile } from "./question-parser";
+import { mergeQuestions } from "./merge-questions";
 
 export const TYPE_BANK_ROOT = ACTIVE_CONTENT_PACKAGE.questionBankRoot;
 export const DOMAIN_ORDER = ACTIVE_CONTENT_PACKAGE.domains;
@@ -151,5 +152,7 @@ export async function loadQuestionBank(vault: Vault): Promise<QuestionBank> {
       content: await vault.cachedRead(file),
     })),
   );
-  return buildQuestionBank(files);
+  const local = buildQuestionBank(files);
+  // A complete older Markdown vault must not hide newly bundled papers/questions.
+  return finalizeQuestionBank(mergeQuestions(local.questions, EMBEDDED_QUESTIONS), local.issues, "markdown");
 }

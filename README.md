@@ -5,7 +5,7 @@
 ## English
 
 Yiji Study is an offline-first, mobile-friendly quiz plugin for Obsidian. It
-currently bundles 1,085 questions for the Level 4 electricity trader exam and
+currently bundles 1,433 questions for the Level 4 electricity trader exam and
 supports focused practice, instant grading, mistake review, bookmarks, saved
 progress, and learning statistics.
 
@@ -15,10 +15,10 @@ network requests.
 
 ## Installation
 
-After the community-directory review is approved, open **Settings > Community
-plugins > Browse**, search for **Yiji Study**, and select **Install**.
+Open **Settings > Community plugins > Browse**, search for **Yiji Study**, and
+select **Install**. Existing users can check for updates in Community plugins.
 
-During review, Yiji Study can be installed with BRAT:
+Yiji Study can also be installed with BRAT:
 
 1. Enable community plugins in Obsidian, then install and enable
    [BRAT](https://obsidian.md/plugins?id=obsidian42-brat).
@@ -31,9 +31,9 @@ enter `ZiZ-LG/yiji-study`.
 
 ## Current features
 
-- 1,085 bundled questions: 503 single-choice, 277 multiple-choice, and 305
+- 1,433 bundled questions: 704 single-choice, 351 multiple-choice, and 378
   true-or-false questions.
-- Practice by 22 knowledge domains or by question type.
+- Practice by 22 knowledge domains plus an unclassified group, or by question type.
 - Instant grading with the original answer and source reference.
 - Automatic progress bookmarks that restore the previous position.
 - Automatic mistake notebook: a question is added after a wrong answer and
@@ -43,11 +43,14 @@ enter `ZiZ-LG/yiji-study`.
 - Three primary sections: Question bank, Mock exams, and Statistics. The
   mistake notebook is available under Statistics.
 
-The mock-exam page currently presents two reference papers and five fixed mock
-paper entries, but starting an exam is not enabled yet. The reference papers
-still need question-by-question mapping, and the mock papers still need final
-duplicate, answer-integrity, and composition checks. The plugin does not use a
-temporary random paper as a substitute.
+Four recent original papers (June 26 A/B, June 30, July 18, 2026) are playable,
+with all 170 original question positions per paper, saved answers, answer sheets,
+submission, scores and review. Only submitted answers update mistake statistics.
+The July paper contains 100 single-choice, 20 multiple-choice and 50 true-or-false
+questions. Its printed item scores sum to 95 despite a 100-point header; scores
+use the item-level values without rescaling. The fixed 120-minute practice limit
+is inherited from Yiji, not inferred from candidates' elapsed exam times.
+The older two sample papers and five mock entries remain disabled pending mapping.
 
 ## Usage
 
@@ -65,9 +68,11 @@ npm run install:local
 ```
 
 When the local Markdown question sources are available, development builds can
-parse them from `Study_Vault`. Published builds use the bundled question pack.
+parse them from `Study_Vault` and merge the bundled additions. Other vaults use
+the full bundled question pack.
 After source changes, run `npm run content:generate` to validate and regenerate
-the package.
+the package. Regeneration also requires the local recent Markdown sources, the
+four original PDFs and Poppler's `pdftotext`; builds and tests use generated data.
 
 Useful commands:
 
@@ -80,7 +85,8 @@ npm run build
 npm run check:ui
 npm run check:mobile-layout
 npm run verify
-npm run verify:release -- 0.1.6
+npm run check:exam-ui
+npm run verify:release -- 0.1.7
 ```
 
 Pushing a Git tag that exactly matches `manifest.json` triggers the release
