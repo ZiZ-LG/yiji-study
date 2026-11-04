@@ -191,7 +191,7 @@ export function parsePlainQuestions(source: SourceDocument): ImportResult {
       ordinal: current.ordinal, type: current.type, stem: stem.join("\n").trim(), options, answers: answer,
       domain, explanation, sourceLocator: [...new Set(current.locators)].join("；"), sourceUnitIds: [...new Set(current.unitIds)], attachments: [...new Set(current.attachments)], originalText,
     }, source, candidates.length);
-    if (current.locators.length > 1) candidate.issues.push(issue("cross-unit", "题目跨越页面或段落，请对照原文确认完整性。", false));
+    if (new Set(current.unitIds).size > 1) candidate.issues.push(issue("cross-unit", "题目跨越页面或段落，请对照原文确认完整性。", false));
     if (/(?:附图|图像|图片|题图).{0,8}(?:缺失|缺少|未提供)/.test(originalText)
       || /(?:根据附图|根据下图|如图所示|见下图)/.test(originalText) && !candidate.attachments.length) candidate.issues.push(issue("missing-source-image", "原文标明题图缺失，需要补齐后才能计分。"));
     candidates.push(candidate);

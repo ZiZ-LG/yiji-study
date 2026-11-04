@@ -57,7 +57,21 @@ describe("import parser and provenance", () => {
     expect(result.candidates[0]!.explanation).toBe("4 可以被 2 整除。");
     expect(result.candidates[0]!.explanationOrigin).toBe("source");
     expect(result.candidates.every((item) => item.sourceUnitIds[0] === document.units[0]!.id)).toBe(true);
+    expect(result.candidates.every((item) => !item.issues.some((problem) => problem.code === "cross-unit"))).toBe(true);
     expect(result.candidates.every((item) => !item.issues.some((problem) => problem.blocking))).toBe(true);
+  });
+
+  it("warns when a question spans distinct units even if their locator labels are identical", async () => {
+    const first = "## 单选题\n1. 下列哪项为偶数？\nA. 3";
+    const second = "B. 4\n答案：B\n知识点：整数";
+    const document = await source(`${first}\n${second}`);
+    const original = parseDocumentCandidates(document).candidates[0]!;
+    const unit = document.units[0]!;
+    const split = { ...document, units: [{ ...unit, text: first }, { ...unit, id: `${unit.id}-next`, text: second }] };
+    const candidate = parseDocumentCandidates(split).candidates[0]!;
+    expect(candidate).toEqual({ ...original, sourceUnitIds: [unit.id, `${unit.id}-next`], issues: [
+      { code: "cross-unit", message: "题目跨越页面或段落，请对照原文确认完整性。", blocking: false },
+    ] });
   });
 
   it("retains unsupported and missing-answer candidates instead of silently dropping them", async () => {
