@@ -115,6 +115,9 @@ export function parseCodexResult(input: string, sources: readonly SourceDocument
       && (item.type === candidate.type || item.type === "unsupported"));
     const positioned = evidence.filter((item) => sameIds(item.sourceUnitIds, validUnits));
     const known = positioned.length === 1 ? positioned[0] : undefined;
+    if (candidate.explanation) {
+      candidate.explanationOrigin = known?.explanation && normalizedEvidence(known.explanation) === normalizedEvidence(candidate.explanation) ? "source" : "ai";
+    } else delete candidate.explanationOrigin;
     if (source.role !== "questions") candidate.issues.push({ code: "invalid-question-source", message: "题目引用的来源不是题卷，请重新核对题卷与答案文件的角色。", blocking: true });
     if (normalizedEvidence(candidate.paperTitle) !== normalizedEvidence(source.paperTitle)) candidate.issues.push({ code: "paper-title-mismatch", message: "题目卷名与选定题卷不一致，请核对题卷关联。", blocking: true });
     if (!known) candidate.issues.push({ code: "unverified-question-source", message: "未能在所引用的具体页面或段落中唯一核对原题，请对照原件逐题确认。", blocking: true });

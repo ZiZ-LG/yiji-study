@@ -24,6 +24,7 @@ const plugin = {
   getExamQuestions: () => bank.byId,
   getQuestionRevision: () => ({ id: "fixture-revision" }),
   getExamExplanation: () => undefined,
+  getExamRevision: () => undefined,
   getLearningEvidence: () => ({ firstAnswers: { sampleCount: 0, correctCount: 0, accuracy: null }, delayedAnswers: { sampleCount: 0, correctCount: 0, accuracy: null }, repeatedWrongQuestionIds: [], unretestedQuestionIds: [], domains: [], note: "仅统计有完整修订记录的新作答。" }),
   getReviewIds: () => [],
   isReviewEnabled: () => false,

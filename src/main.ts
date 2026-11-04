@@ -7,7 +7,7 @@ import { LibraryController } from "./host/library-controller";
 import { ManagerController } from "./host/manager-controller";
 import { LibraryManager } from "./ui/library-manager";
 import type { ExamPaper } from "./content/exam-paper";
-import { getActiveBank } from "./library";
+import { getActiveBank, type QuestionRevision } from "./library";
 
 export { VIEW_TYPE_YIJI } from "./constants";
 
@@ -75,8 +75,13 @@ export default class YijiPlugin extends Plugin {
   selectExamHistory(id: string) { return this.controller.selectExamHistory(id); }
   clearExamHistorySelection() { this.controller.clearExamHistorySelection(); }
   getLearningEvidence() { return this.controller.getLearningEvidence(); }
+  getExamRevision(paper: ExamPaper, ordinal: number): QuestionRevision | undefined {
+    const frozen = getActiveBank(this.controller.state)?.papers[paper.id];
+    if (!frozen || frozen.digest !== paper.sourceSha256) return undefined;
+    return frozen.items.find((item) => item.ordinal === ordinal)?.snapshot;
+  }
   getExamExplanation(paper: ExamPaper, ordinal: number): string | undefined {
-    return getActiveBank(this.controller.state)?.papers[paper.id]?.items.find((item) => item.ordinal === ordinal)?.snapshot.explanation;
+    return this.getExamRevision(paper, ordinal)?.explanation;
   }
   private async refreshFromDisk(): Promise<void> {
     await this.controller.reloadFromDisk();

@@ -194,6 +194,21 @@ describe("manager import integration with persistent fake vault files", () => {
       options: { bankId: "bank_test", questionId: question.id }, expectedRevisionId: "old_revision" })).rejects.toThrow("更新");
   });
 
+  it("persists source versus AI explanation labels and preserves a user's edited explanation", async () => {
+    const c = setup(); await importOne(c, `${SINGLE}答案：B\n解析：这是原文解析。`);
+    let candidate = Object.values(getBank(c.holder.state).candidates)[0]!;
+    expect(candidate.input.explanationOrigin).toBe("source");
+    const { task } = await exportedTask(c); const source = (await c.manager.getSnapshot()).importSources![0]!;
+    await c.manager.execute({ type: "import-codex", bankId: "bank_test", text: resultFor(task, source, { explanation: "这是 AI 重新组织的解释。", explanationOrigin: "source" }) });
+    candidate = Object.values(getBank(c.holder.state).candidates)[0]!;
+    expect(candidate.input.explanationOrigin).toBe("ai-adopted");
+    await c.manager.execute({ type: "commit-candidate", bankId: "bank_test", candidateId: candidate.id,
+      input: { ...candidate.input, explanation: "用户补充的解释。", explanationOrigin: "user" }, resolveConflict: true, reason: "核对并修改解析" });
+    const question = Object.values(getBank(c.holder.state).questions)[0]!;
+    expect(question.revisions[question.activeRevisionId]!.explanationOrigin).toBe("user");
+    expect(question.revisions[question.activeRevisionId]!.explanation).toBe("用户补充的解释。");
+  });
+
   it("retains separate occurrences when the same question type restarts numbering", async () => {
     const c = setup();
     await importOne(c, "## 单选题\n1. 第一节的问题？\nA.甲\nB.乙\n答案：A\n## 单选题\n1. 第二节的问题？\nA.丙\nB.丁\n答案：B");
@@ -233,6 +248,23 @@ describe("manager import integration with persistent fake vault files", () => {
     expect(missingCandidate.issues.join()).toContain("题图缺失");
     await expect(missing.manager.execute({ type: "commit-candidate", bankId: "bank_test", candidateId: missingCandidate.id,
       input: missingCandidate.input, resolveConflict: true, reason: "已核对" })).rejects.toThrow("补齐题图");
+  });
+
+  it("sends distinct-question weakness evidence and keeps insufficient samples subject to explicit category choice", async () => {
+    const c = setup(); await importOne(c, `${SINGLE}答案：B`);
+    await c.manager.execute({ type: "commit-normal-candidates", bankId: "bank_test", candidateIds: Object.keys(getBank(c.holder.state).candidates) });
+    const questionId = Object.keys(getBank(c.holder.state).questions)[0]!;
+    await c.holder.mutate((state) => recordAnswerEvent(recordAnswerEvent(state, questionId, false), questionId, false));
+    c.holder.settings.ai.mode = "api"; c.holder.settings.ai.model = "fixture";
+    http.mockResolvedValue({ status: 200, text: JSON.stringify({ choices: [{ message: { content: JSON.stringify({ counts: { single: 1 } }) } }] }) });
+    const result = await c.manager.execute({ type: "parse-compose", bankId: "bank_test", prompt: "按薄弱章节选一题" });
+    const instruction = JSON.parse(http.mock.calls[0]![0].body).messages[0].content as string;
+    const summary = JSON.parse(instruction.split("\n").at(-1)!);
+    expect(summary.domains[0]).toMatchObject({ answered: 1, wrong: 1, currentWrongPercent: 100, sampleInsufficient: true });
+    expect(instruction).toContain("不得据此自动排序选择薄弱章节");
+    expect(instruction).toContain("未指定时省略 domains");
+    expect(result.composeOptions?.domains).toBeUndefined();
+    expect(http).toHaveBeenCalledTimes(1);
   });
 
   it("never recursively requests composition and strictly rejects invalid types or unknown conditions", async () => {

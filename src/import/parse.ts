@@ -57,10 +57,11 @@ export function candidateFromObject(value: unknown, source: SourceDocument, inde
   let options = normalizeOptions(value.options ?? value.选项);
   if (type === "judge" && !options.length) options = [{ key: "对", text: "正确" }, { key: "错", text: "错误" }];
   const ordinal = text(value.ordinal ?? value.题号) || String(index + 1);
+  const explanation = text(value.explanation ?? value.解析);
   const candidate: ImportCandidate = {
     id: "", ordinal, type, stem: text(value.stem ?? value.题干), options,
     answers: normalizeAnswers(value.answers ?? value.answer ?? value.答案), domain: text(value.domain ?? value.知识点),
-    explanation: text(value.explanation ?? value.解析), sourceId: source.id,
+    explanation, ...(explanation ? { explanationOrigin: "source" as const } : {}), sourceId: source.id,
     sourceUnitIds: Array.isArray(value.sourceUnitIds) ? value.sourceUnitIds.filter((id): id is string => typeof id === "string") : source.units.length === 1 ? [source.units[0]!.id] : [],
     sourceLocator: text(value.sourceLocator) || source.units[0]?.locator || "导入数据",
     paperTitle: text(value.paperTitle) || source.paperTitle,

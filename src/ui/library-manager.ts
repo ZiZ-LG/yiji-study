@@ -4,6 +4,7 @@ import type {
   LibraryState, QuestionInput, SourceReference,
 } from "../library/types";
 import type { QuestionType } from "../domain/question";
+import { getBankStudyData, getLearningEvidence } from "../library";
 import { append, element } from "./dom";
 
 export interface ManagerAiSettings {
@@ -494,7 +495,18 @@ export class LibraryManager extends Modal {
       if (candidate) append(original, this.note("此处是结构化草稿；请打开来源核对原始内容。"));
       append(parent, original);
     }
-    const mark = <K extends keyof QuestionForm>(key: K, value: QuestionForm[K]): void => { form[key] = value; form.dirty = true; };
+    const answerBasis = element("p", { className: "yiji-manager-muted", attrs: { "data-answer-origin": "" } });
+    const explanationBasis = element("p", { className: "yiji-manager-muted", attrs: { "data-explanation-origin": "" } });
+    const updateOrigins = (): void => {
+      const answersChanged = parseManagerAnswers(form.answersText).join(",") !== (form.original?.answers.join(",") ?? "");
+      const answerOrigin = answersChanged || !form.original ? "user" : form.original.answerOrigin;
+      answerBasis.textContent = `答案依据：${answerOrigin === "source" ? "原资料提供" : answerOrigin === "ai-adopted" ? candidate ? "AI 建议，待用户核对采用" : "AI 建议，经用户采用" : answerOrigin === "user" ? "用户修订" : "来源未记录"}`;
+      const changed = form.original?.explanation !== form.explanation.trim();
+      const origin = changed ? "user" : form.original?.explanationOrigin;
+      explanationBasis.textContent = `解析来源：${!form.explanation.trim() ? "暂未提供解析" : origin === "source" ? "原资料解析" : origin === "ai-adopted" ? candidate ? "AI 整理草稿，待核对" : "AI 整理，经用户采用" : origin === "user" ? "用户改写" : "来源未记录"}`;
+    };
+    updateOrigins();
+    const mark = <K extends keyof QuestionForm>(key: K, value: QuestionForm[K]): void => { form[key] = value; form.dirty = true; updateOrigins(); };
     append(parent, this.select("题型", form.type, [["single", "单选"], ["multiple", "多选"], ["judge", "判断"]], (value) => {
       if (value !== "single" && value !== "multiple" && value !== "judge") return;
       mark("type", value);
@@ -505,9 +517,11 @@ export class LibraryManager extends Modal {
       this.textArea("题干", form.stem, (value) => { mark("stem", value); }, 5),
       this.textArea("选项（每行一个，例如 A. 选项内容）", form.optionsText, (value) => { mark("optionsText", value); }, 5),
       this.textField("采用答案（选项编号，多个用逗号分开）", form.answersText, (value) => { mark("answersText", value); }, { placeholder: form.type === "multiple" ? "A, C" : form.type === "judge" ? "对 或 错" : "A" }),
+      answerBasis,
       this.textField("知识点／章节", form.domain, (value) => { mark("domain", value); }, { placeholder: "未归类" }),
       this.textField("标签（用逗号或顿号分开）", form.tags, (value) => { mark("tags", value); }),
       this.textArea("解析／记忆提示", form.explanation, (value) => { mark("explanation", value); }, 4),
+      explanationBasis,
       this.textField("关联知识笔记", form.notePath, (value) => { mark("notePath", value); }, { placeholder: "仓库内的笔记路径，可留空" }),
       this.textField("适用年份／规则版本", form.ruleVersion, (value) => { mark("ruleVersion", value); }),
     );
@@ -849,6 +863,7 @@ export class LibraryManager extends Modal {
     const preview = element("section", { className: "yiji-manager-panel" });
     append(parent, layout); append(layout, form, preview);
     append(form, this.heading("组合自己的试卷"), this.note("只从当前题库的可用题中选择。题目不足时显示缺口；保存后冻结题目、顺序、答案和计分规则。"));
+    this.renderCompositionEvidence(form, bank);
     const natural = this.details("compose-natural");
     append(natural, element("summary", { text: "用一句话描述组卷要求" }), this.textArea("组卷要求或 Codex 返回的条件 JSON", this.session.composePrompt, (value) => { this.session.composePrompt = value; }, 3), this.note(this.snapshot?.ai.mode === "codex" ? "输入要求后导出 Codex 组卷任务；把返回的条件 JSON 粘贴回此处再解析。条件会填到下方表单，核对后再预览。" : "例如：第一章单选 10 题、多选 5 题，只用错题。你填写的要求和必要的题库摘要会用于所选服务的 AI 分析，可能产生费用；结果先填入表单，核对后再预览。"), this.action("梳理组卷条件", () => {
       if (!this.session.composePrompt.trim()) { this.showProblem("请先填写组卷要求。"); return; }
@@ -904,6 +919,7 @@ export class LibraryManager extends Modal {
       const counts = { single: 0, multiple: 0, judge: 0 };
       for (const item of paper.items) counts[item.snapshot.type] += 1;
       append(preview, this.note(`单选 ${counts.single} · 多选 ${counts.multiple} · 判断 ${counts.judge}`));
+      this.renderPaperSources(preview, paper);
       const list = element("ol", { className: "yiji-manager-paper-list" });
       for (const item of paper.items) append(list, element("li", { text: `${item.snapshot.domain || "未归类"} · ${TYPE_NAMES[item.snapshot.type]} · ${item.points} 分` }));
       append(preview, list, this.note("预览只显示构成，不提前显示参考答案。保存后可在“模考”中开始。"), this.action("保存这份试卷", () => {
@@ -920,6 +936,63 @@ export class LibraryManager extends Modal {
       append(preview, this.heading(`已保存试卷 · ${saved.length}`));
       for (const savedPaper of saved.slice(-15).reverse()) append(preview, element("p", { text: `${savedPaper.title} · ${savedPaper.items.length} 题 · ${savedPaper.totalScore} 分` }));
     }
+  }
+
+  private renderCompositionEvidence(parent: HTMLElement, bank: LibraryBank): void {
+    if (!this.snapshot) return;
+    const study = getBankStudyData(this.snapshot.library, bank.id);
+    const evidence = getLearningEvidence(this.snapshot.library, bank.id);
+    const section = element("section", { attrs: { "data-compose-evidence": "" } });
+    append(section, this.heading("判断薄弱的依据"), this.note("当前错题占比 = 当前错题数 ÷ 已答不同题数。重复作答不增加题目样本；这个比例不表示掌握率，也不预测成绩。"),
+      this.note("不足 10 道已答题时样本不足，不自动排序选择薄弱章节，请自行确认知识点范围。"));
+    const groups = new Map<string, string[]>();
+    for (const question of Object.values(bank.questions)) {
+      if (question.inactive) continue;
+      const domain = question.revisions[question.activeRevisionId]!.domain;
+      const ids = groups.get(domain) ?? [];
+      ids.push(question.id);
+      groups.set(domain, ids);
+    }
+    const rows = this.details("compose-evidence");
+    append(rows, element("summary", { text: `查看各知识点的作答样本 · ${groups.size} 类` }));
+    const describe = (value: { sampleCount: number; correctCount: number } | undefined): string =>
+      value?.sampleCount ? `${value.correctCount}/${value.sampleCount} 次正确` : "尚无可确认样本";
+    for (const [domain, ids] of groups) {
+      const answered = ids.filter((id) => (study.questions[id]?.attempts ?? 0) > 0).length;
+      const wrong = ids.filter((id) => study.questions[id]?.isWrong).length;
+      const observed = evidence.domains.find((item) => item.domain === domain);
+      const row = element("div", { attrs: { "data-compose-domain": domain } });
+      append(row, element("h4", { text: domain || "未归类" }), this.note(`未停用 ${ids.length} 题 · 已答 ${answered} 题 · 当前错题 ${wrong} 题 · 错题占比 ${answered ? `${Math.round(100 * wrong / answered)}%` : "暂无样本"}`),
+        this.note(`首次作答：${describe(observed?.firstAnswers)}；延迟复测：${describe(observed?.delayedAnswers)}。`));
+      if (answered < 10) append(row, this.note(`样本不足：仅有 ${answered} 道已作答题，请自行确认本次章节范围。`));
+      append(rows, row);
+    }
+    if (groups.size) append(section, rows);
+    if (!groups.size) append(section, this.note("尚无可比较的题目，请先建立题库。"));
+    if (evidence.legacyExcludedFromFirstAndDelayed) append(section, this.note("旧版累计记录参与当前错题统计；无法还原的首次作答和延迟复测不补造为样本。"));
+    append(parent, section);
+  }
+
+  private renderPaperSources(parent: HTMLElement, paper: FrozenPaper): void {
+    const groups = new Map<string, { label: string; count: number }>();
+    for (const item of paper.items) {
+      const seen = new Set<string>();
+      for (const source of item.snapshot.sources ?? []) {
+        if (!source.file || seen.has(source.file)) continue;
+        seen.add(source.file);
+        const existing = groups.get(source.file);
+        const fileName = source.file.split(/[\\/]/).pop() || source.file;
+        groups.set(source.file, { label: existing?.label ?? (source.label ? `${source.label} · ${fileName}` : fileName), count: (existing?.count ?? 0) + 1 });
+      }
+      if (!seen.size) {
+        const missing = groups.get("");
+        groups.set("", { label: "未标明来源", count: (missing?.count ?? 0) + 1 });
+      }
+    }
+    const section = element("section", { attrs: { "data-compose-sources": "" } });
+    append(section, this.heading("来源构成"), this.note("按本次试卷的冻结题目统计。同一题在同一来源只计一次；有多个来源时会分别计入，因此来源题数之和可能大于整卷题量。"));
+    for (const source of groups.values()) append(section, element("p", { text: `${source.label} · ${source.count} 题` }));
+    append(parent, section);
   }
 
   private renderReview(parent: HTMLElement): void {

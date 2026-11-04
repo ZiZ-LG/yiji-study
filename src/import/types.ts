@@ -56,6 +56,7 @@ export interface ImportCandidate {
   answers: string[];
   domain: string;
   explanation: string;
+  explanationOrigin?: "source" | "ai" | "user";
   sourceId: string;
   sourceUnitIds: string[];
   sourceLocator: string;

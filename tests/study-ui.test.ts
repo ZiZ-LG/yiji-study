@@ -30,7 +30,7 @@ const browserScenario = String.raw`
 import { YijiView } from "./src/ui/yiji-view";
 import { buildQuestionBankFromQuestions } from "./src/data/question-bank";
 import { ACTIVE_CONTENT_PACKAGE } from "./src/content/content-package";
-import { commitQuestion, createLibrary, createBank, getActiveQuestions, getBank, getBankStudyData, getLearningEvidence, getReviewQueue, markReviewAgain, recordAnswerEvent, recordStudyTransition, restoreBankAsCopy, setReviewEnabled } from "./src/library";
+import { commitQuestion, composePaper, createLibrary, createBank, getActiveQuestions, getBank, getBankStudyData, getLearningEvidence, getPaperQuestions, getReviewQueue, markReviewAgain, recordAnswerEvent, recordStudyTransition, restoreBankAsCopy, setReviewEnabled, toExamPaper } from "./src/library";
 
 const assert=(condition,message)=>{if(!condition)throw new Error(message);};
 const settle=()=>new Promise(resolve=>setTimeout(resolve,10));
@@ -51,7 +51,10 @@ const plugin={
   getActiveBankId:()=>state.activeBankId,
   getQuestionRevision:currentRevision,
   getQuestionImages:()=>[],
-  getExamPapers:()=>[],
+  getExamPapers:()=>Object.values(getBank(state).papers).map(toExamPaper),
+  getExamQuestions:paper=>getPaperQuestions(getBank(state).papers[paper.id]),
+  getExamRevision:(paper,ordinal)=>getBank(state).papers[paper.id]?.items.find(item=>item.ordinal===ordinal)?.snapshot,
+  getExamExplanation:(paper,ordinal)=>getBank(state).papers[paper.id]?.items.find(item=>item.ordinal===ordinal)?.snapshot.explanation,
   getExamHistory:()=>[],
   clearExamHistorySelection:()=>undefined,
   getLearningEvidence:()=>getLearningEvidence(state),
@@ -137,7 +140,31 @@ async function review(){
   assert(document.body.dataset.notice==="本轮 10 道巩固题已完成。","Review round lacks a clear completion state");
   assert(plugin.getReviewIds().length===2 && root.textContent.includes("2 题待复查"),"Unselected due questions were lost or replayed");
 }
-const scenarios={ordinary,revision,bank,review};
+async function provenance(){
+  const origins=[["source","原资料解析"],["ai-adopted","AI 整理，经用户采用"],["user","用户改写"],[undefined,"来源未记录"]];
+  for(const [index,[origin,label]] of origins.entries()) {
+    const explanation="第"+index+"个仅在提交后出现的解析";
+    const changed=commitQuestion(state,{...currentRevision(firstId),explanation,explanationOrigin:origin,answerOrigin:"source"},{questionId:firstId,reason:"核对解析来源"});
+    assert(!changed.issues.length,"Invalid explanation fixture");state=changed.state;
+    const {root}=await open("explanation-"+index);await click(root,"start-domain","基础");
+    assert(!root.textContent.includes(explanation) && !root.textContent.includes("解析来源："),"Explanation provenance leaked before practice submission");
+    await click(root,"select-option","A");await click(root,"select-option","C");await click(root,"submit-answer");
+    assert(root.textContent.includes(explanation) && root.textContent.includes("解析来源："+label),"Practice explanation origin incorrect: "+label);
+    assert(root.textContent.includes("答案依据：原资料提供"),"Explanation origin replaced answer evidence");
+  }
+  const frozenText="考试冻结时的 AI 解析";
+  state=commitQuestion(state,{...currentRevision(firstId),explanation:frozenText,explanationOrigin:"ai-adopted"},{questionId:firstId,reason:"冻结前解析"}).state;
+  const composed=composePaper(state,{title:"解析来源试卷",counts:{multiple:1},durationMinutes:30});state=composed.state;
+  const paper=composed.paper;
+  state=commitQuestion(state,{...currentRevision(firstId),explanation:"考试冻结后的用户改写",explanationOrigin:"user"},{questionId:firstId,reason:"冻结后解析"}).state;
+  const {root}=await open("exam-explanation");await click(root,"nav-exam");await click(root,"exam-open",paper.id);
+  assert(!root.textContent.includes(frozenText) && !root.textContent.includes("解析来源："),"Exam exposed explanation before submission");
+  await click(root,"exam-select","A");await click(root,"exam-select","C");await click(root,"exam-sheet");await click(root,"exam-confirm");await click(root,"exam-submit");
+  await click(root,"exam-sheet");await click(root,"exam-move","0");
+  assert(root.textContent.includes(frozenText) && !root.textContent.includes("考试冻结后的用户改写"),"Exam review used current explanation instead of frozen revision");
+  assert(root.textContent.includes("解析来源：AI 整理，经用户采用") && root.textContent.includes("答案依据：原资料提供"),"Exam review merged or changed provenance labels");
+}
+const scenarios={ordinary,revision,bank,review,provenance};
 const scenario=new URL(location.href).searchParams.get("scenario");
 Promise.resolve().then(()=>scenarios[scenario]()).then(()=>{
   views.forEach(view=>view.destroy());
@@ -166,6 +193,7 @@ describe.skipIf(!chrome)("study view in Chromium (simulated Obsidian host)", () 
     ["revision", "refreshes a stale question before any answer can use the new revision"],
     ["bank", "refreshes a stale bank even when the copied question and revision IDs match"],
     ["review", "finishes a selected ten-question review round without looping"],
+    ["provenance", "separates explanation origins from answers and reviews frozen exam evidence only after submission"],
   ])("%s: %s", (scenario) => {
     const output = execFileSync(chrome!, ["--headless=new", "--no-sandbox", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
       "--disable-background-networking", "--disable-component-update", "--disable-sync", "--window-size=1000,1000",

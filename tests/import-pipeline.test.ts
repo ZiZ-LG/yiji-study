@@ -55,6 +55,7 @@ describe("import parser and provenance", () => {
     expect(result.candidates.map((item) => item.answers)).toEqual([["B"], ["A", "C"], ["对"]]);
     expect(new Set(result.candidates.map((item) => item.id)).size).toBe(3);
     expect(result.candidates[0]!.explanation).toBe("4 可以被 2 整除。");
+    expect(result.candidates[0]!.explanationOrigin).toBe("source");
     expect(result.candidates.every((item) => item.sourceUnitIds[0] === document.units[0]!.id)).toBe(true);
     expect(result.candidates.every((item) => !item.issues.some((problem) => problem.blocking))).toBe(true);
   });
@@ -141,6 +142,16 @@ describe("explicit AI scope and Codex exchange", () => {
     expect(parsed.candidates[0]!.sourceUnitIds).toEqual(data.scope.unitIds);
     expect(() => parseCodexResult(JSON.stringify({ ...data.payload, taskId: "other" }), [data.selected], data.scope)).toThrow("任务编号");
     expect(() => buildCodexTask([data.selected], { unitIds: [] })).toThrow("选择");
+  });
+
+  it("derives explanation provenance from the verified original instead of trusting AI labels", async () => {
+    const data = await fixture();
+    const parse = (explanation: string, explanationOrigin: string) => parseCodexResult(JSON.stringify({ ...data.payload,
+      questions: [{ ...data.payload.questions[0], explanation, explanationOrigin }] }), [data.selected], data.scope).candidates[0]!;
+    expect(parse("4 可以被 2 整除。", "ai").explanationOrigin).toBe("source");
+    expect(parse("可以记住：偶数的个位为 0、2、4、6、8。", "source").explanationOrigin).toBe("ai");
+    expect(parse("用户已经核对过这段话。", "user").explanationOrigin).toBe("ai");
+    expect(parse("", "source").explanationOrigin).toBeUndefined();
   });
 
   it("rejects sources outside scope and marks invented positions for review", async () => {

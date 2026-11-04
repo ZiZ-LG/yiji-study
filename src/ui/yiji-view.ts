@@ -9,7 +9,7 @@ import type { ExamPaper } from "../content/exam-paper";
 import { isCorrectSelection, saveExam, startExam, submitExam } from "../state/exam-state";
 import type { ExamAttempt } from "../state/exam-state";
 import type { Question, QuestionType } from "../domain/question";
-import type { QuestionRevision } from "../library";
+import type { AnswerOrigin, QuestionRevision } from "../library";
 import type YijiPlugin from "../main";
 import {
   getStudySummary,
@@ -40,6 +40,12 @@ const TYPE_LABELS: Record<QuestionType, string> = {
   multiple: "多选",
   judge: "判断",
 };
+
+const displayScore = (score: number): string => score.toLocaleString("zh-CN", { maximumFractionDigits: 2 });
+const answerSourceLabel = (origin?: AnswerOrigin): string => origin === "source" ? "原资料提供"
+  : origin === "ai-adopted" ? "AI 建议，经用户采用" : origin === "user" ? "用户修订" : "来源未记录";
+const explanationSourceLabel = (origin?: AnswerOrigin): string => origin === "source" ? "原资料解析"
+  : origin === "ai-adopted" ? "AI 整理，经用户采用" : origin === "user" ? "用户改写" : "来源未记录";
 
 export class YijiView extends ItemView {
   private rootEl: HTMLElement | null = null;
@@ -392,20 +398,22 @@ export class YijiView extends ItemView {
       this.renderOptions(question, true),
     );
 
+    const revision = this.questionRevisions.get(question.id);
     const explanation = element("article", { className: "yiji-explanation" });
     append(
       explanation,
       element("h2", { text: "答案与来源" }),
       element("p", {
-        text: `参考答案：${question.answers.join("、")}。${this.questionRevisions.get(question.id)?.explanation || "此题暂未提供解析。"}`,
+        text: `参考答案：${question.answers.join("、")}`,
       }),
       element("p", {
         className: "yiji-source-line",
         text: `来源：${question.sources.join("、") || "原题库"}`,
       }),
     );
-    const revision = this.questionRevisions.get(question.id);
-    explanation.appendChild(element("p", { className: "yiji-source-line", text: `答案依据：${revision?.answerOrigin === "user" ? "用户修订" : revision?.answerOrigin === "ai-adopted" ? "AI 建议，经用户采用" : "原资料提供"}` }));
+    append(explanation, element("p", { className: "yiji-source-line", text: `答案依据：${answerSourceLabel(revision?.answerOrigin)}` }),
+      element("p", { text: revision?.explanation || "此题暂未提供解析。" }));
+    if (revision?.explanation) explanation.appendChild(element("p", { className: "yiji-source-line", text: `解析来源：${explanationSourceLabel(revision.explanationOrigin)}` }));
     if (this.plugin.isReviewEnabled()) explanation.appendChild(button("这次蒙对了／仍需巩固", "mark-review-again", "yiji-secondary-button"));
     const notePath = revision?.notePath || getKnowledgeNotePath(this.plugin.getContentPackage(), question.domain);
     if (notePath && this.app.vault.getAbstractFileByPath(notePath)) {
@@ -569,7 +577,12 @@ export class YijiView extends ItemView {
     options.querySelectorAll<HTMLElement>("[data-action]").forEach((row) => { row.dataset.action = "exam-select"; });
     scroll.appendChild(options);
     if (review) {
-      append(scroll, element("p", { className: "yiji-explanation", text: `你的答案：${attempt.answers[String(item.ordinal)]?.join("、") || "未作答"}；参考答案：${question.answers.join("、")}。${this.plugin.getExamExplanation(paper, item.ordinal) || "此版本未提供详细解析。"}` }));
+      const revision = this.plugin.getExamRevision?.(paper, item.ordinal);
+      const explanation = revision?.explanation ?? this.plugin.getExamExplanation(paper, item.ordinal);
+      append(scroll, element("p", { className: "yiji-explanation", text: `你的答案：${attempt.answers[String(item.ordinal)]?.join("、") || "未作答"}；参考答案：${question.answers.join("、")}` }),
+        element("p", { className: "yiji-source-line", text: `答案依据：${answerSourceLabel(revision?.answerOrigin)}` }),
+        element("p", { className: "yiji-explanation", text: explanation || "此版本未提供详细解析。" }));
+      if (explanation) append(scroll, element("p", { className: "yiji-source-line", text: `解析来源：${explanationSourceLabel(revision?.explanationOrigin)}` }));
     }
     const controls = element("div", { className: "yiji-exam-controls" });
     const previous = button("上一题", "exam-move", "yiji-secondary-button", { value: String(attempt.index - 1) });
@@ -617,7 +630,7 @@ export class YijiView extends ItemView {
   private renderExamResult(): HTMLElement {
     const { paper, attempt } = this.currentExam();
     const { screen, scroll } = this.createScreen(false);
-    append(scroll, this.pageHeader(paper.title, `${attempt.score ?? 0} / ${paper.totalScore} 分`),
+    append(scroll, this.pageHeader(paper.title, `${displayScore(attempt.score ?? 0)} / ${displayScore(paper.totalScore)} 分`),
       element("p", { className: "yiji-explanation", text: `答对 ${attempt.correctCount ?? 0} 题 · 答错 ${(attempt.answeredCount ?? 0) - (attempt.correctCount ?? 0)} 题 · 未答 ${paper.items.length - (attempt.answeredCount ?? 0)} 题。已作答题目的结果已同步到统计和错题本。` }),
       element("p", { className: "yiji-paper-meta", text: paper.ruleNote }),
       button("查看答题卡与答案", "exam-sheet", "yiji-primary-button"));
@@ -742,14 +755,14 @@ export class YijiView extends ItemView {
       scroll.appendChild(this.sectionHeader(this.plugin.getContentPackage().id === "electricity-trader-level-4" ? "近期真题成绩" : "试卷成绩"));
       for (const paper of completedExams) {
         const attempt = this.studyData.exams?.[paper.id];
-        scroll.appendChild(button(`${paper.title} · ${attempt?.score ?? 0} / ${paper.totalScore} 分`, "exam-open", "yiji-secondary-button", { value: paper.id }));
+        scroll.appendChild(button(`${paper.title} · ${displayScore(attempt?.score ?? 0)} / ${displayScore(paper.totalScore)} 分`, "exam-open", "yiji-secondary-button", { value: paper.id }));
       }
     }
     const exams = this.plugin.getExamHistory();
     if (exams.length) {
       scroll.appendChild(this.sectionHeader("全部作答记录"));
       for (const exam of exams.slice(0, 30)) {
-        const label = `${exam.title} · ${new Date(exam.startedAt).toLocaleString()} · ${exam.score ?? "未交卷"}${exam.totalScore ? ` / ${exam.totalScore}` : ""}`;
+        const label = `${exam.title} · ${new Date(exam.startedAt).toLocaleString()} · ${exam.score === undefined ? "未交卷" : displayScore(exam.score)}${exam.totalScore ? ` / ${displayScore(exam.totalScore)}` : ""}`;
         const row = button(label, "exam-history", "yiji-secondary-button", { value: exam.id });
         row.disabled = !exam.submittedAt || exam.unknownContentVersion || exam.conflicted;
         scroll.appendChild(row);
