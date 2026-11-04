@@ -1029,3 +1029,208 @@ button.yiji-option:active {
 .yiji-root .yiji-exam-intro button {
   margin-top: 14px;
 }
+.yiji-question-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.modal.yiji-manager-modal {
+  width: min(1240px, 96vw);
+  max-width: 1240px;
+  max-height: 94vh;
+  color: #f2f6f3;
+  background: #0b1117;
+  border: 1px solid #2a3944;
+}
+
+.yiji-manager {
+  --manager-bg: #0b1117;
+  --manager-surface: #121b23;
+  --manager-raised: #18242d;
+  --manager-line: #2a3944;
+  --manager-text: #f2f6f3;
+  --manager-muted: #91a3ae;
+  --manager-accent: #f4b74a;
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--manager-text);
+  background: var(--manager-bg);
+  overflow-wrap: anywhere;
+  color-scheme: dark;
+}
+
+.yiji-manager,
+.yiji-manager * { box-sizing: border-box; }
+
+.yiji-manager h2,
+.yiji-manager h3,
+.yiji-manager h4 { margin: 0 0 12px; line-height: 1.4; }
+.yiji-manager h2 { font-size: 20px; }
+.yiji-manager h3 { font-size: 18px; }
+.yiji-manager h4 { font-size: 17px; }
+.yiji-manager p { margin: 8px 0 16px; }
+.yiji-manager ul,
+.yiji-manager ol { padding-inline-start: 24px; }
+
+.yiji-manager-status {
+  padding: 10px 0 16px;
+  color: var(--manager-muted);
+  font-size: 14px;
+}
+
+.yiji-manager-errors,
+.yiji-manager-risk {
+  padding: 14px 18px;
+  border: 1px solid #86534c;
+  border-radius: 10px;
+  color: #ffd3ce;
+  background: #2b2021;
+}
+
+.yiji-manager-errors { padding-inline-start: 36px !important; }
+.yiji-manager-bankbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  padding-bottom: 18px;
+}
+.yiji-manager-bankbar > .yiji-manager-field { flex: 1 1 210px; margin: 0; }
+.yiji-manager-bankbar > .yiji-manager-bank-management { flex-basis: 100%; width: 100%; margin: 0; padding: 0 12px; }
+.yiji-manager-bank-management > summary { font-size: 15px; }
+.yiji-manager-editor > .is-quiet:first-child { margin-bottom: 16px; }
+
+.yiji-manager-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--manager-line);
+}
+.yiji-manager-tabs .yiji-manager-button { flex: 1 0 auto; background: transparent; }
+.yiji-manager-tabs .yiji-manager-button[aria-current="page"] {
+  border-color: var(--manager-accent);
+  color: var(--manager-accent);
+  background: #29241b;
+}
+
+.yiji-manager-main { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+.yiji-manager-columns { display: grid; grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr); gap: 18px; align-items: start; }
+.yiji-manager-panel {
+  min-width: 0;
+  padding: 20px;
+  margin-bottom: 18px;
+  border: 1px solid var(--manager-line);
+  border-radius: 16px;
+  background: var(--manager-surface);
+}
+.yiji-manager-field { display: flex; flex-direction: column; gap: 7px; margin: 0 0 16px; min-width: 0; }
+.yiji-manager-field > span { font-weight: 500; }
+.yiji-manager-fields { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; }
+.yiji-manager-fields > .yiji-manager-field { flex: 1 1 140px; }
+.yiji-manager-fields > button { margin-bottom: 16px; }
+
+.yiji-manager input:not([type="checkbox"]),
+.yiji-manager textarea,
+.yiji-manager select {
+  width: 100%;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid #40525f;
+  border-radius: 10px;
+  font: inherit;
+  line-height: 1.55;
+  color: var(--manager-text);
+  background: var(--manager-bg);
+  box-shadow: none;
+}
+.yiji-manager select { height: auto; padding-right: 30px; }
+.yiji-manager textarea { min-height: 112px; resize: vertical; }
+.yiji-manager input[type="file"] { white-space: normal; font-size: 15px; }
+.yiji-manager input::placeholder,
+.yiji-manager textarea::placeholder { color: #8092a0; }
+.yiji-manager input:focus-visible,
+.yiji-manager textarea:focus-visible,
+.yiji-manager select:focus-visible,
+.yiji-manager button:focus-visible,
+.yiji-manager summary:focus-visible { outline: 3px solid #69a9ff; outline-offset: 2px; }
+
+.yiji-manager .yiji-manager-button {
+  min-height: 48px;
+  height: auto;
+  max-width: 100%;
+  padding: 10px 16px;
+  margin: 0;
+  border: 1px solid #40525f;
+  border-radius: 10px;
+  color: var(--manager-text);
+  background: var(--manager-raised);
+  font: inherit;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-shadow: none;
+  cursor: pointer;
+}
+.yiji-manager .yiji-manager-button:hover:not(:disabled) { background: #223341; }
+.yiji-manager .yiji-manager-button.is-primary { min-height: 56px; color: #1a1409; background: var(--manager-accent); border-color: var(--manager-accent); font-weight: 600; }
+.yiji-manager .yiji-manager-button.is-primary:hover:not(:disabled) { background: #ffca6f; }
+.yiji-manager .yiji-manager-button.is-quiet { color: #b9cbd8; background: transparent; }
+.yiji-manager .yiji-manager-button.is-danger { color: #ffb6ad; border-color: #a55b52; background: #301f20; }
+.yiji-manager .yiji-manager-button:disabled,
+.yiji-manager input:disabled,
+.yiji-manager select:disabled,
+.yiji-manager textarea:disabled { opacity: 0.5; cursor: default; }
+.yiji-manager-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+.yiji-manager-sticky { position: sticky; bottom: 0; padding: 12px 0 4px; background: var(--manager-surface); border-top: 1px solid var(--manager-line); z-index: 1; }
+
+.yiji-manager-check { display: flex; align-items: flex-start; gap: 12px; min-height: 48px; padding: 12px 0; cursor: pointer; }
+.yiji-manager-check input { flex: 0 0 auto; width: 22px; height: 22px; margin-top: 3px; accent-color: var(--manager-accent); }
+.yiji-manager-check span { min-width: 0; }
+.yiji-manager .yiji-manager-button.is-row { display: flex; flex-direction: column; gap: 6px; width: 100%; min-height: 72px; margin-top: 10px; text-align: left; align-items: stretch; }
+.yiji-manager-button.is-row strong { font-size: 17px; line-height: 1.6; font-weight: 500; }
+.yiji-manager-muted { color: var(--manager-muted); font-size: 14px; line-height: 1.7; }
+.yiji-manager-warning { color: #ffb898; font-size: 14px; }
+.yiji-manager-candidate { padding: 12px 0; border-top: 1px solid var(--manager-line); }
+.yiji-manager-candidate > .yiji-manager-check { font-size: 14px; min-height: 44px; padding: 4px 0; }
+.yiji-manager-candidate > .is-row { margin-top: 0; }
+.yiji-manager-empty { padding: 28px 8px; }
+.yiji-manager-empty h3 { color: #b9cbd8; }
+
+.yiji-manager details { margin: 14px 0; padding: 12px; border: 1px solid var(--manager-line); border-radius: 10px; background: var(--manager-bg); }
+.yiji-manager summary { min-height: 44px; padding: 8px 0; color: #cbdbe6; cursor: pointer; font-weight: 500; }
+.yiji-manager details[open] > summary { margin-bottom: 12px; }
+.yiji-manager pre { padding: 14px; margin: 10px 0; max-height: 440px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: 16px; line-height: 1.75; background: #101820; border-radius: 8px; }
+.yiji-manager-source-image { display: block; max-width: 100%; height: auto; margin: 12px 0; border: 1px solid var(--manager-line); border-radius: 8px; }
+.yiji-manager-paper-list { max-height: 400px; overflow: auto; }
+.yiji-manager-paper-list li { padding: 6px 0; }
+.yiji-manager-readonly { font-size: 14px !important; }
+
+@media (max-width: 767px) {
+  .modal.yiji-manager-modal { width: 100%; max-width: 100%; max-height: 100%; padding: 18px 16px; }
+  .yiji-manager-columns { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .yiji-manager-columns.has-editor > .yiji-manager-panel:not(.yiji-manager-editor) { display: none; }
+  .yiji-manager.is-editing > .yiji-manager-bankbar,
+  .yiji-manager.is-editing > .yiji-manager-tabs { display: none; }
+  .yiji-manager.is-editing > .yiji-manager-main > .yiji-manager-panel { display: none; }
+  .yiji-manager-panel { padding: 16px; border-radius: 12px; }
+  .yiji-manager-bankbar { gap: 10px; }
+  .yiji-manager-bankbar > .yiji-manager-field { flex: 1 1 170px; }
+  .yiji-manager-bankbar > .yiji-manager-button { flex: 0 0 auto; font-size: 15px; padding: 10px; }
+  .yiji-manager-tabs { gap: 8px; }
+  .yiji-manager-tabs .yiji-manager-button { flex: 1 1 29%; padding: 10px 8px; font-size: 16px; }
+  .yiji-manager-fields { gap: 10px; }
+  .yiji-manager-fields > .yiji-manager-field { flex-basis: 110px; }
+  .yiji-manager-actions > .yiji-manager-button { flex: 1 1 100%; }
+  .yiji-manager-sticky { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yiji-manager * { scroll-behavior: auto !important; }
+}

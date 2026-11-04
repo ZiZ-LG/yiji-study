@@ -82,6 +82,7 @@ function finalizeQuestionBank(
   candidates: readonly Question[],
   issues: QuestionBankIssue[],
   sourceKind: QuestionBank["sourceKind"],
+  domainOrder: readonly string[] = DOMAIN_ORDER,
 ): QuestionBank {
   const { questions, byId } = indexQuestions(candidates, issues);
 
@@ -89,7 +90,7 @@ function finalizeQuestionBank(
   for (const question of questions) counts[question.type] += 1;
 
   const domainMap = new Map<string, DomainSummary>();
-  for (const name of DOMAIN_ORDER) {
+  for (const name of domainOrder) {
     domainMap.set(name, { name, count: 0, counts: emptyTypeCounts() });
   }
   for (const question of questions) {
@@ -103,10 +104,10 @@ function finalizeQuestionBank(
     domainMap.set(question.domain, summary);
   }
 
-  const knownDomains = DOMAIN_ORDER.map((name) => domainMap.get(name)).filter(
+  const knownDomains = domainOrder.map((name) => domainMap.get(name)).filter(
     (domain): domain is DomainSummary => Boolean(domain),
   );
-  const knownNames = new Set<string>(DOMAIN_ORDER);
+  const knownNames = new Set<string>(domainOrder);
   const extraDomains = Array.from(domainMap.values())
     .filter((domain) => !knownNames.has(domain.name))
     .sort((left, right) => left.name.localeCompare(right.name, "zh-CN"));
@@ -137,8 +138,8 @@ export function buildQuestionBank(files: readonly QuestionSourceFile[]): Questio
   return finalizeQuestionBank(candidates, issues, "markdown");
 }
 
-export function buildQuestionBankFromQuestions(questions: readonly Question[]): QuestionBank {
-  return finalizeQuestionBank(questions, [], "embedded");
+export function buildQuestionBankFromQuestions(questions: readonly Question[], domainOrder: readonly string[] = DOMAIN_ORDER): QuestionBank {
+  return finalizeQuestionBank(questions, [], "embedded", domainOrder);
 }
 
 export async function loadQuestionBank(vault: Vault): Promise<QuestionBank> {

@@ -1,3 +1,7 @@
 import { defineConfig } from "vitest/config";
+import { fileURLToPath } from "node:url";
 
-export default defineConfig({ test: { include: ["tests/**/*.test.ts"] } });
+export default defineConfig({
+  resolve: { alias: { obsidian: fileURLToPath(new URL("./tests/fixtures/obsidian-exam-stub.ts", import.meta.url)) } },
+  test: { include: ["tests/**/*.test.ts"] },
+});
