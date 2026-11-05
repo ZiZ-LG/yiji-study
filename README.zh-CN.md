@@ -12,13 +12,7 @@
 
 在 Obsidian 中依次打开“设置 → 第三方插件 → 浏览”，搜索 **Yiji Study** 并安装；已安装用户可在第三方插件中检查更新。社区目录名称为 “Yiji Study”，插件内沿用中文名称“易记”。
 
-也可以通过 BRAT 安装：
-
-1. 在 Obsidian 中允许社区插件，安装并启用 [BRAT](https://obsidian.md/plugins?id=obsidian42-brat)。
-2. 打开[易记安装页](https://ziz-lg.github.io/yiji-study/)，点击“在 Obsidian 中安装易记”，确认 BRAT 提示。
-3. 在“设置 → 第三方插件”中启用“Yiji Study”。
-
-已安装 BRAT 的设备可使用[安装深链](obsidian://brat?plugin=ZiZ-LG%2Fyiji-study&version=latest)。若未能唤起 Obsidian，在 BRAT 的 “Add a beta plugin” 中填写 `ZiZ-LG/yiji-study`。后续已发布版本由 BRAT 按其更新设置检查并安装。
+项目仅维护 Obsidian 社区插件的安装与自动更新渠道。可打开[易记社区插件页](https://obsidian.md/plugins?id=yiji-study)，或在 Obsidian 中搜索 **Yiji Study**。
 
 升级前保留仓库备份。手动更新只替换插件文件，保留原 data.json 和题库目录。
 

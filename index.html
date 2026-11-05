@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#101714" />
     <meta
       name="description"
-      content="易记 Obsidian Mobile 插件的 iPhone 安装入口，通过 BRAT 安装并接收更新。"
+      content="易记 Obsidian 插件的社区安装入口，支持自定义题库、资料核对、刷题和巩固复习。"
     />
     <title>安装易记</title>
     <style>
@@ -240,56 +240,55 @@
   </head>
   <body>
     <main>
-      <div class="brand"><span class="mark" aria-hidden="true">易</span>易记 · iPhone 安装</div>
+      <div class="brand"><span class="mark" aria-hidden="true">易</span>易记 · 社区插件安装</div>
       <h1>把题库装进 Obsidian，随手就能刷。</h1>
-      <p class="lead">题目已内置，无需复制 StudyVault。安装后，进度、错题和收藏只保存在你自己的 Obsidian 仓库。</p>
+      <p class="lead">导入自己的考试资料，核对后组卷、刷题与巩固复习。题目、进度、错题和收藏保存在你自己的 Obsidian 仓库。</p>
 
       <div class="status">
         <span class="status-dot" aria-hidden="true"></span>
-        <span>当前版本 0.1.6 · 1085 道题 · 适用于 iOS 与 Android</span>
+        <span>0.2.0 · 自定义题库 · 桌面、iOS 与 Android</span>
       </div>
 
       <section class="steps" aria-label="安装步骤">
         <article class="step">
-          <div class="step-label"><span class="number">1</span>准备安装器</div>
-          <h2>安装并启用 BRAT</h2>
-          <p>需要先在 Obsidian 中启用社区插件，再安装 BRAT。首次操作会由 Obsidian 要求你确认。</p>
-          <a class="button secondary" href="https://obsidian.md/plugins?id=obsidian42-brat">打开 BRAT 插件页</a>
+          <div class="step-label"><span class="number">1</span>打开社区插件</div>
+          <h2>允许社区插件</h2>
+          <p>在 Obsidian 中打开“设置 → 第三方插件”，允许使用社区插件，然后进入“浏览”。</p>
         </article>
 
         <article class="step">
           <div class="step-label"><span class="number">2</span>加入易记</div>
-          <h2>一键交给 BRAT 安装</h2>
-          <p>确认 BRAT 已启用后点击。安装完成，再到“设置 → 第三方插件”启用“易记”。</p>
-          <a class="button" href="obsidian://brat?plugin=ZiZ-LG%2Fyiji-study&amp;version=latest">在 Obsidian 中安装易记</a>
+          <h2>安装 Yiji Study</h2>
+          <p>打开易记社区插件页，选择“安装”并启用。以后在“设置 → 第三方插件 → 检查更新”中更新。</p>
+          <a class="button" href="https://obsidian.md/plugins?id=yiji-study">打开易记社区插件页</a>
         </article>
       </section>
 
       <section class="fallback">
-        <h2>深链没有反应？</h2>
-        <p>打开 BRAT 的“Add a beta plugin”，粘贴下面的仓库地址：</p>
+        <h2>链接未能打开？</h2>
+        <p>在 Obsidian 的社区插件浏览页搜索以下名称：</p>
         <div class="repo">
-          <code id="repository">ZiZ-LG/yiji-study</code>
-          <button class="copy" id="copy-repository" type="button">复制</button>
+          <code id="plugin-name">Yiji Study</code>
+          <button class="copy" id="copy-plugin-name" type="button">复制</button>
         </div>
       </section>
 
       <footer>
         <a href="https://github.com/ZiZ-LG/yiji-study">查看源码与版本</a>
-        · 易记 0.1.6
+        · 易记 0.2.0
       </footer>
     </main>
     <script>
-      const repository = "ZiZ-LG/yiji-study";
-      const copyButton = document.querySelector("#copy-repository");
+      const pluginName = "Yiji Study";
+      const copyButton = document.querySelector("#copy-plugin-name");
       copyButton.addEventListener("click", async () => {
         let copied = false;
         try {
-          await navigator.clipboard.writeText(repository);
+          await navigator.clipboard.writeText(pluginName);
           copied = true;
         } catch {
           const helper = document.createElement("textarea");
-          helper.value = repository;
+          helper.value = pluginName;
           helper.setAttribute("readonly", "");
           helper.style.position = "fixed";
           helper.style.opacity = "0";
@@ -298,7 +297,7 @@
           copied = document.execCommand("copy");
           helper.remove();
         }
-        copyButton.textContent = copied ? "已复制" : "请长按地址";
+        copyButton.textContent = copied ? "已复制" : "请长按名称";
       });
     </script>
   </body>
