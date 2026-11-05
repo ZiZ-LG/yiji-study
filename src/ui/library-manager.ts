@@ -157,6 +157,7 @@ interface ManagerSession {
   backupSources: boolean;
   backupHistory: boolean;
   restoreText: string;
+  restoreFileName: string;
   restoreSummary: string;
   restoreChecked: boolean;
   resultText: string;
@@ -190,7 +191,7 @@ function initialSession(): ManagerSession {
     composeCounts: { single: "10", multiple: "0", judge: "0" },
     composePoints: { single: "1", multiple: "1", judge: "1" }, composeMinutes: "30",
     composeDomains: "", composeSources: "", composeFilter: "all", scoreMode: "exact",
-    reviewIds: new Set(), backupSources: true, backupHistory: true, restoreText: "",
+    reviewIds: new Set(), backupSources: true, backupHistory: true, restoreText: "", restoreFileName: "",
     restoreSummary: "", restoreChecked: false, resultText: "", expanded: {},
     originalBatchId: "", originalTitle: "", originalQuestionCount: "", originalScore: "", originalMinutes: "120",
     originalPoints: { single: "1", multiple: "1", judge: "1" }, originalRule: "", originalComplete: false, originalScoreMode: "exact",
@@ -1077,9 +1078,13 @@ export class LibraryManager extends Modal {
     picker.addEventListener("change", () => {
       const file = picker.files?.[0];
       if (!file) return;
-      void file.text().then((text) => { this.session.restoreText = text; this.session.restoreSummary = ""; this.session.restoreChecked = false; this.render(); }).catch((error: unknown) => { this.showProblem(this.errorText(error)); });
+      void file.text().then((text) => { this.session.restoreText = text; this.session.restoreFileName = file.name; this.session.restoreSummary = ""; this.session.restoreChecked = false; this.render(); }).catch((error: unknown) => { this.showProblem(this.errorText(error)); });
     });
-    append(restore, picker, this.textArea("备份内容", this.session.restoreText, (value) => { this.session.restoreText = value; this.session.restoreSummary = ""; this.session.restoreChecked = false; }, 5), this.action("检查备份", () => {
+    append(restore, picker);
+    if (this.session.restoreFileName) append(restore, this.note(`已读取文件：${this.session.restoreFileName}（${this.session.restoreText.length.toLocaleString()} 字符）。点击“检查备份”核对恢复范围；下方粘贴内容会替换这份文件。`));
+    // Keep file payloads out of textarea layout: source images can make a backup
+    // several MB, which otherwise stalls Android WebView during each render.
+    append(restore, this.textArea("备份内容", this.session.restoreFileName ? "" : this.session.restoreText, (value) => { this.session.restoreText = value; this.session.restoreFileName = ""; this.session.restoreSummary = ""; this.session.restoreChecked = false; }, 5), this.action("检查备份", () => {
       if (!this.session.restoreText.trim()) { this.showProblem("请先选择或粘贴备份内容。"); return; }
       void this.perform({ type: "restore-backup", text: this.session.restoreText, confirmed: false }, (result) => { this.session.restoreSummary = result.restoreSummary ?? ""; this.session.restoreChecked = false; });
     }));
@@ -1099,7 +1104,10 @@ export class LibraryManager extends Modal {
     append(backup, restore);
     if (this.session.resultText) {
       const output = element("details");
-      append(output, element("summary", { text: "查看最近导出的内容" }), this.readOnlyText(this.session.resultText));
+      append(output, element("summary", { text: "查看最近导出的内容" }));
+      const large = this.session.resultText.length > 100_000;
+      if (large) append(output, this.note("内容较大，仅显示前 2,000 字符。完整内容已保存在上方提示的导出文件中，请使用该文件恢复或分享。"));
+      append(output, this.readOnlyText(large ? this.session.resultText.slice(0, 2000) : this.session.resultText));
       append(backup, output);
     }
     const conflicts = this.snapshot?.library.conflicts.filter((conflict) => !conflict.resolved) ?? [];

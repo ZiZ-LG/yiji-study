@@ -82,6 +82,69 @@ beforeEach(() => { http.mockReset(); pdfLoader.mockReset(); notices.length = 0; 
 afterEach(() => { vi.unstubAllGlobals(); });
 
 describe("manager import integration with persistent fake vault files", () => {
+  it("recovers an acknowledged empty new draft once and retains a verified recovery record", async () => {
+    const c = setup();
+    const write = c.files.write.bind(c.files);
+    let attempts = 0;
+    c.files.write = async (path, text) => {
+      if (path.endsWith(".draft.json") && ++attempts === 1) return write(path, "");
+      return write(path, text);
+    };
+    await importOne(c);
+    expect(attempts).toBe(2);
+    const draftPath = [...c.files.data.keys()].find((path) => path.endsWith(".draft.json"))!;
+    const recoveryPath = [...c.files.data.keys()].find((path) => path.endsWith(".recovery"))!;
+    const recovery = JSON.parse(await c.files.read(recoveryPath));
+    expect(recovery.path).toBe(draftPath);
+    expect(recovery.observed).toBe("");
+    expect(await c.files.read(draftPath)).toBe(recovery.intendedText);
+    expect(Object.keys(getBank(c.holder.state).candidates)).toHaveLength(1);
+    expect(JSON.parse(await c.files.read(draftPath)).bindings).toHaveLength(1);
+  });
+
+  it.each(["persistent-empty", "conflict", "recovery-failure"])("stops without claiming success on %s", async (mode) => {
+    const c = setup();
+    const write = c.files.write.bind(c.files);
+    let attempts = 0;
+    c.files.write = async (path, text) => {
+      if (path.endsWith(".draft.json")) {
+        attempts += 1;
+        return write(path, mode === "conflict" ? "external-content" : "");
+      }
+      return write(path, mode === "recovery-failure" && path.endsWith(".recovery") ? "" : text);
+    };
+    await expect(importOne(c)).rejects.toThrow(/回读不一致|恢复副本/);
+    expect(attempts).toBe(mode === "persistent-empty" ? 2 : 1);
+    if (mode === "conflict") expect([...c.files.data.keys()].some((path) => path.endsWith(".recovery"))).toBe(false);
+  });
+
+  it("does not retry a zeroed existing draft", async () => {
+    const c = setup();
+    await importOne(c);
+    const write = c.files.write.bind(c.files);
+    let attempts = 0;
+    c.files.write = async (path, text) => {
+      if (path.endsWith(".draft.json")) { attempts += 1; return write(path, ""); }
+      return write(path, text);
+    };
+    await expect(importOne(c)).rejects.toThrow("回读不一致");
+    expect(attempts).toBe(1);
+  });
+
+  it("preserves a different record arriving while the recovery copy is saved", async () => {
+    const c = setup();
+    const write = c.files.write.bind(c.files);
+    let draftPath = "";
+    let attempts = 0;
+    c.files.write = async (path, text) => {
+      if (path.endsWith(".draft.json")) { draftPath = path; attempts += 1; return write(path, ""); }
+      await write(path, text);
+      if (path.endsWith(".recovery")) await write(draftPath, "external-content");
+    };
+    await expect(importOne(c)).rejects.toThrow("回读不一致");
+    expect(attempts).toBe(1);
+    expect(await c.files.read(draftPath)).toBe("external-content");
+  });
   it("imports and accepts 200 questions with paused window timers while yielding posted tasks and closing both ports", async () => {
     const c = setup();
     const pausedTimer = vi.fn(() => 0);

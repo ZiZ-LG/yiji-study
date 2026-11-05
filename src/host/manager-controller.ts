@@ -67,9 +67,25 @@ export class ManagerController implements LibraryManagerHost {
 
   private async saveJson(path: string, value: unknown): Promise<void> {
     const text = JSON.stringify(value);
+    const existed = await this.library.files.exists(path);
     try { await this.library.files.write(path, text); }
     catch (error) { if (!await this.library.files.exists(path) || await this.library.files.read(path) !== text) throw error; }
-    if (await this.library.files.read(path) !== text) throw new Error("整理记录保存后回读不一致，请等待同步并重新打开。");
+    const observed = await this.library.files.read(path);
+    if (observed === text) return;
+    // Android's file bridge can acknowledge a newly created file while leaving
+    // it empty. Recover only this observed case, never a conflicting nonempty
+    // record or an existing record. Keep a verified recovery copy before repair.
+    if (!existed && observed === "") {
+      const recoveryPath = `${path}.${newLibraryId("recovery")}.recovery`;
+      const recovery = JSON.stringify({ path, observed, intendedText: text });
+      await this.library.files.write(recoveryPath, recovery);
+      if (await this.library.files.read(recoveryPath) !== recovery) throw new Error("整理记录恢复副本未能保存，请保留现场并重新打开。");
+      if (await this.library.files.read(path) === "") {
+        await this.library.files.write(path, text);
+        if (await this.library.files.read(path) === text) return;
+      }
+    }
+    throw new Error("整理记录保存后回读不一致，请等待同步并重新打开。");
   }
 
   private async writeResource(path: string, bytes: ArrayBuffer): Promise<void> {

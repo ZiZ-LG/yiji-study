@@ -34,6 +34,8 @@ const host = {
   async getSnapshot() { return snapshot(); },
   async execute(command) {
     commands.push(command);
+    if (command.type === "restore-backup") return {restoreSummary:"1 个题库、1 道题",snapshot:snapshot()};
+    if (command.type === "export-backup") return {message:"已保存",path:"易记题库/备份/test.json",text:"x".repeat(200001),snapshot:snapshot()};
     if (command.type === "create-bank") state = createBank(state, command.name);
     else if (command.type === "rename-bank") state = renameBank(state,command.bankId,command.name);
     else if (command.type === "rename-domain") for (const question of Object.values(getBank(state).questions)) {
@@ -102,6 +104,24 @@ const host = {
   await click("保存完整备份");
   const fullExport=commands.filter(command=>command.type==="export-backup").at(-1);
   assert(fullExport.includeHistory===true && fullExport.includeSources===true,"Full backup command did not match its displayed scope");
+  await openSummary("查看最近导出的内容");
+  assert(Array.from(document.querySelectorAll("textarea")).every(node=>node.value.length<=2000),"Export preview inserted a full large payload into layout");
+  await openSummary("从备份恢复");
+  const largeBackup=JSON.stringify({payload:"x".repeat(8_000_000)});
+  const transfer=new DataTransfer();const backupFile=new File([largeBackup],"large-backup.json",{type:"application/json"});
+  // File I/O is covered on Android; resolve this payload without racing Chrome's virtual clock.
+  Object.defineProperty(backupFile,"text",{value:()=>Promise.resolve(largeBackup)});transfer.items.add(backupFile);
+  const picker=document.querySelector('input[aria-label="选择易记备份文件"]');picker.files=transfer.files;picker.dispatchEvent(new Event("change",{bubbles:true}));
+  for(let i=0;i<40&&!document.body.textContent.includes("已读取文件：large-backup.json");i++)await settle();
+  assert(document.body.textContent.includes("已读取文件：large-backup.json"),"Selected backup filename is not shown");
+  assert(label("备份内容").querySelector("textarea").value==="","File payload leaked into editable textarea");
+  await click("检查备份");
+  assert(commands.filter(c=>c.type==="restore-backup").at(-1).text===largeBackup,"Backup validation received truncated file data");
+  await check("我已查看恢复范围，并已为当前题库保留备份");await click("确认恢复这份备份");
+  assert(commands.filter(c=>c.type==="restore-backup").at(-1).confirmed===true&&commands.filter(c=>c.type==="restore-backup").at(-1).text===largeBackup,"Restore did not receive complete selected file");
+  fill("备份内容",'{"replacement":true}');await click("检查备份");
+  assert(commands.filter(c=>c.type==="restore-backup").at(-1).text==='{"replacement":true}',"Pasted backup did not replace selected file");
+  assert(findButton("确认恢复这份备份").disabled,"Replacement backup retained prior approval");
   const originalLearningKey=getBank(state).questions[learnedId].revisions[getBank(state).questions[learnedId].activeRevisionId].learningKey;
   await openSummary("知识点分类"); fill("要改名的知识点","第一章"); fill("新的知识点名称","基本概念");
   await check("确认修改该分类下的 1 道题的知识点名称"); await click("确认更新知识点名称");
