@@ -22,16 +22,9 @@ Codex file tasks provide a separate export-and-import workflow.
 Open **Settings > Community plugins > Browse**, search for **Yiji Study**, and
 select **Install**. Existing users can check for updates in Community plugins.
 
-Yiji Study can also be installed with BRAT:
-
-1. Enable community plugins in Obsidian, then install and enable
-   [BRAT](https://obsidian.md/plugins?id=obsidian42-brat).
-2. Open the [Yiji Study installation page](https://ziz-lg.github.io/yiji-study/)
-   and use the install button.
-3. Enable **Yiji Study** from **Settings > Community plugins**.
-
-If the deep link does not open Obsidian, use **Add a beta plugin** in BRAT and
-enter `ZiZ-LG/yiji-study`.
+The maintained installation and automatic-update channel is the Obsidian community
+plugin directory. Open the [Yiji Study plugin page](https://obsidian.md/plugins?id=yiji-study)
+or search for **Yiji Study** in Obsidian.
 
 Before upgrading, retain a vault backup. Manual updates replace the plugin files;
 keep your existing data.json and question-bank folder.
