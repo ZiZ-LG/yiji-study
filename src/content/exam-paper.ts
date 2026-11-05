@@ -11,4 +11,5 @@ export interface ExamPaper {
   totalScore: number;
   counts: Record<QuestionType, number>;
   items: { ordinal: number; questionId: string; points: number }[];
+  scoreMode?: "exact" | "proportional";
 }

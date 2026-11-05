@@ -5,6 +5,7 @@ import { createEmptyStudyData, parseStudyData, recordAnswer } from "../../src/st
 import type YijiPlugin from "../../src/main";
 import type { StudyDataV1 } from "../../src/state/study-state";
 import type { WorkspaceLeaf } from "obsidian";
+import { ACTIVE_CONTENT_PACKAGE } from "../../src/content/content-package";
 
 const params = new URLSearchParams(location.search);
 document.body.className = params.get("platform") === "android" ? "is-mobile is-phone is-android" : "is-mobile is-phone is-ios is-floating-nav";
@@ -16,6 +17,28 @@ const bank = buildQuestionBankFromQuestions(EMBEDDED_QUESTIONS);
 const plugin = {
   getStudyData: () => saved,
   getQuestionBank: async () => bank,
+  getQuestionBankSnapshot: () => ({ bank, bankId: "fixture-bank", revisions: new Map(bank.questions.map((question) => [question.id, { id: "fixture-revision" }])) }),
+  getContentPackage: () => ACTIVE_CONTENT_PACKAGE,
+  getActiveBankId: () => "fixture-bank",
+  getExamPapers: () => EMBEDDED_EXAM_PAPERS,
+  getExamQuestions: () => bank.byId,
+  getQuestionRevision: () => ({ id: "fixture-revision" }),
+  getExamExplanation: () => undefined,
+  getExamRevision: () => undefined,
+  getLearningEvidence: () => ({ firstAnswers: { sampleCount: 0, correctCount: 0, accuracy: null }, delayedAnswers: { sampleCount: 0, correctCount: 0, accuracy: null }, repeatedWrongQuestionIds: [], unretestedQuestionIds: [], domains: [], note: "仅统计有完整修订记录的新作答。" }),
+  getReviewIds: () => [],
+  isReviewEnabled: () => false,
+  getExamHistory: () => [],
+  clearExamHistorySelection: () => undefined,
+  getQuestionImages: () => [],
+  openManager: () => undefined,
+  submitPracticeAnswer: async (id: string, _revision: string, selected: string[]) => {
+    if (failSave) throw new Error("Simulated storage failure");
+    const question = bank.byId.get(id)!;
+    const result = recordAnswer(saved, id, selected.length === question.answers.length && selected.every((key) => question.answers.includes(key)), new Date().toISOString());
+    saved = result.data;
+    return result.wrongAction;
+  },
   persistStudyData: async (data: StudyDataV1) => {
     if (failSave) throw new Error("Simulated storage failure");
     saved = parseStudyData(JSON.parse(JSON.stringify(data)));

@@ -81,6 +81,32 @@ describe("four complete recent papers", () => {
 });
 
 describe("persistent exam sessions", () => {
+  it("restores a 200-question, 150-point paper and records timeout at its deadline", () => {
+    const questions = bank.questions.slice(0, 200);
+    const custom = { ...paper, id: "synthetic-200", sourceSha256: "synthetic-200-v1", totalScore: 150,
+      declaredTotalScore: 150, items: questions.map((question, index) => ({ ordinal: index + 1, questionId: question.id, points: 0.75 })) };
+    const attempt = { ...startExam(custom, now), index: 199, answers: Object.fromEntries(custom.items.map((item) => [String(item.ordinal), bank.byId.get(item.questionId)!.answers])) };
+    const restored = parseStudyData(JSON.parse(JSON.stringify(saveExam(createEmptyStudyData(), attempt))));
+    const submitted = submitExam(restored, custom, bank.byId, attempt.deadlineAt + 3600_000);
+    expect(submitted.exams?.[custom.id]).toMatchObject({ index: 199, questionCount: 200, totalScore: 150, score: 150, answeredCount: 200, submittedAt: attempt.deadlineAt });
+    expect(submitted.history.every((item) => item.answeredAt === new Date(attempt.deadlineAt).toISOString())).toBe(true);
+    expect(parseStudyData(submitted)).toEqual(submitted);
+  });
+
+  it("gives proportional credit only for a correct subset and keeps it in the wrongbook", () => {
+    const question = bank.questions.find((item) => item.type === "multiple" && item.answers.length > 1 && item.options.length > item.answers.length)!;
+    const custom = { ...paper, id: "synthetic-proportion", sourceSha256: "synthetic-proportion-v1", scoreMode: "proportional" as const,
+      totalScore: 6, declaredTotalScore: 6, items: [{ ordinal: 1, questionId: question.id, points: 6 }] };
+    const correctSubset = [question.answers[0]!];
+    const correctData = saveExam(createEmptyStudyData(), { ...startExam(custom, now), answers: { "1": correctSubset } });
+    const graded = submitExam(correctData, custom, bank.byId, now + 1000);
+    expect(graded.exams?.[custom.id]?.score).toBeCloseTo(6 / question.answers.length);
+    expect(graded.questions[question.id]?.isWrong).toBe(true);
+    const wrong = question.options.find((option) => !question.answers.includes(option.key))!.key;
+    const wrongData = saveExam(createEmptyStudyData(), { ...startExam(custom, now), answers: { "1": [...correctSubset, wrong] } });
+    expect(submitExam(wrongData, custom, bank.byId, now + 1000).exams?.[custom.id]?.score).toBe(0);
+  });
+
   it("persists answers and position and doesn't reveal or record results before submission", () => {
     const attempt = { ...startExam(paper, now), index: 100, answers: { "1": ["A"], "101": ["B", "D"] } };
     const data = saveExam(createEmptyStudyData(), attempt);

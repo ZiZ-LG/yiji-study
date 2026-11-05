@@ -1,7 +1,7 @@
 {
   "name": "yiji-study",
-  "version": "0.1.7",
-  "description": "易记：面向 Obsidian Mobile 的本地题库刷题插件",
+  "version": "0.2.0",
+  "description": "易记：自定义题库、AI 资料核对、组卷与巩固复习的本地 Obsidian 插件",
   "private": true,
   "main": "main.js",
   "type": "module",
@@ -45,5 +45,8 @@
     "obsidian": "1.12.3",
     "typescript": "5.9.3",
     "vitest": "3.2.4"
+  },
+  "dependencies": {
+    "fflate": "0.8.3"
   }
 }

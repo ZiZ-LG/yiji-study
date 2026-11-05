@@ -1,6 +1,9 @@
 import esbuild from "esbuild";
 import process from "node:process";
 import { builtinModules } from "node:module";
+import { readFile, writeFile } from "node:fs/promises";
+
+await writeFile("styles.css", `${await readFile("styles-base.css", "utf8")}\n${await readFile("styles-manager.css", "utf8")}`);
 
 const production = process.argv[2] === "production";
 const context = await esbuild.context({
