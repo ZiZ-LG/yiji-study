@@ -1,16 +1,12 @@
 # Yiji Study
 
-> Working-tree preview: this document includes the unreleased 0.2 development
-> work. The public stable release is still **0.1.7**. Installing from the community
-> directory or BRAT's latest release does not install these preview changes.
-> Mobile and end-to-end iCloud acceptance for the new workflow is still pending;
-> browser and simulated-host checks do not establish device compatibility.
+> Version **0.2.0** adds custom question banks, source-reviewed imports, and spaced review. See the [release notes](./docs/releases/0.2.0.md).
 
 [Simplified Chinese documentation](./README.zh-CN.md)
 
 ## English
 
-Yiji Study is an offline-first quiz plugin for Obsidian. The working-tree preview
+Yiji Study is an offline-first quiz plugin for Obsidian. It
 lets you create your own question banks, import exam papers, review AI-assisted
 extraction, assemble practice papers, and revisit questions after a time interval.
 It supports single-choice, multiple-choice, and true-or-false questions. The
@@ -37,10 +33,10 @@ Yiji Study can also be installed with BRAT:
 If the deep link does not open Obsidian, use **Add a beta plugin** in BRAT and
 enter `ZiZ-LG/yiji-study`.
 
-These steps install a published release. The preview described below must be
-built separately; use a test vault and retain a backup before testing migration.
+Before upgrading, retain a vault backup. Manual updates replace the plugin files;
+keep your existing data.json and question-bank folder.
 
-## Preview: from your files to practice
+## From your files to practice
 
 1. Open Yiji from the ribbon's book icon, then open its question-bank manager.
    The command palette also provides the management command
@@ -147,7 +143,7 @@ The inherited 120-minute limit is a practice setting, not an inferred official
 limit. The older two sample papers and five mock entries remain unavailable
 pending mapping.
 
-When version 1 study data is found, the preview backs it up before migration and
+When version 1 study data is found, the plugin backs it up before migration and
 retains the available question identities, progress, mistakes, bookmarks,
 activity totals, and saved exam snapshots. Older data contains at most 500
 activity entries and the last retained attempt per paper; overwritten history
@@ -179,10 +175,10 @@ remove the bank from active use. Source originals, retained data, backups, and
 copies already present on other devices are not automatically erased. Restoring
 a deleted bank creates a new bank copy.
 
-Your vault's synchronization service may transfer these files. iCloud is the
-selected acceptance target, but actual cross-device iCloud acceptance is still
-pending. Per-device records and conflict handling are implemented; browser tests
-and local merge tests do not prove real synchronization or mobile behavior.
+Your vault's synchronization service may transfer these files. On November 5,
+2026, the release owner reported successful manual iOS and iCloud acceptance.
+Android core workflows were tested in an Android 16 emulator with Obsidian 1.15.0.
+These results do not establish compatibility with every device or sync service.
 Keep source files and required attachments available before working on another
 device.
 
@@ -225,10 +221,10 @@ npm run verify
 npm run verify:release -- 0.2.0
 ```
 
-The release-check example matches the local 0.2.0 candidate metadata.
+The release-check example matches the 0.2.0 metadata.
 Pushing a Git tag that exactly matches `manifest.json` triggers the release
 workflow and publishes `main.js`, `manifest.json`, `styles.css`, and
-`SHA256SUMS.txt`. Passing a local check does not publish the preview.
+`SHA256SUMS.txt`. Passing a local check does not publish a release.
 
 ## Licensing
 
